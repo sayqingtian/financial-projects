@@ -1,0 +1,7 @@
+/target
+**/*.rs.bk
+Cargo.lock
+data/*.csv
+data/*.parquet
+.env
+*.log
