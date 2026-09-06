@@ -2,15 +2,15 @@
 import numpy as np
 
 
-def hysteresis(buy, sell, review, ready=None):
+def hysteresis(buy, sell, review, ready=None, initial=False):
     out = np.zeros(buy.shape, dtype=bool)
-    state = np.zeros(buy.shape[1], dtype=bool)
+    state = np.full(buy.shape[1], initial, dtype=bool)
     for i in range(len(buy)):
         r = review[i]
         state[r & buy[i]] = True
         # Conservative conflict resolution: sell has priority.
         state[r & sell[i]] = False
-        if ready is not None:
+        if ready is not None and not initial:
             state[r & ~ready[i]] = False
         out[i] = state
     return out
@@ -155,4 +155,4 @@ def targets(panel, spec):
         ready = np.isfinite(dd) & np.isfinite(mom)
     else:
         raise ValueError(f'Unknown family {family}')
-    return hysteresis(buy, sell, review, ready)
+    return hysteresis(buy, sell, review, ready, initial=p.get('initial_hold',False))

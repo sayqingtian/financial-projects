@@ -13,7 +13,7 @@ import numpy as np
 import pandas as pd
 
 from .data import PROJECT, RESEARCH, load_panel
-from .engine import simulate
+from .engine import simulate, evaluate
 from .rules import targets
 
 
@@ -104,10 +104,10 @@ def run_round(name):
     started = time.monotonic()
     for i, spec in enumerate(config['candidates'], 1):
         deadline_check(protocol, 60)
-        target = targets(panel, spec)
+        target = targets(panel, spec) if spec['family'] != 'blend' else None
         item = dict(**spec, windows={})
         for window in ('training', 'development'):
-            sim = simulate(panel, target, protocol[window])
+            sim = simulate(panel, target, protocol[window]) if target is not None else evaluate(panel,spec,protocol[window])
             rows = sim['rows']
             item['windows'][window] = {c: summary(rows, benchmarks[window], c) for c in ('all','primary','full10')}
             baseline = {r['code']: r for r in benchmarks[window]}
@@ -129,7 +129,8 @@ def run_round(name):
     package['elapsed_seconds'] = time.monotonic()-started
     final.write_text(json.dumps(package, ensure_ascii=False, indent=2, allow_nan=False)+'\n', encoding='utf-8')
     text = io.StringIO(newline='')
-    writer = csv.DictWriter(text, fieldnames=list(details[0]))
+    fields=list(dict.fromkeys(k for r in details for k in r))
+    writer = csv.DictWriter(text, fieldnames=fields)
     writer.writeheader()
     writer.writerows(details)
     (output/f'{name}-stocks.csv.gz').write_bytes(gzip.compress(text.getvalue().encode('utf-8-sig'), mtime=0))

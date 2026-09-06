@@ -34,6 +34,7 @@ def simulate(panel, target, window, commission=.001, slippage=.0005, extra_delay
     exposure = np.zeros(n)
     turnover = np.zeros(n)
     curve = np.empty((len(index), n)) if keep_curve else None
+    invested_curve = np.empty((len(index), n)) if keep_curve else None
     for k, i in enumerate(index):
         o, can = obs[k], panel.tradable[i]
         op = np.nan_to_num(panel.open[i], nan=0)
@@ -75,6 +76,7 @@ def simulate(panel, target, window, commission=.001, slippage=.0005, extra_delay
         desired[change] = target[i, change]
         if keep_curve:
             curve[k] = nav
+            invested_curve[k] = qty*cl
     with np.errstate(divide='ignore', invalid='ignore'):
         years = (dates[last].astype('datetime64[D]')-dates[first].astype('datetime64[D]')).astype(float)/365.25
         cagr = (np.power(nav/100000, 1/years)-1)*100
@@ -100,4 +102,45 @@ def simulate(panel, target, window, commission=.001, slippage=.0005, extra_delay
                    invested_fraction=float(exposure[j]/count[j]), all_cash=bool(buys[j] == 0),
                    turnover_initial=float(turnover[j]/100000))
         rows.append(row)
-    return dict(rows=rows, dates=dates, curve=curve)
+    return dict(rows=rows, dates=dates, curve=curve, invested_curve=invested_curve)
+
+
+def evaluate(panel, spec, window, commission=.001, slippage=.0005, extra_delay=0, keep_curve=False):
+    """Fixed initial sleeves, independently compounded; never free rebalancing."""
+    from .rules import targets
+    if spec['family'] != 'blend':
+        return simulate(panel, targets(panel,spec), window, commission, slippage, extra_delay, keep_curve)
+    members=spec['params']['members']
+    weights=np.array([m['weight'] for m in members])
+    if np.any(weights <= 0) or not np.isclose(weights.sum(),1,rtol=0,atol=1e-12):
+        raise ValueError('Blend weights must be positive and sum to one; leverage is forbidden.')
+    sims=[evaluate(panel,m['strategy'],window,commission,slippage,extra_delay,True) for m in members]
+    curve=sum(w*s['curve'] for w,s in zip(weights,sims))
+    invested=sum(w*s['invested_curve'] for w,s in zip(weights,sims))
+    dates=sims[0]['dates']
+    index=np.flatnonzero((panel.dates >= window[0]) & (panel.dates <= window[1]))
+    lookup=[{r['code']:r for r in s['rows']} for s in sims]
+    rows=[]
+    for j,stock in enumerate(panel.stocks):
+        code=stock['code']
+        if code not in lookup[0]:
+            continue
+        base=dict(lookup[0][code])
+        observed=panel.observed[index,j]
+        v=curve[observed,j]
+        returns=v[1:]/v[:-1]-1
+        std=returns.std(ddof=0)
+        base.update(final_capital=float(v[-1]),total_return_pct=float((v[-1]/100000-1)*100),
+                    cagr_pct=float(((v[-1]/100000)**(1/base['years'])-1)*100),
+                    sharpe=float(returns.mean()/std*np.sqrt(252)) if std>1e-14 else None,
+                    drawdown_pct=float(np.max(1-v/np.maximum.accumulate(np.maximum(v,100000)))*100),
+                    invested_fraction=float(np.mean(invested[observed,j]/v)),
+                    all_cash=all(r[code]['all_cash'] for r in lookup),
+                    open_position=any(r[code]['open_position'] for r in lookup),
+                    turnover_initial=float(sum(w*r[code]['turnover_initial'] for w,r in zip(weights,lookup))))
+        for field in ['entries','exits','natural_exits','winning_trades']:
+            base[field]=sum(r[code][field] for r in lookup)
+        base['sleeve_count']=len(members)
+        rows.append(base)
+    return dict(rows=rows,dates=dates,curve=curve if keep_curve else None,
+                invested_curve=invested if keep_curve else None)

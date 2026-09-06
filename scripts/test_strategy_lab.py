@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 from strategy_lab.data import Panel
-from strategy_lab.engine import simulate
+from strategy_lab.engine import simulate, evaluate
 from strategy_lab.rules import targets
 from report_tencent_fundamentals import simulate as independent
 from strategy_lab.fundamentals import annual_values
@@ -122,6 +122,27 @@ class EngineTests(unittest.TestCase):
         p.cache[('fundamentals',180)]={k:np.array([[np.nan],[-1],[2]],float) for k in ['profit','revenue_growth','profit_growth','margin']}
         s=dict(family='fundamental_overlay',params=dict(base=dict(family='buy_hold'),mode='avoid_loss'))
         self.assertEqual(targets(p,s)[:,0].tolist(),[True,False,True])
+
+    def test_initial_hold_stays_invested_during_indicator_warmup(self):
+        p=panel([10,11,12,13])
+        s=dict(family='return_reversion',params=dict(period=3,entry=.2,exit=.2,initial_hold=True))
+        self.assertEqual(targets(p,s)[:,0].tolist(),[True,True,True,False])
+
+    def test_blend_is_cash_weighted_sleeves_with_costs(self):
+        p=panel([10,15,20,30,25])
+        a=dict(family='buy_hold')
+        b=dict(family='sma',params=dict(period=2))
+        s=dict(family='blend',params=dict(members=[dict(weight=.3,strategy=a),dict(weight=.7,strategy=b)]))
+        window=['2020-01-01','2020-01-05']
+        actual=evaluate(p,s,window,keep_curve=True)
+        ra=evaluate(p,a,window,keep_curve=True);rb=evaluate(p,b,window,keep_curve=True)
+        self.assertTrue(np.allclose(actual['curve'],.3*ra['curve']+.7*rb['curve'],rtol=1e-12))
+        self.assertAlmostEqual(actual['rows'][0]['final_capital'],float(actual['curve'][-1,0]))
+
+    def test_blend_forbids_leverage(self):
+        p=panel([10,11])
+        s=dict(family='blend',params=dict(members=[dict(weight=1.1,strategy=dict(family='buy_hold'))]))
+        with self.assertRaises(ValueError):evaluate(p,s,['2020-01-01','2020-01-02'])
 
 
 if __name__=='__main__':

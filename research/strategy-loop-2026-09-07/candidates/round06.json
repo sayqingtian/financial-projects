@@ -1,0 +1,550 @@
+{
+  "hypothesis": "Diagnose missed early bull markets with explicit initial-hold policy; diversify timing errors through separately funded fixed initial sleeves, with all costs preserved.",
+  "candidates": [
+    {
+      "id": "R06_INITIAL_RSI",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 25,
+        "exit": 75,
+        "initial_hold": true
+      }
+    },
+    {
+      "id": "R06_INITIAL_WEEKLY",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 30,
+        "exit": 70,
+        "review": "weekly",
+        "initial_hold": true
+      }
+    },
+    {
+      "id": "R06_INITIAL_CHANNEL",
+      "family": "channel_reversion",
+      "params": {
+        "period": 126,
+        "entry": 0.1,
+        "exit": 0.9,
+        "initial_hold": true
+      }
+    },
+    {
+      "id": "R06_INITIAL_RETURN",
+      "family": "return_reversion",
+      "params": {
+        "period": 63,
+        "entry": 0.25,
+        "exit": 0.25,
+        "initial_hold": true
+      }
+    },
+    {
+      "id": "R06_CORE_RSI_0.25",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            }
+          },
+          {
+            "weight": 0.75,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_CORE_RSI_0.5",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_CORE_RSI_0.75",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.75,
+            "strategy": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            }
+          },
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_CORE_MAX126_0.25",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.75,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_CORE_MAX126_0.5",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_CORE_MAX126_0.75",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.75,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_CORE_CHANNEL_0.25",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "channel_reversion",
+              "params": {
+                "period": 126,
+                "entry": 0.1,
+                "exit": 0.9
+              }
+            }
+          },
+          {
+            "weight": 0.75,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_CORE_CHANNEL_0.5",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "channel_reversion",
+              "params": {
+                "period": 126,
+                "entry": 0.1,
+                "exit": 0.9
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_CORE_CHANNEL_0.75",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.75,
+            "strategy": {
+              "family": "channel_reversion",
+              "params": {
+                "period": 126,
+                "entry": 0.1,
+                "exit": 0.9
+              }
+            }
+          },
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_CORE_RETURN_0.25",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          },
+          {
+            "weight": 0.75,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_CORE_RETURN_0.5",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_CORE_RETURN_0.75",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.75,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          },
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_BLEND_MAX126_CHANNEL",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "channel_reversion",
+              "params": {
+                "period": 126,
+                "entry": 0.1,
+                "exit": 0.9
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_BLEND_MAX126_RETURN",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_BLEND_CHANNEL_RETURN",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "channel_reversion",
+              "params": {
+                "period": 126,
+                "entry": 0.1,
+                "exit": 0.9
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_BLEND_WEEKLY_RETURN",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 30,
+                "exit": 70,
+                "review": "weekly"
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R06_BLEND_MAX126_CHANNEL_RETURN",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "channel_reversion",
+              "params": {
+                "period": 126,
+                "entry": 0.1,
+                "exit": 0.9
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
