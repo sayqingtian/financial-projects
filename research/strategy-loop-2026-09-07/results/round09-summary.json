@@ -1,0 +1,4918 @@
+{
+  "round": "round09",
+  "source_commit": "ecbbf00059b476324da7f2bd14f8ea407d8efcbb",
+  "started_utc": "2026-09-06T17:03:48.070406+00:00",
+  "text_hash_policy": "SHA256 of UTF-8 text with LF newlines; downloaded inputs retain exact byte hashes",
+  "protocol_sha256": "c5a7de9df09cda049983f4e06ef903c3ff915eeeaa72bf8dd29ea0fd779d50a0",
+  "config_sha256": "bd2f478e10f056d07e6b2239ae6cdabc9bdc4cd51e7711fe1962057d40547395",
+  "input_manifest_sha256": "b8b576c61b7aeab0d6b20c294772f7cd4ab4b8d2bf57b6343e76ba79d6aa4993",
+  "benchmark": {
+    "training": {
+      "all": {
+        "count": 306,
+        "median_cagr": 3.4124560383098412,
+        "median_total_return": 6.209426012147656,
+        "median_excess_cagr": 0.0,
+        "outperform_rate": 0.0,
+        "median_sharpe": 0.27492506280327966,
+        "median_sharpe_excess": 0.0,
+        "higher_sharpe_rate": 0.0,
+        "sharpe_pairs": 306,
+        "median_drawdown": 38.80537741802345,
+        "median_exposure": 0.9965095986038395,
+        "median_entries": 1.0,
+        "activity_rate": 1.0,
+        "all_cash": 0,
+        "cagr8_rate": 0.369281045751634,
+        "positive_rate": 0.5947712418300654
+      },
+      "primary": {
+        "count": 281,
+        "median_cagr": 3.4213175810313468,
+        "median_total_return": 8.103599225994817,
+        "median_excess_cagr": 0.0,
+        "outperform_rate": 0.0,
+        "median_sharpe": 0.27649869958010437,
+        "median_sharpe_excess": 0.0,
+        "higher_sharpe_rate": 0.0,
+        "sharpe_pairs": 281,
+        "median_drawdown": 38.906943913502126,
+        "median_exposure": 0.9965095986038395,
+        "median_entries": 1.0,
+        "activity_rate": 1.0,
+        "all_cash": 0,
+        "cagr8_rate": 0.3701067615658363,
+        "positive_rate": 0.604982206405694
+      },
+      "full10": {
+        "count": 275,
+        "median_cagr": 3.4213175810313468,
+        "median_total_return": 8.103599225994817,
+        "median_excess_cagr": 0.0,
+        "outperform_rate": 0.0,
+        "median_sharpe": 0.27649869958010437,
+        "median_sharpe_excess": 0.0,
+        "higher_sharpe_rate": 0.0,
+        "sharpe_pairs": 275,
+        "median_drawdown": 38.906943913502126,
+        "median_exposure": 0.9965095986038395,
+        "median_entries": 1.0,
+        "activity_rate": 1.0,
+        "all_cash": 0,
+        "cagr8_rate": 0.3709090909090909,
+        "positive_rate": 0.6072727272727273
+      }
+    },
+    "development": {
+      "all": {
+        "count": 376,
+        "median_cagr": -0.05920743803093376,
+        "median_total_return": -0.29486405359121504,
+        "median_excess_cagr": 0.0,
+        "outperform_rate": 0.0,
+        "median_sharpe": 0.2148991193329426,
+        "median_sharpe_excess": 0.0,
+        "higher_sharpe_rate": 0.0,
+        "sharpe_pairs": 376,
+        "median_drawdown": 61.3446242881932,
+        "median_exposure": 0.9983739837398374,
+        "median_entries": 1.0,
+        "activity_rate": 1.0,
+        "all_cash": 0,
+        "cagr8_rate": 0.2872340425531915,
+        "positive_rate": 0.4973404255319149
+      },
+      "primary": {
+        "count": 351,
+        "median_cagr": 0.33260265950512125,
+        "median_total_return": 1.670184300810873,
+        "median_excess_cagr": 0.0,
+        "outperform_rate": 0.0,
+        "median_sharpe": 0.21921405809734132,
+        "median_sharpe_excess": 0.0,
+        "higher_sharpe_rate": 0.0,
+        "sharpe_pairs": 351,
+        "median_drawdown": 61.895471014929804,
+        "median_exposure": 0.9983739837398374,
+        "median_entries": 1.0,
+        "activity_rate": 1.0,
+        "all_cash": 0,
+        "cagr8_rate": 0.28205128205128205,
+        "positive_rate": 0.5042735042735043
+      },
+      "full10": {
+        "count": 275,
+        "median_cagr": 1.3021778493766512,
+        "median_total_return": 6.666619461531398,
+        "median_excess_cagr": 0.0,
+        "outperform_rate": 0.0,
+        "median_sharpe": 0.2309675538753686,
+        "median_sharpe_excess": 0.0,
+        "higher_sharpe_rate": 0.0,
+        "sharpe_pairs": 275,
+        "median_drawdown": 59.610917054628665,
+        "median_exposure": 0.9983739837398374,
+        "median_entries": 1.0,
+        "activity_rate": 1.0,
+        "all_cash": 0,
+        "cagr8_rate": 0.2872727272727273,
+        "positive_rate": 0.5454545454545454
+      }
+    }
+  },
+  "candidates": [
+    {
+      "id": "R09_MAX90_COOL10",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 90,
+        "cooldown": 10
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.642049329170094,
+            "outperform_rate": 0.4084967320261438,
+            "median_sharpe": 0.07388523556132684,
+            "median_sharpe_excess": -0.052089540015964,
+            "higher_sharpe_rate": 0.4574898785425101,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.97582753062423,
+            "median_exposure": 0.20767888307155322,
+            "median_entries": 2.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.1503267973856209,
+            "positive_rate": 0.39869281045751637
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.752347625421426,
+            "outperform_rate": 0.39501779359430605,
+            "median_sharpe": 0.07941403719570643,
+            "median_sharpe_excess": -0.07660164162126668,
+            "higher_sharpe_rate": 0.43829787234042555,
+            "sharpe_pairs": 235,
+            "median_drawdown": 17.77476301257186,
+            "median_exposure": 0.2094240837696335,
+            "median_entries": 2.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.15658362989323843,
+            "positive_rate": 0.4199288256227758
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.752347625421426,
+            "outperform_rate": 0.3927272727272727,
+            "median_sharpe": 0.08026941372270345,
+            "median_sharpe_excess": -0.07839957166162521,
+            "higher_sharpe_rate": 0.4353448275862069,
+            "sharpe_pairs": 232,
+            "median_drawdown": 17.825538068715385,
+            "median_exposure": 0.2094240837696335,
+            "median_entries": 2.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.16,
+            "positive_rate": 0.4254545454545455
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 3.332796155803641,
+            "median_total_return": 16.513236484351978,
+            "median_excess_cagr": 4.0455875152965675,
+            "outperform_rate": 0.6382978723404256,
+            "median_sharpe": 0.2805145570635943,
+            "median_sharpe_excess": 0.11056998451709274,
+            "higher_sharpe_rate": 0.6239782016348774,
+            "sharpe_pairs": 367,
+            "median_drawdown": 44.52810202056283,
+            "median_exposure": 0.41910569105691053,
+            "median_entries": 7.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.31648936170212766,
+            "positive_rate": 0.598404255319149
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 3.5668821434677866,
+            "median_total_return": 18.620773618523813,
+            "median_excess_cagr": 4.082216452699649,
+            "outperform_rate": 0.6410256410256411,
+            "median_sharpe": 0.2845394678184428,
+            "median_sharpe_excess": 0.09372395878848161,
+            "higher_sharpe_rate": 0.6160458452722063,
+            "sharpe_pairs": 349,
+            "median_drawdown": 44.90178801230636,
+            "median_exposure": 0.4186991869918699,
+            "median_entries": 7.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.3247863247863248,
+            "positive_rate": 0.6267806267806267
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.065852060080499,
+            "median_total_return": 21.99438046362594,
+            "median_excess_cagr": 3.9619570044310706,
+            "outperform_rate": 0.6290909090909091,
+            "median_sharpe": 0.3129361666054278,
+            "median_sharpe_excess": 0.12478177196292611,
+            "higher_sharpe_rate": 0.6313868613138686,
+            "sharpe_pairs": 274,
+            "median_drawdown": 42.28070364375958,
+            "median_exposure": 0.4186991869918699,
+            "median_entries": 8.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.3563636363636364,
+            "positive_rate": 0.68
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX90_COOL20",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 90,
+        "cooldown": 20
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.2127161349947193,
+            "outperform_rate": 0.43137254901960786,
+            "median_sharpe": 0.063035982789217,
+            "median_sharpe_excess": -0.04922297741416559,
+            "higher_sharpe_rate": 0.46963562753036436,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.7887180433369,
+            "median_exposure": 0.19197207678883071,
+            "median_entries": 2.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.14052287581699346,
+            "positive_rate": 0.3888888888888889
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.5817466904620066,
+            "outperform_rate": 0.41637010676156583,
+            "median_sharpe": 0.06394720834403722,
+            "median_sharpe_excess": -0.09434110292784437,
+            "higher_sharpe_rate": 0.44680851063829785,
+            "sharpe_pairs": 235,
+            "median_drawdown": 17.412927702574233,
+            "median_exposure": 0.19720767888307156,
+            "median_entries": 2.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.14590747330960854,
+            "positive_rate": 0.40569395017793597
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.5817466904620066,
+            "outperform_rate": 0.41454545454545455,
+            "median_sharpe": 0.06891622195268203,
+            "median_sharpe_excess": -0.09671960521846967,
+            "higher_sharpe_rate": 0.44396551724137934,
+            "sharpe_pairs": 232,
+            "median_drawdown": 17.77476301257186,
+            "median_exposure": 0.19720767888307156,
+            "median_entries": 2.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.14909090909090908,
+            "positive_rate": 0.4109090909090909
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 1.4465008820118586,
+            "median_total_return": 7.426841059756651,
+            "median_excess_cagr": 1.7830500730555299,
+            "outperform_rate": 0.574468085106383,
+            "median_sharpe": 0.20223677271582438,
+            "median_sharpe_excess": 0.017504338058480257,
+            "higher_sharpe_rate": 0.5122615803814714,
+            "sharpe_pairs": 367,
+            "median_drawdown": 44.17735128651758,
+            "median_exposure": 0.3926829268292683,
+            "median_entries": 6.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.2632978723404255,
+            "positive_rate": 0.5398936170212766
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 1.8754670459649736,
+            "median_total_return": 9.712008786246319,
+            "median_excess_cagr": 1.6196441250086786,
+            "outperform_rate": 0.5726495726495726,
+            "median_sharpe": 0.20920788310562172,
+            "median_sharpe_excess": 0.003605456180263339,
+            "higher_sharpe_rate": 0.504297994269341,
+            "sharpe_pairs": 349,
+            "median_drawdown": 45.19637412579669,
+            "median_exposure": 0.389948006932409,
+            "median_entries": 6.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.2678062678062678,
+            "positive_rate": 0.5641025641025641
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 2.7364072002853623,
+            "median_total_return": 14.415653736122369,
+            "median_excess_cagr": 1.599103223876741,
+            "outperform_rate": 0.5818181818181818,
+            "median_sharpe": 0.25135095001812535,
+            "median_sharpe_excess": 0.04613137752794606,
+            "higher_sharpe_rate": 0.5328467153284672,
+            "sharpe_pairs": 274,
+            "median_drawdown": 42.42664881716232,
+            "median_exposure": 0.3878048780487805,
+            "median_entries": 7.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.29454545454545455,
+            "positive_rate": 0.6218181818181818
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX90_COOL40",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 90,
+        "cooldown": 40
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.1728440312331294,
+            "outperform_rate": 0.434640522875817,
+            "median_sharpe": 0.0711310502753691,
+            "median_sharpe_excess": -0.07146701605557935,
+            "higher_sharpe_rate": 0.46558704453441296,
+            "sharpe_pairs": 247,
+            "median_drawdown": 15.87174151828729,
+            "median_exposure": 0.16841186736474695,
+            "median_entries": 2.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.13725490196078433,
+            "positive_rate": 0.40522875816993464
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.7283963162953793,
+            "outperform_rate": 0.4199288256227758,
+            "median_sharpe": 0.07388523556132684,
+            "median_sharpe_excess": -0.09434110292784437,
+            "higher_sharpe_rate": 0.4425531914893617,
+            "sharpe_pairs": 235,
+            "median_drawdown": 16.34172060059189,
+            "median_exposure": 0.18150087260034903,
+            "median_entries": 2.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.1423487544483986,
+            "positive_rate": 0.4234875444839858
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.5817466904620066,
+            "outperform_rate": 0.4218181818181818,
+            "median_sharpe": 0.07613036691762537,
+            "median_sharpe_excess": -0.09449713827619727,
+            "higher_sharpe_rate": 0.4396551724137931,
+            "sharpe_pairs": 232,
+            "median_drawdown": 16.35853586043392,
+            "median_exposure": 0.18150087260034903,
+            "median_entries": 2.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.14545454545454545,
+            "positive_rate": 0.4290909090909091
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 1.971050531260754,
+            "median_total_return": 10.226460366584966,
+            "median_excess_cagr": 2.7714622470440866,
+            "outperform_rate": 0.5957446808510638,
+            "median_sharpe": 0.23731516105722664,
+            "median_sharpe_excess": 0.03739125293713108,
+            "higher_sharpe_rate": 0.5422343324250681,
+            "sharpe_pairs": 367,
+            "median_drawdown": 40.827346005817695,
+            "median_exposure": 0.3467479674796748,
+            "median_entries": 6.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.30851063829787234,
+            "positive_rate": 0.5877659574468085
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 2.736573542007581,
+            "median_total_return": 14.41657784217849,
+            "median_excess_cagr": 2.718935393549926,
+            "outperform_rate": 0.5925925925925926,
+            "median_sharpe": 0.2390598874505404,
+            "median_sharpe_excess": 0.03226699545260092,
+            "higher_sharpe_rate": 0.5329512893982808,
+            "sharpe_pairs": 349,
+            "median_drawdown": 42.04700056999363,
+            "median_exposure": 0.34552845528455284,
+            "median_entries": 6.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.31339031339031337,
+            "positive_rate": 0.6125356125356125
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 2.9445493604197237,
+            "median_total_return": 15.576658228612029,
+            "median_excess_cagr": 2.2609137565634985,
+            "outperform_rate": 0.5890909090909091,
+            "median_sharpe": 0.2650897988001122,
+            "median_sharpe_excess": 0.044856428896421996,
+            "higher_sharpe_rate": 0.5583941605839416,
+            "sharpe_pairs": 274,
+            "median_drawdown": 39.57253097999083,
+            "median_exposure": 0.34552845528455284,
+            "median_entries": 6.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.33090909090909093,
+            "positive_rate": 0.6545454545454545
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX105_COOL10",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 105,
+        "cooldown": 10
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.1942853358168266,
+            "outperform_rate": 0.41830065359477125,
+            "median_sharpe": 0.0915968899954339,
+            "median_sharpe_excess": 0.004721310975004944,
+            "higher_sharpe_rate": 0.5060728744939271,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.511703601048787,
+            "median_exposure": 0.20855148342059338,
+            "median_entries": 2.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.16666666666666666,
+            "positive_rate": 0.4084967320261438
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.5544720099497384,
+            "outperform_rate": 0.40213523131672596,
+            "median_sharpe": 0.09273558660319685,
+            "median_sharpe_excess": -0.013504811236889291,
+            "higher_sharpe_rate": 0.48936170212765956,
+            "sharpe_pairs": 235,
+            "median_drawdown": 17.031741562708056,
+            "median_exposure": 0.21291448516579406,
+            "median_entries": 2.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.1708185053380783,
+            "positive_rate": 0.42704626334519574
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.5436406055456393,
+            "outperform_rate": 0.4036363636363636,
+            "median_sharpe": 0.10348426888947987,
+            "median_sharpe_excess": -0.012588348331413812,
+            "higher_sharpe_rate": 0.49137931034482757,
+            "sharpe_pairs": 232,
+            "median_drawdown": 17.123298581080626,
+            "median_exposure": 0.21291448516579406,
+            "median_entries": 2.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.17454545454545456,
+            "positive_rate": 0.43272727272727274
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 1.7508556124834929,
+            "median_total_return": 9.04421876546634,
+            "median_excess_cagr": 2.670906779096194,
+            "outperform_rate": 0.6090425531914894,
+            "median_sharpe": 0.2052540000380082,
+            "median_sharpe_excess": 0.07518273874516504,
+            "higher_sharpe_rate": 0.5912806539509536,
+            "sharpe_pairs": 367,
+            "median_drawdown": 45.63612435550651,
+            "median_exposure": 0.424906652012794,
+            "median_entries": 6.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.29521276595744683,
+            "positive_rate": 0.5558510638297872
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 1.9113326740227254,
+            "median_total_return": 9.90481722712142,
+            "median_excess_cagr": 2.648019931580059,
+            "outperform_rate": 0.6125356125356125,
+            "median_sharpe": 0.2167065645463527,
+            "median_sharpe_excess": 0.07505005014272559,
+            "higher_sharpe_rate": 0.5873925501432665,
+            "sharpe_pairs": 349,
+            "median_drawdown": 45.9236454349761,
+            "median_exposure": 0.42357723577235773,
+            "median_entries": 6.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.301994301994302,
+            "positive_rate": 0.5811965811965812
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.375434781155362,
+            "median_total_return": 18.010048094912847,
+            "median_excess_cagr": 3.1115779277862243,
+            "outperform_rate": 0.6363636363636364,
+            "median_sharpe": 0.286917902358345,
+            "median_sharpe_excess": 0.09701158098637352,
+            "higher_sharpe_rate": 0.6167883211678832,
+            "sharpe_pairs": 274,
+            "median_drawdown": 43.26408237329291,
+            "median_exposure": 0.4195121951219512,
+            "median_entries": 7.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.3381818181818182,
+            "positive_rate": 0.6363636363636364
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX105_COOL20",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 105,
+        "cooldown": 20
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -2.4544086317854097,
+            "outperform_rate": 0.42810457516339867,
+            "median_sharpe": 0.1552249536650007,
+            "median_sharpe_excess": -0.015593927370785344,
+            "higher_sharpe_rate": 0.4939271255060729,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.326759450735196,
+            "median_exposure": 0.19633507853403143,
+            "median_entries": 2.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.16993464052287582,
+            "positive_rate": 0.4411764705882353
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -2.7193045568470353,
+            "outperform_rate": 0.4128113879003559,
+            "median_sharpe": 0.1660469173480668,
+            "median_sharpe_excess": -0.036114827471434685,
+            "higher_sharpe_rate": 0.4765957446808511,
+            "sharpe_pairs": 235,
+            "median_drawdown": 16.92308771259721,
+            "median_exposure": 0.2006980802792321,
+            "median_entries": 2.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.17437722419928825,
+            "positive_rate": 0.4626334519572954
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -2.6123138917836135,
+            "outperform_rate": 0.41454545454545455,
+            "median_sharpe": 0.16775903874609144,
+            "median_sharpe_excess": -0.03919279605740225,
+            "higher_sharpe_rate": 0.47413793103448276,
+            "sharpe_pairs": 232,
+            "median_drawdown": 16.95052041132016,
+            "median_exposure": 0.2006980802792321,
+            "median_entries": 2.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.1781818181818182,
+            "positive_rate": 0.4690909090909091
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 1.4918184850730598,
+            "median_total_return": 7.450610670793544,
+            "median_excess_cagr": 2.9260285865150557,
+            "outperform_rate": 0.6143617021276596,
+            "median_sharpe": 0.23471920407468452,
+            "median_sharpe_excess": 0.061938080228702695,
+            "higher_sharpe_rate": 0.553133514986376,
+            "sharpe_pairs": 367,
+            "median_drawdown": 43.89657507610377,
+            "median_exposure": 0.39878048780487807,
+            "median_entries": 6.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.324468085106383,
+            "positive_rate": 0.5771276595744681
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 2.290000710275941,
+            "median_total_return": 11.556129288431215,
+            "median_excess_cagr": 2.913173420839721,
+            "outperform_rate": 0.6153846153846154,
+            "median_sharpe": 0.24994937258262362,
+            "median_sharpe_excess": 0.05925398891247485,
+            "higher_sharpe_rate": 0.5530085959885387,
+            "sharpe_pairs": 349,
+            "median_drawdown": 44.564651885931404,
+            "median_exposure": 0.3967479674796748,
+            "median_entries": 6.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.3333333333333333,
+            "positive_rate": 0.6011396011396012
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.6510472647352854,
+            "median_total_return": 19.587905302075125,
+            "median_excess_cagr": 2.938883752190391,
+            "outperform_rate": 0.6145454545454545,
+            "median_sharpe": 0.2894389561242541,
+            "median_sharpe_excess": 0.0814019675426364,
+            "higher_sharpe_rate": 0.5766423357664233,
+            "sharpe_pairs": 274,
+            "median_drawdown": 41.92090973020504,
+            "median_exposure": 0.3983739837398374,
+            "median_entries": 6.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.36363636363636365,
+            "positive_rate": 0.6363636363636364
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX105_COOL40",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 105,
+        "cooldown": 40
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -2.7642515075809335,
+            "outperform_rate": 0.43137254901960786,
+            "median_sharpe": 0.10818829096650324,
+            "median_sharpe_excess": -0.00043879964399018423,
+            "higher_sharpe_rate": 0.4979757085020243,
+            "sharpe_pairs": 247,
+            "median_drawdown": 15.57302591244048,
+            "median_exposure": 0.18150087260034903,
+            "median_entries": 1.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.1568627450980392,
+            "positive_rate": 0.42483660130718953
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.077616701368303,
+            "outperform_rate": 0.41637010676156583,
+            "median_sharpe": 0.12643778992310284,
+            "median_sharpe_excess": -0.03408672582721073,
+            "higher_sharpe_rate": 0.4765957446808511,
+            "sharpe_pairs": 235,
+            "median_drawdown": 16.3117983008785,
+            "median_exposure": 0.1849912739965096,
+            "median_entries": 2.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.1601423487544484,
+            "positive_rate": 0.44483985765124556
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.077616701368303,
+            "outperform_rate": 0.41454545454545455,
+            "median_sharpe": 0.1316871628784146,
+            "median_sharpe_excess": -0.04165485162068816,
+            "higher_sharpe_rate": 0.47413793103448276,
+            "sharpe_pairs": 232,
+            "median_drawdown": 16.34172060059189,
+            "median_exposure": 0.1849912739965096,
+            "median_entries": 2.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.16363636363636364,
+            "positive_rate": 0.4509090909090909
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 3.1511748144176788,
+            "median_total_return": 15.872028817691653,
+            "median_excess_cagr": 4.264367405705654,
+            "outperform_rate": 0.6223404255319149,
+            "median_sharpe": 0.2851863515563195,
+            "median_sharpe_excess": 0.1008628959464502,
+            "higher_sharpe_rate": 0.6103542234332425,
+            "sharpe_pairs": 367,
+            "median_drawdown": 40.40882239134347,
+            "median_exposure": 0.35655831255019654,
+            "median_entries": 5.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.31648936170212766,
+            "positive_rate": 0.6356382978723404
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 3.5671303708699753,
+            "median_total_return": 18.455479177977917,
+            "median_excess_cagr": 4.097246934096567,
+            "outperform_rate": 0.6182336182336182,
+            "median_sharpe": 0.29450549176461793,
+            "median_sharpe_excess": 0.09811076762571341,
+            "higher_sharpe_rate": 0.6017191977077364,
+            "sharpe_pairs": 349,
+            "median_drawdown": 40.76652000126671,
+            "median_exposure": 0.35609756097560974,
+            "median_entries": 5.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.32763532763532766,
+            "positive_rate": 0.6638176638176638
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.518327898629626,
+            "median_total_return": 24.663393612810758,
+            "median_excess_cagr": 4.1319530923693115,
+            "outperform_rate": 0.6181818181818182,
+            "median_sharpe": 0.3292813885025536,
+            "median_sharpe_excess": 0.12432122058307964,
+            "higher_sharpe_rate": 0.6277372262773723,
+            "sharpe_pairs": 274,
+            "median_drawdown": 38.84692588926999,
+            "median_exposure": 0.35609756097560974,
+            "median_entries": 6.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.3527272727272727,
+            "positive_rate": 0.7127272727272728
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX126_COOL10",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 126,
+        "cooldown": 10
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.050471615862677,
+            "outperform_rate": 0.43137254901960786,
+            "median_sharpe": 0.1520559556561218,
+            "median_sharpe_excess": 0.0315562766678244,
+            "higher_sharpe_rate": 0.5060728744939271,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.511703601048787,
+            "median_exposure": 0.2181500872600349,
+            "median_entries": 1.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.17973856209150327,
+            "positive_rate": 0.4444444444444444
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.2130629549258716,
+            "outperform_rate": 0.41637010676156583,
+            "median_sharpe": 0.15352395562956705,
+            "median_sharpe_excess": -0.032733578114190365,
+            "higher_sharpe_rate": 0.4851063829787234,
+            "sharpe_pairs": 235,
+            "median_drawdown": 16.92308771259721,
+            "median_exposure": 0.2181500872600349,
+            "median_entries": 2.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.18505338078291814,
+            "positive_rate": 0.46619217081850534
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.2130629549258716,
+            "outperform_rate": 0.41454545454545455,
+            "median_sharpe": 0.15590451525609567,
+            "median_sharpe_excess": -0.03395351671675362,
+            "higher_sharpe_rate": 0.4827586206896552,
+            "sharpe_pairs": 232,
+            "median_drawdown": 16.92308771259721,
+            "median_exposure": 0.2181500872600349,
+            "median_entries": 2.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.1890909090909091,
+            "positive_rate": 0.4727272727272727
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 2.6867705815807663,
+            "median_total_return": 13.933143273357862,
+            "median_excess_cagr": 3.889000356559935,
+            "outperform_rate": 0.6303191489361702,
+            "median_sharpe": 0.26361038785728585,
+            "median_sharpe_excess": 0.11928590183370535,
+            "higher_sharpe_rate": 0.6294277929155313,
+            "sharpe_pairs": 367,
+            "median_drawdown": 44.92472636193679,
+            "median_exposure": 0.43089430894308944,
+            "median_entries": 6.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.3324468085106383,
+            "positive_rate": 0.6117021276595744
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 3.1053993822755643,
+            "median_total_return": 16.272553798346777,
+            "median_excess_cagr": 3.937574881800554,
+            "outperform_rate": 0.6267806267806267,
+            "median_sharpe": 0.27078508961972864,
+            "median_sharpe_excess": 0.11913156675441341,
+            "higher_sharpe_rate": 0.6275071633237822,
+            "sharpe_pairs": 349,
+            "median_drawdown": 45.24159821461103,
+            "median_exposure": 0.4292682926829268,
+            "median_entries": 6.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.3418803418803419,
+            "positive_rate": 0.6410256410256411
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.453120523913556,
+            "median_total_return": 24.275903136950603,
+            "median_excess_cagr": 4.315915675557047,
+            "outperform_rate": 0.6254545454545455,
+            "median_sharpe": 0.3171691868553144,
+            "median_sharpe_excess": 0.1402072297687078,
+            "higher_sharpe_rate": 0.6532846715328468,
+            "sharpe_pairs": 274,
+            "median_drawdown": 42.329850511004416,
+            "median_exposure": 0.4276422764227642,
+            "median_entries": 6.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.36727272727272725,
+            "positive_rate": 0.6945454545454546
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX126_COOL40",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 126,
+        "cooldown": 40
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.050471615862677,
+            "outperform_rate": 0.42810457516339867,
+            "median_sharpe": 0.113885806931277,
+            "median_sharpe_excess": -0.013504811236889291,
+            "higher_sharpe_rate": 0.48582995951417,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.021275398140304,
+            "median_exposure": 0.2181500872600349,
+            "median_entries": 1.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.17320261437908496,
+            "positive_rate": 0.42483660130718953
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.2034227281983583,
+            "outperform_rate": 0.4128113879003559,
+            "median_sharpe": 0.11587615611336789,
+            "median_sharpe_excess": -0.03639120716950539,
+            "higher_sharpe_rate": 0.46382978723404256,
+            "sharpe_pairs": 235,
+            "median_drawdown": 16.557368809551175,
+            "median_exposure": 0.2181500872600349,
+            "median_entries": 2.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.17793594306049823,
+            "positive_rate": 0.44483985765124556
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.2034227281983583,
+            "outperform_rate": 0.4109090909090909,
+            "median_sharpe": 0.12204783542590558,
+            "median_sharpe_excess": -0.04061537058026882,
+            "higher_sharpe_rate": 0.46120689655172414,
+            "sharpe_pairs": 232,
+            "median_drawdown": 16.711489738980447,
+            "median_exposure": 0.2181500872600349,
+            "median_entries": 2.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.18181818181818182,
+            "positive_rate": 0.4509090909090909
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 3.52192983795373,
+            "median_total_return": 18.55595187474639,
+            "median_excess_cagr": 3.9483153904369743,
+            "outperform_rate": 0.6303191489361702,
+            "median_sharpe": 0.2926164497006935,
+            "median_sharpe_excess": 0.11742538062183343,
+            "higher_sharpe_rate": 0.6049046321525886,
+            "sharpe_pairs": 367,
+            "median_drawdown": 40.24534593262436,
+            "median_exposure": 0.3778098475039563,
+            "median_entries": 5.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.3351063829787234,
+            "positive_rate": 0.6223404255319149
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 4.1695183186688745,
+            "median_total_return": 22.289056073727686,
+            "median_excess_cagr": 3.6628913699740644,
+            "outperform_rate": 0.6296296296296297,
+            "median_sharpe": 0.30137564237992254,
+            "median_sharpe_excess": 0.11587661433746577,
+            "higher_sharpe_rate": 0.6017191977077364,
+            "sharpe_pairs": 349,
+            "median_drawdown": 40.556842734549214,
+            "median_exposure": 0.375609756097561,
+            "median_entries": 5.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.34472934472934474,
+            "positive_rate": 0.6524216524216524
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.803950334284268,
+            "median_total_return": 26.372085197598814,
+            "median_excess_cagr": 3.5393292047519296,
+            "outperform_rate": 0.6290909090909091,
+            "median_sharpe": 0.3304615563593367,
+            "median_sharpe_excess": 0.14155916661636658,
+            "higher_sharpe_rate": 0.6277372262773723,
+            "sharpe_pairs": 274,
+            "median_drawdown": 39.481437337104495,
+            "median_exposure": 0.375609756097561,
+            "median_entries": 5.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.3563636363636364,
+            "positive_rate": 0.6981818181818182
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX147_COOL10",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 147,
+        "cooldown": 10
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.1405197147833306,
+            "outperform_rate": 0.4019607843137255,
+            "median_sharpe": 0.12716669453227528,
+            "median_sharpe_excess": 0.014040096630203183,
+            "higher_sharpe_rate": 0.5060728744939271,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.625751393442556,
+            "median_exposure": 0.22338568935427575,
+            "median_entries": 1.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.17647058823529413,
+            "positive_rate": 0.41830065359477125
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.2130629549258716,
+            "outperform_rate": 0.38434163701067614,
+            "median_sharpe": 0.13285151758188385,
+            "median_sharpe_excess": -0.02554117579371945,
+            "higher_sharpe_rate": 0.4808510638297872,
+            "sharpe_pairs": 235,
+            "median_drawdown": 17.741915057690562,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 2.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.18505338078291814,
+            "positive_rate": 0.4377224199288256
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.2130629549258716,
+            "outperform_rate": 0.38181818181818183,
+            "median_sharpe": 0.13399313843014116,
+            "median_sharpe_excess": -0.03519035489237585,
+            "higher_sharpe_rate": 0.47844827586206895,
+            "sharpe_pairs": 232,
+            "median_drawdown": 17.77476301257186,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 2.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.1890909090909091,
+            "positive_rate": 0.44363636363636366
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 3.7966556703429744,
+            "median_total_return": 19.793985389478706,
+            "median_excess_cagr": 4.537687660216614,
+            "outperform_rate": 0.6436170212765957,
+            "median_sharpe": 0.30361356130474143,
+            "median_sharpe_excess": 0.13407862108477567,
+            "higher_sharpe_rate": 0.6539509536784741,
+            "sharpe_pairs": 367,
+            "median_drawdown": 43.359460918604306,
+            "median_exposure": 0.43658536585365854,
+            "median_entries": 5.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.35638297872340424,
+            "positive_rate": 0.6356382978723404
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 4.665510862550737,
+            "median_total_return": 25.541570036142257,
+            "median_excess_cagr": 4.503636538182288,
+            "outperform_rate": 0.6495726495726496,
+            "median_sharpe": 0.3222799511421571,
+            "median_sharpe_excess": 0.13407862108477567,
+            "higher_sharpe_rate": 0.6532951289398281,
+            "sharpe_pairs": 349,
+            "median_drawdown": 43.54873162615655,
+            "median_exposure": 0.4349593495934959,
+            "median_entries": 5.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.36752136752136755,
+            "positive_rate": 0.6666666666666666
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 6.199867054638086,
+            "median_total_return": 34.994442709367426,
+            "median_excess_cagr": 4.728161635220264,
+            "outperform_rate": 0.6545454545454545,
+            "median_sharpe": 0.369842174483884,
+            "median_sharpe_excess": 0.14867027766963664,
+            "higher_sharpe_rate": 0.6897810218978102,
+            "sharpe_pairs": 274,
+            "median_drawdown": 42.026357790475174,
+            "median_exposure": 0.43333333333333335,
+            "median_entries": 6.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.4,
+            "positive_rate": 0.7272727272727273
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX147_COOL20",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 147,
+        "cooldown": 20
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -2.9391776215490655,
+            "outperform_rate": 0.4215686274509804,
+            "median_sharpe": 0.09905284067480873,
+            "median_sharpe_excess": -0.0004075648094707951,
+            "higher_sharpe_rate": 0.4979757085020243,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.44954470507153,
+            "median_exposure": 0.22338568935427575,
+            "median_entries": 1.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.17647058823529413,
+            "positive_rate": 0.4117647058823529
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.077616701368303,
+            "outperform_rate": 0.40569395017793597,
+            "median_sharpe": 0.11909208214317266,
+            "median_sharpe_excess": -0.025485385180843534,
+            "higher_sharpe_rate": 0.4723404255319149,
+            "sharpe_pairs": 235,
+            "median_drawdown": 17.123298581080626,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 2.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.18149466192170818,
+            "positive_rate": 0.4306049822064057
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.077616701368303,
+            "outperform_rate": 0.4036363636363636,
+            "median_sharpe": 0.120015443582182,
+            "median_sharpe_excess": -0.023580052754007486,
+            "higher_sharpe_rate": 0.47413793103448276,
+            "sharpe_pairs": 232,
+            "median_drawdown": 17.200911811802953,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 2.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.18545454545454546,
+            "positive_rate": 0.43636363636363634
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 1.2423011951234408,
+            "median_total_return": 6.352505113299034,
+            "median_excess_cagr": 2.7067352523226633,
+            "outperform_rate": 0.5957446808510638,
+            "median_sharpe": 0.2113062006193486,
+            "median_sharpe_excess": 0.0739179618838639,
+            "higher_sharpe_rate": 0.5749318801089919,
+            "sharpe_pairs": 367,
+            "median_drawdown": 44.51360722434629,
+            "median_exposure": 0.42154471544715444,
+            "median_entries": 5.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.29521276595744683,
+            "positive_rate": 0.5531914893617021
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 1.9957570991951057,
+            "median_total_return": 10.359740298259146,
+            "median_excess_cagr": 2.7124430596019664,
+            "outperform_rate": 0.5982905982905983,
+            "median_sharpe": 0.22820317063370393,
+            "median_sharpe_excess": 0.06995558674131125,
+            "higher_sharpe_rate": 0.5730659025787965,
+            "sharpe_pairs": 349,
+            "median_drawdown": 45.453993394088144,
+            "median_exposure": 0.41788617886178864,
+            "median_entries": 5.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.30484330484330485,
+            "positive_rate": 0.5783475783475783
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.3985747763324303,
+            "median_total_return": 18.141878902744303,
+            "median_excess_cagr": 2.987763256115261,
+            "outperform_rate": 0.6072727272727273,
+            "median_sharpe": 0.2722926297883562,
+            "median_sharpe_excess": 0.10020002469974809,
+            "higher_sharpe_rate": 0.6131386861313869,
+            "sharpe_pairs": 274,
+            "median_drawdown": 42.96356360141479,
+            "median_exposure": 0.416260162601626,
+            "median_entries": 5.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.33454545454545453,
+            "positive_rate": 0.64
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX147_COOL40",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 147,
+        "cooldown": 40
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -2.2341821675824156,
+            "outperform_rate": 0.42810457516339867,
+            "median_sharpe": 0.09157339498807668,
+            "median_sharpe_excess": 0.015087255768740149,
+            "higher_sharpe_rate": 0.5060728744939271,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.021275398140304,
+            "median_exposure": 0.22338568935427575,
+            "median_entries": 1.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.17320261437908496,
+            "positive_rate": 0.4117647058823529
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -2.6238238132552567,
+            "outperform_rate": 0.4128113879003559,
+            "median_sharpe": 0.09905284067480873,
+            "median_sharpe_excess": -0.013504811236889291,
+            "higher_sharpe_rate": 0.4808510638297872,
+            "sharpe_pairs": 235,
+            "median_drawdown": 16.34172060059189,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.17793594306049823,
+            "positive_rate": 0.4306049822064057
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -2.6238238132552567,
+            "outperform_rate": 0.4109090909090909,
+            "median_sharpe": 0.12452144219395245,
+            "median_sharpe_excess": -0.010027247036293985,
+            "higher_sharpe_rate": 0.4827586206896552,
+            "sharpe_pairs": 232,
+            "median_drawdown": 16.557368809551175,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.18181818181818182,
+            "positive_rate": 0.44
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 1.9950358481487962,
+            "median_total_return": 9.614840720567031,
+            "median_excess_cagr": 2.64142390222023,
+            "outperform_rate": 0.5957446808510638,
+            "median_sharpe": 0.2221183566465934,
+            "median_sharpe_excess": 0.03851943819641146,
+            "higher_sharpe_rate": 0.5395095367847411,
+            "sharpe_pairs": 367,
+            "median_drawdown": 42.99460594769023,
+            "median_exposure": 0.390650406504065,
+            "median_entries": 4.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.2765957446808511,
+            "positive_rate": 0.5638297872340425
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 2.3019669895984807,
+            "median_total_return": 11.866107303305329,
+            "median_excess_cagr": 2.628492864135934,
+            "outperform_rate": 0.5954415954415955,
+            "median_sharpe": 0.23258806705684273,
+            "median_sharpe_excess": 0.02771888088458023,
+            "higher_sharpe_rate": 0.5386819484240688,
+            "sharpe_pairs": 349,
+            "median_drawdown": 43.34442589807732,
+            "median_exposure": 0.3902439024390244,
+            "median_entries": 5.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.2849002849002849,
+            "positive_rate": 0.5897435897435898
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.4475553032526474,
+            "median_total_return": 18.42131414643593,
+            "median_excess_cagr": 2.571639796510283,
+            "outperform_rate": 0.6072727272727273,
+            "median_sharpe": 0.2706118236520546,
+            "median_sharpe_excess": 0.04598974996423638,
+            "higher_sharpe_rate": 0.5620437956204379,
+            "sharpe_pairs": 274,
+            "median_drawdown": 41.332426292368176,
+            "median_exposure": 0.3886178861788618,
+            "median_entries": 5.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.3054545454545455,
+            "positive_rate": 0.6327272727272727
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX168_COOL10",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 168,
+        "cooldown": 10
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -2.644251958795275,
+            "outperform_rate": 0.43137254901960786,
+            "median_sharpe": 0.12716669453227528,
+            "median_sharpe_excess": -0.00916483524674494,
+            "higher_sharpe_rate": 0.48582995951417,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.44954470507153,
+            "median_exposure": 0.22338568935427575,
+            "median_entries": 1.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.17647058823529413,
+            "positive_rate": 0.41830065359477125
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.077616701368303,
+            "outperform_rate": 0.41637010676156583,
+            "median_sharpe": 0.1307082674912046,
+            "median_sharpe_excess": -0.017831652927379815,
+            "higher_sharpe_rate": 0.46382978723404256,
+            "sharpe_pairs": 235,
+            "median_drawdown": 17.399372124303902,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.18505338078291814,
+            "positive_rate": 0.4377224199288256
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.077616701368303,
+            "outperform_rate": 0.41454545454545455,
+            "median_sharpe": 0.1317798925365442,
+            "median_sharpe_excess": -0.02137051946610677,
+            "higher_sharpe_rate": 0.46120689655172414,
+            "sharpe_pairs": 232,
+            "median_drawdown": 17.661741414313425,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.1890909090909091,
+            "positive_rate": 0.44363636363636366
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 1.8607992417219887,
+            "median_total_return": 9.633284374438023,
+            "median_excess_cagr": 3.3690702177391287,
+            "outperform_rate": 0.6276595744680851,
+            "median_sharpe": 0.24056035893469058,
+            "median_sharpe_excess": 0.08716545475733462,
+            "higher_sharpe_rate": 0.6185286103542235,
+            "sharpe_pairs": 367,
+            "median_drawdown": 45.44241396127428,
+            "median_exposure": 0.44088923644869027,
+            "median_entries": 5.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.31382978723404253,
+            "positive_rate": 0.5611702127659575
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 2.6209760866504173,
+            "median_total_return": 13.363104081313736,
+            "median_excess_cagr": 3.3319714692432667,
+            "outperform_rate": 0.6296296296296297,
+            "median_sharpe": 0.25031358763545947,
+            "median_sharpe_excess": 0.08243681481243986,
+            "higher_sharpe_rate": 0.6131805157593123,
+            "sharpe_pairs": 349,
+            "median_drawdown": 45.54608335979019,
+            "median_exposure": 0.4373983739837398,
+            "median_entries": 5.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.32193732193732194,
+            "positive_rate": 0.5868945868945868
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.9902694398701755,
+            "median_total_return": 21.553030947421313,
+            "median_excess_cagr": 3.4061689662349903,
+            "outperform_rate": 0.6436363636363637,
+            "median_sharpe": 0.2874208150816501,
+            "median_sharpe_excess": 0.10505393893993478,
+            "higher_sharpe_rate": 0.6532846715328468,
+            "sharpe_pairs": 274,
+            "median_drawdown": 44.266307117046566,
+            "median_exposure": 0.4373983739837398,
+            "median_entries": 5.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.3527272727272727,
+            "positive_rate": 0.6436363636363637
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX168_COOL20",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 168,
+        "cooldown": 20
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -2.454771024117707,
+            "outperform_rate": 0.42483660130718953,
+            "median_sharpe": 0.09084585774889126,
+            "median_sharpe_excess": -0.015156887307549105,
+            "higher_sharpe_rate": 0.47368421052631576,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.269935459012014,
+            "median_exposure": 0.22338568935427575,
+            "median_entries": 1.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.17320261437908496,
+            "positive_rate": 0.4150326797385621
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -2.6238238132552567,
+            "outperform_rate": 0.4092526690391459,
+            "median_sharpe": 0.09905284067480873,
+            "median_sharpe_excess": -0.04483953399103224,
+            "higher_sharpe_rate": 0.451063829787234,
+            "sharpe_pairs": 235,
+            "median_drawdown": 16.825142896974764,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.18149466192170818,
+            "positive_rate": 0.43416370106761565
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -2.6238238132552567,
+            "outperform_rate": 0.4072727272727273,
+            "median_sharpe": 0.11071228221239027,
+            "median_sharpe_excess": -0.04703125570259892,
+            "higher_sharpe_rate": 0.4482758620689655,
+            "sharpe_pairs": 232,
+            "median_drawdown": 16.92308771259721,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.18545454545454546,
+            "positive_rate": 0.44
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 1.3504397552245195,
+            "median_total_return": 5.948567406152039,
+            "median_excess_cagr": 2.742830463495828,
+            "outperform_rate": 0.601063829787234,
+            "median_sharpe": 0.22086149188779614,
+            "median_sharpe_excess": 0.06979046274280729,
+            "higher_sharpe_rate": 0.5613079019073569,
+            "sharpe_pairs": 367,
+            "median_drawdown": 46.58356715106756,
+            "median_exposure": 0.4245001479477533,
+            "median_entries": 4.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.31117021276595747,
+            "positive_rate": 0.5585106382978723
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 2.021335678861602,
+            "median_total_return": 10.49786785464908,
+            "median_excess_cagr": 2.745886176219006,
+            "outperform_rate": 0.5982905982905983,
+            "median_sharpe": 0.23431018176889093,
+            "median_sharpe_excess": 0.0685670549990659,
+            "higher_sharpe_rate": 0.5558739255014327,
+            "sharpe_pairs": 349,
+            "median_drawdown": 46.96209614255614,
+            "median_exposure": 0.42357723577235773,
+            "median_entries": 5.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.3190883190883191,
+            "positive_rate": 0.584045584045584
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.4458779314226584,
+            "median_total_return": 18.411735964223254,
+            "median_excess_cagr": 2.775470598005292,
+            "outperform_rate": 0.610909090909091,
+            "median_sharpe": 0.27900417050728166,
+            "median_sharpe_excess": 0.07911614981679098,
+            "higher_sharpe_rate": 0.572992700729927,
+            "sharpe_pairs": 274,
+            "median_drawdown": 44.75972350609327,
+            "median_exposure": 0.4211382113821138,
+            "median_entries": 5.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.3490909090909091,
+            "positive_rate": 0.6363636363636364
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX168_COOL40",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 168,
+        "cooldown": 40
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -2.829925783246601,
+            "outperform_rate": 0.4150326797385621,
+            "median_sharpe": 0.07988466740401676,
+            "median_sharpe_excess": -0.02554117579371945,
+            "higher_sharpe_rate": 0.46963562753036436,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.44954470507153,
+            "median_exposure": 0.22338568935427575,
+            "median_entries": 1.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.17320261437908496,
+            "positive_rate": 0.4019607843137255
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.2034227281983583,
+            "outperform_rate": 0.398576512455516,
+            "median_sharpe": 0.08112479024970047,
+            "median_sharpe_excess": -0.04483953399103224,
+            "higher_sharpe_rate": 0.44680851063829785,
+            "sharpe_pairs": 235,
+            "median_drawdown": 17.123298581080626,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.18149466192170818,
+            "positive_rate": 0.4199288256227758
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.2034227281983583,
+            "outperform_rate": 0.39636363636363636,
+            "median_sharpe": 0.0815627795210104,
+            "median_sharpe_excess": -0.04703125570259892,
+            "higher_sharpe_rate": 0.44396551724137934,
+            "sharpe_pairs": 232,
+            "median_drawdown": 17.475086438661513,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.18545454545454546,
+            "positive_rate": 0.4254545454545455
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 1.2741242900680572,
+            "median_total_return": 6.371607131255397,
+            "median_excess_cagr": 2.4967854199469453,
+            "outperform_rate": 0.5930851063829787,
+            "median_sharpe": 0.20913250521167095,
+            "median_sharpe_excess": 0.040943400134312885,
+            "higher_sharpe_rate": 0.5449591280653951,
+            "sharpe_pairs": 367,
+            "median_drawdown": 45.71514374441027,
+            "median_exposure": 0.39796747967479673,
+            "median_entries": 4.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.28191489361702127,
+            "positive_rate": 0.5558510638297872
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 1.6976580000886088,
+            "median_total_return": 8.475916713878263,
+            "median_excess_cagr": 2.4985022842402227,
+            "outperform_rate": 0.5897435897435898,
+            "median_sharpe": 0.21339978946033955,
+            "median_sharpe_excess": 0.040943400134312885,
+            "higher_sharpe_rate": 0.5415472779369628,
+            "sharpe_pairs": 349,
+            "median_drawdown": 46.123353535987064,
+            "median_exposure": 0.3959349593495935,
+            "median_entries": 4.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.28774928774928776,
+            "positive_rate": 0.5811965811965812
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 2.909616616333688,
+            "median_total_return": 15.381150585215941,
+            "median_excess_cagr": 2.401267999636225,
+            "outperform_rate": 0.5818181818181818,
+            "median_sharpe": 0.24852022673959567,
+            "median_sharpe_excess": 0.057061246583170744,
+            "higher_sharpe_rate": 0.5583941605839416,
+            "sharpe_pairs": 274,
+            "median_drawdown": 42.51968580088471,
+            "median_exposure": 0.3959349593495935,
+            "median_entries": 5.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.32,
+            "positive_rate": 0.6254545454545455
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX189_COOL10",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 189,
+        "cooldown": 10
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.0426055631597446,
+            "outperform_rate": 0.4117647058823529,
+            "median_sharpe": 0.0954223384545293,
+            "median_sharpe_excess": -0.013504811236889291,
+            "higher_sharpe_rate": 0.4817813765182186,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.874115304785988,
+            "median_exposure": 0.22338568935427575,
+            "median_entries": 1.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.17973856209150327,
+            "positive_rate": 0.41830065359477125
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.2034227281983583,
+            "outperform_rate": 0.39501779359430605,
+            "median_sharpe": 0.09905284067480873,
+            "median_sharpe_excess": -0.039104587935210516,
+            "higher_sharpe_rate": 0.4595744680851064,
+            "sharpe_pairs": 235,
+            "median_drawdown": 17.741915057690562,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.18861209964412812,
+            "positive_rate": 0.4377224199288256
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.2034227281983583,
+            "outperform_rate": 0.3927272727272727,
+            "median_sharpe": 0.10272140386362466,
+            "median_sharpe_excess": -0.04050818769124609,
+            "higher_sharpe_rate": 0.45689655172413796,
+            "sharpe_pairs": 232,
+            "median_drawdown": 17.77476301257186,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.19272727272727272,
+            "positive_rate": 0.44363636363636366
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 2.9575736156960075,
+            "median_total_return": 15.117542537870833,
+            "median_excess_cagr": 4.264118444289,
+            "outperform_rate": 0.6436170212765957,
+            "median_sharpe": 0.27566751700842473,
+            "median_sharpe_excess": 0.11810381004355197,
+            "higher_sharpe_rate": 0.6294277929155313,
+            "sharpe_pairs": 367,
+            "median_drawdown": 44.954069185546906,
+            "median_exposure": 0.44048273238364966,
+            "median_entries": 4.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.3191489361702128,
+            "positive_rate": 0.5797872340425532
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 3.420048442084167,
+            "median_total_return": 17.099582444399598,
+            "median_excess_cagr": 4.323538621051293,
+            "outperform_rate": 0.6467236467236467,
+            "median_sharpe": 0.2789897089529083,
+            "median_sharpe_excess": 0.1166487423515262,
+            "higher_sharpe_rate": 0.6246418338108882,
+            "sharpe_pairs": 349,
+            "median_drawdown": 45.474457343334116,
+            "median_exposure": 0.4373983739837398,
+            "median_entries": 5.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.32763532763532766,
+            "positive_rate": 0.6068376068376068
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.515117763503573,
+            "median_total_return": 24.644295020685725,
+            "median_excess_cagr": 3.9769063098910817,
+            "outperform_rate": 0.6436363636363637,
+            "median_sharpe": 0.3202327844246606,
+            "median_sharpe_excess": 0.12254130462721623,
+            "higher_sharpe_rate": 0.6459854014598541,
+            "sharpe_pairs": 274,
+            "median_drawdown": 43.48935577579221,
+            "median_exposure": 0.4373983739837398,
+            "median_entries": 5.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.36,
+            "positive_rate": 0.6618181818181819
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX189_COOL20",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 189,
+        "cooldown": 20
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.0634000372249233,
+            "outperform_rate": 0.42810457516339867,
+            "median_sharpe": 0.09084585774889126,
+            "median_sharpe_excess": -0.006521226036973554,
+            "higher_sharpe_rate": 0.48582995951417,
+            "sharpe_pairs": 247,
+            "median_drawdown": 17.0377262845369,
+            "median_exposure": 0.22338568935427575,
+            "median_entries": 1.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.17647058823529413,
+            "positive_rate": 0.4150326797385621
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.212262654577447,
+            "outperform_rate": 0.4128113879003559,
+            "median_sharpe": 0.09193801111220119,
+            "median_sharpe_excess": -0.039104587935210516,
+            "higher_sharpe_rate": 0.46382978723404256,
+            "sharpe_pairs": 235,
+            "median_drawdown": 17.77476301257186,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.18505338078291814,
+            "positive_rate": 0.43416370106761565
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.212262654577447,
+            "outperform_rate": 0.4109090909090909,
+            "median_sharpe": 0.09549542589350496,
+            "median_sharpe_excess": -0.04050818769124609,
+            "higher_sharpe_rate": 0.46120689655172414,
+            "sharpe_pairs": 232,
+            "median_drawdown": 17.825538068715375,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.1890909090909091,
+            "positive_rate": 0.44
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 1.2930351511714289,
+            "median_total_return": 6.621926736885275,
+            "median_excess_cagr": 3.300544340640089,
+            "outperform_rate": 0.6117021276595744,
+            "median_sharpe": 0.21914259851845838,
+            "median_sharpe_excess": 0.0680544337879006,
+            "higher_sharpe_rate": 0.5694822888283378,
+            "sharpe_pairs": 367,
+            "median_drawdown": 45.4329796752921,
+            "median_exposure": 0.42845528455284554,
+            "median_entries": 4.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.28191489361702127,
+            "positive_rate": 0.5558510638297872
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 2.3560514235937857,
+            "median_total_return": 11.811611823500101,
+            "median_excess_cagr": 3.3215444613041036,
+            "outperform_rate": 0.6096866096866097,
+            "median_sharpe": 0.2292157004684559,
+            "median_sharpe_excess": 0.07540385326419974,
+            "higher_sharpe_rate": 0.5673352435530086,
+            "sharpe_pairs": 349,
+            "median_drawdown": 45.55193465652112,
+            "median_exposure": 0.4276422764227642,
+            "median_entries": 4.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.28774928774928776,
+            "positive_rate": 0.5811965811965812
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.5434230386383936,
+            "median_total_return": 18.969771500537092,
+            "median_excess_cagr": 3.4792958414755812,
+            "outperform_rate": 0.610909090909091,
+            "median_sharpe": 0.2828120133869252,
+            "median_sharpe_excess": 0.10021460577638487,
+            "higher_sharpe_rate": 0.5985401459854015,
+            "sharpe_pairs": 274,
+            "median_drawdown": 43.51852527065026,
+            "median_exposure": 0.4276422764227642,
+            "median_entries": 5.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.3236363636363636,
+            "positive_rate": 0.64
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_MAX189_COOL40",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 189,
+        "cooldown": 40
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.0634000372249233,
+            "outperform_rate": 0.43137254901960786,
+            "median_sharpe": 0.09193801111220119,
+            "median_sharpe_excess": 0.029462147109927006,
+            "higher_sharpe_rate": 0.5141700404858299,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.759638437154358,
+            "median_exposure": 0.22338568935427575,
+            "median_entries": 1.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.18627450980392157,
+            "positive_rate": 0.41830065359477125
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.212262654577447,
+            "outperform_rate": 0.41637010676156583,
+            "median_sharpe": 0.09658851155571989,
+            "median_sharpe_excess": -0.006521226036973554,
+            "higher_sharpe_rate": 0.49361702127659574,
+            "sharpe_pairs": 235,
+            "median_drawdown": 17.123298581080626,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.19572953736654805,
+            "positive_rate": 0.4377224199288256
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.212262654577447,
+            "outperform_rate": 0.41454545454545455,
+            "median_sharpe": 0.09782067611526431,
+            "median_sharpe_excess": -0.010013018636931423,
+            "higher_sharpe_rate": 0.49137931034482757,
+            "sharpe_pairs": 232,
+            "median_drawdown": 17.735455582204217,
+            "median_exposure": 0.225130890052356,
+            "median_entries": 1.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.2,
+            "positive_rate": 0.44363636363636366
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 0.7875760825712175,
+            "median_total_return": 3.99100189084558,
+            "median_excess_cagr": 3.1293000226896295,
+            "outperform_rate": 0.6223404255319149,
+            "median_sharpe": 0.18900750974017808,
+            "median_sharpe_excess": 0.07124838820063162,
+            "higher_sharpe_rate": 0.5722070844686649,
+            "sharpe_pairs": 367,
+            "median_drawdown": 44.413583334281924,
+            "median_exposure": 0.40779880688417275,
+            "median_entries": 4.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.2872340425531915,
+            "positive_rate": 0.5478723404255319
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 1.5592759754278873,
+            "median_total_return": 8.023884957008232,
+            "median_excess_cagr": 3.228351544063244,
+            "outperform_rate": 0.6239316239316239,
+            "median_sharpe": 0.20738635924888088,
+            "median_sharpe_excess": 0.07054768351966045,
+            "higher_sharpe_rate": 0.5730659025787965,
+            "sharpe_pairs": 349,
+            "median_drawdown": 44.89751881859737,
+            "median_exposure": 0.40487804878048783,
+            "median_entries": 4.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.2934472934472934,
+            "positive_rate": 0.5726495726495726
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.322495463425046,
+            "median_total_return": 17.708889952884952,
+            "median_excess_cagr": 3.228351544063244,
+            "outperform_rate": 0.6327272727272727,
+            "median_sharpe": 0.28475684761621844,
+            "median_sharpe_excess": 0.08439523243219932,
+            "higher_sharpe_rate": 0.5985401459854015,
+            "sharpe_pairs": 274,
+            "median_drawdown": 41.73228208617131,
+            "median_exposure": 0.40487804878048783,
+            "median_entries": 4.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.32727272727272727,
+            "positive_rate": 0.64
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_RET42_0.2",
+      "family": "return_reversion",
+      "params": {
+        "period": 42,
+        "entry": 0.2,
+        "exit": 0.2
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -5.0866743623937065,
+            "outperform_rate": 0.369281045751634,
+            "median_sharpe": -0.07976554977875965,
+            "median_sharpe_excess": -0.2492140652354361,
+            "higher_sharpe_rate": 0.2926829268292683,
+            "sharpe_pairs": 205,
+            "median_drawdown": 18.652213077947366,
+            "median_exposure": 0.15968586387434555,
+            "median_entries": 1.0,
+            "activity_rate": 0.6699346405228758,
+            "all_cash": 101,
+            "cagr8_rate": 0.1111111111111111,
+            "positive_rate": 0.2581699346405229
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -5.372259563424042,
+            "outperform_rate": 0.35587188612099646,
+            "median_sharpe": -0.06721946555349304,
+            "median_sharpe_excess": -0.27446023968424904,
+            "higher_sharpe_rate": 0.2760416666666667,
+            "sharpe_pairs": 192,
+            "median_drawdown": 18.98682189896289,
+            "median_exposure": 0.16055846422338568,
+            "median_entries": 1.0,
+            "activity_rate": 0.6832740213523132,
+            "all_cash": 89,
+            "cagr8_rate": 0.10676156583629894,
+            "positive_rate": 0.26334519572953735
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -5.372259563424042,
+            "outperform_rate": 0.3527272727272727,
+            "median_sharpe": -0.07744596127767692,
+            "median_sharpe_excess": -0.27446023968424904,
+            "higher_sharpe_rate": 0.2765957446808511,
+            "sharpe_pairs": 188,
+            "median_drawdown": 18.968319970092253,
+            "median_exposure": 0.16055846422338568,
+            "median_entries": 1.0,
+            "activity_rate": 0.6836363636363636,
+            "all_cash": 87,
+            "cagr8_rate": 0.10909090909090909,
+            "positive_rate": 0.26181818181818184
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 2.0808029120169547,
+            "median_total_return": 10.197211904366332,
+            "median_excess_cagr": 2.7954655872850287,
+            "outperform_rate": 0.598404255319149,
+            "median_sharpe": 0.24402032766857143,
+            "median_sharpe_excess": 0.05967373318757013,
+            "higher_sharpe_rate": 0.5454545454545454,
+            "sharpe_pairs": 363,
+            "median_drawdown": 45.671195966875786,
+            "median_exposure": 0.4296747967479675,
+            "median_entries": 4.0,
+            "activity_rate": 0.9654255319148937,
+            "all_cash": 13,
+            "cagr8_rate": 0.30319148936170215,
+            "positive_rate": 0.574468085106383
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 2.632555294614125,
+            "median_total_return": 13.229242019664444,
+            "median_excess_cagr": 2.6856610472340243,
+            "outperform_rate": 0.5954415954415955,
+            "median_sharpe": 0.24941465742082372,
+            "median_sharpe_excess": 0.05344150296201938,
+            "higher_sharpe_rate": 0.5362318840579711,
+            "sharpe_pairs": 345,
+            "median_drawdown": 46.70738598834401,
+            "median_exposure": 0.43089430894308944,
+            "median_entries": 4.0,
+            "activity_rate": 0.9829059829059829,
+            "all_cash": 6,
+            "cagr8_rate": 0.31054131054131057,
+            "positive_rate": 0.5982905982905983
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.47250361694611,
+            "median_total_return": 18.563847943791178,
+            "median_excess_cagr": 2.5678535868538184,
+            "outperform_rate": 0.6,
+            "median_sharpe": 0.28762710619885157,
+            "median_sharpe_excess": 0.07460526421396173,
+            "higher_sharpe_rate": 0.5518518518518518,
+            "sharpe_pairs": 270,
+            "median_drawdown": 44.28684712140014,
+            "median_exposure": 0.4040650406504065,
+            "median_entries": 4.0,
+            "activity_rate": 0.9818181818181818,
+            "all_cash": 5,
+            "cagr8_rate": 0.33090909090909093,
+            "positive_rate": 0.6472727272727272
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_RET42_0.25",
+      "family": "return_reversion",
+      "params": {
+        "period": 42,
+        "entry": 0.25,
+        "exit": 0.25
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.175533967166844,
+            "outperform_rate": 0.35947712418300654,
+            "median_sharpe": -0.038044235427567706,
+            "median_sharpe_excess": -0.32162285211840536,
+            "higher_sharpe_rate": 0.3219178082191781,
+            "sharpe_pairs": 146,
+            "median_drawdown": 0.0,
+            "median_exposure": 0.0,
+            "median_entries": 0.0,
+            "activity_rate": 0.477124183006536,
+            "all_cash": 160,
+            "cagr8_rate": 0.07516339869281045,
+            "positive_rate": 0.1895424836601307
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.343388256900692,
+            "outperform_rate": 0.3487544483985765,
+            "median_sharpe": -0.0307468684939346,
+            "median_sharpe_excess": -0.40156994421918507,
+            "higher_sharpe_rate": 0.2857142857142857,
+            "sharpe_pairs": 133,
+            "median_drawdown": 0.0,
+            "median_exposure": 0.0,
+            "median_entries": 0.0,
+            "activity_rate": 0.47330960854092524,
+            "all_cash": 148,
+            "cagr8_rate": 0.06405693950177936,
+            "positive_rate": 0.18861209964412812
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.343388256900692,
+            "outperform_rate": 0.34545454545454546,
+            "median_sharpe": -0.03491072838462285,
+            "median_sharpe_excess": -0.40156994421918507,
+            "higher_sharpe_rate": 0.2868217054263566,
+            "sharpe_pairs": 129,
+            "median_drawdown": 0.0,
+            "median_exposure": 0.0,
+            "median_entries": 0.0,
+            "activity_rate": 0.4690909090909091,
+            "all_cash": 146,
+            "cagr8_rate": 0.06545454545454546,
+            "positive_rate": 0.18545454545454546
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 3.553486791613547,
+            "median_total_return": 15.55303314157862,
+            "median_excess_cagr": 4.297156861067497,
+            "outperform_rate": 0.6223404255319149,
+            "median_sharpe": 0.32524066548387054,
+            "median_sharpe_excess": 0.12207094778199491,
+            "higher_sharpe_rate": 0.6264367816091954,
+            "sharpe_pairs": 348,
+            "median_drawdown": 38.3900524847179,
+            "median_exposure": 0.32762633508688027,
+            "median_entries": 3.0,
+            "activity_rate": 0.925531914893617,
+            "all_cash": 28,
+            "cagr8_rate": 0.3058510638297872,
+            "positive_rate": 0.6170212765957447
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 3.8707448580429515,
+            "median_total_return": 18.566185183251882,
+            "median_excess_cagr": 3.9893152157457585,
+            "outperform_rate": 0.6210826210826211,
+            "median_sharpe": 0.3257549911347578,
+            "median_sharpe_excess": 0.11977138547653027,
+            "higher_sharpe_rate": 0.6253776435045317,
+            "sharpe_pairs": 331,
+            "median_drawdown": 39.82038722171375,
+            "median_exposure": 0.33414634146341465,
+            "median_entries": 3.0,
+            "activity_rate": 0.9430199430199431,
+            "all_cash": 20,
+            "cagr8_rate": 0.31054131054131057,
+            "positive_rate": 0.6381766381766382
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.761593821363852,
+            "median_total_return": 26.117518360510505,
+            "median_excess_cagr": 3.498275921567817,
+            "outperform_rate": 0.6254545454545455,
+            "median_sharpe": 0.3797775877824884,
+            "median_sharpe_excess": 0.12277738304443037,
+            "higher_sharpe_rate": 0.6381322957198443,
+            "sharpe_pairs": 257,
+            "median_drawdown": 35.44802199240446,
+            "median_exposure": 0.3065040650406504,
+            "median_entries": 3.0,
+            "activity_rate": 0.9345454545454546,
+            "all_cash": 18,
+            "cagr8_rate": 0.34545454545454546,
+            "positive_rate": 0.6872727272727273
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_RET42_0.3",
+      "family": "return_reversion",
+      "params": {
+        "period": 42,
+        "entry": 0.3,
+        "exit": 0.3
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.872672600667315,
+            "outperform_rate": 0.3758169934640523,
+            "median_sharpe": -0.06571407854263567,
+            "median_sharpe_excess": -0.33421988878573566,
+            "higher_sharpe_rate": 0.3402061855670103,
+            "sharpe_pairs": 97,
+            "median_drawdown": 0.0,
+            "median_exposure": 0.0,
+            "median_entries": 0.0,
+            "activity_rate": 0.31699346405228757,
+            "all_cash": 209,
+            "cagr8_rate": 0.058823529411764705,
+            "positive_rate": 0.12418300653594772
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.004152568618036,
+            "outperform_rate": 0.36298932384341637,
+            "median_sharpe": -0.06571407854263567,
+            "median_sharpe_excess": -0.39538630613353465,
+            "higher_sharpe_rate": 0.2988505747126437,
+            "sharpe_pairs": 87,
+            "median_drawdown": 0.0,
+            "median_exposure": 0.0,
+            "median_entries": 0.0,
+            "activity_rate": 0.3096085409252669,
+            "all_cash": 194,
+            "cagr8_rate": 0.05338078291814947,
+            "positive_rate": 0.12099644128113879
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.004152568618036,
+            "outperform_rate": 0.36,
+            "median_sharpe": -0.0628211538278539,
+            "median_sharpe_excess": -0.39538630613353465,
+            "higher_sharpe_rate": 0.29411764705882354,
+            "sharpe_pairs": 85,
+            "median_drawdown": 0.0,
+            "median_exposure": 0.0,
+            "median_entries": 0.0,
+            "activity_rate": 0.3090909090909091,
+            "all_cash": 190,
+            "cagr8_rate": 0.05454545454545454,
+            "positive_rate": 0.12363636363636364
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 2.6504742099789036,
+            "median_total_return": 13.521074253928202,
+            "median_excess_cagr": 4.517624997541741,
+            "outperform_rate": 0.6090425531914894,
+            "median_sharpe": 0.3829716826391044,
+            "median_sharpe_excess": 0.18807538014675873,
+            "higher_sharpe_rate": 0.6578073089700996,
+            "sharpe_pairs": 301,
+            "median_drawdown": 31.7139587630534,
+            "median_exposure": 0.19796747967479675,
+            "median_entries": 2.0,
+            "activity_rate": 0.800531914893617,
+            "all_cash": 75,
+            "cagr8_rate": 0.300531914893617,
+            "positive_rate": 0.5558510638297872
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 3.350476048398199,
+            "median_total_return": 17.303878327832113,
+            "median_excess_cagr": 4.107320304824064,
+            "outperform_rate": 0.6068376068376068,
+            "median_sharpe": 0.38352889228401194,
+            "median_sharpe_excess": 0.17255102400032524,
+            "higher_sharpe_rate": 0.6527777777777778,
+            "sharpe_pairs": 288,
+            "median_drawdown": 33.14155316295102,
+            "median_exposure": 0.2146341463414634,
+            "median_entries": 2.0,
+            "activity_rate": 0.8205128205128205,
+            "all_cash": 63,
+            "cagr8_rate": 0.30484330484330485,
+            "positive_rate": 0.5754985754985755
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.770638404834293,
+            "median_total_return": 26.171842744450945,
+            "median_excess_cagr": 3.5421438553742135,
+            "outperform_rate": 0.6218181818181818,
+            "median_sharpe": 0.45068974657965305,
+            "median_sharpe_excess": 0.18984171350237283,
+            "higher_sharpe_rate": 0.6877828054298643,
+            "sharpe_pairs": 221,
+            "median_drawdown": 29.113908691933677,
+            "median_exposure": 0.18455284552845527,
+            "median_entries": 2.0,
+            "activity_rate": 0.8036363636363636,
+            "all_cash": 54,
+            "cagr8_rate": 0.3418181818181818,
+            "positive_rate": 0.6254545454545455
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_RET63_0.2",
+      "family": "return_reversion",
+      "params": {
+        "period": 63,
+        "entry": 0.2,
+        "exit": 0.2
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.883754641635341,
+            "outperform_rate": 0.3790849673202614,
+            "median_sharpe": -0.11141576094768259,
+            "median_sharpe_excess": -0.231851379283998,
+            "higher_sharpe_rate": 0.36324786324786323,
+            "sharpe_pairs": 234,
+            "median_drawdown": 20.386010736897486,
+            "median_exposure": 0.16510705634133,
+            "median_entries": 1.0,
+            "activity_rate": 0.7647058823529411,
+            "all_cash": 72,
+            "cagr8_rate": 0.1503267973856209,
+            "positive_rate": 0.3104575163398693
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.8706282447271483,
+            "outperform_rate": 0.3736654804270463,
+            "median_sharpe": -0.07786190955175686,
+            "median_sharpe_excess": -0.23607812837257736,
+            "higher_sharpe_rate": 0.35135135135135137,
+            "sharpe_pairs": 222,
+            "median_drawdown": 21.182586013313454,
+            "median_exposure": 0.17102966841186737,
+            "median_entries": 1.0,
+            "activity_rate": 0.7900355871886121,
+            "all_cash": 59,
+            "cagr8_rate": 0.15658362989323843,
+            "positive_rate": 0.3309608540925267
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -3.8968810385435333,
+            "outperform_rate": 0.3709090909090909,
+            "median_sharpe": -0.07564086871870189,
+            "median_sharpe_excess": -0.24308912074143363,
+            "higher_sharpe_rate": 0.3486238532110092,
+            "sharpe_pairs": 218,
+            "median_drawdown": 20.8108880940882,
+            "median_exposure": 0.17102966841186737,
+            "median_entries": 1.0,
+            "activity_rate": 0.7927272727272727,
+            "all_cash": 57,
+            "cagr8_rate": 0.15636363636363637,
+            "positive_rate": 0.33454545454545453
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 3.629660346908148,
+            "median_total_return": 17.303344719115465,
+            "median_excess_cagr": 3.8762592903780257,
+            "outperform_rate": 0.6196808510638298,
+            "median_sharpe": 0.31745182777753933,
+            "median_sharpe_excess": 0.09884964699672988,
+            "higher_sharpe_rate": 0.6239782016348774,
+            "sharpe_pairs": 367,
+            "median_drawdown": 44.61106488018761,
+            "median_exposure": 0.4349593495934959,
+            "median_entries": 4.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.3484042553191489,
+            "positive_rate": 0.625
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 3.9790481041563686,
+            "median_total_return": 20.922934285294346,
+            "median_excess_cagr": 3.778341880762081,
+            "outperform_rate": 0.6210826210826211,
+            "median_sharpe": 0.3187774867963586,
+            "median_sharpe_excess": 0.09884964699672988,
+            "higher_sharpe_rate": 0.6217765042979942,
+            "sharpe_pairs": 349,
+            "median_drawdown": 45.60364970420796,
+            "median_exposure": 0.4373983739837398,
+            "median_entries": 4.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.3561253561253561,
+            "positive_rate": 0.6438746438746439
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.993938514282026,
+            "median_total_return": 27.518992241402685,
+            "median_excess_cagr": 3.2866155993025448,
+            "outperform_rate": 0.6181818181818182,
+            "median_sharpe": 0.3635265070360879,
+            "median_sharpe_excess": 0.11360179698476752,
+            "higher_sharpe_rate": 0.6373626373626373,
+            "sharpe_pairs": 273,
+            "median_drawdown": 43.518525270650265,
+            "median_exposure": 0.42276422764227645,
+            "median_entries": 4.0,
+            "activity_rate": 0.9927272727272727,
+            "all_cash": 2,
+            "cagr8_rate": 0.3781818181818182,
+            "positive_rate": 0.6945454545454546
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_RET63_0.3",
+      "family": "return_reversion",
+      "params": {
+        "period": 63,
+        "entry": 0.3,
+        "exit": 0.3
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.577752170023814,
+            "outperform_rate": 0.3660130718954248,
+            "median_sharpe": -0.05973280321523812,
+            "median_sharpe_excess": -0.30635741331327626,
+            "higher_sharpe_rate": 0.33076923076923076,
+            "sharpe_pairs": 130,
+            "median_drawdown": 0.0,
+            "median_exposure": 0.0,
+            "median_entries": 0.0,
+            "activity_rate": 0.42483660130718953,
+            "all_cash": 176,
+            "cagr8_rate": 0.05555555555555555,
+            "positive_rate": 0.17320261437908496
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.663494476243224,
+            "outperform_rate": 0.35587188612099646,
+            "median_sharpe": -0.03825113594889629,
+            "median_sharpe_excess": -0.39892972638032265,
+            "higher_sharpe_rate": 0.29411764705882354,
+            "sharpe_pairs": 119,
+            "median_drawdown": 0.0,
+            "median_exposure": 0.0,
+            "median_entries": 0.0,
+            "activity_rate": 0.4234875444839858,
+            "all_cash": 162,
+            "cagr8_rate": 0.05338078291814947,
+            "positive_rate": 0.17793594306049823
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.663494476243224,
+            "outperform_rate": 0.3527272727272727,
+            "median_sharpe": -0.03825113594889629,
+            "median_sharpe_excess": -0.4040569338264028,
+            "higher_sharpe_rate": 0.2956521739130435,
+            "sharpe_pairs": 115,
+            "median_drawdown": 0.0,
+            "median_exposure": 0.0,
+            "median_entries": 0.0,
+            "activity_rate": 0.41818181818181815,
+            "all_cash": 160,
+            "cagr8_rate": 0.05454545454545454,
+            "positive_rate": 0.17454545454545456
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 2.957244095345768,
+            "median_total_return": 15.586678402954256,
+            "median_excess_cagr": 3.215124735897006,
+            "outperform_rate": 0.5797872340425532,
+            "median_sharpe": 0.35654812322587726,
+            "median_sharpe_excess": 0.13218955201875487,
+            "higher_sharpe_rate": 0.6105919003115264,
+            "sharpe_pairs": 321,
+            "median_drawdown": 36.035012926325834,
+            "median_exposure": 0.2658119397213997,
+            "median_entries": 2.0,
+            "activity_rate": 0.8537234042553191,
+            "all_cash": 55,
+            "cagr8_rate": 0.30319148936170215,
+            "positive_rate": 0.5957446808510638
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 3.1606400231710463,
+            "median_total_return": 16.791945278570953,
+            "median_excess_cagr": 2.960445080028762,
+            "outperform_rate": 0.5811965811965812,
+            "median_sharpe": 0.36318569533830536,
+            "median_sharpe_excess": 0.12160189711177039,
+            "higher_sharpe_rate": 0.6032786885245902,
+            "sharpe_pairs": 305,
+            "median_drawdown": 36.91830701521413,
+            "median_exposure": 0.26504065040650404,
+            "median_entries": 2.0,
+            "activity_rate": 0.8689458689458689,
+            "all_cash": 46,
+            "cagr8_rate": 0.3076923076923077,
+            "positive_rate": 0.6210826210826211
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.8305912473866943,
+            "median_total_return": 20.624819339122435,
+            "median_excess_cagr": 2.6162347993378354,
+            "outperform_rate": 0.5818181818181818,
+            "median_sharpe": 0.41222826800346535,
+            "median_sharpe_excess": 0.14223960103533906,
+            "higher_sharpe_rate": 0.6206896551724138,
+            "sharpe_pairs": 232,
+            "median_drawdown": 33.02803793203856,
+            "median_exposure": 0.23089430894308943,
+            "median_entries": 2.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.33454545454545453,
+            "positive_rate": 0.6727272727272727
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_RET84_0.2",
+      "family": "return_reversion",
+      "params": {
+        "period": 84,
+        "entry": 0.2,
+        "exit": 0.2
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -0.32916484365118626,
+            "median_total_return": -0.7607677349824815,
+            "median_excess_cagr": -5.947145838184098,
+            "outperform_rate": 0.3300653594771242,
+            "median_sharpe": -0.17405568059784637,
+            "median_sharpe_excess": -0.29756085234766005,
+            "higher_sharpe_rate": 0.2987012987012987,
+            "sharpe_pairs": 231,
+            "median_drawdown": 18.631124184959127,
+            "median_exposure": 0.16680212448258264,
+            "median_entries": 1.0,
+            "activity_rate": 0.7549019607843137,
+            "all_cash": 75,
+            "cagr8_rate": 0.10784313725490197,
+            "positive_rate": 0.24509803921568626
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -0.40666854134042696,
+            "median_total_return": -0.9394146807686354,
+            "median_excess_cagr": -6.063964459269533,
+            "outperform_rate": 0.3202846975088968,
+            "median_sharpe": -0.16001633727620193,
+            "median_sharpe_excess": -0.316345489834846,
+            "higher_sharpe_rate": 0.2818181818181818,
+            "sharpe_pairs": 220,
+            "median_drawdown": 20.03960147892552,
+            "median_exposure": 0.1762652705061082,
+            "median_entries": 1.0,
+            "activity_rate": 0.7829181494661922,
+            "all_cash": 61,
+            "cagr8_rate": 0.1103202846975089,
+            "positive_rate": 0.2597864768683274
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -0.40666854134042696,
+            "median_total_return": -0.9394146807686354,
+            "median_excess_cagr": -6.063964459269533,
+            "outperform_rate": 0.32,
+            "median_sharpe": -0.1477883234846248,
+            "median_sharpe_excess": -0.308243521791458,
+            "higher_sharpe_rate": 0.28110599078341014,
+            "sharpe_pairs": 217,
+            "median_drawdown": 20.03960147892552,
+            "median_exposure": 0.18150087260034903,
+            "median_entries": 1.0,
+            "activity_rate": 0.7890909090909091,
+            "all_cash": 58,
+            "cagr8_rate": 0.11272727272727273,
+            "positive_rate": 0.26545454545454544
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 3.5822311630059556,
+            "median_total_return": 18.301764004545497,
+            "median_excess_cagr": 3.3194135178563395,
+            "outperform_rate": 0.6090425531914894,
+            "median_sharpe": 0.2875011631259716,
+            "median_sharpe_excess": 0.10268442320199006,
+            "higher_sharpe_rate": 0.5945205479452055,
+            "sharpe_pairs": 365,
+            "median_drawdown": 45.9148635726775,
+            "median_exposure": 0.45528455284552843,
+            "median_entries": 4.0,
+            "activity_rate": 0.9707446808510638,
+            "all_cash": 11,
+            "cagr8_rate": 0.31648936170212766,
+            "positive_rate": 0.6223404255319149
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 3.8999949769136677,
+            "median_total_return": 21.027565314447383,
+            "median_excess_cagr": 3.2866155993025448,
+            "outperform_rate": 0.6125356125356125,
+            "median_sharpe": 0.29942363495060037,
+            "median_sharpe_excess": 0.09005372024622088,
+            "higher_sharpe_rate": 0.5902578796561605,
+            "sharpe_pairs": 349,
+            "median_drawdown": 46.94846603707739,
+            "median_exposure": 0.45772357723577234,
+            "median_entries": 4.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.3333333333333333,
+            "positive_rate": 0.6495726495726496
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 5.128439888682679,
+            "median_total_return": 28.335960104599135,
+            "median_excess_cagr": 3.304050054489748,
+            "outperform_rate": 0.6181818181818182,
+            "median_sharpe": 0.33528395123624094,
+            "median_sharpe_excess": 0.12634960123324626,
+            "higher_sharpe_rate": 0.63003663003663,
+            "sharpe_pairs": 273,
+            "median_drawdown": 44.102470103587635,
+            "median_exposure": 0.45284552845528453,
+            "median_entries": 4.0,
+            "activity_rate": 0.9927272727272727,
+            "all_cash": 2,
+            "cagr8_rate": 0.36,
+            "positive_rate": 0.7054545454545454
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_RET84_0.25",
+      "family": "return_reversion",
+      "params": {
+        "period": 84,
+        "entry": 0.25,
+        "exit": 0.25
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.584210385945808,
+            "outperform_rate": 0.3464052287581699,
+            "median_sharpe": -0.16255497233379923,
+            "median_sharpe_excess": -0.3465039540154482,
+            "higher_sharpe_rate": 0.29545454545454547,
+            "sharpe_pairs": 176,
+            "median_drawdown": 10.811986117687017,
+            "median_exposure": 0.09336823734729494,
+            "median_entries": 1.0,
+            "activity_rate": 0.5751633986928104,
+            "all_cash": 130,
+            "cagr8_rate": 0.06535947712418301,
+            "positive_rate": 0.19934640522875818
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.834010230115315,
+            "outperform_rate": 0.33451957295373663,
+            "median_sharpe": -0.13616425629748366,
+            "median_sharpe_excess": -0.3509057106096554,
+            "higher_sharpe_rate": 0.281437125748503,
+            "sharpe_pairs": 167,
+            "median_drawdown": 12.010440322263726,
+            "median_exposure": 0.09773123909249563,
+            "median_entries": 1.0,
+            "activity_rate": 0.594306049822064,
+            "all_cash": 114,
+            "cagr8_rate": 0.06405693950177936,
+            "positive_rate": 0.2099644128113879
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.834010230115315,
+            "outperform_rate": 0.33090909090909093,
+            "median_sharpe": -0.12255930805448575,
+            "median_sharpe_excess": -0.3465039540154482,
+            "higher_sharpe_rate": 0.2804878048780488,
+            "sharpe_pairs": 164,
+            "median_drawdown": 12.010440322263726,
+            "median_exposure": 0.09773123909249563,
+            "median_entries": 1.0,
+            "activity_rate": 0.5963636363636363,
+            "all_cash": 111,
+            "cagr8_rate": 0.06545454545454546,
+            "positive_rate": 0.21454545454545454
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 3.5786931543505096,
+            "median_total_return": 18.587925163866014,
+            "median_excess_cagr": 4.146848506981366,
+            "outperform_rate": 0.625,
+            "median_sharpe": 0.30813725553260385,
+            "median_sharpe_excess": 0.12226226471470619,
+            "higher_sharpe_rate": 0.6147308781869688,
+            "sharpe_pairs": 353,
+            "median_drawdown": 43.49647709226083,
+            "median_exposure": 0.3960034862214416,
+            "median_entries": 3.0,
+            "activity_rate": 0.9388297872340425,
+            "all_cash": 23,
+            "cagr8_rate": 0.32180851063829785,
+            "positive_rate": 0.6382978723404256
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 4.292727739032021,
+            "median_total_return": 22.765002226070983,
+            "median_excess_cagr": 4.104103948809346,
+            "outperform_rate": 0.6296296296296297,
+            "median_sharpe": 0.3178721534849611,
+            "median_sharpe_excess": 0.12043508043859255,
+            "higher_sharpe_rate": 0.6153846153846154,
+            "sharpe_pairs": 338,
+            "median_drawdown": 44.102470103587635,
+            "median_exposure": 0.3967479674796748,
+            "median_entries": 3.0,
+            "activity_rate": 0.9629629629629629,
+            "all_cash": 13,
+            "cagr8_rate": 0.3418803418803419,
+            "positive_rate": 0.6752136752136753
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.958051372212036,
+            "median_total_return": 27.30171629775471,
+            "median_excess_cagr": 4.104103948809346,
+            "outperform_rate": 0.6254545454545455,
+            "median_sharpe": 0.3582073775117132,
+            "median_sharpe_excess": 0.1448415926056743,
+            "higher_sharpe_rate": 0.6577946768060836,
+            "sharpe_pairs": 263,
+            "median_drawdown": 42.001497803485876,
+            "median_exposure": 0.3829268292682927,
+            "median_entries": 3.0,
+            "activity_rate": 0.9563636363636364,
+            "all_cash": 12,
+            "cagr8_rate": 0.36,
+            "positive_rate": 0.730909090909091
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_RET84_0.3",
+      "family": "return_reversion",
+      "params": {
+        "period": 84,
+        "entry": 0.3,
+        "exit": 0.3
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.159048254289555,
+            "outperform_rate": 0.35947712418300654,
+            "median_sharpe": -0.06031376214570531,
+            "median_sharpe_excess": -0.375768341358794,
+            "higher_sharpe_rate": 0.2932330827067669,
+            "sharpe_pairs": 133,
+            "median_drawdown": 0.0,
+            "median_exposure": 0.0,
+            "median_entries": 0.0,
+            "activity_rate": 0.434640522875817,
+            "all_cash": 173,
+            "cagr8_rate": 0.0457516339869281,
+            "positive_rate": 0.16013071895424835
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.492009863804403,
+            "outperform_rate": 0.3487544483985765,
+            "median_sharpe": -0.046111302821012404,
+            "median_sharpe_excess": -0.39983524615732824,
+            "higher_sharpe_rate": 0.27419354838709675,
+            "sharpe_pairs": 124,
+            "median_drawdown": 0.0,
+            "median_exposure": 0.0,
+            "median_entries": 0.0,
+            "activity_rate": 0.4412811387900356,
+            "all_cash": 157,
+            "cagr8_rate": 0.042704626334519574,
+            "positive_rate": 0.16725978647686832
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": 0.0,
+            "median_excess_cagr": -4.492009863804403,
+            "outperform_rate": 0.34545454545454546,
+            "median_sharpe": -0.04117774247051256,
+            "median_sharpe_excess": -0.38790022314926315,
+            "higher_sharpe_rate": 0.2727272727272727,
+            "sharpe_pairs": 121,
+            "median_drawdown": 0.0,
+            "median_exposure": 0.0,
+            "median_entries": 0.0,
+            "activity_rate": 0.44,
+            "all_cash": 154,
+            "cagr8_rate": 0.04363636363636364,
+            "positive_rate": 0.1709090909090909
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 3.806844089641148,
+            "median_total_return": 17.978789679120865,
+            "median_excess_cagr": 4.268882105377775,
+            "outperform_rate": 0.601063829787234,
+            "median_sharpe": 0.36470266799593637,
+            "median_sharpe_excess": 0.16017300243476124,
+            "higher_sharpe_rate": 0.636085626911315,
+            "sharpe_pairs": 327,
+            "median_drawdown": 36.77388603395569,
+            "median_exposure": 0.3101626016260163,
+            "median_entries": 2.0,
+            "activity_rate": 0.8696808510638298,
+            "all_cash": 49,
+            "cagr8_rate": 0.3271276595744681,
+            "positive_rate": 0.6143617021276596
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 4.184388007185835,
+            "median_total_return": 22.089388507518937,
+            "median_excess_cagr": 4.1938319590640205,
+            "outperform_rate": 0.5982905982905983,
+            "median_sharpe": 0.37890193027705277,
+            "median_sharpe_excess": 0.16017300243476124,
+            "higher_sharpe_rate": 0.6389776357827476,
+            "sharpe_pairs": 313,
+            "median_drawdown": 37.85049561547482,
+            "median_exposure": 0.3121951219512195,
+            "median_entries": 2.0,
+            "activity_rate": 0.8917378917378918,
+            "all_cash": 38,
+            "cagr8_rate": 0.34472934472934474,
+            "positive_rate": 0.6495726495726496
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.683675294295342,
+            "median_total_return": 25.65029123307916,
+            "median_excess_cagr": 3.3030936098670054,
+            "outperform_rate": 0.5890909090909091,
+            "median_sharpe": 0.4053129443805126,
+            "median_sharpe_excess": 0.17569769699022333,
+            "higher_sharpe_rate": 0.6446280991735537,
+            "sharpe_pairs": 242,
+            "median_drawdown": 34.99096539702378,
+            "median_exposure": 0.2780487804878049,
+            "median_entries": 2.0,
+            "activity_rate": 0.88,
+            "all_cash": 33,
+            "cagr8_rate": 0.36363636363636365,
+            "positive_rate": 0.7018181818181818
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_CHANNEL84",
+      "family": "channel_reversion",
+      "params": {
+        "period": 84,
+        "entry": 0.1,
+        "exit": 0.9
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -1.1744805185747664,
+            "median_total_return": -2.697905624131697,
+            "median_excess_cagr": -4.227436449726556,
+            "outperform_rate": 0.4150326797385621,
+            "median_sharpe": -0.003976321887071869,
+            "median_sharpe_excess": -0.23537001955632622,
+            "higher_sharpe_rate": 0.3689655172413793,
+            "sharpe_pairs": 290,
+            "median_drawdown": 27.14623673343598,
+            "median_exposure": 0.3333333333333333,
+            "median_entries": 2.0,
+            "activity_rate": 0.9477124183006536,
+            "all_cash": 16,
+            "cagr8_rate": 0.1830065359477124,
+            "positive_rate": 0.4084967320261438
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -1.8288584204633307,
+            "median_total_return": -4.185155631949633,
+            "median_excess_cagr": -4.243685957361208,
+            "outperform_rate": 0.4128113879003559,
+            "median_sharpe": 0.020789495579842228,
+            "median_sharpe_excess": -0.21765743634902474,
+            "higher_sharpe_rate": 0.375,
+            "sharpe_pairs": 280,
+            "median_drawdown": 27.711973203993324,
+            "median_exposure": 0.3368237347294939,
+            "median_entries": 2.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.19572953736654805,
+            "positive_rate": 0.4412811387900356
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -1.8288584204633307,
+            "median_total_return": -4.185155631949633,
+            "median_excess_cagr": -4.310087623615844,
+            "outperform_rate": 0.4072727272727273,
+            "median_sharpe": 0.016786939257106337,
+            "median_sharpe_excess": -0.23797323052455363,
+            "higher_sharpe_rate": 0.3686131386861314,
+            "sharpe_pairs": 274,
+            "median_drawdown": 27.711973203993324,
+            "median_exposure": 0.3368237347294939,
+            "median_entries": 2.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.19636363636363635,
+            "positive_rate": 0.44363636363636366
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 2.104502279618592,
+            "median_total_return": 9.789842497674728,
+            "median_excess_cagr": 2.1284721273786835,
+            "outperform_rate": 0.5904255319148937,
+            "median_sharpe": 0.23513854080423352,
+            "median_sharpe_excess": 0.03212675415028607,
+            "higher_sharpe_rate": 0.5489130434782609,
+            "sharpe_pairs": 368,
+            "median_drawdown": 48.36471766051034,
+            "median_exposure": 0.5264227642276422,
+            "median_entries": 6.0,
+            "activity_rate": 0.9787234042553191,
+            "all_cash": 8,
+            "cagr8_rate": 0.3058510638297872,
+            "positive_rate": 0.550531914893617
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 2.660716169298505,
+            "median_total_return": 13.995773367660668,
+            "median_excess_cagr": 1.9994122192589003,
+            "outperform_rate": 0.5897435897435898,
+            "median_sharpe": 0.2417810200841399,
+            "median_sharpe_excess": 0.03014574080869903,
+            "higher_sharpe_rate": 0.5470085470085471,
+            "sharpe_pairs": 351,
+            "median_drawdown": 49.34186768635618,
+            "median_exposure": 0.5292682926829269,
+            "median_entries": 6.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.31339031339031337,
+            "positive_rate": 0.5726495726495726
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.221095928600538,
+            "median_total_return": 22.90491445268397,
+            "median_excess_cagr": 1.9994122192589003,
+            "outperform_rate": 0.5890909090909091,
+            "median_sharpe": 0.3011473307696135,
+            "median_sharpe_excess": 0.03676350456350261,
+            "higher_sharpe_rate": 0.5636363636363636,
+            "sharpe_pairs": 275,
+            "median_drawdown": 46.90646803668271,
+            "median_exposure": 0.5260162601626016,
+            "median_entries": 6.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.33454545454545453,
+            "positive_rate": 0.6327272727272727
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_CHANNEL105",
+      "family": "channel_reversion",
+      "params": {
+        "period": 105,
+        "entry": 0.1,
+        "exit": 0.9
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -1.260123068257607,
+            "median_total_return": -2.8945505939476424,
+            "median_excess_cagr": -4.41730211409162,
+            "outperform_rate": 0.39869281045751637,
+            "median_sharpe": -0.011819603026158632,
+            "median_sharpe_excess": -0.20745320728334582,
+            "higher_sharpe_rate": 0.34375,
+            "sharpe_pairs": 288,
+            "median_drawdown": 26.544041953402463,
+            "median_exposure": 0.29232111692844676,
+            "median_entries": 2.0,
+            "activity_rate": 0.9411764705882353,
+            "all_cash": 18,
+            "cagr8_rate": 0.1503267973856209,
+            "positive_rate": 0.39215686274509803
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -1.7966661813089924,
+            "median_total_return": -4.112365249997851,
+            "median_excess_cagr": -4.601169209025735,
+            "outperform_rate": 0.3879003558718861,
+            "median_sharpe": -0.009090168927347526,
+            "median_sharpe_excess": -0.20873205819373952,
+            "higher_sharpe_rate": 0.34767025089605735,
+            "sharpe_pairs": 279,
+            "median_drawdown": 27.139166239038115,
+            "median_exposure": 0.30017452006980805,
+            "median_entries": 2.0,
+            "activity_rate": 0.9928825622775801,
+            "all_cash": 2,
+            "cagr8_rate": 0.1601423487544484,
+            "positive_rate": 0.4234875444839858
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -1.723692103118868,
+            "median_total_return": -3.9472460859235836,
+            "median_excess_cagr": -4.645519148809996,
+            "outperform_rate": 0.38545454545454544,
+            "median_sharpe": -0.004745542321684992,
+            "median_sharpe_excess": -0.20873205819373952,
+            "higher_sharpe_rate": 0.34798534798534797,
+            "sharpe_pairs": 273,
+            "median_drawdown": 27.139166239038115,
+            "median_exposure": 0.30017452006980805,
+            "median_entries": 2.0,
+            "activity_rate": 0.9927272727272727,
+            "all_cash": 2,
+            "cagr8_rate": 0.16,
+            "positive_rate": 0.4290909090909091
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 1.8605014578450318,
+            "median_total_return": 9.631636096221918,
+            "median_excess_cagr": 2.91872684399522,
+            "outperform_rate": 0.5904255319148937,
+            "median_sharpe": 0.24365523073686385,
+            "median_sharpe_excess": 0.06701360557623806,
+            "higher_sharpe_rate": 0.5710382513661202,
+            "sharpe_pairs": 366,
+            "median_drawdown": 48.49008504496784,
+            "median_exposure": 0.5274314533976285,
+            "median_entries": 5.0,
+            "activity_rate": 0.973404255319149,
+            "all_cash": 10,
+            "cagr8_rate": 0.30851063829787234,
+            "positive_rate": 0.5824468085106383
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 2.4605710555253513,
+            "median_total_return": 11.854018914772713,
+            "median_excess_cagr": 2.7860097697485653,
+            "outperform_rate": 0.5897435897435898,
+            "median_sharpe": 0.24730805653254267,
+            "median_sharpe_excess": 0.06175494346859989,
+            "higher_sharpe_rate": 0.5669515669515669,
+            "sharpe_pairs": 351,
+            "median_drawdown": 49.03740005120747,
+            "median_exposure": 0.5308943089430894,
+            "median_entries": 5.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.3190883190883191,
+            "positive_rate": 0.6096866096866097
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.5458658870830995,
+            "median_total_return": 18.98377347282758,
+            "median_excess_cagr": 2.366274620302611,
+            "outperform_rate": 0.5818181818181818,
+            "median_sharpe": 0.27879898276170545,
+            "median_sharpe_excess": 0.07056688710127082,
+            "higher_sharpe_rate": 0.5781818181818181,
+            "sharpe_pairs": 275,
+            "median_drawdown": 46.91321773533601,
+            "median_exposure": 0.5349593495934959,
+            "median_entries": 5.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.3418181818181818,
+            "positive_rate": 0.6654545454545454
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_CHANNEL147",
+      "family": "channel_reversion",
+      "params": {
+        "period": 147,
+        "entry": 0.1,
+        "exit": 0.9
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -1.5926707627226588,
+            "median_total_return": -3.650303262546811,
+            "median_excess_cagr": -6.581132768854303,
+            "outperform_rate": 0.35947712418300654,
+            "median_sharpe": -0.13701760811334643,
+            "median_sharpe_excess": -0.33540724974135594,
+            "higher_sharpe_rate": 0.3238434163701068,
+            "sharpe_pairs": 281,
+            "median_drawdown": 22.782232933579287,
+            "median_exposure": 0.22774869109947643,
+            "median_entries": 1.0,
+            "activity_rate": 0.9183006535947712,
+            "all_cash": 25,
+            "cagr8_rate": 0.12091503267973856,
+            "positive_rate": 0.3366013071895425
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -1.8595884935086793,
+            "median_total_return": -4.254610583868068,
+            "median_excess_cagr": -6.72837393396536,
+            "outperform_rate": 0.34519572953736655,
+            "median_sharpe": -0.12596191725953507,
+            "median_sharpe_excess": -0.34441191524623793,
+            "higher_sharpe_rate": 0.3235294117647059,
+            "sharpe_pairs": 272,
+            "median_drawdown": 24.319716841374483,
+            "median_exposure": 0.23734729493891799,
+            "median_entries": 1.0,
+            "activity_rate": 0.9679715302491103,
+            "all_cash": 9,
+            "cagr8_rate": 0.12811387900355872,
+            "positive_rate": 0.36298932384341637
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -1.8595884935086793,
+            "median_total_return": -4.254610583868068,
+            "median_excess_cagr": -6.72837393396536,
+            "outperform_rate": 0.34545454545454546,
+            "median_sharpe": -0.11942375835340194,
+            "median_sharpe_excess": -0.33805292028023787,
+            "higher_sharpe_rate": 0.32706766917293234,
+            "sharpe_pairs": 266,
+            "median_drawdown": 24.319716841374483,
+            "median_exposure": 0.23734729493891799,
+            "median_entries": 1.0,
+            "activity_rate": 0.9672727272727273,
+            "all_cash": 9,
+            "cagr8_rate": 0.13090909090909092,
+            "positive_rate": 0.3709090909090909
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 2.2506140182997014,
+            "median_total_return": 10.194632029597761,
+            "median_excess_cagr": 2.746158667438829,
+            "outperform_rate": 0.5957446808510638,
+            "median_sharpe": 0.24436329736804457,
+            "median_sharpe_excess": 0.08260389216903202,
+            "higher_sharpe_rate": 0.5628415300546448,
+            "sharpe_pairs": 366,
+            "median_drawdown": 48.7441206656428,
+            "median_exposure": 0.5248715646665669,
+            "median_entries": 4.0,
+            "activity_rate": 0.973404255319149,
+            "all_cash": 10,
+            "cagr8_rate": 0.300531914893617,
+            "positive_rate": 0.5771276595744681
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 2.9012721856030987,
+            "median_total_return": 15.070051411490981,
+            "median_excess_cagr": 2.711995565200521,
+            "outperform_rate": 0.5954415954415955,
+            "median_sharpe": 0.2559109457142045,
+            "median_sharpe_excess": 0.07827941908100981,
+            "higher_sharpe_rate": 0.5612535612535613,
+            "sharpe_pairs": 351,
+            "median_drawdown": 49.19489853375117,
+            "median_exposure": 0.5333333333333333,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.31339031339031337,
+            "positive_rate": 0.603988603988604
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.828179036206869,
+            "median_total_return": 20.61084070614154,
+            "median_excess_cagr": 2.1938982963387366,
+            "outperform_rate": 0.5963636363636363,
+            "median_sharpe": 0.2942034511066767,
+            "median_sharpe_excess": 0.096443505729007,
+            "higher_sharpe_rate": 0.5818181818181818,
+            "sharpe_pairs": 275,
+            "median_drawdown": 46.56883483427515,
+            "median_exposure": 0.5422764227642276,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.34545454545454546,
+            "positive_rate": 0.6618181818181819
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_CHANNEL168",
+      "family": "channel_reversion",
+      "params": {
+        "period": 168,
+        "entry": 0.1,
+        "exit": 0.9
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -1.7395392277546329,
+            "median_total_return": -3.7962767618267224,
+            "median_excess_cagr": -6.716182252836672,
+            "outperform_rate": 0.33986928104575165,
+            "median_sharpe": -0.1537833605665447,
+            "median_sharpe_excess": -0.3183278969089505,
+            "higher_sharpe_rate": 0.2915129151291513,
+            "sharpe_pairs": 271,
+            "median_drawdown": 22.08985046219954,
+            "median_exposure": 0.22164048865619546,
+            "median_entries": 1.0,
+            "activity_rate": 0.8856209150326797,
+            "all_cash": 35,
+            "cagr8_rate": 0.10784313725490197,
+            "positive_rate": 0.3104575163398693
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -2.244927772864369,
+            "median_total_return": -5.123111350211474,
+            "median_excess_cagr": -7.119522975025294,
+            "outperform_rate": 0.3238434163701068,
+            "median_sharpe": -0.1537833605665447,
+            "median_sharpe_excess": -0.33753983558623424,
+            "higher_sharpe_rate": 0.2889733840304182,
+            "sharpe_pairs": 263,
+            "median_drawdown": 23.31195086865556,
+            "median_exposure": 0.2268760907504363,
+            "median_entries": 1.0,
+            "activity_rate": 0.9359430604982206,
+            "all_cash": 18,
+            "cagr8_rate": 0.11387900355871886,
+            "positive_rate": 0.3309608540925267
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -2.244927772864369,
+            "median_total_return": -5.123111350211474,
+            "median_excess_cagr": -7.135294762890176,
+            "outperform_rate": 0.32727272727272727,
+            "median_sharpe": -0.1537833605665447,
+            "median_sharpe_excess": -0.3334243177905283,
+            "higher_sharpe_rate": 0.2918287937743191,
+            "sharpe_pairs": 257,
+            "median_drawdown": 23.31195086865556,
+            "median_exposure": 0.2268760907504363,
+            "median_entries": 1.0,
+            "activity_rate": 0.9345454545454546,
+            "all_cash": 18,
+            "cagr8_rate": 0.11636363636363636,
+            "positive_rate": 0.3381818181818182
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 1.1908640681415061,
+            "median_total_return": 5.923083443802679,
+            "median_excess_cagr": 2.680962744962036,
+            "outperform_rate": 0.601063829787234,
+            "median_sharpe": 0.22117368312978425,
+            "median_sharpe_excess": 0.07454712563175447,
+            "higher_sharpe_rate": 0.5753424657534246,
+            "sharpe_pairs": 365,
+            "median_drawdown": 48.97005188838625,
+            "median_exposure": 0.5142276422764227,
+            "median_entries": 3.0,
+            "activity_rate": 0.9707446808510638,
+            "all_cash": 11,
+            "cagr8_rate": 0.2898936170212766,
+            "positive_rate": 0.5718085106382979
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 1.9379383834645436,
+            "median_total_return": 9.092246527192515,
+            "median_excess_cagr": 2.5665256897145605,
+            "outperform_rate": 0.6011396011396012,
+            "median_sharpe": 0.22663177166901158,
+            "median_sharpe_excess": 0.06749206248429773,
+            "higher_sharpe_rate": 0.5685714285714286,
+            "sharpe_pairs": 350,
+            "median_drawdown": 49.772809174369016,
+            "median_exposure": 0.5211382113821138,
+            "median_entries": 3.0,
+            "activity_rate": 0.9971509971509972,
+            "all_cash": 1,
+            "cagr8_rate": 0.301994301994302,
+            "positive_rate": 0.5954415954415955
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 2.8036172178141916,
+            "median_total_return": 14.789523036679286,
+            "median_excess_cagr": 2.5665256897145605,
+            "outperform_rate": 0.6072727272727273,
+            "median_sharpe": 0.2569677796834145,
+            "median_sharpe_excess": 0.08457566278428381,
+            "higher_sharpe_rate": 0.5963636363636363,
+            "sharpe_pairs": 275,
+            "median_drawdown": 47.54017948090903,
+            "median_exposure": 0.532520325203252,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.3418181818181818,
+            "positive_rate": 0.6618181818181819
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_INITIAL_MAX90",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75,
+            "initial_hold": true
+          }
+        },
+        "max_bars": 90,
+        "cooldown": 20
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -1.0121656505365728,
+            "median_total_return": -2.0078312412507127,
+            "median_excess_cagr": -3.6323891551257255,
+            "outperform_rate": 0.35947712418300654,
+            "median_sharpe": 0.02070461610608152,
+            "median_sharpe_excess": -0.1649893985288512,
+            "higher_sharpe_rate": 0.3562091503267974,
+            "sharpe_pairs": 306,
+            "median_drawdown": 21.44405750619996,
+            "median_exposure": 0.34205933682373474,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.1895424836601307,
+            "positive_rate": 0.4673202614379085
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -1.1024760858757254,
+            "median_total_return": -2.535073146114364,
+            "median_excess_cagr": -4.08359285065194,
+            "outperform_rate": 0.36298932384341637,
+            "median_sharpe": -0.006559044868800685,
+            "median_sharpe_excess": -0.181401148700294,
+            "higher_sharpe_rate": 0.35231316725978645,
+            "sharpe_pairs": 281,
+            "median_drawdown": 21.474569403269527,
+            "median_exposure": 0.3403141361256545,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.16725978647686832,
+            "positive_rate": 0.45907473309608543
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -1.1024760858757254,
+            "median_total_return": -2.535073146114364,
+            "median_excess_cagr": -4.08359285065194,
+            "outperform_rate": 0.36,
+            "median_sharpe": -0.0024843228844606824,
+            "median_sharpe_excess": -0.181401148700294,
+            "higher_sharpe_rate": 0.3490909090909091,
+            "sharpe_pairs": 275,
+            "median_drawdown": 21.537130054480347,
+            "median_exposure": 0.3403141361256545,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.1709090909090909,
+            "positive_rate": 0.4618181818181818
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 2.132497631047836,
+            "median_total_return": 11.099966925334659,
+            "median_excess_cagr": 1.6259878041626872,
+            "outperform_rate": 0.574468085106383,
+            "median_sharpe": 0.22707773415744523,
+            "median_sharpe_excess": 0.02064967600235302,
+            "higher_sharpe_rate": 0.512,
+            "sharpe_pairs": 375,
+            "median_drawdown": 44.77988612439826,
+            "median_exposure": 0.39959349593495935,
+            "median_entries": 6.0,
+            "activity_rate": 0.9973404255319149,
+            "all_cash": 1,
+            "cagr8_rate": 0.2872340425531915,
+            "positive_rate": 0.5638297872340425
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 2.1763658013779663,
+            "median_total_return": 11.33801079865011,
+            "median_excess_cagr": 1.6323314833166958,
+            "outperform_rate": 0.5811965811965812,
+            "median_sharpe": 0.22822556754177592,
+            "median_sharpe_excess": 0.029167097938277098,
+            "higher_sharpe_rate": 0.52,
+            "sharpe_pairs": 350,
+            "median_drawdown": 45.31063703574117,
+            "median_exposure": 0.3967479674796748,
+            "median_entries": 7.0,
+            "activity_rate": 0.9971509971509972,
+            "all_cash": 1,
+            "cagr8_rate": 0.27350427350427353,
+            "positive_rate": 0.5698005698005698
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 2.942012539906713,
+            "median_total_return": 15.562451524899657,
+            "median_excess_cagr": 1.6196441250086786,
+            "outperform_rate": 0.5818181818181818,
+            "median_sharpe": 0.2603673280956048,
+            "median_sharpe_excess": 0.0516852121543907,
+            "higher_sharpe_rate": 0.5364963503649635,
+            "sharpe_pairs": 274,
+            "median_drawdown": 42.42664881716232,
+            "median_exposure": 0.3878048780487805,
+            "median_entries": 7.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.29454545454545455,
+            "positive_rate": 0.6254545454545455
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_INITIAL_MAX126",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75,
+            "initial_hold": true
+          }
+        },
+        "max_bars": 126,
+        "cooldown": 20
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.48525776754210215,
+            "median_total_return": 1.1275573140087758,
+            "median_excess_cagr": -1.9019234888589422,
+            "outperform_rate": 0.4117647058823529,
+            "median_sharpe": 0.1209234486067032,
+            "median_sharpe_excess": -0.06839855958592353,
+            "higher_sharpe_rate": 0.41830065359477125,
+            "sharpe_pairs": 306,
+            "median_drawdown": 20.559028580380485,
+            "median_exposure": 0.3856893542757417,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.2222222222222222,
+            "positive_rate": 0.5196078431372549
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.329999441134432,
+            "median_total_return": 0.7660124559521142,
+            "median_excess_cagr": -2.0912829864562887,
+            "outperform_rate": 0.4234875444839858,
+            "median_sharpe": 0.1105517912447801,
+            "median_sharpe_excess": -0.09603156564114612,
+            "higher_sharpe_rate": 0.4199288256227758,
+            "sharpe_pairs": 281,
+            "median_drawdown": 20.566870128512615,
+            "median_exposure": 0.37347294938917974,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.199288256227758,
+            "positive_rate": 0.5160142348754448
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.329999441134432,
+            "median_total_return": 0.7660124559521142,
+            "median_excess_cagr": -2.0912829864562887,
+            "outperform_rate": 0.4218181818181818,
+            "median_sharpe": 0.1105517912447801,
+            "median_sharpe_excess": -0.09405145836478751,
+            "higher_sharpe_rate": 0.4218181818181818,
+            "sharpe_pairs": 275,
+            "median_drawdown": 20.58824179660437,
+            "median_exposure": 0.37347294938917974,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.20363636363636364,
+            "positive_rate": 0.5163636363636364
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 4.4276057557543265,
+            "median_total_return": 20.866093151425268,
+            "median_excess_cagr": 4.178409934180053,
+            "outperform_rate": 0.6329787234042553,
+            "median_sharpe": 0.3221127310261165,
+            "median_sharpe_excess": 0.1255311111064923,
+            "higher_sharpe_rate": 0.632,
+            "sharpe_pairs": 375,
+            "median_drawdown": 42.60309353923857,
+            "median_exposure": 0.4191056910569106,
+            "median_entries": 5.0,
+            "activity_rate": 0.9973404255319149,
+            "all_cash": 1,
+            "cagr8_rate": 0.36436170212765956,
+            "positive_rate": 0.6542553191489362
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 4.5850308786040905,
+            "median_total_return": 24.58501058876925,
+            "median_excess_cagr": 4.311139764706116,
+            "outperform_rate": 0.6438746438746439,
+            "median_sharpe": 0.3298077373426693,
+            "median_sharpe_excess": 0.15479995630639462,
+            "higher_sharpe_rate": 0.6485714285714286,
+            "sharpe_pairs": 350,
+            "median_drawdown": 42.62056829761227,
+            "median_exposure": 0.41544715447154473,
+            "median_entries": 6.0,
+            "activity_rate": 0.9971509971509972,
+            "all_cash": 1,
+            "cagr8_rate": 0.36182336182336183,
+            "positive_rate": 0.6723646723646723
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 5.2774361666924285,
+            "median_total_return": 29.24585066927836,
+            "median_excess_cagr": 4.244183873041607,
+            "outperform_rate": 0.6436363636363637,
+            "median_sharpe": 0.3603322202289626,
+            "median_sharpe_excess": 0.17034246864565278,
+            "higher_sharpe_rate": 0.6678832116788321,
+            "sharpe_pairs": 274,
+            "median_drawdown": 40.47912920985047,
+            "median_exposure": 0.40487804878048783,
+            "median_entries": 6.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.38545454545454544,
+            "positive_rate": 0.730909090909091
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_INITIAL_MAX168",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75,
+            "initial_hold": true
+          }
+        },
+        "max_bars": 168,
+        "cooldown": 20
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.8170918386879444,
+            "median_total_return": 1.8032566410112527,
+            "median_excess_cagr": -1.1969457462631734,
+            "outperform_rate": 0.41830065359477125,
+            "median_sharpe": 0.14312315452451413,
+            "median_sharpe_excess": -0.017430537751033273,
+            "higher_sharpe_rate": 0.4542483660130719,
+            "sharpe_pairs": 306,
+            "median_drawdown": 20.579465675114577,
+            "median_exposure": 0.39267015706806285,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.238562091503268,
+            "positive_rate": 0.5686274509803921
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.7476276700598916,
+            "median_total_return": 1.7401983910444008,
+            "median_excess_cagr": -1.7077510951173807,
+            "outperform_rate": 0.4306049822064057,
+            "median_sharpe": 0.13654255607619262,
+            "median_sharpe_excess": -0.04078964632551285,
+            "higher_sharpe_rate": 0.45907473309608543,
+            "sharpe_pairs": 281,
+            "median_drawdown": 20.58824179660437,
+            "median_exposure": 0.3769633507853403,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.21708185053380782,
+            "positive_rate": 0.5693950177935944
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.8015267224452005,
+            "median_total_return": 1.8663148909781047,
+            "median_excess_cagr": -1.7077510951173807,
+            "outperform_rate": 0.4290909090909091,
+            "median_sharpe": 0.142548831832796,
+            "median_sharpe_excess": -0.04078964632551285,
+            "higher_sharpe_rate": 0.4581818181818182,
+            "sharpe_pairs": 275,
+            "median_drawdown": 20.641020300536262,
+            "median_exposure": 0.3769633507853403,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.22181818181818183,
+            "positive_rate": 0.5745454545454546
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 2.056587714392233,
+            "median_total_return": 10.688591153957228,
+            "median_excess_cagr": 2.6830753293180076,
+            "outperform_rate": 0.5930851063829787,
+            "median_sharpe": 0.22804497273186425,
+            "median_sharpe_excess": 0.06466032616561923,
+            "higher_sharpe_rate": 0.5546666666666666,
+            "sharpe_pairs": 375,
+            "median_drawdown": 46.912889505062495,
+            "median_exposure": 0.44146341463414634,
+            "median_entries": 5.0,
+            "activity_rate": 0.9973404255319149,
+            "all_cash": 1,
+            "cagr8_rate": 0.34308510638297873,
+            "positive_rate": 0.5718085106382979
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 2.131594324198538,
+            "median_total_return": 11.094861462695626,
+            "median_excess_cagr": 3.094025790405419,
+            "outperform_rate": 0.6096866096866097,
+            "median_sharpe": 0.23836705045351733,
+            "median_sharpe_excess": 0.0753154333557922,
+            "higher_sharpe_rate": 0.5742857142857143,
+            "sharpe_pairs": 350,
+            "median_drawdown": 47.260034700794094,
+            "median_exposure": 0.4300813008130081,
+            "median_entries": 5.0,
+            "activity_rate": 0.9971509971509972,
+            "all_cash": 1,
+            "cagr8_rate": 0.33618233618233617,
+            "positive_rate": 0.5811965811965812
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.4458779314226584,
+            "median_total_return": 18.411735964223254,
+            "median_excess_cagr": 2.6263759078633653,
+            "outperform_rate": 0.610909090909091,
+            "median_sharpe": 0.27900417050728166,
+            "median_sharpe_excess": 0.07751209443426643,
+            "higher_sharpe_rate": 0.572992700729927,
+            "sharpe_pairs": 274,
+            "median_drawdown": 44.75972350609327,
+            "median_exposure": 0.4211382113821138,
+            "median_entries": 5.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.3490909090909091,
+            "positive_rate": 0.6290909090909091
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_TIME_BAG",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 90,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 168,
+                "cooldown": 20
+              }
+            }
+          }
+        ]
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": -1.1102230246251565e-14,
+            "median_excess_cagr": -2.6687314180182216,
+            "outperform_rate": 0.42810457516339867,
+            "median_sharpe": 0.12074136104091855,
+            "median_sharpe_excess": -0.027017702612309458,
+            "higher_sharpe_rate": 0.4817813765182186,
+            "sharpe_pairs": 247,
+            "median_drawdown": 16.350893890671703,
+            "median_exposure": 0.2112720823318098,
+            "median_entries": 4.0,
+            "activity_rate": 0.8071895424836601,
+            "all_cash": 59,
+            "cagr8_rate": 0.15359477124183007,
+            "positive_rate": 0.4150326797385621
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": -1.1102230246251565e-14,
+            "median_excess_cagr": -3.077616701368303,
+            "outperform_rate": 0.4128113879003559,
+            "median_sharpe": 0.12654606257531376,
+            "median_sharpe_excess": -0.049222977414171254,
+            "higher_sharpe_rate": 0.4595744680851064,
+            "sharpe_pairs": 235,
+            "median_drawdown": 16.923087712597194,
+            "median_exposure": 0.21536763070288512,
+            "median_entries": 5.0,
+            "activity_rate": 0.8362989323843416,
+            "all_cash": 46,
+            "cagr8_rate": 0.1601423487544484,
+            "positive_rate": 0.43416370106761565
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": -1.1102230246251565e-14,
+            "median_excess_cagr": -3.077616701368303,
+            "outperform_rate": 0.4109090909090909,
+            "median_sharpe": 0.13088047191333063,
+            "median_sharpe_excess": -0.05155453759628026,
+            "higher_sharpe_rate": 0.45689655172413796,
+            "sharpe_pairs": 232,
+            "median_drawdown": 17.123298581080626,
+            "median_exposure": 0.21536763070288512,
+            "median_entries": 5.0,
+            "activity_rate": 0.8436363636363636,
+            "all_cash": 43,
+            "cagr8_rate": 0.16363636363636364,
+            "positive_rate": 0.44
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 1.8670632061843606,
+            "median_total_return": 9.666891258808374,
+            "median_excess_cagr": 3.7857074127709724,
+            "outperform_rate": 0.6223404255319149,
+            "median_sharpe": 0.23287893454440717,
+            "median_sharpe_excess": 0.09975739732962466,
+            "higher_sharpe_rate": 0.6103542234332425,
+            "sharpe_pairs": 367,
+            "median_drawdown": 43.53554869198932,
+            "median_exposure": 0.40912921098287225,
+            "median_entries": 16.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.31382978723404253,
+            "positive_rate": 0.5904255319148937
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 2.6524677426754018,
+            "median_total_return": 13.933396705796008,
+            "median_excess_cagr": 3.6848317125563246,
+            "outperform_rate": 0.6210826210826211,
+            "median_sharpe": 0.2421662260944272,
+            "median_sharpe_excess": 0.09975739732962466,
+            "higher_sharpe_rate": 0.6074498567335244,
+            "sharpe_pairs": 349,
+            "median_drawdown": 43.681031030128196,
+            "median_exposure": 0.408556390002826,
+            "median_entries": 17.0,
+            "activity_rate": 0.9943019943019943,
+            "all_cash": 2,
+            "cagr8_rate": 0.32193732193732194,
+            "positive_rate": 0.6182336182336182
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.638458390884969,
+            "median_total_return": 19.51546947771643,
+            "median_excess_cagr": 3.6144715188059062,
+            "outperform_rate": 0.6327272727272727,
+            "median_sharpe": 0.2897667744772997,
+            "median_sharpe_excess": 0.11402639401372226,
+            "higher_sharpe_rate": 0.6313868613138686,
+            "sharpe_pairs": 274,
+            "median_drawdown": 41.736378729778224,
+            "median_exposure": 0.40540296470311754,
+            "median_entries": 18.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.3490909090909091,
+            "positive_rate": 0.6727272727272727
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_RETURN_BAG",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 42,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 84,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": -1.1102230246251565e-14,
+            "median_excess_cagr": -4.392694465159403,
+            "outperform_rate": 0.369281045751634,
+            "median_sharpe": -0.06356926067593294,
+            "median_sharpe_excess": -0.29955822650720976,
+            "higher_sharpe_rate": 0.3613861386138614,
+            "sharpe_pairs": 202,
+            "median_drawdown": 9.586785763009292,
+            "median_exposure": 0.09640292037731585,
+            "median_entries": 2.0,
+            "activity_rate": 0.6601307189542484,
+            "all_cash": 104,
+            "cagr8_rate": 0.05555555555555555,
+            "positive_rate": 0.2679738562091503
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": -1.1102230246251565e-14,
+            "median_excess_cagr": -4.516531160202918,
+            "outperform_rate": 0.35587188612099646,
+            "median_sharpe": -0.050643616710033076,
+            "median_sharpe_excess": -0.3392807816309739,
+            "higher_sharpe_rate": 0.3333333333333333,
+            "sharpe_pairs": 189,
+            "median_drawdown": 10.151985799855623,
+            "median_exposure": 0.09684036962612001,
+            "median_entries": 2.0,
+            "activity_rate": 0.6725978647686833,
+            "all_cash": 92,
+            "cagr8_rate": 0.0498220640569395,
+            "positive_rate": 0.2775800711743772
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": -1.1102230246251565e-14,
+            "median_excess_cagr": -4.516531160202918,
+            "outperform_rate": 0.3527272727272727,
+            "median_sharpe": -0.050643616710033076,
+            "median_sharpe_excess": -0.3371450996283616,
+            "higher_sharpe_rate": 0.33513513513513515,
+            "sharpe_pairs": 185,
+            "median_drawdown": 9.99339086038339,
+            "median_exposure": 0.09596547112851168,
+            "median_entries": 2.0,
+            "activity_rate": 0.6727272727272727,
+            "all_cash": 90,
+            "cagr8_rate": 0.05090909090909091,
+            "positive_rate": 0.28
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 4.0953081130945534,
+            "median_total_return": 20.504718033036685,
+            "median_excess_cagr": 5.233112875931245,
+            "outperform_rate": 0.6303191489361702,
+            "median_sharpe": 0.3425679648751618,
+            "median_sharpe_excess": 0.1615696210954268,
+            "higher_sharpe_rate": 0.6583333333333333,
+            "sharpe_pairs": 360,
+            "median_drawdown": 37.14588188554322,
+            "median_exposure": 0.3770475238923876,
+            "median_entries": 8.0,
+            "activity_rate": 0.9574468085106383,
+            "all_cash": 16,
+            "cagr8_rate": 0.3271276595744681,
+            "positive_rate": 0.6702127659574468
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 4.459045309385656,
+            "median_total_return": 24.287905767956765,
+            "median_excess_cagr": 5.0513005262335495,
+            "outperform_rate": 0.6267806267806267,
+            "median_sharpe": 0.3494540239240203,
+            "median_sharpe_excess": 0.1562406540970338,
+            "higher_sharpe_rate": 0.652046783625731,
+            "sharpe_pairs": 342,
+            "median_drawdown": 37.835637867914116,
+            "median_exposure": 0.3771690460939765,
+            "median_entries": 9.0,
+            "activity_rate": 0.9743589743589743,
+            "all_cash": 9,
+            "cagr8_rate": 0.33903133903133903,
+            "positive_rate": 0.6923076923076923
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.92263664695114,
+            "median_total_return": 27.08759084225203,
+            "median_excess_cagr": 4.652044648002973,
+            "outperform_rate": 0.6254545454545455,
+            "median_sharpe": 0.38284249421409594,
+            "median_sharpe_excess": 0.18611142895060062,
+            "higher_sharpe_rate": 0.6779026217228464,
+            "sharpe_pairs": 267,
+            "median_drawdown": 34.4543578636185,
+            "median_exposure": 0.35513078368498446,
+            "median_entries": 9.0,
+            "activity_rate": 0.9709090909090909,
+            "all_cash": 8,
+            "cagr8_rate": 0.36363636363636365,
+            "positive_rate": 0.7527272727272727
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_TIME_RETURN_BAG",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "blend",
+              "params": {
+                "members": [
+                  {
+                    "weight": 0.3333333333333333,
+                    "strategy": {
+                      "family": "risk_overlay",
+                      "params": {
+                        "base": {
+                          "family": "rsi",
+                          "params": {
+                            "period": 14,
+                            "entry": 25,
+                            "exit": 75
+                          }
+                        },
+                        "max_bars": 90,
+                        "cooldown": 20
+                      }
+                    }
+                  },
+                  {
+                    "weight": 0.3333333333333333,
+                    "strategy": {
+                      "family": "risk_overlay",
+                      "params": {
+                        "base": {
+                          "family": "rsi",
+                          "params": {
+                            "period": 14,
+                            "entry": 25,
+                            "exit": 75
+                          }
+                        },
+                        "max_bars": 126,
+                        "cooldown": 20
+                      }
+                    }
+                  },
+                  {
+                    "weight": 0.3333333333333333,
+                    "strategy": {
+                      "family": "risk_overlay",
+                      "params": {
+                        "base": {
+                          "family": "rsi",
+                          "params": {
+                            "period": 14,
+                            "entry": 25,
+                            "exit": 75
+                          }
+                        },
+                        "max_bars": 168,
+                        "cooldown": 20
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "blend",
+              "params": {
+                "members": [
+                  {
+                    "weight": 0.3333333333333333,
+                    "strategy": {
+                      "family": "return_reversion",
+                      "params": {
+                        "period": 42,
+                        "entry": 0.25,
+                        "exit": 0.25
+                      }
+                    }
+                  },
+                  {
+                    "weight": 0.3333333333333333,
+                    "strategy": {
+                      "family": "return_reversion",
+                      "params": {
+                        "period": 63,
+                        "entry": 0.25,
+                        "exit": 0.25
+                      }
+                    }
+                  },
+                  {
+                    "weight": 0.3333333333333333,
+                    "strategy": {
+                      "family": "return_reversion",
+                      "params": {
+                        "period": 84,
+                        "entry": 0.25,
+                        "exit": 0.25
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0,
+            "median_total_return": -1.1102230246251565e-14,
+            "median_excess_cagr": -3.1524365375740544,
+            "outperform_rate": 0.40522875816993464,
+            "median_sharpe": 0.04691809137277411,
+            "median_sharpe_excess": -0.09947245078207893,
+            "higher_sharpe_rate": 0.4384057971014493,
+            "sharpe_pairs": 276,
+            "median_drawdown": 12.017355538952973,
+            "median_exposure": 0.16521250990875874,
+            "median_entries": 7.0,
+            "activity_rate": 0.9019607843137255,
+            "all_cash": 30,
+            "cagr8_rate": 0.058823529411764705,
+            "positive_rate": 0.4477124183006536
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.0,
+            "median_total_return": -1.1102230246251565e-14,
+            "median_excess_cagr": -3.487375431425888,
+            "outperform_rate": 0.39501779359430605,
+            "median_sharpe": 0.0568857801240713,
+            "median_sharpe_excess": -0.143532317175835,
+            "higher_sharpe_rate": 0.41762452107279696,
+            "sharpe_pairs": 261,
+            "median_drawdown": 12.083141856790292,
+            "median_exposure": 0.16832908083995587,
+            "median_entries": 7.0,
+            "activity_rate": 0.9288256227758007,
+            "all_cash": 20,
+            "cagr8_rate": 0.05693950177935943,
+            "positive_rate": 0.4697508896797153
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.0,
+            "median_total_return": -1.1102230246251565e-14,
+            "median_excess_cagr": -3.487375431425888,
+            "outperform_rate": 0.3927272727272727,
+            "median_sharpe": 0.05778831245299028,
+            "median_sharpe_excess": -0.13896444692089976,
+            "higher_sharpe_rate": 0.41796875,
+            "sharpe_pairs": 256,
+            "median_drawdown": 12.201652936578434,
+            "median_exposure": 0.16832908083995587,
+            "median_entries": 7.0,
+            "activity_rate": 0.9309090909090909,
+            "all_cash": 19,
+            "cagr8_rate": 0.05818181818181818,
+            "positive_rate": 0.4727272727272727
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 3.6849373331121704,
+            "median_total_return": 17.512572599767793,
+            "median_excess_cagr": 4.87913794311875,
+            "outperform_rate": 0.6702127659574468,
+            "median_sharpe": 0.3057751350222855,
+            "median_sharpe_excess": 0.14958392783440327,
+            "higher_sharpe_rate": 0.6972972972972973,
+            "sharpe_pairs": 370,
+            "median_drawdown": 37.7866530029295,
+            "median_exposure": 0.38537744558215464,
+            "median_entries": 25.0,
+            "activity_rate": 0.9840425531914894,
+            "all_cash": 6,
+            "cagr8_rate": 0.3191489361702128,
+            "positive_rate": 0.675531914893617
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 3.9120018579384075,
+            "median_total_return": 21.097349531342367,
+            "median_excess_cagr": 4.673267918691936,
+            "outperform_rate": 0.6666666666666666,
+            "median_sharpe": 0.31242385970402087,
+            "median_sharpe_excess": 0.14171456276567962,
+            "higher_sharpe_rate": 0.6971428571428572,
+            "sharpe_pairs": 350,
+            "median_drawdown": 38.204467751588766,
+            "median_exposure": 0.3841721068003498,
+            "median_entries": 25.0,
+            "activity_rate": 0.9971509971509972,
+            "all_cash": 1,
+            "cagr8_rate": 0.32763532763532766,
+            "positive_rate": 0.7037037037037037
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.509994995750866,
+            "median_total_return": 24.613822129791952,
+            "median_excess_cagr": 4.283106321267871,
+            "outperform_rate": 0.6618181818181819,
+            "median_sharpe": 0.36788433100908585,
+            "median_sharpe_excess": 0.1764607221241414,
+            "higher_sharpe_rate": 0.7272727272727273,
+            "sharpe_pairs": 275,
+            "median_drawdown": 35.96578600383599,
+            "median_exposure": 0.3777010873583788,
+            "median_entries": 27.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.3527272727272727,
+            "positive_rate": 0.7636363636363637
+          }
+        }
+      }
+    },
+    {
+      "id": "R09_INITIAL_BLEND",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75,
+                    "initial_hold": true
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -0.0975854154481759,
+            "median_total_return": -0.1858491916374605,
+            "median_excess_cagr": -3.28427431246352,
+            "outperform_rate": 0.4150326797385621,
+            "median_sharpe": 0.04446956796868815,
+            "median_sharpe_excess": -0.1483874830519345,
+            "higher_sharpe_rate": 0.37254901960784315,
+            "sharpe_pairs": 306,
+            "median_drawdown": 13.994831381909211,
+            "median_exposure": 0.24523603275822625,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.13725490196078433,
+            "positive_rate": 0.477124183006536
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -0.13454989951637852,
+            "median_total_return": -0.3113714851162852,
+            "median_excess_cagr": -3.800065499472449,
+            "outperform_rate": 0.398576512455516,
+            "median_sharpe": 0.03981830534987466,
+            "median_sharpe_excess": -0.1597821664210169,
+            "higher_sharpe_rate": 0.3665480427046263,
+            "sharpe_pairs": 281,
+            "median_drawdown": 14.103575373996435,
+            "median_exposure": 0.2368499041901784,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.11743772241992882,
+            "positive_rate": 0.4697508896797153
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -0.13454989951637852,
+            "median_total_return": -0.3113714851162852,
+            "median_excess_cagr": -3.800065499472449,
+            "outperform_rate": 0.39636363636363636,
+            "median_sharpe": 0.03981830534987466,
+            "median_sharpe_excess": -0.1496601334221782,
+            "higher_sharpe_rate": 0.36727272727272725,
+            "sharpe_pairs": 275,
+            "median_drawdown": 14.103575373996435,
+            "median_exposure": 0.23881823596210697,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.12,
+            "positive_rate": 0.4690909090909091
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 4.263872112320788,
+            "median_total_return": 19.40372212828492,
+            "median_excess_cagr": 5.729248457712165,
+            "outperform_rate": 0.6808510638297872,
+            "median_sharpe": 0.32945865252952256,
+            "median_sharpe_excess": 0.15309853007430574,
+            "higher_sharpe_rate": 0.6861702127659575,
+            "sharpe_pairs": 376,
+            "median_drawdown": 38.416033311439705,
+            "median_exposure": 0.39346600023443656,
+            "median_entries": 8.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.34308510638297873,
+            "positive_rate": 0.6914893617021277
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 4.306269204294777,
+            "median_total_return": 22.188247543536544,
+            "median_excess_cagr": 5.701879376846031,
+            "outperform_rate": 0.6780626780626781,
+            "median_sharpe": 0.33064990044904913,
+            "median_sharpe_excess": 0.16249819555705577,
+            "higher_sharpe_rate": 0.698005698005698,
+            "sharpe_pairs": 351,
+            "median_drawdown": 39.30512681068414,
+            "median_exposure": 0.3879932351069936,
+            "median_entries": 9.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.33618233618233617,
+            "positive_rate": 0.7065527065527065
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 4.679179143876522,
+            "median_total_return": 25.623373014164063,
+            "median_excess_cagr": 4.486446986326831,
+            "outperform_rate": 0.6654545454545454,
+            "median_sharpe": 0.36017215046021084,
+            "median_sharpe_excess": 0.17696013546586176,
+            "higher_sharpe_rate": 0.7090909090909091,
+            "sharpe_pairs": 275,
+            "median_drawdown": 36.36181186577892,
+            "median_exposure": 0.3749815293490801,
+            "median_entries": 9.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.34545454545454546,
+            "positive_rate": 0.7636363636363637
+          }
+        }
+      }
+    }
+  ],
+  "completed_utc": "2026-09-06T17:03:56.850004+00:00",
+  "elapsed_seconds": 8.776881999976467
+}
