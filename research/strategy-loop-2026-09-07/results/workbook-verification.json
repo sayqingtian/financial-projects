@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-09-06T17:31:43.947245+00:00",
+  "verifier_source_commit": "bd447e073600326ddc2b8cc2add8d7a246afb470",
+  "workbook": "outputs/01a06f83-a122-76c3-b29c-df4417405f3b/港股策略迭代验证_2026-09-07.xlsx",
+  "workbook_sha256": "5111df0b9b46a90a7de703210a7ffa9e3a064d7c21037d924f3485f115fe352a",
+  "workbook_bytes": 1629410,
+  "sheets": 9,
+  "native_charts": 2,
+  "errors": [],
+  "formula_count": 28791,
+  "independently_compared_cached_formulas": 17392,
+  "stock_codes": "five-digit text preserved",
+  "excluded_rows": "blank metrics preserved",
+  "zero_volatility_sharpe": "blank preserved",
+  "forced_exits": "no invented sell signal",
+  "development_score_max_difference": 0,
+  "rendered_sheets_sha256": {
+    "总览": "2538c2321e665758bf10eb138389b9ea31dd68a39c1db126f9182969e6ef208e",
+    "全股结果": "01641422f5a568a134dea869830fa92e9a14adb51967e752362f14a80cbda963",
+    "候选验证": "7b74d9374e6e1c9e3006308b90901cd6897fa2678ef7af6208bf8b70ce713fa1",
+    "开发评分": "bbd370cfe5b4403cfadf556c416a176ec52de99c43d4649449967aa08cd09215",
+    "交易区间": "f96cc6dde17aa197d5c16f1f25aed32465db80d21c281f5736614f08bead27bb",
+    "年度表现": "450f16616d4d3d7b7c83e43a414023dc6936aa91fa81f952d998f7eb180a849c",
+    "稳健性": "28b019366e45e3a8ac0fcad920dd4f47782faba61f15564c82ef32a04fb79d40",
+    "组合净值": "26c98e0147ebce805b171a3cea4425c9e1f36799af19af7e47adde454b53d198",
+    "口径版本": "785936dd0890b939d66ef483bf0270b484b6408672c8d25e02fd78c2b2166b8b"
+  }
+}

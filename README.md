@@ -185,7 +185,7 @@ Excel默认输出至 `outputs/01a06f83-a122-76c3-b29c-df4417405f3b/`，包含股
 
 ## 开发与验证
 
-持续策略研究及逐轮Git留档见 [两小时港股策略研究记录](research/strategy-loop-2026-09-07/README.md)。这是独立研究入口，不自动替换原20组默认预设。
+持续策略研究及逐轮Git留档见 [两小时港股策略研究记录](research/strategy-loop-2026-09-07/README.md)。本轮完成311个配置开发、461股验证，结论见 [最终报告](research/strategy-loop-2026-09-07/results/final-report.md)：没有策略在保留期达到大多数股票跑赢持有。这是独立研究入口，不自动替换原20组默认预设。
 
 ```sh
 cargo fmt --all -- --check
