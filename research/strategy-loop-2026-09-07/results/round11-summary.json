@@ -1,0 +1,4820 @@
+{
+  "round": "round11",
+  "source_commit": "7cd470048678a62630d71277efb1d68344cec2a2",
+  "started_utc": "2026-09-06T17:08:07.941300+00:00",
+  "text_hash_policy": "SHA256 of UTF-8 text with LF newlines; downloaded inputs retain exact byte hashes",
+  "protocol_sha256": "c5a7de9df09cda049983f4e06ef903c3ff915eeeaa72bf8dd29ea0fd779d50a0",
+  "config_sha256": "b2918b33e55901d60a05d5f9e53a4f185c21c0acbd59090ed39b305b6c7ca91b",
+  "input_manifest_sha256": "b8b576c61b7aeab0d6b20c294772f7cd4ab4b8d2bf57b6343e76ba79d6aa4993",
+  "benchmark": {
+    "training": {
+      "all": {
+        "count": 306,
+        "median_cagr": 3.4124560383098412,
+        "median_total_return": 6.209426012147656,
+        "median_excess_cagr": 0.0,
+        "outperform_rate": 0.0,
+        "median_sharpe": 0.27492506280327966,
+        "median_sharpe_excess": 0.0,
+        "higher_sharpe_rate": 0.0,
+        "sharpe_pairs": 306,
+        "median_drawdown": 38.80537741802345,
+        "median_exposure": 0.9965095986038395,
+        "median_entries": 1.0,
+        "activity_rate": 1.0,
+        "all_cash": 0,
+        "cagr8_rate": 0.369281045751634,
+        "positive_rate": 0.5947712418300654
+      },
+      "primary": {
+        "count": 281,
+        "median_cagr": 3.4213175810313468,
+        "median_total_return": 8.103599225994817,
+        "median_excess_cagr": 0.0,
+        "outperform_rate": 0.0,
+        "median_sharpe": 0.27649869958010437,
+        "median_sharpe_excess": 0.0,
+        "higher_sharpe_rate": 0.0,
+        "sharpe_pairs": 281,
+        "median_drawdown": 38.906943913502126,
+        "median_exposure": 0.9965095986038395,
+        "median_entries": 1.0,
+        "activity_rate": 1.0,
+        "all_cash": 0,
+        "cagr8_rate": 0.3701067615658363,
+        "positive_rate": 0.604982206405694
+      },
+      "full10": {
+        "count": 275,
+        "median_cagr": 3.4213175810313468,
+        "median_total_return": 8.103599225994817,
+        "median_excess_cagr": 0.0,
+        "outperform_rate": 0.0,
+        "median_sharpe": 0.27649869958010437,
+        "median_sharpe_excess": 0.0,
+        "higher_sharpe_rate": 0.0,
+        "sharpe_pairs": 275,
+        "median_drawdown": 38.906943913502126,
+        "median_exposure": 0.9965095986038395,
+        "median_entries": 1.0,
+        "activity_rate": 1.0,
+        "all_cash": 0,
+        "cagr8_rate": 0.3709090909090909,
+        "positive_rate": 0.6072727272727273
+      }
+    },
+    "development": {
+      "all": {
+        "count": 376,
+        "median_cagr": -0.05920743803093376,
+        "median_total_return": -0.29486405359121504,
+        "median_excess_cagr": 0.0,
+        "outperform_rate": 0.0,
+        "median_sharpe": 0.2148991193329426,
+        "median_sharpe_excess": 0.0,
+        "higher_sharpe_rate": 0.0,
+        "sharpe_pairs": 376,
+        "median_drawdown": 61.3446242881932,
+        "median_exposure": 0.9983739837398374,
+        "median_entries": 1.0,
+        "activity_rate": 1.0,
+        "all_cash": 0,
+        "cagr8_rate": 0.2872340425531915,
+        "positive_rate": 0.4973404255319149
+      },
+      "primary": {
+        "count": 351,
+        "median_cagr": 0.33260265950512125,
+        "median_total_return": 1.670184300810873,
+        "median_excess_cagr": 0.0,
+        "outperform_rate": 0.0,
+        "median_sharpe": 0.21921405809734132,
+        "median_sharpe_excess": 0.0,
+        "higher_sharpe_rate": 0.0,
+        "sharpe_pairs": 351,
+        "median_drawdown": 61.895471014929804,
+        "median_exposure": 0.9983739837398374,
+        "median_entries": 1.0,
+        "activity_rate": 1.0,
+        "all_cash": 0,
+        "cagr8_rate": 0.28205128205128205,
+        "positive_rate": 0.5042735042735043
+      },
+      "full10": {
+        "count": 275,
+        "median_cagr": 1.3021778493766512,
+        "median_total_return": 6.666619461531398,
+        "median_excess_cagr": 0.0,
+        "outperform_rate": 0.0,
+        "median_sharpe": 0.2309675538753686,
+        "median_sharpe_excess": 0.0,
+        "higher_sharpe_rate": 0.0,
+        "sharpe_pairs": 275,
+        "median_drawdown": 59.610917054628665,
+        "median_exposure": 0.9983739837398374,
+        "median_entries": 1.0,
+        "activity_rate": 1.0,
+        "all_cash": 0,
+        "cagr8_rate": 0.2872727272727273,
+        "positive_rate": 0.5454545454545454
+      }
+    }
+  },
+  "candidates": [
+    {
+      "id": "R11_BREADTH150_0.15_0.65",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 150,
+        "entry": 0.15,
+        "exit": 0.65
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -0.6537195477563262,
+            "median_total_return": -1.5076493438664018,
+            "median_excess_cagr": -3.8575637483901803,
+            "outperform_rate": 0.38235294117647056,
+            "median_sharpe": -0.03418119390538406,
+            "median_sharpe_excess": -0.36581489872283324,
+            "higher_sharpe_rate": 0.3194444444444444,
+            "sharpe_pairs": 288,
+            "median_drawdown": 18.41185691986506,
+            "median_exposure": 0.12914485165794065,
+            "median_entries": 1.0,
+            "activity_rate": 0.9411764705882353,
+            "all_cash": 18,
+            "cagr8_rate": 0.03594771241830065,
+            "positive_rate": 0.35947712418300654
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -0.9262256619192777,
+            "median_total_return": -2.132279684191829,
+            "median_excess_cagr": -4.008369945787149,
+            "outperform_rate": 0.3665480427046263,
+            "median_sharpe": -0.02380923012526134,
+            "median_sharpe_excess": -0.36963655787532157,
+            "higher_sharpe_rate": 0.3107142857142857,
+            "sharpe_pairs": 280,
+            "median_drawdown": 19.131625634041495,
+            "median_exposure": 0.12914485165794065,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.03558718861209965,
+            "positive_rate": 0.38434163701067614
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -0.8717887676985892,
+            "median_total_return": -2.0076816285100163,
+            "median_excess_cagr": -4.008369945787149,
+            "outperform_rate": 0.36727272727272725,
+            "median_sharpe": -0.017947360532439748,
+            "median_sharpe_excess": -0.36581489872283324,
+            "higher_sharpe_rate": 0.31386861313868614,
+            "sharpe_pairs": 274,
+            "median_drawdown": 19.131625634041495,
+            "median_exposure": 0.12914485165794065,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.03636363636363636,
+            "positive_rate": 0.3890909090909091
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 7.577117670884892,
+            "median_total_return": 40.17641335797428,
+            "median_excess_cagr": 8.407532574367266,
+            "outperform_rate": 0.7473404255319149,
+            "median_sharpe": 0.4857199620474214,
+            "median_sharpe_excess": 0.28558645189930837,
+            "higher_sharpe_rate": 0.8084507042253521,
+            "sharpe_pairs": 355,
+            "median_drawdown": 36.05624757004169,
+            "median_exposure": 0.23089430894308943,
+            "median_entries": 3.0,
+            "activity_rate": 0.9441489361702128,
+            "all_cash": 21,
+            "cagr8_rate": 0.4867021276595745,
+            "positive_rate": 0.8617021276595744
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 8.18403461729691,
+            "median_total_return": 46.445361631381665,
+            "median_excess_cagr": 8.271180916222097,
+            "outperform_rate": 0.7578347578347578,
+            "median_sharpe": 0.4799476092489973,
+            "median_sharpe_excess": 0.2819450603555272,
+            "higher_sharpe_rate": 0.8062678062678063,
+            "sharpe_pairs": 351,
+            "median_drawdown": 37.23449112145185,
+            "median_exposure": 0.23089430894308943,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5128205128205128,
+            "positive_rate": 0.9145299145299145
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 8.23292139844336,
+            "median_total_return": 48.38742680444783,
+            "median_excess_cagr": 6.651457923880689,
+            "outperform_rate": 0.7345454545454545,
+            "median_sharpe": 0.5147598380890726,
+            "median_sharpe_excess": 0.2819450603555272,
+            "higher_sharpe_rate": 0.8072727272727273,
+            "sharpe_pairs": 275,
+            "median_drawdown": 36.01831066814234,
+            "median_exposure": 0.23089430894308943,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5236363636363637,
+            "positive_rate": 0.9454545454545454
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_BREADTH150_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 150,
+        "entry": 0.2,
+        "exit": 0.7
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -1.9058493715683966,
+            "median_total_return": -4.18157485954716,
+            "median_excess_cagr": -4.214522357845201,
+            "outperform_rate": 0.3790849673202614,
+            "median_sharpe": -0.06204106127792132,
+            "median_sharpe_excess": -0.31938109921519253,
+            "higher_sharpe_rate": 0.27241379310344827,
+            "sharpe_pairs": 290,
+            "median_drawdown": 20.848477061250144,
+            "median_exposure": 0.16055846422338568,
+            "median_entries": 1.0,
+            "activity_rate": 0.9477124183006536,
+            "all_cash": 16,
+            "cagr8_rate": 0.049019607843137254,
+            "positive_rate": 0.3300653594771242
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -2.1462466486401044,
+            "median_total_return": -4.703983834202896,
+            "median_excess_cagr": -5.04370025262365,
+            "outperform_rate": 0.36298932384341637,
+            "median_sharpe": -0.05833169074032589,
+            "median_sharpe_excess": -0.32695002926545075,
+            "higher_sharpe_rate": 0.2642857142857143,
+            "sharpe_pairs": 280,
+            "median_drawdown": 21.947356120455154,
+            "median_exposure": 0.16055846422338568,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.0498220640569395,
+            "positive_rate": 0.35231316725978645
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -2.001446000332352,
+            "median_total_return": -4.574860623185684,
+            "median_excess_cagr": -5.04370025262365,
+            "outperform_rate": 0.36363636363636365,
+            "median_sharpe": -0.05655856965397137,
+            "median_sharpe_excess": -0.3251062085489964,
+            "higher_sharpe_rate": 0.2664233576642336,
+            "sharpe_pairs": 274,
+            "median_drawdown": 21.947356120455154,
+            "median_exposure": 0.16055846422338568,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.05090909090909091,
+            "positive_rate": 0.36
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 8.12822100840892,
+            "median_total_return": 45.2556940386456,
+            "median_excess_cagr": 8.71723752648551,
+            "outperform_rate": 0.7712765957446809,
+            "median_sharpe": 0.4623838549266489,
+            "median_sharpe_excess": 0.2725155140935844,
+            "higher_sharpe_rate": 0.779291553133515,
+            "sharpe_pairs": 367,
+            "median_drawdown": 41.930420290036935,
+            "median_exposure": 0.4666666666666667,
+            "median_entries": 5.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.5079787234042553,
+            "positive_rate": 0.7952127659574468
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 9.017890083577008,
+            "median_total_return": 52.841361526080675,
+            "median_excess_cagr": 8.684081369590379,
+            "outperform_rate": 0.7863247863247863,
+            "median_sharpe": 0.47002770562874047,
+            "median_sharpe_excess": 0.2695435377710498,
+            "higher_sharpe_rate": 0.7863247863247863,
+            "sharpe_pairs": 351,
+            "median_drawdown": 42.99207490588309,
+            "median_exposure": 0.4666666666666667,
+            "median_entries": 5.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5356125356125356,
+            "positive_rate": 0.8290598290598291
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 9.427537609869784,
+            "median_total_return": 56.73928488287592,
+            "median_excess_cagr": 7.862925043078416,
+            "outperform_rate": 0.7890909090909091,
+            "median_sharpe": 0.49106072113281773,
+            "median_sharpe_excess": 0.26859281398831547,
+            "higher_sharpe_rate": 0.8109090909090909,
+            "sharpe_pairs": 275,
+            "median_drawdown": 41.90637694403275,
+            "median_exposure": 0.4666666666666667,
+            "median_entries": 5.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.56,
+            "positive_rate": 0.8836363636363637
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_BREADTH150_0.25_0.75",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 150,
+        "entry": 0.25,
+        "exit": 0.75
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -3.2537216211111386,
+            "median_total_return": -7.234351332188132,
+            "median_excess_cagr": -5.886724393051635,
+            "outperform_rate": 0.3431372549019608,
+            "median_sharpe": -0.15510890081309192,
+            "median_sharpe_excess": -0.43811888324686454,
+            "higher_sharpe_rate": 0.2413793103448276,
+            "sharpe_pairs": 290,
+            "median_drawdown": 23.399341944451557,
+            "median_exposure": 0.21291448516579406,
+            "median_entries": 1.0,
+            "activity_rate": 0.9477124183006536,
+            "all_cash": 16,
+            "cagr8_rate": 0.06209150326797386,
+            "positive_rate": 0.2679738562091503
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -3.8696891263900635,
+            "median_total_return": -8.735734667197303,
+            "median_excess_cagr": -6.080020176132184,
+            "outperform_rate": 0.3274021352313167,
+            "median_sharpe": -0.14932890745642724,
+            "median_sharpe_excess": -0.4409353796132934,
+            "higher_sharpe_rate": 0.2392857142857143,
+            "sharpe_pairs": 280,
+            "median_drawdown": 24.461110953622654,
+            "median_exposure": 0.21291448516579406,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.06405693950177936,
+            "positive_rate": 0.28113879003558717
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -3.5366446052307765,
+            "median_total_return": -8.001707242536614,
+            "median_excess_cagr": -6.080020176132184,
+            "outperform_rate": 0.32727272727272727,
+            "median_sharpe": -0.14411130427601326,
+            "median_sharpe_excess": -0.43811888324686454,
+            "higher_sharpe_rate": 0.24087591240875914,
+            "sharpe_pairs": 274,
+            "median_drawdown": 24.448890324180674,
+            "median_exposure": 0.21291448516579406,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.06545454545454546,
+            "positive_rate": 0.2872727272727273
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 8.583997033648384,
+            "median_total_return": 47.78430667148782,
+            "median_excess_cagr": 8.715513851653288,
+            "outperform_rate": 0.7872340425531915,
+            "median_sharpe": 0.4543332721518953,
+            "median_sharpe_excess": 0.24410656890263546,
+            "higher_sharpe_rate": 0.7804878048780488,
+            "sharpe_pairs": 369,
+            "median_drawdown": 46.107823896705234,
+            "median_exposure": 0.532520325203252,
+            "median_entries": 5.0,
+            "activity_rate": 0.9813829787234043,
+            "all_cash": 7,
+            "cagr8_rate": 0.5212765957446809,
+            "positive_rate": 0.7845744680851063
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 9.566302187432264,
+            "median_total_return": 56.68027679672525,
+            "median_excess_cagr": 8.651136268579418,
+            "outperform_rate": 0.8034188034188035,
+            "median_sharpe": 0.465816270717694,
+            "median_sharpe_excess": 0.24065758712309926,
+            "higher_sharpe_rate": 0.7891737891737892,
+            "sharpe_pairs": 351,
+            "median_drawdown": 47.623005105069915,
+            "median_exposure": 0.532520325203252,
+            "median_entries": 5.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5498575498575499,
+            "positive_rate": 0.8148148148148148
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 9.840762871196972,
+            "median_total_return": 59.71414596070987,
+            "median_excess_cagr": 8.112603104354477,
+            "outperform_rate": 0.8,
+            "median_sharpe": 0.49991356075130644,
+            "median_sharpe_excess": 0.257763302536104,
+            "higher_sharpe_rate": 0.8145454545454546,
+            "sharpe_pairs": 275,
+            "median_drawdown": 45.23384745534833,
+            "median_exposure": 0.532520325203252,
+            "median_entries": 5.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5781818181818181,
+            "positive_rate": 0.8763636363636363
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_BREADTH200_0.15_0.65",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.15,
+        "exit": 0.65
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.0480694856319408,
+            "median_total_return": 0.11138169066297054,
+            "median_excess_cagr": -2.4915452878153275,
+            "outperform_rate": 0.4215686274509804,
+            "median_sharpe": 0.12502431666154182,
+            "median_sharpe_excess": -0.18197341125097555,
+            "higher_sharpe_rate": 0.3867595818815331,
+            "sharpe_pairs": 287,
+            "median_drawdown": 13.578490429208784,
+            "median_exposure": 0.0924956369982548,
+            "median_entries": 1.0,
+            "activity_rate": 0.9379084967320261,
+            "all_cash": 19,
+            "cagr8_rate": 0.0718954248366013,
+            "positive_rate": 0.5032679738562091
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 0.7488241258179817,
+            "median_total_return": 1.7429969723483874,
+            "median_excess_cagr": -2.634307383541379,
+            "outperform_rate": 0.4092526690391459,
+            "median_sharpe": 0.1358658950077944,
+            "median_sharpe_excess": -0.1990884802412931,
+            "higher_sharpe_rate": 0.3821428571428571,
+            "sharpe_pairs": 280,
+            "median_drawdown": 13.872849055600266,
+            "median_exposure": 0.0924956369982548,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.07829181494661921,
+            "positive_rate": 0.5409252669039146
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 0.7739882295717759,
+            "median_total_return": 1.8018674459563844,
+            "median_excess_cagr": -2.512968072636667,
+            "outperform_rate": 0.4109090909090909,
+            "median_sharpe": 0.14045429572983437,
+            "median_sharpe_excess": -0.18511036973187167,
+            "higher_sharpe_rate": 0.38686131386861317,
+            "sharpe_pairs": 274,
+            "median_drawdown": 13.802441682951594,
+            "median_exposure": 0.0924956369982548,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.08,
+            "positive_rate": 0.5490909090909091
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 9.359226656069485,
+            "median_total_return": 50.825549776904346,
+            "median_excess_cagr": 9.885522637774185,
+            "outperform_rate": 0.7792553191489362,
+            "median_sharpe": 0.4976590664777482,
+            "median_sharpe_excess": 0.3052260942330537,
+            "higher_sharpe_rate": 0.8163841807909604,
+            "sharpe_pairs": 354,
+            "median_drawdown": 38.336510649259,
+            "median_exposure": 0.3203252032520325,
+            "median_entries": 3.0,
+            "activity_rate": 0.9414893617021277,
+            "all_cash": 22,
+            "cagr8_rate": 0.5585106382978723,
+            "positive_rate": 0.848404255319149
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 9.799864264211223,
+            "median_total_return": 56.49999903726921,
+            "median_excess_cagr": 9.747544836197498,
+            "outperform_rate": 0.792022792022792,
+            "median_sharpe": 0.49733137894650586,
+            "median_sharpe_excess": 0.30476858987821615,
+            "higher_sharpe_rate": 0.8148148148148148,
+            "sharpe_pairs": 351,
+            "median_drawdown": 39.541626263142845,
+            "median_exposure": 0.3203252032520325,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5925925925925926,
+            "positive_rate": 0.9031339031339032
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 9.659916651815315,
+            "median_total_return": 58.40670675432955,
+            "median_excess_cagr": 7.865251305756683,
+            "outperform_rate": 0.7781818181818182,
+            "median_sharpe": 0.49798675400899056,
+            "median_sharpe_excess": 0.2913273771594813,
+            "higher_sharpe_rate": 0.8181818181818182,
+            "sharpe_pairs": 275,
+            "median_drawdown": 38.586453980795845,
+            "median_exposure": 0.3203252032520325,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5854545454545454,
+            "positive_rate": 0.92
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_BREADTH200_0.25_0.75",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.25,
+        "exit": 0.75
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -1.9058493715683966,
+            "median_total_return": -4.18157485954716,
+            "median_excess_cagr": -4.448162416355733,
+            "outperform_rate": 0.3758169934640523,
+            "median_sharpe": -0.06556023738482597,
+            "median_sharpe_excess": -0.3241406714546201,
+            "higher_sharpe_rate": 0.2673611111111111,
+            "sharpe_pairs": 288,
+            "median_drawdown": 20.848477061250144,
+            "median_exposure": 0.16055846422338568,
+            "median_entries": 1.0,
+            "activity_rate": 0.9411764705882353,
+            "all_cash": 18,
+            "cagr8_rate": 0.0457516339869281,
+            "positive_rate": 0.3235294117647059
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -2.1462466486401044,
+            "median_total_return": -4.703983834202896,
+            "median_excess_cagr": -5.04370025262365,
+            "outperform_rate": 0.36298932384341637,
+            "median_sharpe": -0.05833169074032589,
+            "median_sharpe_excess": -0.32695002926545075,
+            "higher_sharpe_rate": 0.2642857142857143,
+            "sharpe_pairs": 280,
+            "median_drawdown": 21.947356120455154,
+            "median_exposure": 0.16055846422338568,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.0498220640569395,
+            "positive_rate": 0.35231316725978645
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -2.001446000332352,
+            "median_total_return": -4.574860623185684,
+            "median_excess_cagr": -5.04370025262365,
+            "outperform_rate": 0.36363636363636365,
+            "median_sharpe": -0.05655856965397137,
+            "median_sharpe_excess": -0.3251062085489964,
+            "higher_sharpe_rate": 0.2664233576642336,
+            "sharpe_pairs": 274,
+            "median_drawdown": 21.947356120455154,
+            "median_exposure": 0.16055846422338568,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.05090909090909091,
+            "positive_rate": 0.36
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 8.75775482379525,
+            "median_total_return": 49.519273984838485,
+            "median_excess_cagr": 9.310686757511522,
+            "outperform_rate": 0.7686170212765957,
+            "median_sharpe": 0.48678451708793025,
+            "median_sharpe_excess": 0.2574088429024516,
+            "higher_sharpe_rate": 0.7929155313351499,
+            "sharpe_pairs": 367,
+            "median_drawdown": 41.39442216440608,
+            "median_exposure": 0.4121951219512195,
+            "median_entries": 4.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.5159574468085106,
+            "positive_rate": 0.8111702127659575
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 9.294420939604887,
+            "median_total_return": 54.70541564998188,
+            "median_excess_cagr": 9.237296141167395,
+            "outperform_rate": 0.7834757834757835,
+            "median_sharpe": 0.49718432865577084,
+            "median_sharpe_excess": 0.25839166088242627,
+            "higher_sharpe_rate": 0.8034188034188035,
+            "sharpe_pairs": 351,
+            "median_drawdown": 42.59662211687629,
+            "median_exposure": 0.4121951219512195,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5441595441595442,
+            "positive_rate": 0.8461538461538461
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 9.561270809198952,
+            "median_total_return": 57.69715592549287,
+            "median_excess_cagr": 7.543838261971147,
+            "outperform_rate": 0.7781818181818182,
+            "median_sharpe": 0.5106554715789083,
+            "median_sharpe_excess": 0.26444541913079056,
+            "higher_sharpe_rate": 0.8109090909090909,
+            "sharpe_pairs": 275,
+            "median_drawdown": 41.403855570726755,
+            "median_exposure": 0.4121951219512195,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5636363636363636,
+            "positive_rate": 0.88
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_BREADTH250_0.15_0.65",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 250,
+        "entry": 0.15,
+        "exit": 0.65
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 0.7768750566827021,
+            "median_total_return": 1.8086415408580692,
+            "median_excess_cagr": -2.2449816302329344,
+            "outperform_rate": 0.4117647058823529,
+            "median_sharpe": 0.18110594735952526,
+            "median_sharpe_excess": -0.15391774968921212,
+            "higher_sharpe_rate": 0.3873239436619718,
+            "sharpe_pairs": 284,
+            "median_drawdown": 11.642085027883137,
+            "median_exposure": 0.07504363001745201,
+            "median_entries": 1.0,
+            "activity_rate": 0.9281045751633987,
+            "all_cash": 22,
+            "cagr8_rate": 0.05228758169934641,
+            "positive_rate": 0.5392156862745098
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 1.1679497414698092,
+            "median_total_return": 2.7260496570934434,
+            "median_excess_cagr": -2.245560903522459,
+            "outperform_rate": 0.40213523131672596,
+            "median_sharpe": 0.18629399999213375,
+            "median_sharpe_excess": -0.15391774968921212,
+            "higher_sharpe_rate": 0.3892857142857143,
+            "sharpe_pairs": 280,
+            "median_drawdown": 12.5531913140986,
+            "median_exposure": 0.07504363001745201,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.05693950177935943,
+            "positive_rate": 0.5836298932384342
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 1.1791957785696638,
+            "median_total_return": 2.75250108127707,
+            "median_excess_cagr": -2.245560903522459,
+            "outperform_rate": 0.4036363636363636,
+            "median_sharpe": 0.19269659570452682,
+            "median_sharpe_excess": -0.14011148914765476,
+            "higher_sharpe_rate": 0.39416058394160586,
+            "sharpe_pairs": 274,
+            "median_drawdown": 12.437814758592314,
+            "median_exposure": 0.07504363001745201,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.05818181818181818,
+            "positive_rate": 0.5927272727272728
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 10.395934488995074,
+            "median_total_return": 60.08175262194064,
+            "median_excess_cagr": 11.059887964512205,
+            "outperform_rate": 0.8031914893617021,
+            "median_sharpe": 0.5607533026715219,
+            "median_sharpe_excess": 0.37868681402896565,
+            "higher_sharpe_rate": 0.8591954022988506,
+            "sharpe_pairs": 348,
+            "median_drawdown": 37.875478487658455,
+            "median_exposure": 0.3276422764227642,
+            "median_entries": 3.0,
+            "activity_rate": 0.925531914893617,
+            "all_cash": 28,
+            "cagr8_rate": 0.5824468085106383,
+            "positive_rate": 0.8643617021276596
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 11.253227394456333,
+            "median_total_return": 68.14889444699715,
+            "median_excess_cagr": 11.026304115060576,
+            "outperform_rate": 0.8176638176638177,
+            "median_sharpe": 0.5607533026715219,
+            "median_sharpe_excess": 0.37868681402896565,
+            "higher_sharpe_rate": 0.8591954022988506,
+            "sharpe_pairs": 348,
+            "median_drawdown": 38.79796726522253,
+            "median_exposure": 0.3276422764227642,
+            "median_entries": 3.0,
+            "activity_rate": 0.9914529914529915,
+            "all_cash": 3,
+            "cagr8_rate": 0.6239316239316239,
+            "positive_rate": 0.9259259259259259
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 11.5062695827719,
+            "median_total_return": 72.16547535497564,
+            "median_excess_cagr": 9.945935862072552,
+            "outperform_rate": 0.8109090909090909,
+            "median_sharpe": 0.5810693763661107,
+            "median_sharpe_excess": 0.37810817441838795,
+            "higher_sharpe_rate": 0.8690909090909091,
+            "sharpe_pairs": 275,
+            "median_drawdown": 38.49531354554785,
+            "median_exposure": 0.3276422764227642,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.64,
+            "positive_rate": 0.9527272727272728
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_BREADTH250_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 250,
+        "entry": 0.2,
+        "exit": 0.7
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -0.7297296371583439,
+            "median_total_return": -1.6584247431175703,
+            "median_excess_cagr": -3.5248164536824556,
+            "outperform_rate": 0.3888888888888889,
+            "median_sharpe": -0.027077115750729387,
+            "median_sharpe_excess": -0.3239419475252818,
+            "higher_sharpe_rate": 0.3205574912891986,
+            "sharpe_pairs": 287,
+            "median_drawdown": 18.24812375099663,
+            "median_exposure": 0.1273996509598604,
+            "median_entries": 1.0,
+            "activity_rate": 0.9379084967320261,
+            "all_cash": 19,
+            "cagr8_rate": 0.0392156862745098,
+            "positive_rate": 0.38562091503267976
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -0.9493256654016569,
+            "median_total_return": -2.185124976433128,
+            "median_excess_cagr": -3.626185516960745,
+            "outperform_rate": 0.37722419928825623,
+            "median_sharpe": -0.017823955492056988,
+            "median_sharpe_excess": -0.33285280995960354,
+            "higher_sharpe_rate": 0.3142857142857143,
+            "sharpe_pairs": 280,
+            "median_drawdown": 19.131625634041495,
+            "median_exposure": 0.1273996509598604,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.042704626334519574,
+            "positive_rate": 0.41637010676156583
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -0.836092930697252,
+            "median_total_return": -1.925930193613179,
+            "median_excess_cagr": -3.626185516960745,
+            "outperform_rate": 0.3781818181818182,
+            "median_sharpe": -0.010488983931277502,
+            "median_sharpe_excess": -0.3143267367370254,
+            "higher_sharpe_rate": 0.3175182481751825,
+            "sharpe_pairs": 274,
+            "median_drawdown": 19.131625634041495,
+            "median_exposure": 0.1273996509598604,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.04363636363636364,
+            "positive_rate": 0.4218181818181818
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 11.889387926836235,
+            "median_total_return": 70.16720049736062,
+            "median_excess_cagr": 12.896655224108557,
+            "outperform_rate": 0.8271276595744681,
+            "median_sharpe": 0.6012778485474874,
+            "median_sharpe_excess": 0.3925032843266402,
+            "higher_sharpe_rate": 0.8764367816091954,
+            "sharpe_pairs": 348,
+            "median_drawdown": 38.73624051003929,
+            "median_exposure": 0.38130081300813007,
+            "median_entries": 3.0,
+            "activity_rate": 0.925531914893617,
+            "all_cash": 28,
+            "cagr8_rate": 0.6117021276595744,
+            "positive_rate": 0.848404255319149
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 13.007502139197925,
+            "median_total_return": 78.96454583711996,
+            "median_excess_cagr": 12.734502170711991,
+            "outperform_rate": 0.8433048433048433,
+            "median_sharpe": 0.6012778485474874,
+            "median_sharpe_excess": 0.3925032843266402,
+            "higher_sharpe_rate": 0.8764367816091954,
+            "sharpe_pairs": 348,
+            "median_drawdown": 39.732780606037586,
+            "median_exposure": 0.38130081300813007,
+            "median_entries": 3.0,
+            "activity_rate": 0.9914529914529915,
+            "all_cash": 3,
+            "cagr8_rate": 0.6552706552706553,
+            "positive_rate": 0.9088319088319088
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 13.670944555371122,
+            "median_total_return": 89.49589843557297,
+            "median_excess_cagr": 11.346194067398429,
+            "outperform_rate": 0.8327272727272728,
+            "median_sharpe": 0.6410826231079282,
+            "median_sharpe_excess": 0.3767617738202088,
+            "higher_sharpe_rate": 0.8763636363636363,
+            "sharpe_pairs": 275,
+            "median_drawdown": 38.897285997179964,
+            "median_exposure": 0.38130081300813007,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.6581818181818182,
+            "positive_rate": 0.9345454545454546
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_BREADTH250_0.25_0.75",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 250,
+        "entry": 0.25,
+        "exit": 0.75
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -2.0244875892953984,
+            "median_total_return": -4.626812504909666,
+            "median_excess_cagr": -4.350157461300485,
+            "outperform_rate": 0.35294117647058826,
+            "median_sharpe": -0.11241760106045338,
+            "median_sharpe_excess": -0.4019473568697771,
+            "higher_sharpe_rate": 0.2613240418118467,
+            "sharpe_pairs": 287,
+            "median_drawdown": 18.570026255269546,
+            "median_exposure": 0.13263525305410123,
+            "median_entries": 1.0,
+            "activity_rate": 0.9379084967320261,
+            "all_cash": 19,
+            "cagr8_rate": 0.02287581699346405,
+            "positive_rate": 0.2875816993464052
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -2.2948068615143757,
+            "median_total_return": -5.235203172495861,
+            "median_excess_cagr": -4.392228940817766,
+            "outperform_rate": 0.3416370106761566,
+            "median_sharpe": -0.1107759292801535,
+            "median_sharpe_excess": -0.4125695366552058,
+            "higher_sharpe_rate": 0.2571428571428571,
+            "sharpe_pairs": 280,
+            "median_drawdown": 19.425272888764646,
+            "median_exposure": 0.13263525305410123,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.02491103202846975,
+            "positive_rate": 0.30604982206405695
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -2.18169898454057,
+            "median_total_return": -4.980910900089275,
+            "median_excess_cagr": -4.392228940817766,
+            "outperform_rate": 0.3418181818181818,
+            "median_sharpe": -0.10352643663087926,
+            "median_sharpe_excess": -0.399742732342259,
+            "higher_sharpe_rate": 0.2591240875912409,
+            "sharpe_pairs": 274,
+            "median_drawdown": 19.425272888764646,
+            "median_exposure": 0.13263525305410123,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.025454545454545455,
+            "positive_rate": 0.31272727272727274
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 6.2955304810799255,
+            "median_total_return": 30.901328540815676,
+            "median_excess_cagr": 7.9317709023993626,
+            "outperform_rate": 0.7207446808510638,
+            "median_sharpe": 0.3910541073359247,
+            "median_sharpe_excess": 0.17926331264026174,
+            "higher_sharpe_rate": 0.7060439560439561,
+            "sharpe_pairs": 364,
+            "median_drawdown": 48.89187650940394,
+            "median_exposure": 0.591869918699187,
+            "median_entries": 3.0,
+            "activity_rate": 0.9680851063829787,
+            "all_cash": 12,
+            "cagr8_rate": 0.43882978723404253,
+            "positive_rate": 0.723404255319149
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 6.918433602211849,
+            "median_total_return": 35.1401260448748,
+            "median_excess_cagr": 7.733918951737495,
+            "outperform_rate": 0.7293447293447294,
+            "median_sharpe": 0.39404910565303586,
+            "median_sharpe_excess": 0.17555023346483278,
+            "higher_sharpe_rate": 0.7094017094017094,
+            "sharpe_pairs": 351,
+            "median_drawdown": 49.586470696766746,
+            "median_exposure": 0.591869918699187,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.4672364672364672,
+            "positive_rate": 0.7549857549857549
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 6.059116949347509,
+            "median_total_return": 34.10431776356293,
+            "median_excess_cagr": 5.680298967293606,
+            "outperform_rate": 0.7090909090909091,
+            "median_sharpe": 0.36844436810130876,
+            "median_sharpe_excess": 0.14333854098261412,
+            "higher_sharpe_rate": 0.6836363636363636,
+            "sharpe_pairs": 275,
+            "median_drawdown": 50.21232076053288,
+            "median_exposure": 0.591869918699187,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.44727272727272727,
+            "positive_rate": 0.7490909090909091
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_FIXED_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7,
+        "formation_date": "2016-09-06"
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -2.775592938809374,
+            "median_total_return": -6.190130925489351,
+            "median_excess_cagr": -5.209177056611763,
+            "outperform_rate": 0.35947712418300654,
+            "median_sharpe": -0.13285791518676265,
+            "median_sharpe_excess": -0.391089040737847,
+            "higher_sharpe_rate": 0.2569444444444444,
+            "sharpe_pairs": 288,
+            "median_drawdown": 20.765198702827693,
+            "median_exposure": 0.15881326352530542,
+            "median_entries": 1.0,
+            "activity_rate": 0.9411764705882353,
+            "all_cash": 18,
+            "cagr8_rate": 0.032679738562091505,
+            "positive_rate": 0.3006535947712418
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -2.8821406010015704,
+            "median_total_return": -6.54944127487359,
+            "median_excess_cagr": -5.636290563271696,
+            "outperform_rate": 0.3487544483985765,
+            "median_sharpe": -0.12301278372620417,
+            "median_sharpe_excess": -0.3987866961852966,
+            "higher_sharpe_rate": 0.25357142857142856,
+            "sharpe_pairs": 280,
+            "median_drawdown": 21.942867509408572,
+            "median_exposure": 0.15881326352530542,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.03558718861209965,
+            "positive_rate": 0.3274021352313167
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -2.856265439438177,
+            "median_total_return": -6.491761686222586,
+            "median_excess_cagr": -5.636290563271696,
+            "outperform_rate": 0.3490909090909091,
+            "median_sharpe": -0.11805259400873733,
+            "median_sharpe_excess": -0.3945114596970736,
+            "higher_sharpe_rate": 0.25547445255474455,
+            "sharpe_pairs": 274,
+            "median_drawdown": 21.942867509408572,
+            "median_exposure": 0.15881326352530542,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.03636363636363636,
+            "positive_rate": 0.33454545454545453
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 9.455498624479297,
+            "median_total_return": 52.061005543594106,
+            "median_excess_cagr": 9.43029614951617,
+            "outperform_rate": 0.7792553191489362,
+            "median_sharpe": 0.498625374908903,
+            "median_sharpe_excess": 0.3002048097478711,
+            "higher_sharpe_rate": 0.8147138964577657,
+            "sharpe_pairs": 367,
+            "median_drawdown": 38.729055997662,
+            "median_exposure": 0.35609756097560974,
+            "median_entries": 4.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.5771276595744681,
+            "positive_rate": 0.8643617021276596
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 9.936030739141199,
+            "median_total_return": 55.761242730110624,
+            "median_excess_cagr": 9.307688605698438,
+            "outperform_rate": 0.792022792022792,
+            "median_sharpe": 0.5001131202258479,
+            "median_sharpe_excess": 0.29957201947660594,
+            "higher_sharpe_rate": 0.8148148148148148,
+            "sharpe_pairs": 351,
+            "median_drawdown": 39.94137308572191,
+            "median_exposure": 0.35609756097560974,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.6011396011396012,
+            "positive_rate": 0.8974358974358975
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 9.750009355252075,
+            "median_total_return": 59.056963619904224,
+            "median_excess_cagr": 8.11375244301007,
+            "outperform_rate": 0.7818181818181819,
+            "median_sharpe": 0.507066201132803,
+            "median_sharpe_excess": 0.2850097956368081,
+            "higher_sharpe_rate": 0.8181818181818182,
+            "sharpe_pairs": 275,
+            "median_drawdown": 39.03620653475427,
+            "median_exposure": 0.35609756097560974,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.6072727272727273,
+            "positive_rate": 0.92
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_INITIAL_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7,
+        "initial_hold": true
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 1.2110936197817668,
+            "median_total_return": 2.006075795208695,
+            "median_excess_cagr": -0.664574198087331,
+            "outperform_rate": 0.43137254901960786,
+            "median_sharpe": 0.16608581126583122,
+            "median_sharpe_excess": -0.053718823055921947,
+            "higher_sharpe_rate": 0.41830065359477125,
+            "sharpe_pairs": 306,
+            "median_drawdown": 25.509969958661287,
+            "median_exposure": 0.506108202443281,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.238562091503268,
+            "positive_rate": 0.5522875816993464
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 1.325381248783608,
+            "median_total_return": 3.0966911552760656,
+            "median_excess_cagr": -1.9255074564360264,
+            "outperform_rate": 0.4483985765124555,
+            "median_sharpe": 0.17169726109362557,
+            "median_sharpe_excess": -0.09092075371503502,
+            "higher_sharpe_rate": 0.4377224199288256,
+            "sharpe_pairs": 281,
+            "median_drawdown": 25.513311455703448,
+            "median_exposure": 0.506108202443281,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.2277580071174377,
+            "positive_rate": 0.5622775800711743
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 1.4501594767886372,
+            "median_total_return": 3.390995927612228,
+            "median_excess_cagr": -1.8984068611302973,
+            "outperform_rate": 0.4509090909090909,
+            "median_sharpe": 0.17740415243179042,
+            "median_sharpe_excess": -0.08743024960600199,
+            "higher_sharpe_rate": 0.44,
+            "sharpe_pairs": 275,
+            "median_drawdown": 25.513311455703448,
+            "median_exposure": 0.506108202443281,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.2290909090909091,
+            "positive_rate": 0.5672727272727273
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 10.6439906037462,
+            "median_total_return": 58.58384475117711,
+            "median_excess_cagr": 10.257132492251387,
+            "outperform_rate": 0.7898936170212766,
+            "median_sharpe": 0.5351633449650897,
+            "median_sharpe_excess": 0.3475705440366619,
+            "higher_sharpe_rate": 0.8191489361702128,
+            "sharpe_pairs": 376,
+            "median_drawdown": 39.56880433213572,
+            "median_exposure": 0.3235772357723577,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5877659574468085,
+            "positive_rate": 0.8909574468085106
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 10.760779116037478,
+            "median_total_return": 64.30001173693893,
+            "median_excess_cagr": 10.351831610070905,
+            "outperform_rate": 0.8062678062678063,
+            "median_sharpe": 0.5371129882934359,
+            "median_sharpe_excess": 0.3575349988401729,
+            "higher_sharpe_rate": 0.8404558404558404,
+            "sharpe_pairs": 351,
+            "median_drawdown": 40.14177687881679,
+            "median_exposure": 0.3235772357723577,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5982905982905983,
+            "positive_rate": 0.9202279202279202
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 10.64041568271068,
+            "median_total_return": 65.5991177904717,
+            "median_excess_cagr": 9.24447157932493,
+            "outperform_rate": 0.7963636363636364,
+            "median_sharpe": 0.5371129882934359,
+            "median_sharpe_excess": 0.3525461760379822,
+            "higher_sharpe_rate": 0.84,
+            "sharpe_pairs": 275,
+            "median_drawdown": 38.586453980795845,
+            "median_exposure": 0.3235772357723577,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5927272727272728,
+            "positive_rate": 0.9418181818181818
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_weekly_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7,
+        "review": "weekly"
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -0.6883103661541101,
+            "median_total_return": -1.587049533634044,
+            "median_excess_cagr": -3.9959059006672404,
+            "outperform_rate": 0.3790849673202614,
+            "median_sharpe": -0.03666380362346712,
+            "median_sharpe_excess": -0.36726469949801555,
+            "higher_sharpe_rate": 0.3159722222222222,
+            "sharpe_pairs": 288,
+            "median_drawdown": 18.41185691986506,
+            "median_exposure": 0.12914485165794065,
+            "median_entries": 1.0,
+            "activity_rate": 0.9411764705882353,
+            "all_cash": 18,
+            "cagr8_rate": 0.032679738562091505,
+            "positive_rate": 0.3562091503267974
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -0.9262256619192777,
+            "median_total_return": -2.132279684191829,
+            "median_excess_cagr": -4.008369945787149,
+            "outperform_rate": 0.3665480427046263,
+            "median_sharpe": -0.02380923012526134,
+            "median_sharpe_excess": -0.36963655787532157,
+            "higher_sharpe_rate": 0.3107142857142857,
+            "sharpe_pairs": 280,
+            "median_drawdown": 19.131625634041495,
+            "median_exposure": 0.12914485165794065,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.03558718861209965,
+            "positive_rate": 0.38434163701067614
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -0.8717887676985892,
+            "median_total_return": -2.0076816285100163,
+            "median_excess_cagr": -4.008369945787149,
+            "outperform_rate": 0.36727272727272725,
+            "median_sharpe": -0.017947360532439748,
+            "median_sharpe_excess": -0.36581489872283324,
+            "higher_sharpe_rate": 0.31386861313868614,
+            "sharpe_pairs": 274,
+            "median_drawdown": 19.131625634041495,
+            "median_exposure": 0.12914485165794065,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.03636363636363636,
+            "positive_rate": 0.3890909090909091
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 10.283000069409798,
+            "median_total_return": 57.089062738103706,
+            "median_excess_cagr": 10.898618665347998,
+            "outperform_rate": 0.7978723404255319,
+            "median_sharpe": 0.5470727879685746,
+            "median_sharpe_excess": 0.3673141661728738,
+            "higher_sharpe_rate": 0.8587570621468926,
+            "sharpe_pairs": 354,
+            "median_drawdown": 38.37042757313568,
+            "median_exposure": 0.33170731707317075,
+            "median_entries": 3.0,
+            "activity_rate": 0.9414893617021277,
+            "all_cash": 22,
+            "cagr8_rate": 0.5957446808510638,
+            "positive_rate": 0.875
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 11.25463215759539,
+            "median_total_return": 62.323424007095475,
+            "median_excess_cagr": 10.79008709393171,
+            "outperform_rate": 0.811965811965812,
+            "median_sharpe": 0.5467906050709521,
+            "median_sharpe_excess": 0.3626766895747898,
+            "higher_sharpe_rate": 0.8575498575498576,
+            "sharpe_pairs": 351,
+            "median_drawdown": 39.641872145522186,
+            "median_exposure": 0.33170731707317075,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.6324786324786325,
+            "positive_rate": 0.9287749287749287
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 11.096066471004896,
+            "median_total_return": 69.02917352475421,
+            "median_excess_cagr": 9.889470410709489,
+            "outperform_rate": 0.8,
+            "median_sharpe": 0.5483583965105983,
+            "median_sharpe_excess": 0.3425143380540753,
+            "higher_sharpe_rate": 0.8618181818181818,
+            "sharpe_pairs": 275,
+            "median_drawdown": 38.459417813819194,
+            "median_exposure": 0.33170731707317075,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.6218181818181818,
+            "positive_rate": 0.9454545454545454
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_monthly_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7,
+        "review": "monthly"
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -0.5724942074430639,
+            "median_total_return": -1.3210249946078723,
+            "median_excess_cagr": -3.861211737494047,
+            "outperform_rate": 0.38235294117647056,
+            "median_sharpe": -0.08059305335439343,
+            "median_sharpe_excess": -0.3409980803413632,
+            "higher_sharpe_rate": 0.29965156794425085,
+            "sharpe_pairs": 287,
+            "median_drawdown": 11.740637977449158,
+            "median_exposure": 0.06806282722513089,
+            "median_entries": 1.0,
+            "activity_rate": 0.9379084967320261,
+            "all_cash": 19,
+            "cagr8_rate": 0.0196078431372549,
+            "positive_rate": 0.38562091503267976
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -0.8897022014325184,
+            "median_total_return": -2.0486927921210207,
+            "median_excess_cagr": -3.8736524374260677,
+            "outperform_rate": 0.3701067615658363,
+            "median_sharpe": -0.07001787865161865,
+            "median_sharpe_excess": -0.3467061759614697,
+            "higher_sharpe_rate": 0.29642857142857143,
+            "sharpe_pairs": 280,
+            "median_drawdown": 12.55319131409861,
+            "median_exposure": 0.06806282722513089,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.021352313167259787,
+            "positive_rate": 0.4199288256227758
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -0.7702487311470607,
+            "median_total_return": -1.7750306315657993,
+            "median_excess_cagr": -3.8736524374260677,
+            "outperform_rate": 0.3709090909090909,
+            "median_sharpe": -0.06275931397146012,
+            "median_sharpe_excess": -0.33892853513679166,
+            "higher_sharpe_rate": 0.29927007299270075,
+            "sharpe_pairs": 274,
+            "median_drawdown": 12.437814758592324,
+            "median_exposure": 0.06806282722513089,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.02181818181818182,
+            "positive_rate": 0.4290909090909091
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 12.646255144505481,
+            "median_total_return": 71.05234135610485,
+            "median_excess_cagr": 14.03670814826523,
+            "outperform_rate": 0.8324468085106383,
+            "median_sharpe": 0.7278672340868099,
+            "median_sharpe_excess": 0.5778732924666223,
+            "higher_sharpe_rate": 0.9005681818181818,
+            "sharpe_pairs": 352,
+            "median_drawdown": 25.757511670466187,
+            "median_exposure": 0.23008130081300812,
+            "median_entries": 3.0,
+            "activity_rate": 0.9361702127659575,
+            "all_cash": 24,
+            "cagr8_rate": 0.6622340425531915,
+            "positive_rate": 0.9122340425531915
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 13.583959610678153,
+            "median_total_return": 80.72309445667851,
+            "median_excess_cagr": 13.968943180819915,
+            "outperform_rate": 0.8490028490028491,
+            "median_sharpe": 0.7249657993165499,
+            "median_sharpe_excess": 0.5694924780546669,
+            "higher_sharpe_rate": 0.9,
+            "sharpe_pairs": 350,
+            "median_drawdown": 26.35815094983638,
+            "median_exposure": 0.23008130081300812,
+            "median_entries": 3.0,
+            "activity_rate": 0.9971509971509972,
+            "all_cash": 1,
+            "cagr8_rate": 0.7037037037037037,
+            "positive_rate": 0.9715099715099715
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 13.726112420084835,
+            "median_total_return": 89.9551123021285,
+            "median_excess_cagr": 12.541134879302751,
+            "outperform_rate": 0.850909090909091,
+            "median_sharpe": 0.7634199029392237,
+            "median_sharpe_excess": 0.5697466898095404,
+            "higher_sharpe_rate": 0.9090909090909091,
+            "sharpe_pairs": 275,
+            "median_drawdown": 26.046215739537093,
+            "median_exposure": 0.23008130081300812,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.7163636363636363,
+            "positive_rate": 0.9854545454545455
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_FIXED_0.3_0.8",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.3,
+        "exit": 0.8,
+        "formation_date": "2016-09-06"
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -3.9838435630261237,
+            "median_total_return": -8.763950887423672,
+            "median_excess_cagr": -6.278043961055502,
+            "outperform_rate": 0.3300653594771242,
+            "median_sharpe": -0.20801661711119118,
+            "median_sharpe_excess": -0.47378311028944375,
+            "higher_sharpe_rate": 0.22569444444444445,
+            "sharpe_pairs": 288,
+            "median_drawdown": 23.925971222997827,
+            "median_exposure": 0.2198952879581152,
+            "median_entries": 1.0,
+            "activity_rate": 0.9411764705882353,
+            "all_cash": 18,
+            "cagr8_rate": 0.05228758169934641,
+            "positive_rate": 0.23202614379084968
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -4.247208087504717,
+            "median_total_return": -9.56374527301833,
+            "median_excess_cagr": -6.451964569098845,
+            "outperform_rate": 0.31316725978647686,
+            "median_sharpe": -0.20031375181814232,
+            "median_sharpe_excess": -0.4806199489258463,
+            "higher_sharpe_rate": 0.22142857142857142,
+            "sharpe_pairs": 280,
+            "median_drawdown": 24.71625681784785,
+            "median_exposure": 0.2198952879581152,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.05693950177935943,
+            "positive_rate": 0.24555160142348753
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -4.145736218301355,
+            "median_total_return": -9.341608870226015,
+            "median_excess_cagr": -6.451964569098845,
+            "outperform_rate": 0.31272727272727274,
+            "median_sharpe": -0.1948735415386751,
+            "median_sharpe_excess": -0.4806199489258463,
+            "higher_sharpe_rate": 0.22262773722627738,
+            "sharpe_pairs": 274,
+            "median_drawdown": 24.501599187311875,
+            "median_exposure": 0.2198952879581152,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.05818181818181818,
+            "positive_rate": 0.2509090909090909
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 7.23274914316967,
+            "median_total_return": 40.13045359582391,
+            "median_excess_cagr": 9.027951952012874,
+            "outperform_rate": 0.800531914893617,
+            "median_sharpe": 0.4096693562928745,
+            "median_sharpe_excess": 0.22001770810389543,
+            "higher_sharpe_rate": 0.782016348773842,
+            "sharpe_pairs": 367,
+            "median_drawdown": 49.128770500533996,
+            "median_exposure": 0.6447154471544716,
+            "median_entries": 4.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.4787234042553192,
+            "positive_rate": 0.7579787234042553
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 8.111828354373207,
+            "median_total_return": 46.60378518599651,
+            "median_excess_cagr": 8.989712125600368,
+            "outperform_rate": 0.8176638176638177,
+            "median_sharpe": 0.427289656676386,
+            "median_sharpe_excess": 0.21416546351650478,
+            "higher_sharpe_rate": 0.7891737891737892,
+            "sharpe_pairs": 351,
+            "median_drawdown": 50.49704048176679,
+            "median_exposure": 0.6447154471544716,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5071225071225072,
+            "positive_rate": 0.7834757834757835
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 8.84619121429191,
+            "median_total_return": 52.629270810596076,
+            "median_excess_cagr": 8.75755036704563,
+            "outperform_rate": 0.8254545454545454,
+            "median_sharpe": 0.4443682001318131,
+            "median_sharpe_excess": 0.22218858410107234,
+            "higher_sharpe_rate": 0.8254545454545454,
+            "sharpe_pairs": 275,
+            "median_drawdown": 48.93761422656158,
+            "median_exposure": 0.6447154471544716,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5381818181818182,
+            "positive_rate": 0.8436363636363636
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_INITIAL_0.3_0.8",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.3,
+        "exit": 0.8,
+        "initial_hold": true
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 2.541132672805335,
+            "median_total_return": 5.2208158101631374,
+            "median_excess_cagr": 0.0,
+            "outperform_rate": 0.45098039215686275,
+            "median_sharpe": 0.23197407247122498,
+            "median_sharpe_excess": -0.001262870314781367,
+            "higher_sharpe_rate": 0.43790849673202614,
+            "sharpe_pairs": 306,
+            "median_drawdown": 28.103898144732163,
+            "median_exposure": 0.5846422338568935,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.30392156862745096,
+            "positive_rate": 0.5947712418300654
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 2.5718880713089476,
+            "median_total_return": 6.058163788178983,
+            "median_excess_cagr": -0.9173721263937118,
+            "outperform_rate": 0.47330960854092524,
+            "median_sharpe": 0.23670825086589736,
+            "median_sharpe_excess": -0.04084355090575811,
+            "higher_sharpe_rate": 0.45907473309608543,
+            "sharpe_pairs": 281,
+            "median_drawdown": 28.148149377832166,
+            "median_exposure": 0.5846422338568935,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.298932384341637,
+            "positive_rate": 0.604982206405694
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 2.573452110770802,
+            "median_total_return": 6.0619096172601195,
+            "median_excess_cagr": -0.8784847612982816,
+            "outperform_rate": 0.4763636363636364,
+            "median_sharpe": 0.23761106518489827,
+            "median_sharpe_excess": -0.039650232588241074,
+            "higher_sharpe_rate": 0.4618181818181818,
+            "sharpe_pairs": 275,
+            "median_drawdown": 28.148149377832166,
+            "median_exposure": 0.5846422338568935,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.3054545454545455,
+            "positive_rate": 0.610909090909091
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 8.022357695045512,
+            "median_total_return": 43.04589011832122,
+            "median_excess_cagr": 9.044464097637533,
+            "outperform_rate": 0.8138297872340425,
+            "median_sharpe": 0.42637058296228886,
+            "median_sharpe_excess": 0.2205577398330319,
+            "higher_sharpe_rate": 0.8191489361702128,
+            "sharpe_pairs": 376,
+            "median_drawdown": 50.976294345659554,
+            "median_exposure": 0.6585365853658537,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5053191489361702,
+            "positive_rate": 0.7792553191489362
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 8.143970047850502,
+            "median_total_return": 46.8821402597819,
+            "median_excess_cagr": 9.162215903489257,
+            "outperform_rate": 0.8347578347578347,
+            "median_sharpe": 0.4334232724334428,
+            "median_sharpe_excess": 0.22971092913155622,
+            "higher_sharpe_rate": 0.8404558404558404,
+            "sharpe_pairs": 351,
+            "median_drawdown": 52.01149791825881,
+            "median_exposure": 0.6585365853658537,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5156695156695157,
+            "positive_rate": 0.8005698005698005
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 8.309899768151464,
+            "median_total_return": 48.91463305168509,
+            "median_excess_cagr": 8.07431744487188,
+            "outperform_rate": 0.8290909090909091,
+            "median_sharpe": 0.4370819798142842,
+            "median_sharpe_excess": 0.21760598856545893,
+            "higher_sharpe_rate": 0.8363636363636363,
+            "sharpe_pairs": 275,
+            "median_drawdown": 49.278544782387534,
+            "median_exposure": 0.6585365853658537,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5272727272727272,
+            "positive_rate": 0.8327272727272728
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_weekly_0.3_0.8",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.3,
+        "exit": 0.8,
+        "review": "weekly"
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -3.5690710418403713,
+            "median_total_return": -7.845581080587561,
+            "median_excess_cagr": -5.425525301936396,
+            "outperform_rate": 0.3333333333333333,
+            "median_sharpe": -0.19248625578517709,
+            "median_sharpe_excess": -0.4541810855307514,
+            "higher_sharpe_rate": 0.22916666666666666,
+            "sharpe_pairs": 288,
+            "median_drawdown": 21.99517812825487,
+            "median_exposure": 0.17277486910994763,
+            "median_entries": 1.0,
+            "activity_rate": 0.9411764705882353,
+            "all_cash": 18,
+            "cagr8_rate": 0.042483660130718956,
+            "positive_rate": 0.24836601307189543
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -3.7920292008866374,
+            "median_total_return": -8.563500398196645,
+            "median_excess_cagr": -5.84368034821069,
+            "outperform_rate": 0.3167259786476868,
+            "median_sharpe": -0.18643046971006838,
+            "median_sharpe_excess": -0.4711165149044505,
+            "higher_sharpe_rate": 0.225,
+            "sharpe_pairs": 280,
+            "median_drawdown": 22.586857241909776,
+            "median_exposure": 0.17277486910994763,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.046263345195729534,
+            "positive_rate": 0.2669039145907473
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -3.779414301382522,
+            "median_total_return": -8.537099766720068,
+            "median_excess_cagr": -5.84368034821069,
+            "outperform_rate": 0.31636363636363635,
+            "median_sharpe": -0.18177643255478448,
+            "median_sharpe_excess": -0.4541810855307514,
+            "higher_sharpe_rate": 0.22627737226277372,
+            "sharpe_pairs": 274,
+            "median_drawdown": 22.44521025701729,
+            "median_exposure": 0.17277486910994763,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.04727272727272727,
+            "positive_rate": 0.2727272727272727
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 2.945314875538474,
+            "median_total_return": 14.26455160876311,
+            "median_excess_cagr": 4.825146981461604,
+            "outperform_rate": 0.699468085106383,
+            "median_sharpe": 0.29184255600065107,
+            "median_sharpe_excess": 0.11297024549650048,
+            "higher_sharpe_rate": 0.6757493188010899,
+            "sharpe_pairs": 367,
+            "median_drawdown": 52.99291636463099,
+            "median_exposure": 0.7113821138211383,
+            "median_entries": 3.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.3670212765957447,
+            "positive_rate": 0.6409574468085106
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 3.3980202472157828,
+            "median_total_return": 17.914300961038165,
+            "median_excess_cagr": 4.769306467996191,
+            "outperform_rate": 0.7094017094017094,
+            "median_sharpe": 0.2963889706737194,
+            "median_sharpe_excess": 0.10854500862017744,
+            "higher_sharpe_rate": 0.6780626780626781,
+            "sharpe_pairs": 351,
+            "median_drawdown": 54.160948205280455,
+            "median_exposure": 0.7113821138211383,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.38461538461538464,
+            "positive_rate": 0.6581196581196581
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 3.824763495360761,
+            "median_total_return": 20.59105004746502,
+            "median_excess_cagr": 4.108345965493299,
+            "outperform_rate": 0.6945454545454546,
+            "median_sharpe": 0.30221250403784267,
+            "median_sharpe_excess": 0.10251784388165544,
+            "higher_sharpe_rate": 0.68,
+            "sharpe_pairs": 275,
+            "median_drawdown": 52.96069809455637,
+            "median_exposure": 0.7113821138211383,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.38545454545454544,
+            "positive_rate": 0.6836363636363636
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_monthly_0.3_0.8",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.3,
+        "exit": 0.8,
+        "review": "monthly"
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -2.9363348334799144,
+            "median_total_return": -6.6413702412048075,
+            "median_excess_cagr": -5.488897605434479,
+            "outperform_rate": 0.3464052287581699,
+            "median_sharpe": -0.19423901360215473,
+            "median_sharpe_excess": -0.4661687910016022,
+            "higher_sharpe_rate": 0.22996515679442509,
+            "sharpe_pairs": 287,
+            "median_drawdown": 19.46998567531159,
+            "median_exposure": 0.13787085514834205,
+            "median_entries": 1.0,
+            "activity_rate": 0.9379084967320261,
+            "all_cash": 19,
+            "cagr8_rate": 0.0196078431372549,
+            "positive_rate": 0.24183006535947713
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -3.2591734199586053,
+            "median_total_return": -7.387610165926239,
+            "median_excess_cagr": -5.503815712265936,
+            "outperform_rate": 0.33451957295373663,
+            "median_sharpe": -0.18571775721308603,
+            "median_sharpe_excess": -0.4743146689991057,
+            "higher_sharpe_rate": 0.22142857142857142,
+            "sharpe_pairs": 280,
+            "median_drawdown": 20.3931433130524,
+            "median_exposure": 0.13787085514834205,
+            "median_entries": 1.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.021352313167259787,
+            "positive_rate": 0.26334519572953735
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -3.213427317740114,
+            "median_total_return": -7.28614226616372,
+            "median_excess_cagr": -5.503815712265936,
+            "outperform_rate": 0.33454545454545453,
+            "median_sharpe": -0.17696687208437883,
+            "median_sharpe_excess": -0.4743146689991057,
+            "higher_sharpe_rate": 0.22262773722627738,
+            "sharpe_pairs": 274,
+            "median_drawdown": 20.303378221207403,
+            "median_exposure": 0.13787085514834205,
+            "median_entries": 1.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.02181818181818182,
+            "positive_rate": 0.2690909090909091
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 4.588969979398117,
+            "median_total_return": 23.59953403554266,
+            "median_excess_cagr": 5.295740489463524,
+            "outperform_rate": 0.7207446808510638,
+            "median_sharpe": 0.3274935943945879,
+            "median_sharpe_excess": 0.1132074099875771,
+            "higher_sharpe_rate": 0.7057220708446866,
+            "sharpe_pairs": 367,
+            "median_drawdown": 53.23871040496387,
+            "median_exposure": 0.7130081300813008,
+            "median_entries": 3.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.39893617021276595,
+            "positive_rate": 0.6808510638297872
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 5.153731505546855,
+            "median_total_return": 26.389666648554687,
+            "median_excess_cagr": 5.227602707814195,
+            "outperform_rate": 0.7321937321937322,
+            "median_sharpe": 0.33335778130485105,
+            "median_sharpe_excess": 0.1132074099875771,
+            "higher_sharpe_rate": 0.7122507122507122,
+            "sharpe_pairs": 351,
+            "median_drawdown": 54.45138494289594,
+            "median_exposure": 0.7130081300813008,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.4188034188034188,
+            "positive_rate": 0.7065527065527065
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 5.153731505546855,
+            "median_total_return": 28.490048964694626,
+            "median_excess_cagr": 4.506280123711747,
+            "outperform_rate": 0.7163636363636363,
+            "median_sharpe": 0.33335778130485105,
+            "median_sharpe_excess": 0.10485485129443539,
+            "higher_sharpe_rate": 0.7163636363636363,
+            "sharpe_pairs": 275,
+            "median_drawdown": 53.825152604689606,
+            "median_exposure": 0.7130081300813008,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.4109090909090909,
+            "positive_rate": 0.7236363636363636
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_MARKET_BAG",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.3,
+                "exit": 0.8
+              }
+            }
+          }
+        ]
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -3.1320245116216396,
+            "median_total_return": -6.913060418927664,
+            "median_excess_cagr": -5.790716936862339,
+            "outperform_rate": 0.3431372549019608,
+            "median_sharpe": -0.16004395191162565,
+            "median_sharpe_excess": -0.43902820315645397,
+            "higher_sharpe_rate": 0.24305555555555555,
+            "sharpe_pairs": 288,
+            "median_drawdown": 21.617571738837967,
+            "median_exposure": 0.18594356378672067,
+            "median_entries": 2.0,
+            "activity_rate": 0.9411764705882353,
+            "all_cash": 18,
+            "cagr8_rate": 0.0392156862745098,
+            "positive_rate": 0.27124183006535946
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -3.4089297122439466,
+            "median_total_return": -7.71933800322161,
+            "median_excess_cagr": -5.8919583789511005,
+            "outperform_rate": 0.3309608540925267,
+            "median_sharpe": -0.1558866657012868,
+            "median_sharpe_excess": -0.4520412025774842,
+            "higher_sharpe_rate": 0.2392857142857143,
+            "sharpe_pairs": 280,
+            "median_drawdown": 22.3515767814222,
+            "median_exposure": 0.18595572337035474,
+            "median_entries": 2.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.042704626334519574,
+            "positive_rate": 0.29537366548042704
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -3.367785628387565,
+            "median_total_return": -7.6282663978773595,
+            "median_excess_cagr": -5.8919583789511005,
+            "outperform_rate": 0.33090909090909093,
+            "median_sharpe": -0.15100822587071108,
+            "median_sharpe_excess": -0.43902820315645397,
+            "higher_sharpe_rate": 0.24087591240875914,
+            "sharpe_pairs": 274,
+            "median_drawdown": 22.268910551190856,
+            "median_exposure": 0.1859539610980231,
+            "median_entries": 2.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.04363636363636364,
+            "positive_rate": 0.3018181818181818
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 8.900619009647414,
+            "median_total_return": 48.81802334866747,
+            "median_excess_cagr": 9.724240194927301,
+            "outperform_rate": 0.8085106382978723,
+            "median_sharpe": 0.4979923569800333,
+            "median_sharpe_excess": 0.2949976128465445,
+            "higher_sharpe_rate": 0.8365122615803815,
+            "sharpe_pairs": 367,
+            "median_drawdown": 41.3496488919977,
+            "median_exposure": 0.4853958522577679,
+            "median_entries": 7.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.5398936170212766,
+            "positive_rate": 0.8430851063829787
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 9.983934089034063,
+            "median_total_return": 57.284984148786556,
+            "median_excess_cagr": 9.633476901185134,
+            "outperform_rate": 0.8262108262108262,
+            "median_sharpe": 0.512188215156688,
+            "median_sharpe_excess": 0.29270158685231035,
+            "higher_sharpe_rate": 0.8461538461538461,
+            "sharpe_pairs": 351,
+            "median_drawdown": 42.41746922789791,
+            "median_exposure": 0.48726556847992947,
+            "median_entries": 7.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5726495726495726,
+            "positive_rate": 0.8774928774928775
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 10.322165769441117,
+            "median_total_return": 63.23657606694266,
+            "median_excess_cagr": 8.944033146942566,
+            "outperform_rate": 0.8181818181818182,
+            "median_sharpe": 0.5267330016157176,
+            "median_sharpe_excess": 0.2949976128465445,
+            "higher_sharpe_rate": 0.8654545454545455,
+            "sharpe_pairs": 275,
+            "median_drawdown": 41.489356710540136,
+            "median_exposure": 0.49194670562678283,
+            "median_entries": 7.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5927272727272728,
+            "positive_rate": 0.9163636363636364
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_HORIZON_BAG",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 150,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 250,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          }
+        ]
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -1.4882134879026732,
+            "median_total_return": -3.41329726311253,
+            "median_excess_cagr": -4.791873170911137,
+            "outperform_rate": 0.369281045751634,
+            "median_sharpe": -0.07350186714629033,
+            "median_sharpe_excess": -0.34136962081418176,
+            "higher_sharpe_rate": 0.2793103448275862,
+            "sharpe_pairs": 290,
+            "median_drawdown": 19.45289312126734,
+            "median_exposure": 0.1490366621862131,
+            "median_entries": 3.0,
+            "activity_rate": 0.9477124183006536,
+            "all_cash": 16,
+            "cagr8_rate": 0.032679738562091505,
+            "positive_rate": 0.3235294117647059
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -1.933988919116325,
+            "median_total_return": -4.422649101129816,
+            "median_excess_cagr": -5.060102235649799,
+            "outperform_rate": 0.35587188612099646,
+            "median_sharpe": -0.06816264152385001,
+            "median_sharpe_excess": -0.3567940734485159,
+            "higher_sharpe_rate": 0.2714285714285714,
+            "sharpe_pairs": 280,
+            "median_drawdown": 20.375835948657596,
+            "median_exposure": 0.1490453819100314,
+            "median_entries": 3.0,
+            "activity_rate": 0.99644128113879,
+            "all_cash": 1,
+            "cagr8_rate": 0.03202846975088968,
+            "positive_rate": 0.3416370106761566
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -1.8129323778386386,
+            "median_total_return": -4.1491489307590275,
+            "median_excess_cagr": -5.060102235649799,
+            "outperform_rate": 0.3563636363636364,
+            "median_sharpe": -0.06547377480578337,
+            "median_sharpe_excess": -0.34136962081418176,
+            "higher_sharpe_rate": 0.2737226277372263,
+            "sharpe_pairs": 274,
+            "median_drawdown": 20.375835948657596,
+            "median_exposure": 0.14904242284210578,
+            "median_entries": 3.0,
+            "activity_rate": 0.9963636363636363,
+            "all_cash": 1,
+            "cagr8_rate": 0.03272727272727273,
+            "positive_rate": 0.3490909090909091
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 10.200162737381591,
+            "median_total_return": 58.92375363243995,
+            "median_excess_cagr": 10.96555235425673,
+            "outperform_rate": 0.8138297872340425,
+            "median_sharpe": 0.5487909739421585,
+            "median_sharpe_excess": 0.3699243828630967,
+            "higher_sharpe_rate": 0.8528610354223434,
+            "sharpe_pairs": 367,
+            "median_drawdown": 38.540835615570145,
+            "median_exposure": 0.38742070436053017,
+            "median_entries": 11.0,
+            "activity_rate": 0.976063829787234,
+            "all_cash": 9,
+            "cagr8_rate": 0.5824468085106383,
+            "positive_rate": 0.8723404255319149
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 11.096158450247028,
+            "median_total_return": 65.15399026435966,
+            "median_excess_cagr": 10.871561552718257,
+            "outperform_rate": 0.8319088319088319,
+            "median_sharpe": 0.5679642455218897,
+            "median_sharpe_excess": 0.3690623972364626,
+            "higher_sharpe_rate": 0.8632478632478633,
+            "sharpe_pairs": 351,
+            "median_drawdown": 39.24825920084803,
+            "median_exposure": 0.38781322331851353,
+            "median_entries": 11.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.6210826210826211,
+            "positive_rate": 0.905982905982906
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 11.473756519626432,
+            "median_total_return": 71.91520449397606,
+            "median_excess_cagr": 9.55182801046388,
+            "outperform_rate": 0.8327272727272728,
+            "median_sharpe": 0.5923185416381876,
+            "median_sharpe_excess": 0.3535591226037622,
+            "higher_sharpe_rate": 0.8763636363636363,
+            "sharpe_pairs": 275,
+            "median_drawdown": 38.502676983782266,
+            "median_exposure": 0.38873892887399575,
+            "median_entries": 11.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.6436363636363637,
+            "positive_rate": 0.9309090909090909
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_MARKET_CORE0.5",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": 1.0012346454398968,
+            "median_total_return": 1.8681750545327835,
+            "median_excess_cagr": -2.5601676918272807,
+            "outperform_rate": 0.35947712418300654,
+            "median_sharpe": 0.16254675418730558,
+            "median_sharpe_excess": -0.14379935141817174,
+            "higher_sharpe_rate": 0.20588235294117646,
+            "sharpe_pairs": 306,
+            "median_drawdown": 28.594871151689293,
+            "median_exposure": 0.601427340544238,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.238562091503268,
+            "positive_rate": 0.5490196078431373
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": 1.0629459438436184,
+            "median_total_return": 2.4792605060727,
+            "median_excess_cagr": -2.7648404398131654,
+            "outperform_rate": 0.3487544483985765,
+            "median_sharpe": 0.1679954828456292,
+            "median_sharpe_excess": -0.1461196916960833,
+            "higher_sharpe_rate": 0.2099644128113879,
+            "sharpe_pairs": 281,
+            "median_drawdown": 29.132754207469127,
+            "median_exposure": 0.6033392606949516,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.2313167259786477,
+            "positive_rate": 0.5551601423487544
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 1.0629459438436184,
+            "median_total_return": 2.4792605060727,
+            "median_excess_cagr": -2.7648404398131654,
+            "outperform_rate": 0.3490909090909091,
+            "median_sharpe": 0.1679954828456292,
+            "median_sharpe_excess": -0.14426274664128658,
+            "higher_sharpe_rate": 0.2109090909090909,
+            "sharpe_pairs": 275,
+            "median_drawdown": 28.943778303514456,
+            "median_exposure": 0.6033392606949516,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.2290909090909091,
+            "positive_rate": 0.5563636363636364
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 6.2689020947358625,
+            "median_total_return": 31.19029057417816,
+            "median_excess_cagr": 5.859704689003614,
+            "outperform_rate": 0.7925531914893617,
+            "median_sharpe": 0.3875341784477344,
+            "median_sharpe_excess": 0.1405982985048817,
+            "higher_sharpe_rate": 0.7978723404255319,
+            "sharpe_pairs": 376,
+            "median_drawdown": 45.5788372020904,
+            "median_exposure": 0.6177708009972178,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.4308510638297872,
+            "positive_rate": 0.7579787234042553
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 6.410131475189029,
+            "median_total_return": 35.54784054000522,
+            "median_excess_cagr": 5.705129239421369,
+            "outperform_rate": 0.8062678062678063,
+            "median_sharpe": 0.3917152520549218,
+            "median_sharpe_excess": 0.1564947909093426,
+            "higher_sharpe_rate": 0.8461538461538461,
+            "sharpe_pairs": 351,
+            "median_drawdown": 46.58517183830803,
+            "median_exposure": 0.6229902565408761,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.43874643874643876,
+            "positive_rate": 0.7806267806267806
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 7.179794436195586,
+            "median_total_return": 41.3234428345522,
+            "median_excess_cagr": 5.0105178339742595,
+            "outperform_rate": 0.7963636363636364,
+            "median_sharpe": 0.4061977943275402,
+            "median_sharpe_excess": 0.15485238346416208,
+            "higher_sharpe_rate": 0.8581818181818182,
+            "sharpe_pairs": 275,
+            "median_drawdown": 44.99517424023559,
+            "median_exposure": 0.6281380069866158,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.45454545454545453,
+            "positive_rate": 0.8181818181818182
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_MARKET_CORE0.75",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.75,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -0.5755470545640795,
+            "median_total_return": -1.175354649660404,
+            "median_excess_cagr": -3.8730341864445683,
+            "outperform_rate": 0.35947712418300654,
+            "median_sharpe": 0.06116236046784966,
+            "median_sharpe_excess": -0.25657463830691096,
+            "higher_sharpe_rate": 0.22549019607843138,
+            "sharpe_pairs": 306,
+            "median_drawdown": 23.47079728706337,
+            "median_exposure": 0.38798078567243166,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.13071895424836602,
+            "positive_rate": 0.46078431372549017
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -0.5267263324371663,
+            "median_total_return": -1.2157882331958692,
+            "median_excess_cagr": -4.1865286401236546,
+            "outperform_rate": 0.3487544483985765,
+            "median_sharpe": 0.0670885101717963,
+            "median_sharpe_excess": -0.2622847347730039,
+            "higher_sharpe_rate": 0.23487544483985764,
+            "sharpe_pairs": 281,
+            "median_drawdown": 24.289781855377456,
+            "median_exposure": 0.3893307496046323,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.11743772241992882,
+            "positive_rate": 0.46619217081850534
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -0.5038862302347402,
+            "median_total_return": -1.1632440153305335,
+            "median_excess_cagr": -4.1865286401236546,
+            "outperform_rate": 0.3490909090909091,
+            "median_sharpe": 0.07218924461264278,
+            "median_sharpe_excess": -0.25881332154062486,
+            "higher_sharpe_rate": 0.23636363636363636,
+            "sharpe_pairs": 275,
+            "median_drawdown": 24.071119060885383,
+            "median_exposure": 0.3890418147547697,
+            "median_entries": 2.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.12,
+            "positive_rate": 0.4727272727272727
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 8.470345985027183,
+            "median_total_return": 42.81198125946189,
+            "median_excess_cagr": 8.32939543000939,
+            "outperform_rate": 0.7925531914893617,
+            "median_sharpe": 0.46388605176885883,
+            "median_sharpe_excess": 0.2468928426062566,
+            "higher_sharpe_rate": 0.7952127659574468,
+            "sharpe_pairs": 376,
+            "median_drawdown": 40.51656591393026,
+            "median_exposure": 0.46207514176800557,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5212765957446809,
+            "positive_rate": 0.8537234042553191
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 8.76162324993983,
+            "median_total_return": 47.771222034538916,
+            "median_excess_cagr": 8.128650294044405,
+            "outperform_rate": 0.8062678062678063,
+            "median_sharpe": 0.4799575504626104,
+            "median_sharpe_excess": 0.2578790474386505,
+            "higher_sharpe_rate": 0.8404558404558404,
+            "sharpe_pairs": 351,
+            "median_drawdown": 41.69190729660629,
+            "median_exposure": 0.46673636870853913,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5356125356125356,
+            "positive_rate": 0.8803418803418803
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 9.060970543233582,
+            "median_total_return": 54.13755842095001,
+            "median_excess_cagr": 7.186668210070657,
+            "outperform_rate": 0.7963636363636364,
+            "median_sharpe": 0.49727795360472166,
+            "median_sharpe_excess": 0.2533634476300469,
+            "higher_sharpe_rate": 0.850909090909091,
+            "sharpe_pairs": 275,
+            "median_drawdown": 40.23407395443163,
+            "median_exposure": 0.47023061200313343,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5490909090909091,
+            "positive_rate": 0.9018181818181819
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_MARKET_STOCK_BLEND",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75,
+                    "initial_hold": true
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -0.9013369735375087,
+            "median_total_return": -1.8850170801018973,
+            "median_excess_cagr": -3.47995647567384,
+            "outperform_rate": 0.3888888888888889,
+            "median_sharpe": -0.036841407632425806,
+            "median_sharpe_excess": -0.28229796449978006,
+            "higher_sharpe_rate": 0.30718954248366015,
+            "sharpe_pairs": 306,
+            "median_drawdown": 15.710108087302416,
+            "median_exposure": 0.20170356817286722,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.06209150326797386,
+            "positive_rate": 0.434640522875817
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -1.097112270308609,
+            "median_total_return": -2.522828889614004,
+            "median_excess_cagr": -3.705474163973621,
+            "outperform_rate": 0.3736654804270463,
+            "median_sharpe": -0.03847596240651137,
+            "median_sharpe_excess": -0.3038918386183722,
+            "higher_sharpe_rate": 0.298932384341637,
+            "sharpe_pairs": 281,
+            "median_drawdown": 16.052500577405095,
+            "median_exposure": 0.19606740550289958,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.0498220640569395,
+            "positive_rate": 0.42704626334519574
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -0.8954665941587003,
+            "median_total_return": -2.061887765900361,
+            "median_excess_cagr": -3.705474163973621,
+            "outperform_rate": 0.3709090909090909,
+            "median_sharpe": -0.036133576635278136,
+            "median_sharpe_excess": -0.2859090482642764,
+            "higher_sharpe_rate": 0.3018181818181818,
+            "sharpe_pairs": 275,
+            "median_drawdown": 15.988883544581034,
+            "median_exposure": 0.1993000703459001,
+            "median_entries": 4.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.05090909090909091,
+            "positive_rate": 0.43272727272727274
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 8.352259111465777,
+            "median_total_return": 43.74768255963486,
+            "median_excess_cagr": 9.127951201320444,
+            "outperform_rate": 0.7925531914893617,
+            "median_sharpe": 0.5048292435162529,
+            "median_sharpe_excess": 0.28324591230185137,
+            "higher_sharpe_rate": 0.8324468085106383,
+            "sharpe_pairs": 376,
+            "median_drawdown": 34.48999208227022,
+            "median_exposure": 0.34455360384228745,
+            "median_entries": 11.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5212765957446809,
+            "positive_rate": 0.8537234042553191
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 8.566069950976573,
+            "median_total_return": 48.77127426277956,
+            "median_excess_cagr": 8.97697487001905,
+            "outperform_rate": 0.8034188034188035,
+            "median_sharpe": 0.5109526730801974,
+            "median_sharpe_excess": 0.29456085613869476,
+            "higher_sharpe_rate": 0.8575498575498576,
+            "sharpe_pairs": 351,
+            "median_drawdown": 35.46626777267284,
+            "median_exposure": 0.34823074674005366,
+            "median_entries": 11.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5327635327635327,
+            "positive_rate": 0.8746438746438746
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 8.6486691052432,
+            "median_total_return": 51.25261041585565,
+            "median_excess_cagr": 7.519931430015324,
+            "outperform_rate": 0.7781818181818182,
+            "median_sharpe": 0.5224322496452517,
+            "median_sharpe_excess": 0.29456085613869476,
+            "higher_sharpe_rate": 0.8618181818181818,
+            "sharpe_pairs": 275,
+            "median_drawdown": 33.746286886671875,
+            "median_exposure": 0.34823074674005366,
+            "median_entries": 12.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5418181818181819,
+            "positive_rate": 0.9090909090909091
+          }
+        }
+      }
+    },
+    {
+      "id": "R11_MARKET_AVOID_LOSS",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "breadth_reversal",
+          "params": {
+            "period": 200,
+            "entry": 0.2,
+            "exit": 0.7
+          }
+        },
+        "mode": "avoid_loss",
+        "lag": 365
+      },
+      "windows": {
+        "training": {
+          "all": {
+            "count": 306,
+            "median_cagr": -2.0735442624549574,
+            "median_total_return": -4.588241494089306,
+            "median_excess_cagr": -4.494703381318105,
+            "outperform_rate": 0.3660130718954248,
+            "median_sharpe": -0.11969244554233993,
+            "median_sharpe_excess": -0.37901117141943674,
+            "higher_sharpe_rate": 0.27099236641221375,
+            "sharpe_pairs": 262,
+            "median_drawdown": 19.073948505663434,
+            "median_exposure": 0.15881326352530542,
+            "median_entries": 1.0,
+            "activity_rate": 0.8562091503267973,
+            "all_cash": 44,
+            "cagr8_rate": 0.029411764705882353,
+            "positive_rate": 0.27450980392156865
+          },
+          "primary": {
+            "count": 281,
+            "median_cagr": -2.3216222760294447,
+            "median_total_return": -5.214353825522588,
+            "median_excess_cagr": -4.982741864527663,
+            "outperform_rate": 0.35587188612099646,
+            "median_sharpe": -0.11312791028786487,
+            "median_sharpe_excess": -0.3994519251474903,
+            "higher_sharpe_rate": 0.2677165354330709,
+            "sharpe_pairs": 254,
+            "median_drawdown": 20.28591709565114,
+            "median_exposure": 0.15881326352530542,
+            "median_entries": 1.0,
+            "activity_rate": 0.9039145907473309,
+            "all_cash": 27,
+            "cagr8_rate": 0.03202846975088968,
+            "positive_rate": 0.298932384341637
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": -2.285526694680773,
+            "median_total_return": -5.214353825522588,
+            "median_excess_cagr": -4.982741864527663,
+            "outperform_rate": 0.3563636363636364,
+            "median_sharpe": -0.11254521623864062,
+            "median_sharpe_excess": -0.38954420722278904,
+            "higher_sharpe_rate": 0.26907630522088355,
+            "sharpe_pairs": 249,
+            "median_drawdown": 20.28591709565114,
+            "median_exposure": 0.15881326352530542,
+            "median_entries": 1.0,
+            "activity_rate": 0.9054545454545454,
+            "all_cash": 26,
+            "cagr8_rate": 0.03272727272727273,
+            "positive_rate": 0.3054545454545455
+          }
+        },
+        "development": {
+          "all": {
+            "count": 376,
+            "median_cagr": 7.639912843452745,
+            "median_total_return": 42.17740936147051,
+            "median_excess_cagr": 9.775633234453267,
+            "outperform_rate": 0.7632978723404256,
+            "median_sharpe": 0.49149917590561454,
+            "median_sharpe_excess": 0.3312832040486274,
+            "higher_sharpe_rate": 0.7957957957957958,
+            "sharpe_pairs": 333,
+            "median_drawdown": 35.346747239328046,
+            "median_exposure": 0.3235772357723577,
+            "median_entries": 3.0,
+            "activity_rate": 0.8856382978723404,
+            "all_cash": 43,
+            "cagr8_rate": 0.4787234042553192,
+            "positive_rate": 0.7925531914893617
+          },
+          "primary": {
+            "count": 351,
+            "median_cagr": 8.375171854165941,
+            "median_total_return": 45.17046292415448,
+            "median_excess_cagr": 9.570623652389411,
+            "outperform_rate": 0.7749287749287749,
+            "median_sharpe": 0.49149917590561454,
+            "median_sharpe_excess": 0.3312832040486274,
+            "higher_sharpe_rate": 0.7945619335347432,
+            "sharpe_pairs": 331,
+            "median_drawdown": 36.82371391085275,
+            "median_exposure": 0.3235772357723577,
+            "median_entries": 3.0,
+            "activity_rate": 0.9430199430199431,
+            "all_cash": 20,
+            "cagr8_rate": 0.50997150997151,
+            "positive_rate": 0.8461538461538461
+          },
+          "full10": {
+            "count": 275,
+            "median_cagr": 9.4887811013872,
+            "median_total_return": 57.177365496368516,
+            "median_excess_cagr": 8.983855371778326,
+            "outperform_rate": 0.7781818181818182,
+            "median_sharpe": 0.518784469150169,
+            "median_sharpe_excess": 0.33877057241046005,
+            "higher_sharpe_rate": 0.8109090909090909,
+            "sharpe_pairs": 275,
+            "median_drawdown": 37.317782696135936,
+            "median_exposure": 0.3235772357723577,
+            "median_entries": 3.0,
+            "activity_rate": 1.0,
+            "all_cash": 0,
+            "cagr8_rate": 0.5490909090909091,
+            "positive_rate": 0.92
+          }
+        }
+      }
+    }
+  ],
+  "completed_utc": "2026-09-06T17:08:14.067927+00:00",
+  "additional_snapshot_inputs": [
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00001.json",
+      "sha256": "bc5ee768afd3376cd6384b54af6e1c0a7be41aec553b26420ed038a47fbed069"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00002.json",
+      "sha256": "244a24608d65d5190dd2ec6f42a3a0b362adebeb357bcf7f8326d17aca858cb9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00003.json",
+      "sha256": "54d3dfb3095996d21f947ebf55f77fad055bfbc8c46cbbe17316fe5feb85e9c6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00004.json",
+      "sha256": "a7dad77b761caa0f23e42bb82383aec2b5baa3011be2845d9a0377475a3f3439"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00005.json",
+      "sha256": "bce25bf5c4aa2fe0f62e66156064411031363e92cfe2bed429bf19834515677e"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00006.json",
+      "sha256": "34d2e14f9bd66b35c802641e20a613e4b8bb70abe7a15dde8d216109923ff8b3"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00008.json",
+      "sha256": "42489e7879e2006bc0f4adfd1a9a4ea844e971bc149b60bcb1f15ba043628b33"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00010.json",
+      "sha256": "d348028d1ae1a85dd1054d97904d5a97b25c6129c943162376b22986de71094e"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00012.json",
+      "sha256": "f20392bb5c1eb15bbc64b673b52a1e46ef0d0f8b2e58032cb1b7d49cc449b120"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00013.json",
+      "sha256": "ddf30e3ae43196cca02519531793518ea666efad4c9cf65d8b865aeb22557adc"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00014.json",
+      "sha256": "80d82abc5d8669ce8f5b0d6ebfc3e5cbe964a890379860b6d2d6efc5d23f7318"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00016.json",
+      "sha256": "74702209de8632feaed3ba816a4bbb242e608f66a50153619c3064313eb304ed"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00017.json",
+      "sha256": "c78f19bfd0ffa3f76c9d6844841ad9d9edc8e9bbb260fa27cb768d532c5b5301"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00019.json",
+      "sha256": "fba8f9fda388c7b77ba539659c5d8fa5bb4b88aaeb3d078d63f81abb1afd449b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00020.json",
+      "sha256": "0717e35b3284811736f72f058630a6a68d0634f452054915dbca6cbd92ffb1b0"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00023.json",
+      "sha256": "b032390d37802700e81e5812b16d7cfad693267278729d8e18eaaf176107d590"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00027.json",
+      "sha256": "53ce7bd7a026d0016b153bcfb97a30dceffe34807d47d9044d9adff6d9c9f258"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00038.json",
+      "sha256": "f2fc16ebc552ea878d508ee4d53c83fe33f045ae037392e607555ed6282b59b5"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00041.json",
+      "sha256": "965ca0907114ac65d9195585a69e3089f8bf98a788ff01a758aec1516e226225"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00066.json",
+      "sha256": "9c53c552e57306de6c10183890cde68a7306852a4e04fa506ad2729a9c063596"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00081.json",
+      "sha256": "eb5c1e9c72a56a1f8c69532b403442c5b434af00fcb844f7470df07a8c0e2ae0"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00083.json",
+      "sha256": "dd2846f6f104c103dc95004e9d67ac4c0c36bb5a740cb4bd01c619cc982240fd"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00087.json",
+      "sha256": "49a80c949b73b9f2acbfc9233d70e14066136d0591c3d6ee3b7c70a2a2b6537b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00100.json",
+      "sha256": "8cf2b46000816f6afb9a40884779419a5f4c0cc378a62c28d30880872c2ff57b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00101.json",
+      "sha256": "1d8cd2316363abfc03e6b360598874f53c43f7a748b5bce052cbadbcf90fb852"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00107.json",
+      "sha256": "544023c5d36a5d8f9411c2c363a5fa0699b06462346f6d3a4e20f647310cab65"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00123.json",
+      "sha256": "73c699259711dd48d76d5ab687fd188b19d3e50cb28a51bff2490ae38be7dbdc"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00135.json",
+      "sha256": "2f9c7bc87fe8b8fe88a6d614058bea32ee7900d4e397663711e902a008b81925"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00136.json",
+      "sha256": "a20293a4232a0905096fd4ae97707b42d5839db514f3ee505a270acb8c549631"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00142.json",
+      "sha256": "aa3134f0180d257a63fe4f98edcee762ca973281f379f0ba3733b88e936f9893"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00144.json",
+      "sha256": "918503bf1869b142f7a532fd1a01522e515df830310bb130004d42c4a47143e0"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00148.json",
+      "sha256": "3dafb4a1f877cb073230e0272818150cecd8273cec901f0c2f72ebf2af6e4800"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00151.json",
+      "sha256": "dc05d675a5848b350d5ac25c8ba5cccb27fe0b2a7c02e110ef23b84cb50deb02"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00152.json",
+      "sha256": "aabaf52878a758bfbed09c8f5efa14eb0b6e971b5506f38dc964b95819ce46fa"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00165.json",
+      "sha256": "d62e21afbb5b49ecc3fec48ffb8282d861c081a25853c2b46ea07cdeff896c1d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00168.json",
+      "sha256": "986c68126758e396b7d72402df2fd83eece7c3ca05fa63b5a93d8ce43cbc19c9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00175.json",
+      "sha256": "3120bba70b6aee610ff0111013302bd693088e0b505c7f8f2de63dbf162715bd"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00177.json",
+      "sha256": "e4fea2f9e2e8def6465385bb8211eedb85f35ac8866d41216cf2fd6cad490ace"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00179.json",
+      "sha256": "f5d71a77346e9bb8a63f34d6911df3cb564cba81d5d43c752ba15f365f33222b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00189.json",
+      "sha256": "b2c1333ba62f132b036cda737f1c4df662fc58db23c2d7c5e93f3ac53111dcf1"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00220.json",
+      "sha256": "9271915c02c59dc2b2305a1fbfd225792762f01a6922294125510c55688b94d4"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00241.json",
+      "sha256": "c5239c4b56df70db46061ec6f7c03db91344c97b787cb07c9a51d5e3b6e41bd9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00257.json",
+      "sha256": "e8ade13f28c5a977208b38d965a249212e0e25178525155820bd729f5449ae93"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00267.json",
+      "sha256": "11f93c875d4cbc4cc5fbe14eaf5dfd8477e68dd8007697ef91ad1b8ad55c67eb"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00268.json",
+      "sha256": "33e2d05fb3392b30e00fdc1eb6c61ee7e1f4aa119e9d235e0d516556076c9994"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00270.json",
+      "sha256": "4d21eb0f6a23a3bf16b58ed22dfa8c4de1d566a6f36fefaf77db713d9a4b0dbe"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00285.json",
+      "sha256": "b7cb7ef3c3df6f781803ee2ef5d260974c0b55976fb284829185674a6c5504be"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00288.json",
+      "sha256": "795a51fee076a0d16a87074d1cd707e2b18ee838d38d2c34b73727ed94215fa3"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00290.json",
+      "sha256": "7679278431a5c42cbf3974bb3636504f1f791d5cfd4930020cb8f707faa51a63"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00291.json",
+      "sha256": "a2049d9f253ab3240dcc0b7b4a9a8715582414726d9ab7541dec37553fcef4ab"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00293.json",
+      "sha256": "b78edc9ee1226baed81374edc3b81b4a3e42725d58bba7955fccb1b737408500"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00300.json",
+      "sha256": "55da07edca45d4417d514447b598da4281a37997eb823b4f46061955d93d9e04"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00303.json",
+      "sha256": "90930c7d16977ec67229eecab819ff0bd4568fdaf46f1ea6568be6c45a2404ff"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00316.json",
+      "sha256": "720fb7010fdfdf7aae1eb8beab5d95cf06595df67596a1b803e93f85f65b7602"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00317.json",
+      "sha256": "4bdb10a76eed7ea53e28560d88903148939421c59dbeb36b78a31c879ff1b574"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00322.json",
+      "sha256": "bd8d3cc3fdf484384e982f63c2f765bf3990f1b40159bda1153777b84713737c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00323.json",
+      "sha256": "49ac7c3aaffc163c52dfdcfcd5687d076636a6512264e1495986db755337a14b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00325.json",
+      "sha256": "b4a63f01061aeb29adfbdbb92f4256d1b2804aff93ca3ffc64730143647cc323"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00338.json",
+      "sha256": "e3b48e50376171855fad12009e52acf87e9055bf189bf3d480ad6e5f3c4b1cb1"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00347.json",
+      "sha256": "4a1e758c9cf8e53a5eda15cdaa4459ca7eb226144a32d7bb7699785a19baec21"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00354.json",
+      "sha256": "cdcfbb5e02b34481b3f35c2cdcc32900c812eb565da1fea535ad147c9477a24f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00358.json",
+      "sha256": "4463b070b1020a27a5a3e2c9eb7cb9f9168ca7bb8ce074f82e75038afc2aaca6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00363.json",
+      "sha256": "74d10d67e56277107cde39b34d6d70c1865a452350661cb1de63598261c3b73a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00371.json",
+      "sha256": "5c0b618d9c54fdd7efec6f105bf77dc67ce6edbbf737411080225125f6b6d542"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00384.json",
+      "sha256": "27a57411bc5d3972f7dbb839baac1656be8c9270b4326caf059f4a95d5c84498"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00386.json",
+      "sha256": "26485bc801fd412a148370d526e9e91f52f30e0ff80b0f83a4f1736b36be33e4"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00388.json",
+      "sha256": "4f8379042a01e0317372ccdacdf17ac1ff7a31f1cb505200fce6092ff6d87b32"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00390.json",
+      "sha256": "fba8e615eec2c5c1d9bd06f2863d829bd2c1811c67a298a4338840fa57dcd098"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00392.json",
+      "sha256": "8a46a6d78e05e9b5e93d9bc4b53313c53aff310cc63814dccd6069abbb89f852"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00425.json",
+      "sha256": "10680cd2708cb73e024ff6907b148fccb51eb24e1c46a335bcb53c23965e0235"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00440.json",
+      "sha256": "15801917acb3ad43c76c882c743bfce5751eb79b7837c0eab086817f3a06dcfe"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00467.json",
+      "sha256": "7587fc4f5ab396dda6aa9fd7922d5b8fd89a11a8331726f6acd8d1d4bdf27587"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00470.json",
+      "sha256": "61572aba654aabbcb62a69911f1dd102cc98a82e07d4319ced676dbe5e42055c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00506.json",
+      "sha256": "2a239d976375a3ced08985f178582d4246a003920d2a9b0772ce9ab7734663e5"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00512.json",
+      "sha256": "fe16fee9c6a2d3cc82bbedbfdcae9cf4260076cd5f01947d3e106a71531ceca6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00522.json",
+      "sha256": "0cc11f2538305d7a48ba00a99941708e535ecdeb104247386ceea0e44f46d24d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00525.json",
+      "sha256": "029a41b207bf057cbec84bf90a685b688a361663e9442cdac0aae44a2df090e2"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00546.json",
+      "sha256": "4e826025401c8dbfef09e81c5ca9106cdfce8ded30ca18678ce32404dcff9a0a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00548.json",
+      "sha256": "db8d47557f10815a6f33be8eee67aaf9598f17c1bd39dfc33612fb71dcb66bea"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00551.json",
+      "sha256": "eaaa4851f63a6de0dddb70915176400374efe9ce7d6c6c347cfa1ed2f55c925b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00552.json",
+      "sha256": "29ab83dbd6f6be8e713ff9899486af102c5c77224a645b3669226979ecb4e755"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00564.json",
+      "sha256": "e0cce35c8e455b26ceb66143bc352404206e099f597ad67bc5162af18bbdac6d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00576.json",
+      "sha256": "bdcf9d6f1443df7f05882c207e8e7a01ee0106f01ea853f7dfe74c96e7b9c0c3"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00586.json",
+      "sha256": "ce7ac876ae5012e9d85be86347d7e65f061b1d82f5dfa1e7a06cdeb6ae7581df"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00590.json",
+      "sha256": "27016272aa1e100c56a9fdcc17b2957760020d2ff8501548110b7f9d04540d45"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00598.json",
+      "sha256": "ebc2ff11832149d31ddecc4e539a0a8273aba2ca2fb26d9f4955607ac76c2391"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00631.json",
+      "sha256": "8989409bef5897c980b12d00ab6e84e1a5ffed6031f7471a566f2238f80f510a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00636.json",
+      "sha256": "fbadddbc3d7bd942103580884aef26cfefed9a0450c89b5c614a89bef3099aab"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00639.json",
+      "sha256": "35b40d5148c0f77d2799573679c2e4ecdab793a59d724c829045bceda10843f6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00656.json",
+      "sha256": "0f65db4fc3c10f507c36b20c7710f0e13b51d908492d97fc1e3f5c34e1ee566a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00659.json",
+      "sha256": "2fb7888708470472fa6fcb5c1246de516d902daa19f10a05cb2bbc2ad79a64d6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00666.json",
+      "sha256": "68af1ed5b27a2ce37c29d1a925158529d7746fb1d9542f0b382e169d32fdbf7c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00669.json",
+      "sha256": "46d3399fbd6e1eeb3a2e6e59e25ec9a9abeabbe7a693523b6b73e7d116428af9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00670.json",
+      "sha256": "945ccd85d14eaca2feff9010ddaafb735bf9420e5608feab3c7ff847c4dac0fd"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00683.json",
+      "sha256": "af745dc01b4a28f9274a20fbad3843fffd111a139db70ed4b6eb6c97ced4c948"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00688.json",
+      "sha256": "3619f6e969214feac1aca79500e900742c86c410a9c501c9df139c0f99e17120"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00696.json",
+      "sha256": "b12825e1f30e178029527fc2075cf4529f174d4d27f0f2787cfec1caf6a41055"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00697.json",
+      "sha256": "50ab3851f314d72756cb9c4025d24322623f5ccde46698151a84f6201c4d2a14"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00700.json",
+      "sha256": "1af6719ff9ac4a104c49c81c8b5ff3d120131a446831a7a6d645a5cdc8335341"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00728.json",
+      "sha256": "9bf2644efdcc821c4edb51dccba64731785aef30c7192febbc8187119a0ee929"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00753.json",
+      "sha256": "be715475f95b5d5d7c4203a66e9401e81531c398650d90e2205311d6aede9985"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00762.json",
+      "sha256": "fe53801ffbf3c130b641a121bf0a0e2d8622a9cb3c202c5538186326fee224da"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00763.json",
+      "sha256": "c7f76cba42be47e57777673eb3bd0d18d35b99c9989b02b6b818c88621bdd58d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00772.json",
+      "sha256": "95527b9de6046227fb32ff8abf1bdf3eb50a172768399626d96832baf0739cc6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00780.json",
+      "sha256": "268af30aa8d0b67350ce30af23d7b33bea0affe3083a62c60ecab1c6cc4bc095"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00788.json",
+      "sha256": "8e9c320c9ef3dc83754e6713f5994df546cb2e753f15b5745af140430c3411b3"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00800.json",
+      "sha256": "ada75054e86ac7ae317fa91d94a63cea6c5b637f55ad3c36ddf61fab84d438fb"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00817.json",
+      "sha256": "1b61bad14c799ece1542e7ae9e9e11ab50be7b43cbd2d78797e19137b2b9610c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00836.json",
+      "sha256": "16a881d27dd7f7af98d5b920f9b2b23d31e2aeee92fc0b9f62354b188ce3234b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00853.json",
+      "sha256": "8d2f39fb84c25da784eccdc01ae21d30698dbc74546e8cadf1f52040fe93b063"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00856.json",
+      "sha256": "3d77cd9ac4377b585d3cab0978d8969a39e8d45868ea667cd22de148566a7ee0"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00857.json",
+      "sha256": "0f672034f9067c4dcaafe38a41cb728312521bda3082d026db83d9b50c263261"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00867.json",
+      "sha256": "d71b692c94db8e38c545dcb145abbb7568579a68e2d96ef53f5c70b542bda44d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00868.json",
+      "sha256": "72d64dde430960b8dfcb37a7bf8275a61e45ae682aff2af1fdf713b9508a71e7"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00874.json",
+      "sha256": "243d24aa522377149f47819238140136bf424fcb3f875306db89e26a568896a6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00880.json",
+      "sha256": "f9f954bc881e8705afa217538b6a15a1e0a585ffa40f4c4ec1cfa1de140161ae"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00883.json",
+      "sha256": "99e588c8dcf677ccac9e538a5e8a9d7f36c5cec9489ee41737b90e184008c47b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00902.json",
+      "sha256": "31ed955807cf1c95c5aa1f3bdc906b9268012c6e3f8f41c77f4da23a0ce79d37"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00914.json",
+      "sha256": "e488c5151e0758144c239a9767fae1c242af3f38fa969a28b9c87e358263da89"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00916.json",
+      "sha256": "996fa5b87550d469d422f498d6dfc69bbd6c96acb857c25a8a16bf90cd09a6c7"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00921.json",
+      "sha256": "b58126d4c620c262ac1eef6d2f4af6882c86c61e8985b87b9f1b6243165e2172"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00939.json",
+      "sha256": "b7ae0d63440203c9ac915eff5e90a8da5f511fcc77ed346c8a158c62593e23ca"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00941.json",
+      "sha256": "b150efbec1311396991b6ae6e8cdf2f74d1a37e71c4fc18360844289dacfaf91"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00956.json",
+      "sha256": "6e82ab0301e734553adf6819a9f586bc2caffaa29e075442055af76389ac690d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00960.json",
+      "sha256": "c3d6e847c1d80fbdc7eb656a05107b802c1426c8dd86e60b105455b73f63023a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00966.json",
+      "sha256": "275b319ec6feb410aee34b78caba4398fee5621eaefdabbf9532ffc0009234ab"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00968.json",
+      "sha256": "8f8a361a6031d2164b5c919aaca76b83bc14cd8057b39cfb545cc536902fb3d1"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00975.json",
+      "sha256": "bbdff56b0dfdfdbd1b090d514bb91d4af3e0754a78f27b61be887130f78188c7"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00981.json",
+      "sha256": "3a7199c0fb5cd86bc1afbe31b2bdd78d2bd374caef7e02ccb34690fca317f022"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00991.json",
+      "sha256": "3ed4a58e6199b5b7eadba23d1c27f189ab9f2f4f0eed3ad2b59ad23a69ce310c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00992.json",
+      "sha256": "5b91bc5097a718427673cbc8f9f91ce74af6880c68db2ada30a25217f016e575"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00995.json",
+      "sha256": "a6c38c8287f449d726f5de8b30bd2cf543fa767f6d22b37bf5b72351aee1eb45"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/00998.json",
+      "sha256": "5cb9acddec6dd920b3e3fceaa5361a4498382f3c49cc28ef09aa1c823dc34301"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01024.json",
+      "sha256": "6be40671dfd217b809d3ee27d452f0e8feaecbbd32b419ff52de4469ad33300c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01030.json",
+      "sha256": "ff9b7324707d7d7bdc243b3dffcae00b4b57a67402081539f7e9eaec605bab1d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01033.json",
+      "sha256": "3b746e3829e415d7290da46ae49d445354be99368377a8e59df45eb16a64275c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01038.json",
+      "sha256": "9162a30bbd52078193f9ff3b0224b47f6cd4b4ce94c2120042d9fb9ccd91faef"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01044.json",
+      "sha256": "bde25b2f03c36edddd92e497a208fa321620a1a1154f116cc1209f7ab18700eb"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01055.json",
+      "sha256": "5ad0a4959a59c31cb8e88bbc8e6256457c86cf806d923ee45de89f5ae853cf0b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01060.json",
+      "sha256": "dcb41c59c6ef93c194713dcf3ea4e604b9d95df1cf04fb1afa2ad5635e478289"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01066.json",
+      "sha256": "31a960d48549637f8db88bfc6a5d87e4c21622805c3d260b30b7abd9605b8967"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01070.json",
+      "sha256": "ed2625f4cb07fd8c5b4c4e1cffc94c4ba2a21d535d6555b7b4681ed1bf33edf2"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01071.json",
+      "sha256": "3968418ed00a86974be88982ce1835bb16508ba7771cdbc5bd8f1eb0f76f8c43"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01072.json",
+      "sha256": "66305c19c5ab4c5bcae8c9833ce365154a509c1294ccd89f27bc789d328347c9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01081.json",
+      "sha256": "f2e1b7c9a49dbf236074ccbe6e7d031c9b3d2e99503688e524c2e18d12cd202e"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01083.json",
+      "sha256": "7928578bd8ba86be0a82cbc100e36a85d9ba0c0caea748998de6eb32d0861d07"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01088.json",
+      "sha256": "41f32cccf0aa1c6c411365e413e895253363ba2532753e39e649dff8c3f365d6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01093.json",
+      "sha256": "ee8ae07bcbdd0d3bf9c1095aea714530e268bc9eb9b4d1b047e871e523e6e026"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01099.json",
+      "sha256": "c6e4bc948c68c37e3e99edacd758030c0eeda5f063e06b951b58225d242d7770"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01109.json",
+      "sha256": "dc0c5ee8df423226be3fb3cf8d07a11e62ef993edd74acffa570a54a2d7b01dc"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01112.json",
+      "sha256": "bf012a44f622476c6cf4f12d1018796aa036a48be48c07917efb88cb42281736"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01113.json",
+      "sha256": "480653d1df0b90852a12f5254cb8bc257939c223d7f692ab46cfb6e5c18dc4dc"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01117.json",
+      "sha256": "d1c32e3d640e66f6c4e7246e7974377cd0793791d412ac1d37c02381e429aacb"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01128.json",
+      "sha256": "71bac2b1a9b93f3ea174363d5648884452a703f34191a978f7c14c08019a1d7a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01138.json",
+      "sha256": "81ad0c2e5db3a7c628b6c0da54f8ddf8c0350caa314a5c92731473f8a13c7452"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01157.json",
+      "sha256": "04499b5fc202eb48ca3e0e28d298cb00702d70999f35a6984801deb6cad1b176"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01164.json",
+      "sha256": "30c97fe921d0ab58b02a1db2ee1bc1f13db5d6fb3aea02164f780e4933ce325c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01171.json",
+      "sha256": "202f0476990a40738401324327673fb907953eea6fafe9986fe09d7457595557"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01177.json",
+      "sha256": "b899f059afe7760dbaa1da984ccacfb6345e3bc7fe80502c9803a83ee52cbee1"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01186.json",
+      "sha256": "0f4bcc03a6007d577ea65969c11c9ab56b3e3c80ee16d2f6f1c70ab8a561decd"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01193.json",
+      "sha256": "776ad1b734bb2db83cd97358e01be347b4fd6e8de246a97c9cd7e70eed11a5ed"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01196.json",
+      "sha256": "b03459c657b89015c6a89930c174e14724127b08d98a0f01c3e11100291fceb6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01199.json",
+      "sha256": "13d23cc42f6e312e4591e9f999a9710a093e736662929bcbd16b9cbecc840265"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01208.json",
+      "sha256": "4bdd1909d49e66b076cc15def89f01a3ea4f5640e058caab68819bfa6db97bdf"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01209.json",
+      "sha256": "563351b4027f072b82bbfbea26bc85b41f8a4c7f38f900da4ab4840b5a235e34"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01211.json",
+      "sha256": "917d3d65b418c06a5e452915ee474db7f300636119fa3e008e033758583081d8"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01258.json",
+      "sha256": "4d324f703fab38ad9794092a80a76b0cb327469f7040018c34dbf3bb29017d95"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01276.json",
+      "sha256": "48349bf2408cf4f7830073ef5101dbbe02a091a87511294ec08ff47bef4452d5"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01277.json",
+      "sha256": "8696ba6c7c7f14d761e5fb4657f235b91fb29898e31d770446196522774981e4"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01288.json",
+      "sha256": "42c0eeceedaae08c3dbef348a6c1a482f52002254b3d3a6260947a6fdb3a9607"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01299.json",
+      "sha256": "9f04ebf455013e62b66030c06a87111f0b5f7dc568ecebb80bccd98f579ad016"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01304.json",
+      "sha256": "7e9ddc6f71927372681bca47aab4bcb70001cd1cdef3688ea051ecc7d20f4728"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01308.json",
+      "sha256": "5147e80d500997e19d41689e78947e879ee54ea9e4d920a189607282140e63fc"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01316.json",
+      "sha256": "44a675547d744e1bc4a29922a9313f97a13fe89c2e407ae75c7f9025b9fb4b17"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01318.json",
+      "sha256": "2638eed53c96ad856757ef8a972823d50c47abe94fc9a2bc3faeea1fbbfd4799"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01336.json",
+      "sha256": "e1da186c79492726ae161c492446f72daf222ff804be62a0491f8f258599d116"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01339.json",
+      "sha256": "d16f990f3b478d70b2acdd97bce201278a18f967b3a077a17e1909f3f9cc31c9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01347.json",
+      "sha256": "0447e9ea3aa94b1d3b954e95389d07ffbdce6640156afcddac91f00ff230309a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01357.json",
+      "sha256": "5e721336f8d5483cc79616c3d053e15f145ef765b24068032a3a5dfd74cff701"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01359.json",
+      "sha256": "ba0e1d2fee84e88471fb5eb93fb882739637209695e5ae039b06ad69ab932f81"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01364.json",
+      "sha256": "0130d715fcca17a8c19bacaa813fff190f670993f2234b2e19eb62e471277354"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01377.json",
+      "sha256": "804d1ed9a0603c394f9b1bc24e5951a65f71a427cc794f44e6663a5f9e0c4d34"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01378.json",
+      "sha256": "6a32bc65b805972b4eb5a1c7246c4210bbab2207181260ca54a98ddbb6893fad"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01384.json",
+      "sha256": "8f272aef759a951a1451946ddf9442484ff90778aed515074585d0ac77ee31f3"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01385.json",
+      "sha256": "f2a8e905da0c437a30e5519c2d2ca03bf3890004fc6bb73c356222e0cba5e029"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01398.json",
+      "sha256": "b0c62e5f0e55e2239202ac7abdab7fd91a565511a9ee31a77a7e887f8838d9b9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01415.json",
+      "sha256": "d556332b8b82c849d53244a5afcf1f09d25ecfa2efe9b3fe59ec8126be58779d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01428.json",
+      "sha256": "c5d95e2367402662b3ac74072534a615359e9627c963b3f6248fc343eec1260c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01456.json",
+      "sha256": "e0c612f4bd1047cc2f82ada6067f4d8c390bdca4050a78307ccb2b1f13054ff2"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01513.json",
+      "sha256": "07eacf48fb044a81be1b874fd072c8b8a71064209058ecfd3e5bb02b468d0ed0"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01519.json",
+      "sha256": "b3607f0dd46cac89cf0d23b8cfc2d782b75a9f2d7033545b8959f6e29459c772"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01530.json",
+      "sha256": "64b3f45e51e9f3e1b6b6331d4652b250c0ebd7e2800779d375a6a1b12b3fb66e"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01548.json",
+      "sha256": "71b0296a4b1acaae9278a6a91059aedefa3cd63495627c41c84ae5c64850d410"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01579.json",
+      "sha256": "c863bdba1f6173182ff8d58ae442189b890584b8e5221bea8830e1b0adcd687d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01585.json",
+      "sha256": "2e936c60b794ba7142804c69d81cfefb2d624b95dc17694979f7efe1c2497cb2"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01618.json",
+      "sha256": "89acfd219f2041be490b8100b1f1d477405f667a3f2a0633c22f17b3ee31717a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01658.json",
+      "sha256": "cd9541f7184085a5bcfbe296acdf703c84c21e2fe7847bca1c413e0152f43940"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01681.json",
+      "sha256": "80024377308db35847034d001672d18382a140826c3b39aafd56912db33c1f5e"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01686.json",
+      "sha256": "d9d730e07e418af128f3a6484aecd4ed44cfa4652382c9650420e6e77e72b859"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01688.json",
+      "sha256": "deeef19be51a09a9ada054540ca39d9346d94ed96da7c39d23029139c77291aa"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01729.json",
+      "sha256": "87e63204c81091cf854c0e1cd4d9177d549ca736bc3cf8594bf35b4af0b968e8"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01735.json",
+      "sha256": "635f8c4d97986f39b7f9922e34e6844499fa4b5ba4409e1d4000bfa6e2fb57e5"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01766.json",
+      "sha256": "23298ddc9feb4af2f2bbf6f4ca32a889852338fdd53724e700d4639a61a629d8"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01768.json",
+      "sha256": "72e091f10b2dff85d29e112ede48cd6dd77e68f6de9558698058b06305ff821c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01772.json",
+      "sha256": "650a7e3ff42e75f4824c985f3888b450547bd99085d3ab4357f74b6281cecff9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01776.json",
+      "sha256": "8e813859f9846fcbfad03aad945a49b3e0eecc5dc485c6f1344ec51444b7f64e"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01783.json",
+      "sha256": "b5cf737f8ea15735abab150dad9d4d80cb80b9e71270406e22390616903a272d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01787.json",
+      "sha256": "fdcb5cacdb98290aaea5961b2b2f3c8f5a335ecabb35741d208d2897a73726ab"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01788.json",
+      "sha256": "a1a4410373d4542246b8957644219c5bfee14fd375540d04ac71fd128630b3b2"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01797.json",
+      "sha256": "968e829fe3a2b2f171d67c50d21da3e7af802e7be1f21f3a6df5979c3fb27170"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01801.json",
+      "sha256": "9fa4757a86efcd149999de3f9d1988383faeb8a43344d4b24e20136b412e425e"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01810.json",
+      "sha256": "b20dee4efbd539e524db8721915e7518556734b941cf44892a5a71d82e184868"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01816.json",
+      "sha256": "2116ef3d6378d62493551e6ffcd932421fbb357fe00b4948d0af30d1584152e2"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01818.json",
+      "sha256": "c71a83539870335ddcc4a569823bd43194081b0089e53c9ee1efef038d8bc0ad"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01828.json",
+      "sha256": "d27cfbb35d31f9a14d01149228a02ea651cf24f67556acbddbd5db38ea5ace0b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01833.json",
+      "sha256": "53dd7ee0079eefe09fb0d5ab7b159f8b78f1cc4800be77b50c37169b87ed15d6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01860.json",
+      "sha256": "53603954a15049d2edce8c3efe710756196801c8f030f467ce986f4a9a43de9c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01876.json",
+      "sha256": "fb606a52aceca96c063dc150cffc5a59a83b7ac4abc64b48e6c639730f172f53"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01877.json",
+      "sha256": "e26f18300fa3b7e3dc3b8379ead3839771faf3236af4450845e0a13b001bfea9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01880.json",
+      "sha256": "61e442b8c3bbeb94b5d1736191e4b656b20a6a89655c6687105f02495233210e"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01882.json",
+      "sha256": "126152056e5cfd5609b569a89de8d42f502740ab3d7443af0b1eae6994a9c799"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01888.json",
+      "sha256": "071ab3017fc2c304bd673cd9c8d3d8f8ca7c05aa9a721794d86612ca70799e00"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01898.json",
+      "sha256": "36233292fe416d16919852289082d248055da7eb8af4ee6f8e3964e097b4a7d1"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01908.json",
+      "sha256": "7a0c0c9db969e6d4c253935916dce2e59be7764567c522f7f8e008b8fd95f489"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01910.json",
+      "sha256": "ed42bd1a9ad1c569d9dc05c283ce04c121ace414017b14fdf46a5047f384ed89"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01918.json",
+      "sha256": "5a46dc6c7df60db8db17dedf5cdef7b9f0d1731991a2c354c0974e399504f5cc"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01919.json",
+      "sha256": "13c2a9b77a2ea9f2be105b64bc331c71b3c60039449a3cf1383746a9bf74f91f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01928.json",
+      "sha256": "1de2a41f221dcd7462c72b42ee9abd5f7d30d8ae47872187b698958b60b1949c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01929.json",
+      "sha256": "71516fb6a3a7aadcfe6b2a67b31516df0e52720f4d6ba1ca952a726245774614"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01952.json",
+      "sha256": "26ebfcdee5e91e832fa1e080663a97b1565ce23daa08a2f41b8c672fa85cb9d6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01963.json",
+      "sha256": "7bb9073b6274b4f392b38fe97ab816440675a16e3d5c1c7bca7053dc965eb60f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01972.json",
+      "sha256": "baea54950596f2eaf26edaafc8c9f344e6ba16eac22436bb6549d533f11e8cdb"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01988.json",
+      "sha256": "6bfd9080d6f11503256eea8d9edadec43a2096b91f5464e387bdbecb7dae2b9f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01989.json",
+      "sha256": "71cb01d6d9139adc46113e150b6affd2fd540433431e2b2249cef3c6a13a7a1c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01997.json",
+      "sha256": "cb4e118e4dee76407a2c538ab7b8093eecf64029045de974ec3747f3fc7d7cf4"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/01999.json",
+      "sha256": "f4dc0088b6c7d90f8482edb262de335dde2320ba5d7a958c1e821462c65cc02b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02015.json",
+      "sha256": "3a257b6b9a45119a2cb034c5ac0342ca8e69ae4784900c57fd034af7e3108101"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02016.json",
+      "sha256": "702c23bfc76abdecb0f8f4cb113c6d2125ee7a32aebee029248446dd933a9b87"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02018.json",
+      "sha256": "8b5252791d085fa9b9da39c878218f77d5a8ef33b67e7f45304a9dee19d00cc7"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02020.json",
+      "sha256": "69814c14ec672ba28795015be131df5124eea049c10f175c09e04c8a40e0f3cf"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02026.json",
+      "sha256": "6b558ead986f4e1522d365f6f8eca82d6dd58894b75af466c7b819862a10c1a7"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02038.json",
+      "sha256": "b7a8c3e95864833b31dceb7352b8b16bc3569b7b6753d80a6693a8376ced1539"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02039.json",
+      "sha256": "66c3b370bb921b3ae10f788406ce919efd6cf521917e3945f2c98678abf05313"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02050.json",
+      "sha256": "a1f5e2843ba3753f05150025b4edc6b0710916decc73d245526e57d2ad205bcb"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02057.json",
+      "sha256": "0e7c33ca6d0363f90181f0dbb69e4a3750b29466ffca600b68c94035c1d9540b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02096.json",
+      "sha256": "304d0765c68bd52007d677bd99081afe9ea67276c335ecb489ccd47e296fa073"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02097.json",
+      "sha256": "f1a180e68f441ca3b86f27fdc25692e46e61baa72e468c45a1b87ec7d5e73882"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02099.json",
+      "sha256": "be2d7bf36c858c5c5881a42b4104f8fa6c368f0b22c46fa1b1988950c278ab2e"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02128.json",
+      "sha256": "2a051e055438250c731f356aa3d24bfe8e46a43c96f6c26b0f281fe9133d771d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02162.json",
+      "sha256": "35655d8596f6b0d8e5f59e3221e1fdc12e7b02b0db5b318d4efb40f4ad5ec33d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02196.json",
+      "sha256": "da075a8bec2b3ee004109ca4e34ea647a2de398f9165329091a57204840b7498"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02202.json",
+      "sha256": "fb291b0af55805cc79c51c91825e91d0dabee1e42de6fcac4152748e616a363c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02208.json",
+      "sha256": "c9fb815749603d08e1f85efd118d2e937a083baed664ec91c49e231435425d61"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02228.json",
+      "sha256": "d5ffce2c0eb8f2d35ae91e1ed583c58eda15fbc4a5e38c66d17999f2e8f828c6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02232.json",
+      "sha256": "ffa039fc082b9330ead0093e7e98278aaddabc187892a040ceedef42f1244189"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02233.json",
+      "sha256": "ca93fee0fa0d5ffdc93dc0a51a0d91f6125475957e86933d8e45cdd6af35fae9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02238.json",
+      "sha256": "472b1c098b1e53794fcb10b2685887e8ed2f6090d493ad8e6cb51edfbbbaa140"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02249.json",
+      "sha256": "a890f81d04538447f25d4d8168966a671f2ffb645811b76dc57dd42e1fa66c4b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02252.json",
+      "sha256": "1dd5d81ed75f23876999ba3678a0d6fcd6a9bc5ecabdc69ebf50a18ab2d3fe0e"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02259.json",
+      "sha256": "6fbe580f7e5422486a770a2c31b511ce80993fa9a49a516597e0475fc7829560"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02268.json",
+      "sha256": "edf0ddf0ae874ca1c8b68b875af49dc24bf72aed85b652b9e310fc14fda96090"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02269.json",
+      "sha256": "6739c84a33e06c3d2fa1bfc774752a8c71bfd07ea6e3f63f73ac0ac3dd5ef08c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02276.json",
+      "sha256": "4a2664ba49f1452927a739d687c7236797d1f2c02e43d454583e7c58c8e5bbec"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02282.json",
+      "sha256": "557819a036c3ee9fd720b66dbe5353f4475b2c4e24ae3838c7c2d5c64a478319"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02285.json",
+      "sha256": "70600f4458c0c91d19a8adc555bb0d6fd00d616b2ce1363d7aff0f582e690892"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02313.json",
+      "sha256": "0538f32ecd459e254d8d15b7b4729cdfb102272983db91aee439456876cc7221"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02314.json",
+      "sha256": "ef108841023ab0ca49a0c8ac69941bbcf87aeab938de33a645ab149f0faad54f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02315.json",
+      "sha256": "ce7aba3ea2ec78123148988cdee900c302ac5d67fcbb452c8ed7424bda6791f0"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02318.json",
+      "sha256": "6027590f9d5dea081408874010a72caf37d49fdfc1c21e593d86b9bae41fe7f6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02319.json",
+      "sha256": "40460522256ecd15ac041f1f97537bd1936cd3f593954ed50035f67fb1dc631d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02328.json",
+      "sha256": "2cea912f4d8d280ab69cc7a903b61cd018fa91a981a8a1f890978802a513500f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02331.json",
+      "sha256": "be99909c2c675972a98297fe5880fc5d604369726bd8119816ae00e7db5a4643"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02338.json",
+      "sha256": "b64d91fb0b461400ca093943841e199525e12179eb51758276906c77a897c66d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02343.json",
+      "sha256": "d8cfab0f9f26bcc38521fb7b89906fd5e7da9eee9312bd36d498471d6f543512"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02356.json",
+      "sha256": "352a7b01bd2e0b716c3ea8abf0afa6b58a3d0aa6d83c17b3645ad86f0cd7e0dd"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02357.json",
+      "sha256": "7328866f5f147cef23247b740f7527cad4603830c8de8c476134fe5e0264fc9f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02359.json",
+      "sha256": "b8decae2e5f1d289ed93c4b76460d0908e1135baffb9da6f70615f858e26cfb8"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02367.json",
+      "sha256": "b875515127b0f3a676c8f51e6192468f6f4338c7480b261662dbdefb5ad2d0d5"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02378.json",
+      "sha256": "e1d51af31e74e2b3e2f177b0d10eda9af2ce4d98e8e8c4af276be3b63300d99b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02380.json",
+      "sha256": "0827366046db44272a0fa20dc2515e3a9b525fe2ef99a1af321af703116abf89"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02382.json",
+      "sha256": "855e1f6787aec80488b7480a1fbf4e2b1e5de7ba120da9b6717b7f049480ed5c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02386.json",
+      "sha256": "39c5ec98660f0543e1682c35baf8b3798f581dd9bce88433e533cc4f8ef93fbd"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02388.json",
+      "sha256": "648ce7158c5035f6ac7c952e437e8008cafbd693eb00451c9d3891b90387cf4f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02400.json",
+      "sha256": "10f5135a0af0bfdb909cb01f17cb4298c4a1c41669effbf0c5a886e7304c1395"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02419.json",
+      "sha256": "d2e2931fe54648d5ade4f0b392fb3691c4b71db4d702ed6fe50cfc6fc07d4615"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02423.json",
+      "sha256": "5c8e3ededcd5a20820389e189d41049143a4a69dae3acb95bcaa77f8eaf39808"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02432.json",
+      "sha256": "67022e698f07731f883bc883f596553300d476d638e3765ecd684f89cd1455e8"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02460.json",
+      "sha256": "91cd13d713b804113edef64bbab394e9520ea42eb1829a5c0c3a989377774cba"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02475.json",
+      "sha256": "514c8d47e658fccbbcf006f65b538470676dc9db291a89ddf7756a8e5e36a5ec"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02476.json",
+      "sha256": "ca81a463e17b86f7c3cc00fe1cb1f3d826744274b4bf17c69b42c4df00c9ea8a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02507.json",
+      "sha256": "c828a310aa41ce413d39d6077e1345e5219a1f903c94115c29c8d8d078535e93"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02510.json",
+      "sha256": "33185d88893c8225a1235e50d5416a2700bb7acbf244e16225b91c38fb03d599"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02513.json",
+      "sha256": "527d158e9c8ad67146060e31d0fafa4c864a5d3692d025b27d85a485b864bc71"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02556.json",
+      "sha256": "4b8ce4ee78dcaab2e643039e381a3459897f4bdc005201a7301991ed9130e8c9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02577.json",
+      "sha256": "b8093292cde9724fb718525e7164efecf7bc6bd6f551ce1f5529f07bb96a4e64"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02579.json",
+      "sha256": "bf0af00856fbc33a1faf6a62e850469fce4e742baa5bcae8059fe449c75819a9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02580.json",
+      "sha256": "027bcb0c7eae0017cbd6dda4ea88bfeb35f4f83a08e0310b28e4a3b819309f68"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02588.json",
+      "sha256": "c564e2d449f7b24c13dc4774cb16af55bc676787b2a44291c38561f0709983fe"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02590.json",
+      "sha256": "d77a9146ac8fd7c33b04e5a9648e1aecb4a421153a6c50868e32d7e15e1194af"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02595.json",
+      "sha256": "ba84da763a085504a8f331d32499b5752f8011c47782f595e41b8740040516d0"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02600.json",
+      "sha256": "cf0c668f3ff550cb87d1a72172dbbebe572521b7f1c683bc617f4ef2726ff9e3"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02601.json",
+      "sha256": "87306c670e2f3872f733044b6c68c638066eff8ee715cd99ff96ff592bf562ff"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02602.json",
+      "sha256": "07509f15ca776acc59704ce2c61f1e81d94100362605e4c2e398b4af165df27f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02607.json",
+      "sha256": "f45456fae8ec9cdefabd9442d339975bdd47d7c02f8c44f493254f56ed624fed"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02610.json",
+      "sha256": "195f001fff31b177fa354ce9847e5372142048e9bc9d1748a5f747f2da10087d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02611.json",
+      "sha256": "7a10ef27f2b98052ab85ad6c5eda50b7710641986234b244d19bbd4f2b116ab5"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02618.json",
+      "sha256": "d6076056112c2571806ea80449b66a07b58bc3c0aeed2020c36c3ebf77cabe89"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02628.json",
+      "sha256": "0907ba4c93ecdafa8768e727192074c471f453b350222ecf5e2145fb99bb2aea"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02631.json",
+      "sha256": "6c8bb40ac51ededa3bb4206b3cdc3710c701b1ea70b4c6e5dcf3ebaf7f100815"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02637.json",
+      "sha256": "5bbfcbb4b6698e5c6697a1f86555287563b47f5443e34fbb8cda22223280d0b1"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02648.json",
+      "sha256": "8b4ea1750f4cbd039283beaa398af003291068a75da47451d6b9def69e2b44a7"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02669.json",
+      "sha256": "4a2796c32fb8bdeec22bbc56e0aa577888cdf0edb71c201b8f9dd6ad7244dd25"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02675.json",
+      "sha256": "d1feb624e6e2e744c2433a74038eb278803517a2a3ac7dfbc65db8e3bdb1b62f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02676.json",
+      "sha256": "3af97b5bfee3dc2e1994995be676cfeaea209728abb18052a128782512598c49"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02687.json",
+      "sha256": "3455c7d518d8044a932c668b8bd22900d52f73da3c95362f64073a2d00076bfe"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02688.json",
+      "sha256": "1d577114a5ddfce547c4eb420cd3f8d6b841983e4a15eb107969b3fb0578ef92"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02689.json",
+      "sha256": "303f2a9f7c6cb84e117cb5f107136cc6ec91634903167f4e2903a9c2da7f0694"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02692.json",
+      "sha256": "12f923c2fba4291b3212e333448f9e5e9394d04673a00b5a7fc94757503d0db5"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02698.json",
+      "sha256": "1659ae325780bc2657b163a014c7802047a079290e3274d20ef7597e1138857b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02706.json",
+      "sha256": "d3f20373791bfd7f8506eb8494bd5edbca1898059bcae17977e1ceafcbb7444c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02714.json",
+      "sha256": "ef398b623bd06a779c22a3796029e98883ce3b2bc40d8e21eecf8c5b785d92b2"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02715.json",
+      "sha256": "2cc78d9aaf6ce6e1b4b0a7c4a2b50989a1cf3ddd5e9940fe2299a3dacad2cd1a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02727.json",
+      "sha256": "f98d4d4df17915860e02f7476c7a7034a5e4ebd1401b6bff081823ce6261cfe9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02768.json",
+      "sha256": "4f86519610a1ff1d8e2a8e0e5c4c26663cf979635d55b7f68180da7014ec3156"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02788.json",
+      "sha256": "cdea3b152e8d0638b8bbbd7e35536f46e235f3b85977a2c8a9c55b5e4a1bb8e8"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02799.json",
+      "sha256": "5efe64ff3b4e267d384e041b91c9584161fd412fd29dae7c6165b1fcb7b5612d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02866.json",
+      "sha256": "7921758d4f0bafa48d9ef8ab484e44494da9636593b169f05b8fef045ef34f00"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02869.json",
+      "sha256": "31a40955e202b5d760cc1fa353550f7f044fd6b733e2c08996ab17451a2cb0cc"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02880.json",
+      "sha256": "8bcbd8ed2056291676e227374e5376e39a8261b3ea9ce92837192671ca5e562a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02883.json",
+      "sha256": "722578556fa9383b0bc0ba018906366ad2ec1f88358ab26d0d91ec53dff3864a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02888.json",
+      "sha256": "2cde156249c3b0f135c78efcadb7ce8e32b9d583a2ac077b10a38a47f5eb8aca"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02889.json",
+      "sha256": "2be1187cb997ee710a975dd62f99257639234df752f44cc5eaec37f15ec61ca3"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/02899.json",
+      "sha256": "cecee147a03676971794bd89ca86fc040f178de6b68f17a631a3c583bc926a68"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03200.json",
+      "sha256": "a44b182b034bece4ad0fea083b3e6858251824017d0590087bea84d7a9232edb"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03288.json",
+      "sha256": "a13ff46895a2e989df74e6b59d80777c5d398fc82de6ee64e3dacf35023ca6bf"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03296.json",
+      "sha256": "2197b5c27019d072d77bb5bf9065b4346cae5bed821115f27a20d40d5496806f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03306.json",
+      "sha256": "09555bff1589370c138e70dd652602321a7a68f510a9e8a46da938766cbde405"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03308.json",
+      "sha256": "9bbcc2014f285e358e32a96cd50cef553cf1d91dc2fc408a6bb5d26052e345aa"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03311.json",
+      "sha256": "fcb51816abae5e948aa72fb8dfdcb2a02ec509221c236a3faea53127b1fcd77c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03317.json",
+      "sha256": "75d159b8eb028c69eca8dafa348187ec5e45b8d8dcbd89a1df4fab824df6423a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03320.json",
+      "sha256": "0ac98dd4f006c0e55e1cf697d4fd6c871dd8a466863452d7c36b84489d1879c8"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03323.json",
+      "sha256": "933ef63c22f60f3f30bfeb52aeaccb8b609b8a3067375eb2c3b1559063fd9988"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03328.json",
+      "sha256": "485fa9ddb622f45a513d9bdc6bec31711c60a2519dd1b464201fb2c2ef798663"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03330.json",
+      "sha256": "bcd71f5d6cc7a3eca34f124e3a469fca263872367b70c42297962059f701bace"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03339.json",
+      "sha256": "7f259bc77e61262d25d3034c6ccc504f72300855445b3fa70481380cfc96f14a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03347.json",
+      "sha256": "31b1568343055530678bb59c4d0abcbece2148d8f962ca38648f733bcb4a95db"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03360.json",
+      "sha256": "5de4d021c0fe1183e3d589ec6d3a0c51a84b4a1c2e8e91e7713701f5950f72c0"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03369.json",
+      "sha256": "12db4eed722ba5ae5260b1c0a704fd2831db6bf9630b6593745ef01be1f8a149"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03393.json",
+      "sha256": "26bbb2fb62c206fd4fffd53fa1774e54832391307b947a25c34e5c88880c666a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03396.json",
+      "sha256": "5ebd901bc91a644748e63bfd05092112aeee961ad216680b2c95fceff70a8261"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03606.json",
+      "sha256": "a313c9231c0e07695783f8ba1e2bfe7d4e6e60b9a9fdd5d409a9b15ec34c3972"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03618.json",
+      "sha256": "be4575092649f819722f7c15c9e920275806df863f8c4dd5687874bcc1958b1d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03661.json",
+      "sha256": "18026c5b8b784b0d3a402117b94f2b720790cdd12f93ed7d08844b988eb23254"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03668.json",
+      "sha256": "c1a07b44db1c7bbddd995a9c0decd91ca0555a74d2d4c5fc984094a6c8a6ec56"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03677.json",
+      "sha256": "8df668f5e4f318e412385977064d3287daff8b1b1e44c36e11561f4bdb1ab961"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03690.json",
+      "sha256": "3942a19a49639a18374d8e4260bad5b42a141465306772bf6156f953a424b836"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03692.json",
+      "sha256": "562a53ec93e13c1d3f94166e33f8fdd03ac49aef87b8ecc1cb2c84ddd80db5ee"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03696.json",
+      "sha256": "2a146a5e0685032187ab89d5e92b0730d1c8ea695426dbfb9b5d648454da29b6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03698.json",
+      "sha256": "96055c3d2ad7496e58ba057460d19d6e63506d3a363706317982bf97bca2d734"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03750.json",
+      "sha256": "6576e53f7350d9d5acb558a84dd25170ec18cfec2116844395d72bc6047c600a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03759.json",
+      "sha256": "10cd37b93490033e9e3b2c7d5e9f05c1357167478611b94736e1e2650167ea4f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03800.json",
+      "sha256": "000e63a2131020f446553a2a954764a49cb71be1889c6d7dcaa68ad3376fe219"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03808.json",
+      "sha256": "b3946273ffac50bcb4f87a03e713afa9c474c53d667cbae8c6ed3eeb65f37052"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03858.json",
+      "sha256": "82d09a85d1d513273d65b9dbf6c24b9c4a5672bdcbea376f047a9b5990936030"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03877.json",
+      "sha256": "67f30a41902a860d05b76f20deb611ee48848f1d534a5fd98ef9646368f04e8f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03888.json",
+      "sha256": "9f8e33cdfbceb349469dc686a8f9fe21e427e45b2603f9a5c01b4686dd1ec8ea"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03896.json",
+      "sha256": "c00b5d039491bfff408b1476e143317b25478c6b7b2abbbf5766ce2a4bf63c76"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03898.json",
+      "sha256": "f1f82bb7848cce6ff78f8a496e88532e3e7d8818f3fca85c5d40c263a937b898"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03899.json",
+      "sha256": "29c2dade53879eb77ae7c2e32a80aed459a83123702160bc5773007d75a863f8"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03900.json",
+      "sha256": "221f575612f4ad534e4cf6e196e436355be9b4a8d13b04f3f7535259287c4c5b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03908.json",
+      "sha256": "60a0397c5b212daac13d6c03752833cdda1d9bde55c2a455a7de3293b4e57c7d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03918.json",
+      "sha256": "eab319b14c0b1d54e9aaa3c059c9efdc9b6b4a07eb54dc2d8cbaf824a0f303c0"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03931.json",
+      "sha256": "8261561fc75d2473e06bcb6800178b9776fae2b19accca40b5ff11a8de4069ba"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03933.json",
+      "sha256": "2ce2a279e20df72434eb18eda01941486b651e8b5d6e6bceebb177f71c09dadd"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03939.json",
+      "sha256": "68ec9def88972eb3bb4ae1f639a3a3ccf2514d8f13cf36d3055efde3d4459b88"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03958.json",
+      "sha256": "86ce0838574990389e2266d3553df721588ae699bfa9ce4a52463dd992b7c2a9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03968.json",
+      "sha256": "399b1ad17e20c335e62be0b646fd7ef231ff7a4810e11effd0156d3a43bd7d13"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03969.json",
+      "sha256": "35bb776a9292e68bf3272113100c2cf0ee96439271a1d5aff20de1f763e510b8"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03986.json",
+      "sha256": "28ca6eae87d2b876f5cd7a56046761704bb73c6a540792f8849e7d63a3e584cc"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03988.json",
+      "sha256": "db16a452fab789ea169ae67b875eff970ebe45102fb8302dc5c9e76b86a58500"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03993.json",
+      "sha256": "419616bac00e94e107855ee23310d91ccccf47430bafdfacf04909151fb7409c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03996.json",
+      "sha256": "88d3a745cbf8812bbbba2a7cfb4204db041503c7e30a816c22ec3987e6e5a15b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/03998.json",
+      "sha256": "1ae591075fc3993f76ddd649115d5184059f79a63c1bd5758812b8d8bb07c6e3"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06030.json",
+      "sha256": "8b5a93e74f3f9c6b345e24bb095dd5723fe1f3769df950d9529d9ac6de68195b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06031.json",
+      "sha256": "2998ea4e5e5ecb91a971eca8c4fc2e2806741e970215b742141e408b473278ce"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06049.json",
+      "sha256": "4234cefb8311e704a8fe7959948fea414024f940a4336ebdd729d9ad174f710e"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06055.json",
+      "sha256": "08d275c35ee16317bfcc5a325fc0a370471033bcadb6bad23b1a1cf83a653733"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06060.json",
+      "sha256": "ccb20b257804048ef282be0c5d80bbec4b6bbe709c63131137bc99d1246727eb"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06066.json",
+      "sha256": "05f8511270c7976bdccede9ae3e4a6385252a464e3f19e15df12ab30fcaad8ca"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06067.json",
+      "sha256": "5a09bc230d332427cb3d59f27dc8850947fee89bf066a05453fe3b576fc1ca93"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06082.json",
+      "sha256": "459c3244b1efd97381101c109b0b8519cf4451705aff0c03e5828ee2309ec837"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06088.json",
+      "sha256": "209f899ad8456360758d059b5af71f2230e8f0e4237d6d91fc513fe222dfefa9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06098.json",
+      "sha256": "b6d788fd62efd539a4fd67575985c3a6246413bdb652177c6488c4f7b3d24f0d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06127.json",
+      "sha256": "7e84164083a550e9b60047b481204dca240deaa5572103e7e917d54d3a29e05b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06160.json",
+      "sha256": "51519d3e4d89ba296eca95ba68a4db75655aece140ccdcfa0bcf74e2dd4687cc"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06166.json",
+      "sha256": "5e4cbe31f4126e974372ba407c1d05e061a09069c3bccfbd71590db309479b04"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06178.json",
+      "sha256": "7bbf950fd7ee044d44af19e9d4b67083436009c7c6e5c29a81848cdafa2ee6b9"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06181.json",
+      "sha256": "2c333309b5ccc62b78f924bca5b44a988b0f3cca6a440f372cf1de4d0755d217"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06186.json",
+      "sha256": "5eec0dcb58e6027389e9f9fd788ec2d47006f76021215a445db680c9e0ee097a"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06198.json",
+      "sha256": "99a5905a7191d9406634f04956aa56be29f5f95ed4f589dbd7663d66c4bcc0a5"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06600.json",
+      "sha256": "0e0fe672552c7dcfcb4b73003186758adc7eb156e68b854b66a66146eb571645"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06613.json",
+      "sha256": "081db48207987d293ca4bb77403c030e9b86590ccf8dbed6c21e2215659c5be4"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06618.json",
+      "sha256": "5f2f0adc64f268902ac709ba1f689110f4f1512f42f955291179ae183b6986d1"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06651.json",
+      "sha256": "4db9565469e5cebe22e18b830851c16489d8953241c4a3912d9e297ca694f77b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06655.json",
+      "sha256": "66d15c9980aee2ae2a3d624845d2544598d20afdc1ac0633185ae664a95ebd56"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06666.json",
+      "sha256": "1a87c6f222b0f3c091488fe041cd4ecf83e55ef036fec636a93379e83ba29ea7"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06680.json",
+      "sha256": "51044fcbdb53d523d787a72f1e8fd8bb6f9ad0de7e6b9bc9a50f39b7a22dc8e2"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06682.json",
+      "sha256": "9877860af6a68b88993f264ba5db28b1fc63e20c30bc6720c38f60f3220e73e1"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06690.json",
+      "sha256": "7d364840d922d0178850eed922a32f83c798e4bd647c9c9296c3c27e215e5572"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06693.json",
+      "sha256": "75ea8f1287d60506b089d61d4a99c1115006ee5bb9138ec54aab6190026c639d"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06699.json",
+      "sha256": "cfb8623189148fbda92fad5f04cba3f278771002bf880d26f3dcc2c4e3a63452"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06806.json",
+      "sha256": "f5eca8f31d0ff89fecb885bdeb739aee2d2aeac7c874bb143e8048629f9c055e"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06808.json",
+      "sha256": "709ece7d51048b0ef8713c20d3f85d570e77f1ab6e0da7e917fad97240f424a2"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06809.json",
+      "sha256": "d8242855845b10782b985fce829e678ed5744046d19ac7266f946f6265990d03"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06818.json",
+      "sha256": "5dd220a909587cc2ade4ad81c58b914a2b50f9fb8540c4512a937468155537fb"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06821.json",
+      "sha256": "5b49081450bb36d4d68a4cddd81a92301201d1f8307d58a8155da2f55e6ec94f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06855.json",
+      "sha256": "242bf8999c43a716bb79fe7c007f4997d7475c5c66c89c887410ec146629191c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06862.json",
+      "sha256": "ed7887227896f8424269423048c122abd36a13a48a5cd7dc972a2e922b269c2c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06865.json",
+      "sha256": "0e67889ab3c990405d833e6e50e73185fce61d81fc66acf575eddbfe6fba94e4"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06869.json",
+      "sha256": "c5d480ce40c07b388482343de2bc21ce704188bd5bb25296e75269cffd0b72cd"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06881.json",
+      "sha256": "9dbe3678bee59bce3d76e19f9f7111f612322fc7436b12deafdc2338b2934a37"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06886.json",
+      "sha256": "ebc11b1ffefb5ebfd355d2daa13ddff82756640ac4041a77787d7e1c01930682"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06936.json",
+      "sha256": "4e90d9e0e186934f42329ce441b849381f41978abc46774d8f34b88727d87670"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06951.json",
+      "sha256": "c6d27f3f7e51bb844d63e3e40921b8a5475c8c9c56d4a79f4e56e6fe767a7cb8"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06963.json",
+      "sha256": "e0e91f612e92ebeb5a14115639650a379a9e49adb40335b969959dcc93cb1263"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06969.json",
+      "sha256": "b1ea070c9e4bde188acbd16ab55d39fdd4923f1881abf112173f8605623e41a6"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06979.json",
+      "sha256": "e1a17e1f4c578e291ef26ee0edccb3935c717415ca51fdfa9c694079d27d1f92"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06990.json",
+      "sha256": "333c75cbcf4105e466f518c00c485d4b7d77125f6faf18d56bdea570386993bf"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/06993.json",
+      "sha256": "a5f899088ad840e14250192a2f1b16738419ffe1e357583e91385426cf5d1f5b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/07618.json",
+      "sha256": "180b88d0184d39558261576d83b289196f26ec20bd7d6cb4018d38f45b8da078"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09606.json",
+      "sha256": "acbe4eb4e087e5687eec3e8256887d3fa61518e5ee77fd865c9d037c73af37b2"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09611.json",
+      "sha256": "3ab9c0f7b8857206cd047f4add97a91fbf4da128b169279587276a23c50c001b"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09626.json",
+      "sha256": "a0a2a0c826b3f6b352dadd66014f6bcb939feca7c20723a080ce2c61496dd627"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09630.json",
+      "sha256": "bed1a9cea82ec7e4eb6cd2b37f56d079bef1b413a3963a316117cae9a651d943"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09633.json",
+      "sha256": "4251cee6e4c2b077d54fcbb1ecdf30d27e47156e4281e5ce3719aa8df3f78dfd"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09636.json",
+      "sha256": "fb38a48bd37a5ecd7eb22c5fbfc234207dd1dc7f3e7683a67cafcb2b50cfa848"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09660.json",
+      "sha256": "299a58a63e945c8e11b6c3afd5394931b4a4550e91cf46602ef04929a7077216"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09688.json",
+      "sha256": "b8bc217ca15014945b142b3e1a0b871fc1b87519f74c21e5fd647cf0d835b4df"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09690.json",
+      "sha256": "31c9cc7f1514664190c109ad352eb54ea7b5560f36a0f6e73aaed6c117017236"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09696.json",
+      "sha256": "d8105add3a10fd14edf7d3956d6f4bca5bc6a98eeffeab9389762e69ce2d9ac7"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09858.json",
+      "sha256": "1910275b159e500a5dc30c462618b66c2246920500ee2f8071ff922e772b1aea"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09863.json",
+      "sha256": "6b5883bff778c540c7e9337059d900ce3bbfb67174b9711d673f551c67468b73"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09868.json",
+      "sha256": "8efdb5384b227220a5f285810050750772e9b328c1ede7d07d3ba02fdf3ea61c"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09880.json",
+      "sha256": "df4f3435cc7f25d90e77938dedc40497344d2ae91fd204da3e68fdca25f8c60f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09887.json",
+      "sha256": "2124953db40a46763643a4a1b4dff045a3494f74c5008c94e96d09011cc0e431"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09896.json",
+      "sha256": "74cb9e777ee0cd83e04c4257ffe2e960119842edbef9326cfcbd8111b5c6daf0"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09899.json",
+      "sha256": "7f98663d255735c117fc68e8da8c3c7bc69e4fa8cc9d4c758f0c65df400ded68"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09903.json",
+      "sha256": "0c9dce178fff58a664c575c5c349b741ee3d87b38adabf8903a3606f23ab647f"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09911.json",
+      "sha256": "281a6b8def179c7ce3dd5c583468f792c4dc1222ccb6bfd79201fa1237bd6afe"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09926.json",
+      "sha256": "20e78b2d3812cfb56125de0139d14294e312caa5584ce6877c451a911b9d2b65"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09927.json",
+      "sha256": "1ede1db90ae0d3c582d70a03a73f9b1d011bc83c8293ec8995f337ec26834cbc"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09969.json",
+      "sha256": "274cbe7ae6eff7220214ebcc436683f7e8d4f64e506a85905fff7f100f3c95ea"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09973.json",
+      "sha256": "c96b9aa80aaf2f0da84e0bd7fa44241a6cc7b6d0ea744f96335eea21bccac2b8"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09980.json",
+      "sha256": "4f71764a125d294f6f6044bda53d362cb0627e003dd4b8f38545817c3d2e2c14"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09981.json",
+      "sha256": "5e6feac7c9e7b9a380813c84429c9a20cd2d18928c47f6f918fb31da1a3a4334"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09985.json",
+      "sha256": "69e103fe93f8150a9c510a87465f156fbeebfa41b690eccf26bd82d2f514546e"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09987.json",
+      "sha256": "b1eff62b6e9b7a276092310fa6d0cce128dcda2ba2e95bdd347ee8f0f350d0fc"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09988.json",
+      "sha256": "48c08a99a02f1426c3ad7a5819e29ecdd4996d9e8dd17a2952a875ad9a2c1af3"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09992.json",
+      "sha256": "61dee9e7aa60a9402bc467f466e0eb4ec75df77f71a9fca4f925a6986a3a15f3"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09995.json",
+      "sha256": "df775315a65213125badded03886cd1a383851b4bfcc6096944e5569002d6862"
+    },
+    {
+      "file": "data/connect-fundamentals-2026-09-06/prepared/09999.json",
+      "sha256": "4db034b8ab231975e1598a7412cc59549180457b26287356ac01dec2ce71c3eb"
+    }
+  ],
+  "fundamental_warning": "Snapshot GAAP proxy, assumed lag, not original disclosure vintages; missing fields use explicitly specified technical fallback.",
+  "elapsed_seconds": 6.124015700013842
+}
