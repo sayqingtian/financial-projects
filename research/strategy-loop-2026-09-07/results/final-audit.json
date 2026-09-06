@@ -1,0 +1,472 @@
+{
+  "status": "passed",
+  "independent_stock_windows": 1844,
+  "equity_marks": 2238514,
+  "trades": 4236,
+  "audited_candidates": [
+    "R11_monthly_0.2_0.7",
+    "R11_BREADTH250_0.2_0.7"
+  ],
+  "breadth_checks": [
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "date": "2018-11-01",
+      "above": 45,
+      "available": 288,
+      "breadth": 0.15625,
+      "action": "Buy"
+    },
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "date": "2019-03-01",
+      "above": 204,
+      "available": 291,
+      "breadth": 0.7010309278350515,
+      "action": "Sell"
+    },
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "date": "2020-04-01",
+      "above": 48,
+      "available": 311,
+      "breadth": 0.15434083601286175,
+      "action": "Buy"
+    },
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "date": "2020-12-01",
+      "above": 241,
+      "available": 319,
+      "breadth": 0.7554858934169278,
+      "action": "Sell"
+    },
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "date": "2022-10-03",
+      "above": 48,
+      "available": 350,
+      "breadth": 0.13714285714285715,
+      "action": "Buy"
+    },
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "date": "2023-02-01",
+      "above": 301,
+      "available": 355,
+      "breadth": 0.847887323943662,
+      "action": "Sell"
+    },
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "date": "2026-07-02",
+      "above": 59,
+      "available": 409,
+      "breadth": 0.14425427872860636,
+      "action": "Buy"
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "date": "2018-09-11",
+      "above": 55,
+      "available": 284,
+      "breadth": 0.1936619718309859,
+      "action": "Buy"
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "date": "2019-04-03",
+      "above": 204,
+      "available": 289,
+      "breadth": 0.7058823529411765,
+      "action": "Sell"
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "date": "2020-03-16",
+      "above": 40,
+      "available": 306,
+      "breadth": 0.13071895424836602,
+      "action": "Buy"
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "date": "2021-01-06",
+      "above": 231,
+      "available": 319,
+      "breadth": 0.7241379310344828,
+      "action": "Sell"
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "date": "2022-03-14",
+      "above": 59,
+      "available": 339,
+      "breadth": 0.17404129793510326,
+      "action": "Buy"
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "date": "2023-01-13",
+      "above": 254,
+      "available": 353,
+      "breadth": 0.7195467422096318,
+      "action": "Sell"
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "date": "2024-01-22",
+      "above": 70,
+      "available": 367,
+      "breadth": 0.1907356948228883,
+      "action": "Buy"
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "date": "2024-05-17",
+      "above": 261,
+      "available": 369,
+      "breadth": 0.7073170731707317,
+      "action": "Sell"
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "date": "2026-06-25",
+      "above": 79,
+      "available": 399,
+      "breadth": 0.19799498746867167,
+      "action": "Buy"
+    }
+  ],
+  "bootstrap": [
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "window": "full",
+      "block_days": 20,
+      "repetitions": 500,
+      "portfolio_cagr_difference_95": [
+        -17.320824629925134,
+        7.482886615248253
+      ],
+      "portfolio_sharpe_difference_95": [
+        -0.2029427749987786,
+        0.9875967689769218
+      ],
+      "fraction_stocks_outperforming_95": [
+        0.21627272727272728,
+        0.8055454545454545
+      ],
+      "warning": "Conditional time-block resampling of the current survivor universe and already-selected rules; no correction for searching 311 configurations, not proof of future edge."
+    },
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "window": "full",
+      "block_days": 63,
+      "repetitions": 500,
+      "portfolio_cagr_difference_95": [
+        -19.17564430949143,
+        8.466253563403109
+      ],
+      "portfolio_sharpe_difference_95": [
+        -0.3350678548429243,
+        0.9335379103336131
+      ],
+      "fraction_stocks_outperforming_95": [
+        0.1871818181818182,
+        0.8164545454545454
+      ],
+      "warning": "Conditional time-block resampling of the current survivor universe and already-selected rules; no correction for searching 311 configurations, not proof of future edge."
+    },
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "window": "reserved",
+      "block_days": 20,
+      "repetitions": 500,
+      "portfolio_cagr_difference_95": [
+        -72.39688947726226,
+        6.799981234906288
+      ],
+      "portfolio_sharpe_difference_95": [
+        -1.8873130354333756,
+        0.92939000179229
+      ],
+      "fraction_stocks_outperforming_95": [
+        0.03445454545454546,
+        0.680181818181818
+      ],
+      "warning": "Conditional time-block resampling of the current survivor universe and already-selected rules; no correction for searching 311 configurations, not proof of future edge."
+    },
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "window": "reserved",
+      "block_days": 63,
+      "repetitions": 500,
+      "portfolio_cagr_difference_95": [
+        -62.74115985484768,
+        5.121755967180496
+      ],
+      "portfolio_sharpe_difference_95": [
+        -1.7553101486763223,
+        1.0888282277663586
+      ],
+      "fraction_stocks_outperforming_95": [
+        0.05454545454545454,
+        0.620272727272727
+      ],
+      "warning": "Conditional time-block resampling of the current survivor universe and already-selected rules; no correction for searching 311 configurations, not proof of future edge."
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "window": "full",
+      "block_days": 20,
+      "repetitions": 500,
+      "portfolio_cagr_difference_95": [
+        -12.28730393618422,
+        10.030695504947886
+      ],
+      "portfolio_sharpe_difference_95": [
+        -0.1695645978475833,
+        0.8382199966401732
+      ],
+      "fraction_stocks_outperforming_95": [
+        0.30354545454545456,
+        0.8528181818181817
+      ],
+      "warning": "Conditional time-block resampling of the current survivor universe and already-selected rules; no correction for searching 311 configurations, not proof of future edge."
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "window": "full",
+      "block_days": 63,
+      "repetitions": 500,
+      "portfolio_cagr_difference_95": [
+        -13.429566869063628,
+        11.8833452992816
+      ],
+      "portfolio_sharpe_difference_95": [
+        -0.27373856527056617,
+        0.9286335150027462
+      ],
+      "fraction_stocks_outperforming_95": [
+        0.2509090909090909,
+        0.8581818181818182
+      ],
+      "warning": "Conditional time-block resampling of the current survivor universe and already-selected rules; no correction for searching 311 configurations, not proof of future edge."
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "window": "reserved",
+      "block_days": 20,
+      "repetitions": 500,
+      "portfolio_cagr_difference_95": [
+        -58.88910467446685,
+        16.91651401907284
+      ],
+      "portfolio_sharpe_difference_95": [
+        -0.9187083922186254,
+        1.7063375295580923
+      ],
+      "fraction_stocks_outperforming_95": [
+        0.07636363636363637,
+        0.7837272727272726
+      ],
+      "warning": "Conditional time-block resampling of the current survivor universe and already-selected rules; no correction for searching 311 configurations, not proof of future edge."
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "window": "reserved",
+      "block_days": 63,
+      "repetitions": 500,
+      "portfolio_cagr_difference_95": [
+        -54.10086395078412,
+        22.379096544120166
+      ],
+      "portfolio_sharpe_difference_95": [
+        -1.0382872408497055,
+        1.9477026347258983
+      ],
+      "fraction_stocks_outperforming_95": [
+        0.0780909090909091,
+        0.7854545454545454
+      ],
+      "warning": "Conditional time-block resampling of the current survivor universe and already-selected rules; no correction for searching 311 configurations, not proof of future edge."
+    }
+  ],
+  "intervals": [
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "window": "full",
+      "code": "00700",
+      "name": "腾讯控股",
+      "buy_signal": "2018-11-01",
+      "sell_signal": "2019-03-01",
+      "entry_date": "2018-11-02",
+      "entry_price": 258.8507842822391,
+      "entry_cost": 99999.99999999999,
+      "exit_date": "2019-03-04",
+      "exit_price": 295.4085757519122,
+      "quantity": 385.9370184143363,
+      "exit_proceeds": 113895.0958347789,
+      "net_pnl": 13895.095834778913,
+      "return_pct": 13.895095834778914,
+      "forced_exit": false,
+      "days_held": 122
+    },
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "window": "full",
+      "code": "00700",
+      "name": "腾讯控股",
+      "buy_signal": "2020-04-01",
+      "sell_signal": "2020-12-01",
+      "entry_date": "2020-04-02",
+      "entry_price": 325.6264321054671,
+      "entry_cost": 113895.09583477893,
+      "exit_date": "2020-12-02",
+      "exit_price": 515.4459073835781,
+      "quantity": 349.4228456349823,
+      "exit_proceeds": 179928.4671531465,
+      "net_pnl": 66033.37131836759,
+      "return_pct": 57.977361390659354,
+      "forced_exit": false,
+      "days_held": 244
+    },
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "window": "full",
+      "code": "00700",
+      "name": "腾讯控股",
+      "buy_signal": "2022-10-03",
+      "sell_signal": "2023-02-01",
+      "entry_date": "2022-10-05",
+      "entry_price": 251.90520153005832,
+      "entry_cost": 179928.4671531465,
+      "exit_date": "2023-02-02",
+      "exit_price": 375.0708786962126,
+      "quantity": 713.5569942300834,
+      "exit_proceeds": 267366.81437688,
+      "net_pnl": 87438.3472237335,
+      "return_pct": 48.596171916092715,
+      "forced_exit": false,
+      "days_held": 120
+    },
+    {
+      "candidate": "R11_monthly_0.2_0.7",
+      "window": "full",
+      "code": "00700",
+      "name": "腾讯控股",
+      "buy_signal": "2026-07-02",
+      "sell_signal": null,
+      "entry_date": "2026-07-03",
+      "entry_price": 433.2165,
+      "entry_cost": 267366.81437688,
+      "exit_date": "2026-09-04",
+      "exit_price": 442.57858779907235,
+      "quantity": 616.5501883289713,
+      "exit_proceeds": 272599.0397462303,
+      "net_pnl": 5232.225369350286,
+      "return_pct": 1.9569464451092822,
+      "forced_exit": true,
+      "days_held": 63
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "window": "full",
+      "code": "00700",
+      "name": "腾讯控股",
+      "buy_signal": "2018-09-11",
+      "sell_signal": "2019-04-03",
+      "entry_date": "2018-09-12",
+      "entry_price": 273.76755572476844,
+      "entry_cost": 99999.99999999999,
+      "exit_date": "2019-04-04",
+      "exit_price": 329.59528227233886,
+      "quantity": 364.9084700180259,
+      "exit_proceeds": 120151.8380689794,
+      "net_pnl": 20151.838068979414,
+      "return_pct": 20.151838068979416,
+      "forced_exit": false,
+      "days_held": 204
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "window": "full",
+      "code": "00700",
+      "name": "腾讯控股",
+      "buy_signal": "2020-03-16",
+      "sell_signal": "2021-01-06",
+      "entry_date": "2020-03-17",
+      "entry_price": 300.8084397131976,
+      "entry_cost": 120151.83806897941,
+      "exit_date": "2021-01-07",
+      "exit_price": 511.91838914796807,
+      "quantity": 399.0307132910223,
+      "exit_proceeds": 204066.8888085363,
+      "net_pnl": 83915.0507395569,
+      "return_pct": 69.84083813298062,
+      "forced_exit": false,
+      "days_held": 296
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "window": "full",
+      "code": "00700",
+      "name": "腾讯控股",
+      "buy_signal": "2022-03-14",
+      "sell_signal": "2023-01-13",
+      "entry_date": "2022-03-15",
+      "entry_price": 278.39354959544465,
+      "entry_cost": 204066.88880853629,
+      "exit_date": "2023-01-16",
+      "exit_price": 358.8724738946229,
+      "quantity": 732.2835822848726,
+      "exit_proceeds": 262533.6243462219,
+      "net_pnl": 58466.73553768563,
+      "return_pct": 28.650770283728615,
+      "forced_exit": false,
+      "days_held": 307
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "window": "full",
+      "code": "00700",
+      "name": "腾讯控股",
+      "buy_signal": "2024-01-22",
+      "sell_signal": "2024-05-17",
+      "entry_date": "2024-01-23",
+      "entry_price": 259.3355956497585,
+      "entry_cost": 262533.624346222,
+      "exit_date": "2024-05-20",
+      "exit_price": 388.8373332243328,
+      "quantity": 1011.3203023137445,
+      "exit_proceeds": 392845.85029791517,
+      "net_pnl": 130312.2259516932,
+      "return_pct": 49.636394681330835,
+      "forced_exit": false,
+      "days_held": 118
+    },
+    {
+      "candidate": "R11_BREADTH250_0.2_0.7",
+      "window": "full",
+      "code": "00700",
+      "name": "腾讯控股",
+      "buy_signal": "2026-06-25",
+      "sell_signal": null,
+      "entry_date": "2026-06-26",
+      "entry_price": 418.209,
+      "entry_cost": 392845.85029791517,
+      "exit_date": "2026-09-04",
+      "exit_price": 442.57858779907235,
+      "quantity": 938.4145173848822,
+      "exit_proceeds": 414906.84970247484,
+      "net_pnl": 22060.99940455967,
+      "return_pct": 5.615688542421838,
+      "forced_exit": true,
+      "days_held": 70
+    }
+  ],
+  "elapsed_seconds": 63.1177549000131,
+  "source_files_sha256": {
+    "scripts/audit_strategy_lab.py": "bd3d42d79d1a63b97f35ebf93ca75bc3c5f7fba9663ee622dc20f752640438b9",
+    "scripts/report_tencent_fundamentals.py": "29ce30e6241f719513eec32c218f23fb2d76fcf8bb5b2175503855365ddc1f46"
+  }
+}
