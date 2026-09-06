@@ -1,0 +1,420 @@
+{
+  "locked_utc": "2026-09-06T17:12:15.937246+00:00",
+  "development_commit": "e0fc3dba07c29aefe80f999192f662ffe89992a3",
+  "attempted_configurations": 311,
+  "primary": "R11_monthly_0.2_0.7",
+  "policy": "Top 8 activity-eligible development scores plus predeclared structural/source controls; no replacement of primary after reserved validation.",
+  "finalists": [
+    {
+      "id": "R11_monthly_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7,
+        "review": "monthly"
+      },
+      "development_score": 100.0
+    },
+    {
+      "id": "R11_BREADTH250_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 250,
+        "entry": 0.2,
+        "exit": 0.7
+      },
+      "development_score": 99.67741935483872
+    },
+    {
+      "id": "R11_HORIZON_BAG",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 150,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 250,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          }
+        ]
+      },
+      "development_score": 99.06451612903228
+    },
+    {
+      "id": "R11_BREADTH250_0.15_0.65",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 250,
+        "entry": 0.15,
+        "exit": 0.65
+      },
+      "development_score": 98.7983870967742
+    },
+    {
+      "id": "R11_weekly_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7,
+        "review": "weekly"
+      },
+      "development_score": 98.38709677419354
+    },
+    {
+      "id": "R11_MARKET_BAG",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.3,
+                "exit": 0.8
+              }
+            }
+          }
+        ]
+      },
+      "development_score": 98.03225806451611
+    },
+    {
+      "id": "R11_INITIAL_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7,
+        "initial_hold": true
+      },
+      "development_score": 97.71774193548386
+    },
+    {
+      "id": "R10_BREADTH200_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7
+      },
+      "development_score": 97.6048387096774
+    },
+    {
+      "id": "R11_FIXED_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7,
+        "formation_date": "2016-09-06"
+      },
+      "development_score": 96.37903225806453
+    },
+    {
+      "id": "R11_MARKET_CORE0.5",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      },
+      "development_score": 94.31451612903226
+    },
+    {
+      "id": "R11_MARKET_CORE0.75",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.75,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      },
+      "development_score": 95.79838709677418
+    },
+    {
+      "id": "R11_MARKET_STOCK_BLEND",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75,
+                    "initial_hold": true
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      },
+      "development_score": 96.12096774193547
+    },
+    {
+      "id": "R11_MARKET_AVOID_LOSS",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "breadth_reversal",
+          "params": {
+            "period": 200,
+            "entry": 0.2,
+            "exit": 0.7
+          }
+        },
+        "mode": "avoid_loss",
+        "lag": 365
+      },
+      "development_score": 95.29032258064515
+    },
+    {
+      "id": "R09_INITIAL_BLEND",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75,
+                    "initial_hold": true
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      },
+      "development_score": 89.87096774193549
+    },
+    {
+      "id": "R05_MAX126_avoid_loss_L365",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "mode": "avoid_loss",
+        "lag": 365
+      },
+      "development_score": 87.12096774193549
+    },
+    {
+      "id": "R07_META_reversal_504_utility",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 504,
+        "metric": "utility"
+      },
+      "development_score": 76.94354838709677
+    },
+    {
+      "id": "R02_RSI14_25_75",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 25,
+        "exit": 75,
+        "trend": 0
+      },
+      "development_score": 74.32258064516128
+    },
+    {
+      "id": "R01_RSI14_30_70_T0",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 30,
+        "exit": 70,
+        "trend": 0
+      },
+      "development_score": 50.04838709677419
+    },
+    {
+      "id": "R01_SMA200_monthly",
+      "family": "sma",
+      "params": {
+        "period": 200,
+        "review": "monthly"
+      },
+      "development_score": 5.919354838709677
+    },
+    {
+      "id": "R01_BH",
+      "family": "buy_hold",
+      "params": {},
+      "development_score": 19.846774193548384
+    }
+  ]
+}
