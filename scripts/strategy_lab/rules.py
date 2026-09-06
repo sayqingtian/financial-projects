@@ -51,6 +51,40 @@ def targets(panel, spec):
         buy = rsi < np.where(bull, p['bull_entry'], p['bear_entry'])
         sell = rsi > np.where(bull, p['bull_exit'], p['bear_exit'])
         return hysteresis(buy, sell, review, np.isfinite(rsi) & np.isfinite(ma))
+    if family == 'risk_overlay':
+        base = targets(panel, p['base'])
+        vol = panel.feature('vol', p.get('vol_period', 63)) if p.get('vol_cap') else None
+        state = np.zeros(panel.shape[1], bool)
+        peak = np.zeros(panel.shape[1])
+        anchor = peak.copy()
+        cooldown = np.zeros(panel.shape[1], int)
+        age = cooldown.copy()
+        out = np.zeros(panel.shape, bool)
+        for i in range(len(c)):
+            observed = panel.observed[i]
+            cooldown[observed] = np.maximum(0, cooldown[observed]-1)
+            state[observed & ~base[i]] = False
+            enter = observed & base[i] & ~state & (cooldown == 0)
+            if vol is not None:
+                enter &= np.isfinite(vol[i]) & (vol[i] <= p['vol_cap'])
+            state[enter] = True
+            peak[enter] = c[i, enter]
+            anchor[enter] = c[i, enter]
+            age[enter] = 0
+            active = observed & state
+            age[active] += 1
+            peak[active] = np.maximum(peak[active], c[i, active])
+            stop = np.zeros(panel.shape[1], bool)
+            if p.get('trailing'):
+                stop |= active & (c[i] < peak*(1-p['trailing']))
+            if p.get('loss'):
+                stop |= active & (c[i] < anchor*(1-p['loss']))
+            if p.get('max_bars'):
+                stop |= active & (age >= p['max_bars'])
+            state[stop] = False
+            cooldown[stop] = p.get('cooldown', 20)
+            out[i] = state
+        return out
     if family in ('sma', 'ema'):
         ma = panel.feature(family, p['period'])
         band = p.get('band', 0)
@@ -81,6 +115,21 @@ def targets(panel, spec):
             buy &= c > ma
             sell |= c < ma
             ready &= np.isfinite(ma)
+    elif family == 'channel_reversion':
+        hi = panel.feature('prior_high', p['period'])
+        lo = panel.feature('prior_low', p['period'])
+        with np.errstate(divide='ignore', invalid='ignore'):
+            location = (c-lo)/(hi-lo)
+        buy, sell, ready = location < p['entry'], location > p['exit'], np.isfinite(location)
+    elif family == 'return_reversion':
+        m = panel.feature('mom', p['period'])
+        buy, sell, ready = m < -p['entry'], m > p['exit'], np.isfinite(m)
+    elif family == 'drawdown_recovery':
+        dd = panel.feature('drawdown', p['period'])
+        mom = panel.feature('mom', p['recovery_days'])
+        buy = (dd < -p['entry']) & (mom > 0)
+        sell = dd > -p['exit']
+        ready = np.isfinite(dd) & np.isfinite(mom)
     else:
         raise ValueError(f'Unknown family {family}')
     return hysteresis(buy, sell, review, ready)

@@ -90,6 +90,20 @@ class EngineTests(unittest.TestCase):
         spec=dict(family='rsi_recovery',params=dict(oversold=25,recover=30,overbought=70,release=65))
         self.assertEqual(targets(p,spec)[:,0].tolist(),[False,False,False,True,True,True,False])
 
+    def test_trailing_risk_overlay_waits_for_cooldown(self):
+        p=panel([10,12,9,8,10,11])
+        s=dict(family='risk_overlay',params=dict(base=dict(family='buy_hold'),trailing=.2,cooldown=2))
+        self.assertEqual(targets(p,s)[:,0].tolist(),[True,True,False,False,True,True])
+        r=simulate(p,targets(p,s),['2020-01-01','2020-01-06'],commission=0,slippage=0)['rows'][0]
+        self.assertAlmostEqual(r['final_capital'],100000*8/12)
+
+    def test_risk_and_channel_are_prefix_invariant(self):
+        p=panel([10,12,9,8,14,15]);q=panel([10,12,9,8,14,15,1000,1])
+        specs=[dict(family='channel_reversion',params=dict(period=3,entry=.2,exit=.8)),
+               dict(family='risk_overlay',params=dict(base=dict(family='buy_hold'),loss=.2,cooldown=2))]
+        for s in specs:
+            self.assertTrue(np.array_equal(targets(p,s),targets(q,s)[:6]))
+
 
 if __name__=='__main__':
     unittest.main()

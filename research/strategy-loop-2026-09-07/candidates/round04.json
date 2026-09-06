@@ -1,0 +1,412 @@
+{
+  "hypothesis": "Test longer-horizon price value, recovery from drawdown, and close-triggered risk exits with cooldown. Risk anchors are signal close, not claimed intraday stop fills.",
+  "candidates": [
+    {
+      "id": "R04_CHANNEL63_0.1_0.9",
+      "family": "channel_reversion",
+      "params": {
+        "period": 63,
+        "entry": 0.1,
+        "exit": 0.9
+      }
+    },
+    {
+      "id": "R04_CHANNEL63_0.2_0.8",
+      "family": "channel_reversion",
+      "params": {
+        "period": 63,
+        "entry": 0.2,
+        "exit": 0.8
+      }
+    },
+    {
+      "id": "R04_CHANNEL63_0.3_0.9",
+      "family": "channel_reversion",
+      "params": {
+        "period": 63,
+        "entry": 0.3,
+        "exit": 0.9
+      }
+    },
+    {
+      "id": "R04_CHANNEL126_0.1_0.9",
+      "family": "channel_reversion",
+      "params": {
+        "period": 126,
+        "entry": 0.1,
+        "exit": 0.9
+      }
+    },
+    {
+      "id": "R04_CHANNEL126_0.2_0.8",
+      "family": "channel_reversion",
+      "params": {
+        "period": 126,
+        "entry": 0.2,
+        "exit": 0.8
+      }
+    },
+    {
+      "id": "R04_CHANNEL126_0.3_0.9",
+      "family": "channel_reversion",
+      "params": {
+        "period": 126,
+        "entry": 0.3,
+        "exit": 0.9
+      }
+    },
+    {
+      "id": "R04_CHANNEL252_0.1_0.9",
+      "family": "channel_reversion",
+      "params": {
+        "period": 252,
+        "entry": 0.1,
+        "exit": 0.9
+      }
+    },
+    {
+      "id": "R04_CHANNEL252_0.2_0.8",
+      "family": "channel_reversion",
+      "params": {
+        "period": 252,
+        "entry": 0.2,
+        "exit": 0.8
+      }
+    },
+    {
+      "id": "R04_CHANNEL252_0.3_0.9",
+      "family": "channel_reversion",
+      "params": {
+        "period": 252,
+        "entry": 0.3,
+        "exit": 0.9
+      }
+    },
+    {
+      "id": "R04_RETURN63_0.15",
+      "family": "return_reversion",
+      "params": {
+        "period": 63,
+        "entry": 0.15,
+        "exit": 0.15
+      }
+    },
+    {
+      "id": "R04_RETURN63_0.25",
+      "family": "return_reversion",
+      "params": {
+        "period": 63,
+        "entry": 0.25,
+        "exit": 0.25
+      }
+    },
+    {
+      "id": "R04_RETURN126_0.15",
+      "family": "return_reversion",
+      "params": {
+        "period": 126,
+        "entry": 0.15,
+        "exit": 0.15
+      }
+    },
+    {
+      "id": "R04_RETURN126_0.25",
+      "family": "return_reversion",
+      "params": {
+        "period": 126,
+        "entry": 0.25,
+        "exit": 0.25
+      }
+    },
+    {
+      "id": "R04_RETURN252_0.15",
+      "family": "return_reversion",
+      "params": {
+        "period": 252,
+        "entry": 0.15,
+        "exit": 0.15
+      }
+    },
+    {
+      "id": "R04_RETURN252_0.25",
+      "family": "return_reversion",
+      "params": {
+        "period": 252,
+        "entry": 0.25,
+        "exit": 0.25
+      }
+    },
+    {
+      "id": "R04_DD126_0.2",
+      "family": "drawdown_recovery",
+      "params": {
+        "period": 126,
+        "entry": 0.2,
+        "exit": 0.05,
+        "recovery_days": 21
+      }
+    },
+    {
+      "id": "R04_DD126_0.35",
+      "family": "drawdown_recovery",
+      "params": {
+        "period": 126,
+        "entry": 0.35,
+        "exit": 0.05,
+        "recovery_days": 21
+      }
+    },
+    {
+      "id": "R04_DD252_0.2",
+      "family": "drawdown_recovery",
+      "params": {
+        "period": 252,
+        "entry": 0.2,
+        "exit": 0.05,
+        "recovery_days": 21
+      }
+    },
+    {
+      "id": "R04_DD252_0.35",
+      "family": "drawdown_recovery",
+      "params": {
+        "period": 252,
+        "entry": 0.35,
+        "exit": 0.05,
+        "recovery_days": 21
+      }
+    },
+    {
+      "id": "R04_SLOWZ60",
+      "family": "zscore",
+      "params": {
+        "period": 60,
+        "entry": 1.5,
+        "exit": 1
+      }
+    },
+    {
+      "id": "R04_SLOWZ120",
+      "family": "zscore",
+      "params": {
+        "period": 120,
+        "entry": 1.5,
+        "exit": 1
+      }
+    },
+    {
+      "id": "R04_SLOWZ252",
+      "family": "zscore",
+      "params": {
+        "period": 252,
+        "entry": 1.5,
+        "exit": 1
+      }
+    },
+    {
+      "id": "R04_TRAIL0.15_20",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "trailing": 0.15,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R04_TRAIL0.15_60",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "trailing": 0.15,
+        "cooldown": 60
+      }
+    },
+    {
+      "id": "R04_TRAIL0.25_20",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "trailing": 0.25,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R04_TRAIL0.25_60",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "trailing": 0.25,
+        "cooldown": 60
+      }
+    },
+    {
+      "id": "R04_TRAIL0.35_20",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "trailing": 0.35,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R04_TRAIL0.35_60",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "trailing": 0.35,
+        "cooldown": 60
+      }
+    },
+    {
+      "id": "R04_LOSS0.15",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "loss": 0.15,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R04_LOSS0.25",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "loss": 0.25,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R04_VOLCAP0.4",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "vol_cap": 0.4
+      }
+    },
+    {
+      "id": "R04_VOLCAP0.6",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "vol_cap": 0.6
+      }
+    },
+    {
+      "id": "R04_VOLCAP0.8",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "vol_cap": 0.8
+      }
+    },
+    {
+      "id": "R04_MAXHOLD63",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 63,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R04_MAXHOLD126",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 126,
+        "cooldown": 20
+      }
+    }
+  ]
+}
