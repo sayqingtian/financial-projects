@@ -29,6 +29,12 @@ jobs:
       - name: Check temporal and accounting invariants
         run: python scripts/test_connect_fundamentals.py
 
+      - name: Install strategy research dependencies
+        run: python -m pip install numpy pandas
+
+      - name: Check strategy research accounting and causality
+        run: python scripts/test_strategy_lab.py
+
   test:
     name: Test (${{ matrix.os }}, ${{ matrix.toolchain }})
     runs-on: ${{ matrix.os }}

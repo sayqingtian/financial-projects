@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "started_utc": "2026-09-06T16:41:26Z",
+  "deadline_utc": "2026-09-06T18:41:26Z",
+  "maximum_wall_seconds": 7200,
+  "universe": "Frozen 469 current Stock Connect stocks above HKD10bn from 2026-09-06; 461 multi-bar histories, 5 price errors and 3 single-bar records remain visible",
+  "training": ["2016-09-06", "2018-12-31"],
+  "development": ["2019-01-01", "2023-12-31"],
+  "reserved_validation": ["2024-01-01", "2026-09-04"],
+  "full_history": ["2016-09-06", "2026-09-04"],
+  "selection": "Develop on 2019-2023, diagnose 2016-2018; lock finalists before examining 2024-2026. Earlier conversation already examined full-history strategies: reserved validation is a new-loop holdout, not a never-seen independent sample.",
+  "objectives": {
+    "majority": "strictly positive paired net CAGR difference on >50% of eligible stocks; ties are not wins",
+    "cagr_aspiration": "median per-stock full-calendar net CAGR >=8%, not annualized only over invested days",
+    "sharpe": "maximize median daily Sharpe, cash rate zero; also compare paired Sharpe versus Buy & Hold",
+    "activity": "at least 80% of selection-cohort stocks have an entry; report all-cash cases and do not award them a finite Sharpe",
+    "score_weights": {"outperformance_rate": 0.35, "median_sharpe": 0.30, "median_cagr": 0.20, "median_excess_cagr": 0.15},
+    "normalization": "cross-candidate average-rank percentiles over all completed development candidates; higher is better; activity-ineligible candidates remain visible but cannot be finalists"
+  },
+  "execution": {
+    "initial_hkd_per_stock": 100000,
+    "side": "long only, unlevered, fractional adjusted shares",
+    "signal": "observed daily close using only that date and earlier inputs",
+    "fill": "next positive-volume observed open; later target change replaces pending order",
+    "commission_each_side": 0.001,
+    "slippage_each_side": 0.0005,
+    "terminal": "liquidate at last observed close if positive volume; otherwise mark open position and disclose",
+    "warmup": "indicators may use prior dates before evaluation window; each window starts with cash and can first signal on its first observed close",
+    "benchmark": "Buy & Hold on the identical stock, window, prices, costs and next-open convention"
+  },
+  "coverage": "All valid multi-bar stocks are evaluated. Primary full-history statistics require >=3 years, >=95% reference-calendar coverage and an end within 7 days of the window end. Development/training require >=2 years. Full-ten-year 275-stock subset reported separately; no invented pre-IPO history.",
+  "final_checks": ["double transaction costs", "one extra observed bar execution delay", "year-by-year outcomes", "active versus all-cash", "full-ten-year cohort", "independent cash/share ledger reconciliation", "time-block bootstrap for equal-account portfolio, not independent-stock significance"],
+  "fundamentals": "Only lagged published/assumed-available fields; snapshot GAAP proxies labeled exploratory, no replacement of missing records with future values. Missing-data fallback must be explicit per candidate.",
+  "archive": "Commit each coherent source/spec change and each completed iteration's results/diagnosis to master, push without force. Track small per-stock metrics, config, input SHA256 manifest and source commit; large curves remain ignored locally.",
+  "biases": ["current-universe survivorship and current market-cap filtering", "multiple testing across all attempted candidates", "earlier experiments have inspected this historical market", "financial snapshots may be restated", "adjusted synthetic prices and proportional costs approximate real trading"],
+  "sources": [
+    "https://www.aqr.com/Insights/Research/Journal-Article/Time-Series-Momentum",
+    "https://mebfaber.com/2009/02/19/a-quantitative-approach-to-tactical-asset-allocation-updated/",
+    "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf"
+  ]
+}

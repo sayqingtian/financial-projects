@@ -185,6 +185,8 @@ Excel默认输出至 `outputs/01a06f83-a122-76c3-b29c-df4417405f3b/`，包含股
 
 ## 开发与验证
 
+持续策略研究及逐轮Git留档见 [两小时港股策略研究记录](research/strategy-loop-2026-09-07/README.md)。这是独立研究入口，不自动替换原20组默认预设。
+
 ```sh
 cargo fmt --all -- --check
 cargo clippy --locked --all-targets --all-features -- -D warnings

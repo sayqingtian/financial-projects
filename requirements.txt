@@ -3,4 +3,6 @@ requests
 matplotlib
 pypdf
 openpyxl
+numpy
+pandas
 tzdata; sys_platform == "win32"

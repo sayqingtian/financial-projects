@@ -1,0 +1,281 @@
+{
+  "hypothesis": "Compare slow trend, momentum, breakout and mean reversion with common accounting before choosing improvements.",
+  "candidates": [
+    {
+      "id": "R01_BH",
+      "family": "buy_hold",
+      "params": {}
+    },
+    {
+      "id": "R01_SMA50_weekly",
+      "family": "sma",
+      "params": {
+        "period": 50,
+        "review": "weekly"
+      }
+    },
+    {
+      "id": "R01_SMA50_monthly",
+      "family": "sma",
+      "params": {
+        "period": 50,
+        "review": "monthly"
+      }
+    },
+    {
+      "id": "R01_SMA100_weekly",
+      "family": "sma",
+      "params": {
+        "period": 100,
+        "review": "weekly"
+      }
+    },
+    {
+      "id": "R01_SMA100_monthly",
+      "family": "sma",
+      "params": {
+        "period": 100,
+        "review": "monthly"
+      }
+    },
+    {
+      "id": "R01_SMA150_weekly",
+      "family": "sma",
+      "params": {
+        "period": 150,
+        "review": "weekly"
+      }
+    },
+    {
+      "id": "R01_SMA150_monthly",
+      "family": "sma",
+      "params": {
+        "period": 150,
+        "review": "monthly"
+      }
+    },
+    {
+      "id": "R01_SMA200_weekly",
+      "family": "sma",
+      "params": {
+        "period": 200,
+        "review": "weekly"
+      }
+    },
+    {
+      "id": "R01_SMA200_monthly",
+      "family": "sma",
+      "params": {
+        "period": 200,
+        "review": "monthly"
+      }
+    },
+    {
+      "id": "R01_SMA250_weekly",
+      "family": "sma",
+      "params": {
+        "period": 250,
+        "review": "weekly"
+      }
+    },
+    {
+      "id": "R01_SMA250_monthly",
+      "family": "sma",
+      "params": {
+        "period": 250,
+        "review": "monthly"
+      }
+    },
+    {
+      "id": "R01_SMA100_band2",
+      "family": "sma",
+      "params": {
+        "period": 100,
+        "band": 0.02,
+        "review": "daily"
+      }
+    },
+    {
+      "id": "R01_SMA200_band2",
+      "family": "sma",
+      "params": {
+        "period": 200,
+        "band": 0.02,
+        "review": "daily"
+      }
+    },
+    {
+      "id": "R01_CROSS10_50",
+      "family": "cross",
+      "params": {
+        "fast": 10,
+        "slow": 50,
+        "review": "weekly"
+      }
+    },
+    {
+      "id": "R01_CROSS20_100",
+      "family": "cross",
+      "params": {
+        "fast": 20,
+        "slow": 100,
+        "review": "weekly"
+      }
+    },
+    {
+      "id": "R01_CROSS50_200",
+      "family": "cross",
+      "params": {
+        "fast": 50,
+        "slow": 200,
+        "review": "weekly"
+      }
+    },
+    {
+      "id": "R01_MOM63",
+      "family": "momentum",
+      "params": {
+        "period": 63,
+        "review": "monthly"
+      }
+    },
+    {
+      "id": "R01_MOM126",
+      "family": "momentum",
+      "params": {
+        "period": 126,
+        "review": "monthly"
+      }
+    },
+    {
+      "id": "R01_MOM252",
+      "family": "momentum",
+      "params": {
+        "period": 252,
+        "review": "monthly"
+      }
+    },
+    {
+      "id": "R01_BREAK20_10",
+      "family": "breakout",
+      "params": {
+        "entry": 20,
+        "exit": 10
+      }
+    },
+    {
+      "id": "R01_BREAK55_20",
+      "family": "breakout",
+      "params": {
+        "entry": 55,
+        "exit": 20
+      }
+    },
+    {
+      "id": "R01_BREAK100_50",
+      "family": "breakout",
+      "params": {
+        "entry": 100,
+        "exit": 50
+      }
+    },
+    {
+      "id": "R01_BREAK200_100",
+      "family": "breakout",
+      "params": {
+        "entry": 200,
+        "exit": 100
+      }
+    },
+    {
+      "id": "R01_RSI2_10_65_T200",
+      "family": "rsi",
+      "params": {
+        "period": 2,
+        "entry": 10,
+        "exit": 65,
+        "trend": 200
+      }
+    },
+    {
+      "id": "R01_RSI2_20_80_T200",
+      "family": "rsi",
+      "params": {
+        "period": 2,
+        "entry": 20,
+        "exit": 80,
+        "trend": 200
+      }
+    },
+    {
+      "id": "R01_RSI5_25_65_T0",
+      "family": "rsi",
+      "params": {
+        "period": 5,
+        "entry": 25,
+        "exit": 65,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R01_RSI14_30_70_T0",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 30,
+        "exit": 70,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R01_RSI14_35_65_T0",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 35,
+        "exit": 65,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R01_RSI14_30_55_T200",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 30,
+        "exit": 55,
+        "trend": 200
+      }
+    },
+    {
+      "id": "R01_Z20_2_T0",
+      "family": "zscore",
+      "params": {
+        "period": 20,
+        "entry": 2,
+        "exit": 0,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R01_Z60_1.5_T0",
+      "family": "zscore",
+      "params": {
+        "period": 60,
+        "entry": 1.5,
+        "exit": 0,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R01_Z20_2_T200",
+      "family": "zscore",
+      "params": {
+        "period": 20,
+        "entry": 2,
+        "exit": 0,
+        "trend": 200
+      }
+    }
+  ]
+}
