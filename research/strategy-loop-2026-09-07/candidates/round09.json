@@ -1,0 +1,692 @@
+{
+  "hypothesis": "Test parameter neighborhoods of the strongest ideas, and average multiple horizons rather than relying on one sharp optimum. Include explicit initial-hold diagnostics.",
+  "candidates": [
+    {
+      "id": "R09_MAX90_COOL10",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 90,
+        "cooldown": 10
+      }
+    },
+    {
+      "id": "R09_MAX90_COOL20",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 90,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R09_MAX90_COOL40",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 90,
+        "cooldown": 40
+      }
+    },
+    {
+      "id": "R09_MAX105_COOL10",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 105,
+        "cooldown": 10
+      }
+    },
+    {
+      "id": "R09_MAX105_COOL20",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 105,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R09_MAX105_COOL40",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 105,
+        "cooldown": 40
+      }
+    },
+    {
+      "id": "R09_MAX126_COOL10",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 126,
+        "cooldown": 10
+      }
+    },
+    {
+      "id": "R09_MAX126_COOL40",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 126,
+        "cooldown": 40
+      }
+    },
+    {
+      "id": "R09_MAX147_COOL10",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 147,
+        "cooldown": 10
+      }
+    },
+    {
+      "id": "R09_MAX147_COOL20",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 147,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R09_MAX147_COOL40",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 147,
+        "cooldown": 40
+      }
+    },
+    {
+      "id": "R09_MAX168_COOL10",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 168,
+        "cooldown": 10
+      }
+    },
+    {
+      "id": "R09_MAX168_COOL20",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 168,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R09_MAX168_COOL40",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 168,
+        "cooldown": 40
+      }
+    },
+    {
+      "id": "R09_MAX189_COOL10",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 189,
+        "cooldown": 10
+      }
+    },
+    {
+      "id": "R09_MAX189_COOL20",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 189,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R09_MAX189_COOL40",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "max_bars": 189,
+        "cooldown": 40
+      }
+    },
+    {
+      "id": "R09_RET42_0.2",
+      "family": "return_reversion",
+      "params": {
+        "period": 42,
+        "entry": 0.2,
+        "exit": 0.2
+      }
+    },
+    {
+      "id": "R09_RET42_0.25",
+      "family": "return_reversion",
+      "params": {
+        "period": 42,
+        "entry": 0.25,
+        "exit": 0.25
+      }
+    },
+    {
+      "id": "R09_RET42_0.3",
+      "family": "return_reversion",
+      "params": {
+        "period": 42,
+        "entry": 0.3,
+        "exit": 0.3
+      }
+    },
+    {
+      "id": "R09_RET63_0.2",
+      "family": "return_reversion",
+      "params": {
+        "period": 63,
+        "entry": 0.2,
+        "exit": 0.2
+      }
+    },
+    {
+      "id": "R09_RET63_0.3",
+      "family": "return_reversion",
+      "params": {
+        "period": 63,
+        "entry": 0.3,
+        "exit": 0.3
+      }
+    },
+    {
+      "id": "R09_RET84_0.2",
+      "family": "return_reversion",
+      "params": {
+        "period": 84,
+        "entry": 0.2,
+        "exit": 0.2
+      }
+    },
+    {
+      "id": "R09_RET84_0.25",
+      "family": "return_reversion",
+      "params": {
+        "period": 84,
+        "entry": 0.25,
+        "exit": 0.25
+      }
+    },
+    {
+      "id": "R09_RET84_0.3",
+      "family": "return_reversion",
+      "params": {
+        "period": 84,
+        "entry": 0.3,
+        "exit": 0.3
+      }
+    },
+    {
+      "id": "R09_CHANNEL84",
+      "family": "channel_reversion",
+      "params": {
+        "period": 84,
+        "entry": 0.1,
+        "exit": 0.9
+      }
+    },
+    {
+      "id": "R09_CHANNEL105",
+      "family": "channel_reversion",
+      "params": {
+        "period": 105,
+        "entry": 0.1,
+        "exit": 0.9
+      }
+    },
+    {
+      "id": "R09_CHANNEL147",
+      "family": "channel_reversion",
+      "params": {
+        "period": 147,
+        "entry": 0.1,
+        "exit": 0.9
+      }
+    },
+    {
+      "id": "R09_CHANNEL168",
+      "family": "channel_reversion",
+      "params": {
+        "period": 168,
+        "entry": 0.1,
+        "exit": 0.9
+      }
+    },
+    {
+      "id": "R09_INITIAL_MAX90",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75,
+            "initial_hold": true
+          }
+        },
+        "max_bars": 90,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R09_INITIAL_MAX126",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75,
+            "initial_hold": true
+          }
+        },
+        "max_bars": 126,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R09_INITIAL_MAX168",
+      "family": "risk_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75,
+            "initial_hold": true
+          }
+        },
+        "max_bars": 168,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "R09_TIME_BAG",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 90,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 168,
+                "cooldown": 20
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R09_RETURN_BAG",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 42,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 84,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R09_TIME_RETURN_BAG",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "blend",
+              "params": {
+                "members": [
+                  {
+                    "weight": 0.3333333333333333,
+                    "strategy": {
+                      "family": "risk_overlay",
+                      "params": {
+                        "base": {
+                          "family": "rsi",
+                          "params": {
+                            "period": 14,
+                            "entry": 25,
+                            "exit": 75
+                          }
+                        },
+                        "max_bars": 90,
+                        "cooldown": 20
+                      }
+                    }
+                  },
+                  {
+                    "weight": 0.3333333333333333,
+                    "strategy": {
+                      "family": "risk_overlay",
+                      "params": {
+                        "base": {
+                          "family": "rsi",
+                          "params": {
+                            "period": 14,
+                            "entry": 25,
+                            "exit": 75
+                          }
+                        },
+                        "max_bars": 126,
+                        "cooldown": 20
+                      }
+                    }
+                  },
+                  {
+                    "weight": 0.3333333333333333,
+                    "strategy": {
+                      "family": "risk_overlay",
+                      "params": {
+                        "base": {
+                          "family": "rsi",
+                          "params": {
+                            "period": 14,
+                            "entry": 25,
+                            "exit": 75
+                          }
+                        },
+                        "max_bars": 168,
+                        "cooldown": 20
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "blend",
+              "params": {
+                "members": [
+                  {
+                    "weight": 0.3333333333333333,
+                    "strategy": {
+                      "family": "return_reversion",
+                      "params": {
+                        "period": 42,
+                        "entry": 0.25,
+                        "exit": 0.25
+                      }
+                    }
+                  },
+                  {
+                    "weight": 0.3333333333333333,
+                    "strategy": {
+                      "family": "return_reversion",
+                      "params": {
+                        "period": 63,
+                        "entry": 0.25,
+                        "exit": 0.25
+                      }
+                    }
+                  },
+                  {
+                    "weight": 0.3333333333333333,
+                    "strategy": {
+                      "family": "return_reversion",
+                      "params": {
+                        "period": 84,
+                        "entry": 0.25,
+                        "exit": 0.25
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R09_INITIAL_BLEND",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75,
+                    "initial_hold": true
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
