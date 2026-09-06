@@ -1,0 +1,285 @@
+{
+  "hypothesis": "Daily RSI14 showed >50% development wins but low CAGR. Test slower/faster reversal and wider exits to retain recoveries; weekly review diagnoses turnover.",
+  "candidates": [
+    {
+      "id": "R02_RSI7_25_75",
+      "family": "rsi",
+      "params": {
+        "period": 7,
+        "entry": 25,
+        "exit": 75,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI7_30_80",
+      "family": "rsi",
+      "params": {
+        "period": 7,
+        "entry": 30,
+        "exit": 80,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI7_35_75",
+      "family": "rsi",
+      "params": {
+        "period": 7,
+        "entry": 35,
+        "exit": 75,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI7_40_80",
+      "family": "rsi",
+      "params": {
+        "period": 7,
+        "entry": 40,
+        "exit": 80,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI7_45_85",
+      "family": "rsi",
+      "params": {
+        "period": 7,
+        "entry": 45,
+        "exit": 85,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI7_50_90",
+      "family": "rsi",
+      "params": {
+        "period": 7,
+        "entry": 50,
+        "exit": 90,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI14_25_75",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 25,
+        "exit": 75,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI14_30_80",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 30,
+        "exit": 80,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI14_35_75",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 35,
+        "exit": 75,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI14_40_80",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 40,
+        "exit": 80,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI14_45_85",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 45,
+        "exit": 85,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI14_50_90",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 50,
+        "exit": 90,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI21_25_75",
+      "family": "rsi",
+      "params": {
+        "period": 21,
+        "entry": 25,
+        "exit": 75,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI21_30_80",
+      "family": "rsi",
+      "params": {
+        "period": 21,
+        "entry": 30,
+        "exit": 80,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI21_35_75",
+      "family": "rsi",
+      "params": {
+        "period": 21,
+        "entry": 35,
+        "exit": 75,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI21_40_80",
+      "family": "rsi",
+      "params": {
+        "period": 21,
+        "entry": 40,
+        "exit": 80,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI21_45_85",
+      "family": "rsi",
+      "params": {
+        "period": 21,
+        "entry": 45,
+        "exit": 85,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI21_50_90",
+      "family": "rsi",
+      "params": {
+        "period": 21,
+        "entry": 50,
+        "exit": 90,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI28_25_75",
+      "family": "rsi",
+      "params": {
+        "period": 28,
+        "entry": 25,
+        "exit": 75,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI28_30_80",
+      "family": "rsi",
+      "params": {
+        "period": 28,
+        "entry": 30,
+        "exit": 80,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI28_35_75",
+      "family": "rsi",
+      "params": {
+        "period": 28,
+        "entry": 35,
+        "exit": 75,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI28_40_80",
+      "family": "rsi",
+      "params": {
+        "period": 28,
+        "entry": 40,
+        "exit": 80,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI28_45_85",
+      "family": "rsi",
+      "params": {
+        "period": 28,
+        "entry": 45,
+        "exit": 85,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI28_50_90",
+      "family": "rsi",
+      "params": {
+        "period": 28,
+        "entry": 50,
+        "exit": 90,
+        "trend": 0
+      }
+    },
+    {
+      "id": "R02_RSI14_30_70_W",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 30,
+        "exit": 70,
+        "review": "weekly"
+      }
+    },
+    {
+      "id": "R02_RSI14_35_75_W",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 35,
+        "exit": 75,
+        "review": "weekly"
+      }
+    },
+    {
+      "id": "R02_RSI14_40_80_W",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 40,
+        "exit": 80,
+        "review": "weekly"
+      }
+    },
+    {
+      "id": "R02_RSI14_45_85_W",
+      "family": "rsi",
+      "params": {
+        "period": 14,
+        "entry": 45,
+        "exit": 85,
+        "review": "weekly"
+      }
+    }
+  ]
+}
