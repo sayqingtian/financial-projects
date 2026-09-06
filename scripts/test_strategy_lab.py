@@ -77,6 +77,19 @@ class EngineTests(unittest.TestCase):
         x=targets(p,dict(family='breakout',params=dict(entry=2,exit=2)))
         self.assertEqual(x[:,0].tolist(),[False,False,True,True])
 
+    def test_ensemble_sell_conflict_and_future_invariance(self):
+        p=panel([10,12,9,8,14,15]);q=panel([10,12,9,8,14,15,1000,1])
+        member=dict(family='sma',params=dict(period=3))
+        spec=dict(family='ensemble',params=dict(members=[member,member],entry_votes=2,exit_votes=0))
+        self.assertTrue(np.array_equal(targets(p,spec),targets(p,member)))
+        self.assertTrue(np.array_equal(targets(p,spec),targets(q,spec)[:6]))
+
+    def test_recovery_waits_until_oversold_recovers(self):
+        p=panel([10]*7)
+        p.cache[('rsi',14)]=np.array([[50],[20],[22],[35],[80],[75],[60]],float)
+        spec=dict(family='rsi_recovery',params=dict(oversold=25,recover=30,overbought=70,release=65))
+        self.assertEqual(targets(p,spec)[:,0].tolist(),[False,False,False,True,True,True,False])
+
 
 if __name__=='__main__':
     unittest.main()

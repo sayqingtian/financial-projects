@@ -1,0 +1,587 @@
+{
+  "hypothesis": "Test recovery confirmation, regime-dependent RSI and independent state voting rather than tuning one winner.",
+  "candidates": [
+    {
+      "id": "R03_REC20_30_65_60",
+      "family": "rsi_recovery",
+      "params": {
+        "oversold": 20,
+        "recover": 30,
+        "overbought": 65,
+        "release": 60
+      }
+    },
+    {
+      "id": "R03_REC20_30_70_65",
+      "family": "rsi_recovery",
+      "params": {
+        "oversold": 20,
+        "recover": 30,
+        "overbought": 70,
+        "release": 65
+      }
+    },
+    {
+      "id": "R03_REC20_30_75_70",
+      "family": "rsi_recovery",
+      "params": {
+        "oversold": 20,
+        "recover": 30,
+        "overbought": 75,
+        "release": 70
+      }
+    },
+    {
+      "id": "R03_REC25_30_65_60",
+      "family": "rsi_recovery",
+      "params": {
+        "oversold": 25,
+        "recover": 30,
+        "overbought": 65,
+        "release": 60
+      }
+    },
+    {
+      "id": "R03_REC25_30_70_65",
+      "family": "rsi_recovery",
+      "params": {
+        "oversold": 25,
+        "recover": 30,
+        "overbought": 70,
+        "release": 65
+      }
+    },
+    {
+      "id": "R03_REC25_30_75_70",
+      "family": "rsi_recovery",
+      "params": {
+        "oversold": 25,
+        "recover": 30,
+        "overbought": 75,
+        "release": 70
+      }
+    },
+    {
+      "id": "R03_REC25_35_65_60",
+      "family": "rsi_recovery",
+      "params": {
+        "oversold": 25,
+        "recover": 35,
+        "overbought": 65,
+        "release": 60
+      }
+    },
+    {
+      "id": "R03_REC25_35_70_65",
+      "family": "rsi_recovery",
+      "params": {
+        "oversold": 25,
+        "recover": 35,
+        "overbought": 70,
+        "release": 65
+      }
+    },
+    {
+      "id": "R03_REC25_35_75_70",
+      "family": "rsi_recovery",
+      "params": {
+        "oversold": 25,
+        "recover": 35,
+        "overbought": 75,
+        "release": 70
+      }
+    },
+    {
+      "id": "R03_REC30_35_65_60",
+      "family": "rsi_recovery",
+      "params": {
+        "oversold": 30,
+        "recover": 35,
+        "overbought": 65,
+        "release": 60
+      }
+    },
+    {
+      "id": "R03_REC30_35_70_65",
+      "family": "rsi_recovery",
+      "params": {
+        "oversold": 30,
+        "recover": 35,
+        "overbought": 70,
+        "release": 65
+      }
+    },
+    {
+      "id": "R03_REC30_35_75_70",
+      "family": "rsi_recovery",
+      "params": {
+        "oversold": 30,
+        "recover": 35,
+        "overbought": 75,
+        "release": 70
+      }
+    },
+    {
+      "id": "R03_REGIME100_40_25",
+      "family": "regime_reversal",
+      "params": {
+        "trend": 100,
+        "bull_entry": 40,
+        "bull_exit": 80,
+        "bear_entry": 25,
+        "bear_exit": 65
+      }
+    },
+    {
+      "id": "R03_REGIME100_50_30",
+      "family": "regime_reversal",
+      "params": {
+        "trend": 100,
+        "bull_entry": 50,
+        "bull_exit": 80,
+        "bear_entry": 30,
+        "bear_exit": 70
+      }
+    },
+    {
+      "id": "R03_REGIME100_45_25",
+      "family": "regime_reversal",
+      "params": {
+        "trend": 100,
+        "bull_entry": 45,
+        "bull_exit": 75,
+        "bear_entry": 25,
+        "bear_exit": 75
+      }
+    },
+    {
+      "id": "R03_REGIME200_40_25",
+      "family": "regime_reversal",
+      "params": {
+        "trend": 200,
+        "bull_entry": 40,
+        "bull_exit": 80,
+        "bear_entry": 25,
+        "bear_exit": 65
+      }
+    },
+    {
+      "id": "R03_REGIME200_50_30",
+      "family": "regime_reversal",
+      "params": {
+        "trend": 200,
+        "bull_entry": 50,
+        "bull_exit": 80,
+        "bear_entry": 30,
+        "bear_exit": 70
+      }
+    },
+    {
+      "id": "R03_REGIME200_45_25",
+      "family": "regime_reversal",
+      "params": {
+        "trend": 200,
+        "bull_entry": 45,
+        "bull_exit": 75,
+        "bear_entry": 25,
+        "bear_exit": 75
+      }
+    },
+    {
+      "id": "R03_VOTE100_1_0",
+      "family": "ensemble",
+      "params": {
+        "members": [
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 100,
+              "review": "monthly"
+            }
+          },
+          {
+            "family": "momentum",
+            "params": {
+              "period": 126,
+              "review": "monthly"
+            }
+          }
+        ],
+        "entry_votes": 1,
+        "exit_votes": 0
+      }
+    },
+    {
+      "id": "R03_VOTE100_2_0",
+      "family": "ensemble",
+      "params": {
+        "members": [
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 100,
+              "review": "monthly"
+            }
+          },
+          {
+            "family": "momentum",
+            "params": {
+              "period": 126,
+              "review": "monthly"
+            }
+          }
+        ],
+        "entry_votes": 2,
+        "exit_votes": 0
+      }
+    },
+    {
+      "id": "R03_VOTE100_2_1",
+      "family": "ensemble",
+      "params": {
+        "members": [
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 100,
+              "review": "monthly"
+            }
+          },
+          {
+            "family": "momentum",
+            "params": {
+              "period": 126,
+              "review": "monthly"
+            }
+          }
+        ],
+        "entry_votes": 2,
+        "exit_votes": 1
+      }
+    },
+    {
+      "id": "R03_VOTE100_3_1",
+      "family": "ensemble",
+      "params": {
+        "members": [
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 100,
+              "review": "monthly"
+            }
+          },
+          {
+            "family": "momentum",
+            "params": {
+              "period": 126,
+              "review": "monthly"
+            }
+          }
+        ],
+        "entry_votes": 3,
+        "exit_votes": 1
+      }
+    },
+    {
+      "id": "R03_VOTE200_1_0",
+      "family": "ensemble",
+      "params": {
+        "members": [
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          },
+          {
+            "family": "momentum",
+            "params": {
+              "period": 126,
+              "review": "monthly"
+            }
+          }
+        ],
+        "entry_votes": 1,
+        "exit_votes": 0
+      }
+    },
+    {
+      "id": "R03_VOTE200_2_0",
+      "family": "ensemble",
+      "params": {
+        "members": [
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          },
+          {
+            "family": "momentum",
+            "params": {
+              "period": 126,
+              "review": "monthly"
+            }
+          }
+        ],
+        "entry_votes": 2,
+        "exit_votes": 0
+      }
+    },
+    {
+      "id": "R03_VOTE200_2_1",
+      "family": "ensemble",
+      "params": {
+        "members": [
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          },
+          {
+            "family": "momentum",
+            "params": {
+              "period": 126,
+              "review": "monthly"
+            }
+          }
+        ],
+        "entry_votes": 2,
+        "exit_votes": 1
+      }
+    },
+    {
+      "id": "R03_VOTE200_3_1",
+      "family": "ensemble",
+      "params": {
+        "members": [
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          },
+          {
+            "family": "momentum",
+            "params": {
+              "period": 126,
+              "review": "monthly"
+            }
+          }
+        ],
+        "entry_votes": 3,
+        "exit_votes": 1
+      }
+    },
+    {
+      "id": "R03_REVOTE_1_0",
+      "family": "ensemble",
+      "params": {
+        "members": [
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 30,
+              "exit": 70,
+              "review": "weekly"
+            }
+          },
+          {
+            "family": "zscore",
+            "params": {
+              "period": 60,
+              "entry": 1.5,
+              "exit": 0
+            }
+          }
+        ],
+        "entry_votes": 1,
+        "exit_votes": 0
+      }
+    },
+    {
+      "id": "R03_REVOTE_2_0",
+      "family": "ensemble",
+      "params": {
+        "members": [
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 30,
+              "exit": 70,
+              "review": "weekly"
+            }
+          },
+          {
+            "family": "zscore",
+            "params": {
+              "period": 60,
+              "entry": 1.5,
+              "exit": 0
+            }
+          }
+        ],
+        "entry_votes": 2,
+        "exit_votes": 0
+      }
+    },
+    {
+      "id": "R03_REVOTE_2_1",
+      "family": "ensemble",
+      "params": {
+        "members": [
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 30,
+              "exit": 70,
+              "review": "weekly"
+            }
+          },
+          {
+            "family": "zscore",
+            "params": {
+              "period": 60,
+              "entry": 1.5,
+              "exit": 0
+            }
+          }
+        ],
+        "entry_votes": 2,
+        "exit_votes": 1
+      }
+    },
+    {
+      "id": "R03_REVOTE_3_1",
+      "family": "ensemble",
+      "params": {
+        "members": [
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 30,
+              "exit": 70,
+              "review": "weekly"
+            }
+          },
+          {
+            "family": "zscore",
+            "params": {
+              "period": 60,
+              "entry": 1.5,
+              "exit": 0
+            }
+          }
+        ],
+        "entry_votes": 3,
+        "exit_votes": 1
+      }
+    }
+  ]
+}

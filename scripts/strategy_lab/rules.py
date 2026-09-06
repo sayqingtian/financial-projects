@@ -23,6 +23,34 @@ def targets(panel, spec):
     review = panel.review(p.get('review', 'daily'))
     if family == 'buy_hold':
         return hysteresis(panel.observed, np.zeros(panel.shape, bool), panel.observed)
+    if family == 'ensemble':
+        votes = sum(targets(panel, member).astype(int) for member in p['members'])
+        return hysteresis(votes >= p['entry_votes'], votes <= p['exit_votes'], review)
+    if family == 'rsi_recovery':
+        rsi = panel.feature('rsi', p.get('period', 14))
+        state = np.zeros(panel.shape[1], bool)
+        armed_buy = state.copy()
+        armed_sell = state.copy()
+        out = np.zeros(panel.shape, bool)
+        for i in range(len(rsi)):
+            r = review[i] & np.isfinite(rsi[i])
+            armed_buy[r & ~state & (rsi[i] < p['oversold'])] = True
+            enter = r & ~state & armed_buy & (rsi[i] >= p['recover'])
+            state[enter] = True
+            armed_buy[enter] = False
+            armed_sell[r & state & (rsi[i] > p['overbought'])] = True
+            leave = r & state & armed_sell & (rsi[i] <= p['release'])
+            state[leave] = False
+            armed_sell[leave] = False
+            out[i] = state
+        return out
+    if family == 'regime_reversal':
+        rsi = panel.feature('rsi', p.get('period', 14))
+        ma = panel.feature('sma', p.get('trend', 200))
+        bull = c > ma
+        buy = rsi < np.where(bull, p['bull_entry'], p['bear_entry'])
+        sell = rsi > np.where(bull, p['bull_exit'], p['bear_exit'])
+        return hysteresis(buy, sell, review, np.isfinite(rsi) & np.isfinite(ma))
     if family in ('sma', 'ema'):
         ma = panel.feature(family, p['period'])
         band = p.get('band', 0)
