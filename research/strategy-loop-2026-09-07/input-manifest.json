@@ -1,0 +1,3735 @@
+{
+  "prices": [
+    {
+      "code": "00001",
+      "file": "data/connect-10y-2026-09-06/prices/0001.HK.csv",
+      "sha256": "feeba24360e122663b89da838817833edd59d798a54017fbb4b43a12bb7d9c66",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00002",
+      "file": "data/connect-10y-2026-09-06/prices/0002.HK.csv",
+      "sha256": "5fc13f104a4206ee99030d5e155adef1e4ed5b2da65b3076c466d274dccfc9b7",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00003",
+      "file": "data/connect-10y-2026-09-06/prices/0003.HK.csv",
+      "sha256": "c80a12d867a07cefaf5824e5d1cc18563da8517f353f133018eaf9286143d09b",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00004",
+      "file": "data/connect-10y-2026-09-06/prices/0004.HK.csv",
+      "sha256": "71bf49e2f66e015387a57fae6e732aeec1b3e121758ae261a684016283d161db",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00005",
+      "file": "data/connect-10y-2026-09-06/prices/0005.HK.csv",
+      "sha256": "65f784e0fcd9e381e8c77838ab9785f3786c62fb0934502f3b9486e47e6da7e8",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00006",
+      "file": "data/connect-10y-2026-09-06/prices/0006.HK.csv",
+      "sha256": "2ef3d61148ba8f8112478a30c1e76cca903013c889a7c819f94e7236931aa4d4",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00008",
+      "file": "data/connect-10y-2026-09-06/prices/0008.HK.csv",
+      "sha256": "83040b050f8e16ea631bc2e5a018b09d901a9146ed6678813bbfe5ddbb85012f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00010",
+      "file": "data/connect-10y-2026-09-06/prices/0010.HK.csv",
+      "sha256": "5d491e34426967d362bcecfa0ab77c3f98d3d6cddd1e90f77dd0a2974ed327c4",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00012",
+      "file": "data/connect-10y-2026-09-06/prices/0012.HK.csv",
+      "sha256": "5f948e55a6875ccf1e478b2df3b13d76baa1d5bfcb078daebaf545e8e12f1cce",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00013",
+      "file": "data/connect-10y-2026-09-06/prices/0013.HK.csv",
+      "sha256": "ea47448398447ecd452b291b3de373b228ccec7c66b5ecf7bd9fe1426626e629",
+      "bars": 1274,
+      "first": "2021-06-30",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00014",
+      "file": "data/connect-10y-2026-09-06/prices/0014.HK.csv",
+      "sha256": "69a0456d279b5d52095d191eef1e6cf77b266d29c4377e1fa7ff0d70cea740d1",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00016",
+      "file": "data/connect-10y-2026-09-06/prices/0016.HK.csv",
+      "sha256": "16b5e41df3458858ad80a7857f76d51fc1920efcb89a6fa7065409c4b37a9035",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00017",
+      "file": "data/connect-10y-2026-09-06/prices/0017.HK.csv",
+      "sha256": "551d85fe8906d6eb69e12b23e413e6ae42d5956bee7b5cf7d73c4b706d3077e0",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00019",
+      "file": "data/connect-10y-2026-09-06/prices/0019.HK.csv",
+      "sha256": "4122c1951a4e9d5b6ed9642a8ea5944570230bc25b268af34880253b262b31f4",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00020",
+      "file": "data/connect-10y-2026-09-06/prices/0020.HK.csv",
+      "sha256": "0d2afde0407e2399a59fa90f75f1600a1509cacc3e9e5eca0fcacc12f57abddc",
+      "bars": 1149,
+      "first": "2021-12-30",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00023",
+      "file": "data/connect-10y-2026-09-06/prices/0023.HK.csv",
+      "sha256": "b0df7e6ac1d40c876e5340780dbf71aaa260ecfec869ff9cbde829898bcc5a60",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00027",
+      "file": "data/connect-10y-2026-09-06/prices/0027.HK.csv",
+      "sha256": "20d77d78e39a5ef4a8cf555bcb7b25dd51e06ad9798d273f3f753c2b22459f82",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00038",
+      "file": "data/connect-10y-2026-09-06/prices/0038.HK.csv",
+      "sha256": "abdba50815c98f4796951eaedf236744254d484a60bd8631ac66db3755bdc944",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00041",
+      "file": "data/connect-10y-2026-09-06/prices/0041.HK.csv",
+      "sha256": "0f54c255d6cbfcf85371bd801f6947dc801438eb12120ab620649e4e571b0c38",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00066",
+      "file": "data/connect-10y-2026-09-06/prices/0066.HK.csv",
+      "sha256": "9e38e3297c9fcc175b1eaa24ab6c3edacbb108047a133d0c4a34189a29c19844",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00081",
+      "file": "data/connect-10y-2026-09-06/prices/0081.HK.csv",
+      "sha256": "8e99b394f3201641025348c482a00ef64f01a2ea96cde8751943e6281dd9041d",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00083",
+      "file": "data/connect-10y-2026-09-06/prices/0083.HK.csv",
+      "sha256": "2edb419a5b5bf6992af9c6a31cd1fcaa5f2e8a545add21fde79a117d86d69653",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00087",
+      "file": "data/connect-10y-2026-09-06/prices/0087.HK.csv",
+      "sha256": "4e446880fa1150b2d7b19aeeb4886273a384a269ef23301c15049680d2b3d1b2",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00100",
+      "file": "data/connect-10y-2026-09-06/prices/0100.HK.csv",
+      "sha256": "c9e2b9083fa9f60dc6c4d8eadbfa7a0892a8a915d76a8eb0df140a256451040f",
+      "bars": 161,
+      "first": "2026-01-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00101",
+      "file": "data/connect-10y-2026-09-06/prices/0101.HK.csv",
+      "sha256": "db444b297295deba32f018752bcb1d827c749ed30f87840d4b9cee05d91e7079",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00107",
+      "file": "data/connect-10y-2026-09-06/prices/0107.HK.csv",
+      "sha256": "23525a23af5e977d498748318460537f35e6992735a4527305bbf875af7deff2",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00123",
+      "file": "data/connect-10y-2026-09-06/prices/0123.HK.csv",
+      "sha256": "c0bab09b942f4a7229b18c99810368ed93bebbd7888813edcdb790fe767ace1f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00135",
+      "file": "data/connect-10y-2026-09-06/prices/0135.HK.csv",
+      "sha256": "ab235f37ee27ce51817b07f78d9bdaa4a84ad41549576399ebdfb9c057ef879e",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00136",
+      "file": "data/connect-10y-2026-09-06/prices/0136.HK.csv",
+      "sha256": "702ad24387a28fd5a5cfbafcf02344811e8e794bb3565322c3f767187400b53d",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00142",
+      "file": "data/connect-10y-2026-09-06/prices/0142.HK.csv",
+      "sha256": "e628737cc61151c2a245106757bbe470f6739063c0b3a9caebe3f3c2188def77",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00144",
+      "file": "data/connect-10y-2026-09-06/prices/0144.HK.csv",
+      "sha256": "a41f345e5b6c5771d6858767495cd9757618310e6f60eed4d572e510d111aae4",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00148",
+      "file": "data/connect-10y-2026-09-06/prices/0148.HK.csv",
+      "sha256": "fa627bc24ff70b545c45c2db5d6e5fcf5c8dd2884df956a259f579ed039810bd",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00151",
+      "file": "data/connect-10y-2026-09-06/prices/0151.HK.csv",
+      "sha256": "57d5770e5a416cfe4297d18def495e892299a51ed18c53dba8fed76a720d0393",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00152",
+      "file": "data/connect-10y-2026-09-06/prices/0152.HK.csv",
+      "sha256": "52fd6ea2b8c25bf7dc18d670934dc6443390500913e33aa87ebb921493cdb814",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00165",
+      "file": "data/connect-10y-2026-09-06/prices/0165.HK.csv",
+      "sha256": "6fe15f4a40934097b2c8816eafaaaf1667a1e9f05c9aa9e3c282baea3fb68c41",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00168",
+      "file": "data/connect-10y-2026-09-06/prices/0168.HK.csv",
+      "sha256": "b8d2f588de3eb688ea1fd8e78f7e1b36603c4192a40caef71ccce478230e00dc",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00175",
+      "file": "data/connect-10y-2026-09-06/prices/0175.HK.csv",
+      "sha256": "251ea5ec4570bc576a93abfd9b2c714767aa9b0d7d24f01a833cd2b307aaa116",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00177",
+      "file": "data/connect-10y-2026-09-06/prices/0177.HK.csv",
+      "sha256": "42f58a98cad4fa99bcc8f3777f822b23f5f7007e87a2b76070dfc569ceafe950",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00179",
+      "file": "data/connect-10y-2026-09-06/prices/0179.HK.csv",
+      "sha256": "11dc7e4a8fe83d4dc544af39b621e635ab953fa617a202a90350d4696c4cd6f1",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00189",
+      "file": "data/connect-10y-2026-09-06/prices/0189.HK.csv",
+      "sha256": "eefc258b530554e4d3d3f0f8921e4706825f9a3ef936aa64cd0b328afc11b9b2",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00220",
+      "file": "data/connect-10y-2026-09-06/prices/0220.HK.csv",
+      "sha256": "1e35716311148cb7b2c7e59f8d7fb5bcfc5bd20a8c5147947e40395433e5f2d4",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00241",
+      "file": "data/connect-10y-2026-09-06/prices/0241.HK.csv",
+      "sha256": "93291f6c5f0aeccd7dccd5ffb87cf8741534aee0d750483e3679346d409a0cae",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00257",
+      "file": "data/connect-10y-2026-09-06/prices/0257.HK.csv",
+      "sha256": "0d3196fbd5b228065be2b640b19079787d1737fca83f4823127c85d6c2a93b87",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00267",
+      "file": "data/connect-10y-2026-09-06/prices/0267.HK.csv",
+      "sha256": "44d1fde2b14b2b3f9f18b5e06968f3f6a1364ba985cf45d0557331f481e40fd7",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00268",
+      "file": "data/connect-10y-2026-09-06/prices/0268.HK.csv",
+      "sha256": "eb72e2d9d26f705216edbd29b695e61608e7f110e905357e010ab0f57762f34c",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00270",
+      "file": "data/connect-10y-2026-09-06/prices/0270.HK.csv",
+      "sha256": "f758a4cc6da4aa138911ded8621f44a6fdf4fdc37af36b612ff8938f7d16c07d",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00285",
+      "file": "data/connect-10y-2026-09-06/prices/0285.HK.csv",
+      "sha256": "ce769914283fb45e86aafe7a38794484aad128eb531dd27a964347fc3dae4c33",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00288",
+      "file": "data/connect-10y-2026-09-06/prices/0288.HK.csv",
+      "sha256": "42ad98633954da02bafef0be7cf22f09f5ce7b73323ee6e0700f906cf1b74512",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00290",
+      "file": "data/connect-10y-2026-09-06/prices/0290.HK.csv",
+      "sha256": "e0fb8eda30d047726102991433ed8ae2ce304fe4f299b2ba7fdbe98d20ea42a8",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00291",
+      "file": "data/connect-10y-2026-09-06/prices/0291.HK.csv",
+      "sha256": "80e497d5318d3a428e66e06cec29f39c8c727d5b69d162843d966456b631b39b",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00293",
+      "file": "data/connect-10y-2026-09-06/prices/0293.HK.csv",
+      "sha256": "9f1f3d537e2c8e4d201517823b9b2142a4538d7132a3effa6a15a3bf022f343a",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00300",
+      "file": "data/connect-10y-2026-09-06/prices/0300.HK.csv",
+      "sha256": "57f71f146c212cab176692547a27cf1d9b6b0204b73353df4e188fee196ed945",
+      "bars": 474,
+      "first": "2024-10-02",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00303",
+      "file": "data/connect-10y-2026-09-06/prices/0303.HK.csv",
+      "sha256": "a68ef44ddf9db3331efa2487dbbbed215a697faa348cd9740bc2c0f3aec2b4e9",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00316",
+      "file": "data/connect-10y-2026-09-06/prices/0316.HK.csv",
+      "sha256": "08651db0d09e3e6b9807c897225df0d362f21c4be4854d45e48993d3358388b7",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00317",
+      "file": "data/connect-10y-2026-09-06/prices/0317.HK.csv",
+      "sha256": "73ac4bbef18c5a149f8e7bb2d765df13fa6a3f84f5d9af8460247cfbe76d2daa",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00322",
+      "file": "data/connect-10y-2026-09-06/prices/0322.HK.csv",
+      "sha256": "74db58962ce9a31265419ef3d245c382beb684cdc79d885227482d4a5c32aa4f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00323",
+      "file": "data/connect-10y-2026-09-06/prices/0323.HK.csv",
+      "sha256": "3d95cf143968a52b833327f649cdfc0eddc89cb2428327a00d5add818ec6c568",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00325",
+      "file": "data/connect-10y-2026-09-06/prices/0325.HK.csv",
+      "sha256": "85db9f59b6970d9947dd978eded64da3aa555d4aee49b30d105e3042a7a9b3cd",
+      "bars": 406,
+      "first": "2025-01-10",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00338",
+      "file": "data/connect-10y-2026-09-06/prices/0338.HK.csv",
+      "sha256": "8128cb7f89e40980b8d246f55fac06f92d01270929dbb16b5d5cbf58cfd79eeb",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00347",
+      "file": "data/connect-10y-2026-09-06/prices/0347.HK.csv",
+      "sha256": "3e490f8b3bd0a72f4fa5cd27365262af0781eed3ee89760b2bbbe4a20e2ea307",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00354",
+      "file": "data/connect-10y-2026-09-06/prices/0354.HK.csv",
+      "sha256": "3af297dfbe7a5b6db8b8e1d87d337befdb454b79d89a150afee0969c0d56d329",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00358",
+      "file": "data/connect-10y-2026-09-06/prices/0358.HK.csv",
+      "sha256": "fc446bd9d8f9389104ad41242d69de3b8fc2e42b5114edfb0f8ad380f0a98d01",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00363",
+      "file": "data/connect-10y-2026-09-06/prices/0363.HK.csv",
+      "sha256": "8fc373f63c55180b8d14b62e14cfc637c9c64ad035b22a6d7470e9fd46f1a537",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00371",
+      "file": "data/connect-10y-2026-09-06/prices/0371.HK.csv",
+      "sha256": "e98d36355078f6cc3559156121c06211dba1fd05700a55b7324a80c67acace23",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00384",
+      "file": "data/connect-10y-2026-09-06/prices/0384.HK.csv",
+      "sha256": "258d82b30cf6f29e0eb42a06a938d7c5d912c7ee3b9a794b69cd955d4883bd3b",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00386",
+      "file": "data/connect-10y-2026-09-06/prices/0386.HK.csv",
+      "sha256": "e5caa5fd42e0cbd246ed166698e21118923e22e8796b37af8f3467fb25c28841",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00388",
+      "file": "data/connect-10y-2026-09-06/prices/0388.HK.csv",
+      "sha256": "71998b6c405226c52718bbedaf38beee5d190bb55a8ebe86d54738a400533362",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00390",
+      "file": "data/connect-10y-2026-09-06/prices/0390.HK.csv",
+      "sha256": "dacd52f8619ba4d710b421396b49d9bce0ca4b075080f03925812f41615a2977",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00392",
+      "file": "data/connect-10y-2026-09-06/prices/0392.HK.csv",
+      "sha256": "57149e2450e2b20216fa281d506d6ce3706d109d97bc9b8c4f512bbb83aa1857",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00425",
+      "file": "data/connect-10y-2026-09-06/prices/0425.HK.csv",
+      "sha256": "31190eaed7d0d339fae0c38913cbdcb2e0f724fdf4d0acdd739afc848fa4ca2f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00440",
+      "file": "data/connect-10y-2026-09-06/prices/0440.HK.csv",
+      "sha256": "5a12110693b3b6e860aca82f063572b045236d6cf57646cad2dee0e368f05ac1",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00467",
+      "file": "data/connect-10y-2026-09-06/prices/0467.HK.csv",
+      "sha256": "8d2ae87509fcc1623809a4dc443cafa771280dde95505b6825e83e2cf0e15d52",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00470",
+      "file": "data/connect-10y-2026-09-06/prices/0470.HK.csv",
+      "sha256": "a8d6e85673c4c1d39e896c5bf1d6edd3fd25a3a2541eca5c62aed8197c334f2c",
+      "bars": 138,
+      "first": "2026-02-11",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00506",
+      "file": "data/connect-10y-2026-09-06/prices/0506.HK.csv",
+      "sha256": "3fa7a1cedab7a6280079688a54146141455f1c6319d3483d02a64f0e51a76317",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00512",
+      "file": "data/connect-10y-2026-09-06/prices/0512.HK.csv",
+      "sha256": "0ed2775a8880f4177ee6d28eeda26bfc7684cd82657b821694a77e7003303e40",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00522",
+      "file": "data/connect-10y-2026-09-06/prices/0522.HK.csv",
+      "sha256": "35bbeaff4457c6139551f46b1d37c273fa2b58c59da38eed5bf23aeafa06db20",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00525",
+      "file": "data/connect-10y-2026-09-06/prices/0525.HK.csv",
+      "sha256": "ef3478d3b87004588ab92e75322b6c08943079f715f451dcbffafafca9cdb909",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00546",
+      "file": "data/connect-10y-2026-09-06/prices/0546.HK.csv",
+      "sha256": "9a26aabe4151e2cf7ad6131daa4e3750a88a067d4e3b010142255058205c5271",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00548",
+      "file": "data/connect-10y-2026-09-06/prices/0548.HK.csv",
+      "sha256": "b84206a420e7bc7461e034ce2a6aeedb59b08fc2d4455bbc51a2bad487b3b19a",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00551",
+      "file": "data/connect-10y-2026-09-06/prices/0551.HK.csv",
+      "sha256": "c8536e1ad856e4fc3c8a39fe990a2a06d27dbc965e4c7df892e4dc08e641ccac",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00552",
+      "file": "data/connect-10y-2026-09-06/prices/0552.HK.csv",
+      "sha256": "d1bc64b33f836b0c7f1f0061feb9e0f346582031c105c806ce115b1d893f435e",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00564",
+      "file": "data/connect-10y-2026-09-06/prices/0564.HK.csv",
+      "sha256": "c21ca3782d792a61486d0c768168a9a915f807cce5f0717365ceff765006a60d",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00576",
+      "file": "data/connect-10y-2026-09-06/prices/0576.HK.csv",
+      "sha256": "a2aa192261f3b5568fe1e35717a94f1e3e9dbbff928ef22c9d413c8fcab3f5c6",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00586",
+      "file": "data/connect-10y-2026-09-06/prices/0586.HK.csv",
+      "sha256": "2f759f81b7778038526c2d1ce539833232daf9edacf8e91481ebb292ca0cc25e",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00590",
+      "file": "data/connect-10y-2026-09-06/prices/0590.HK.csv",
+      "sha256": "d5cca20466624a57fe38b7384cf67bcb92252177d91a81a607997bebdc98e396",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00598",
+      "file": "data/connect-10y-2026-09-06/prices/0598.HK.csv",
+      "sha256": "4dc0ae9b347f168230043bf95c4df568d315879be4a6a994a528aad773e5e633",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00631",
+      "file": "data/connect-10y-2026-09-06/prices/0631.HK.csv",
+      "sha256": "e395d95a4c5a0aec161e786134878effcd36b1a28a8d0948839e47f856b3fc63",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00636",
+      "file": "data/connect-10y-2026-09-06/prices/0636.HK.csv",
+      "sha256": "5ed0a251f14883f5049723763a1f26420e5536b10bbde8248e37f586eea58047",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00639",
+      "file": "data/connect-10y-2026-09-06/prices/0639.HK.csv",
+      "sha256": "df48a6638e07a0f5422967dd3544c51b75302e95313d5f757bedd18c581df2d1",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00656",
+      "file": "data/connect-10y-2026-09-06/prices/0656.HK.csv",
+      "sha256": "fcf636a9af912cf99406102dfd6af30471624a21d87079548492b95a64e693c7",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00659",
+      "file": "data/connect-10y-2026-09-06/prices/0659.HK.csv",
+      "sha256": "ea5bd4fe174e1123634abd3cc1c02d5ec57850e91103d80826d04caf2365ed99",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00666",
+      "file": "data/connect-10y-2026-09-06/prices/0666.HK.csv",
+      "sha256": "b6fc0b359390363e1e409cd79408c9da42d17e4c94ec74eb1acd7457e7e7985e",
+      "bars": 666,
+      "first": "2023-12-18",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00669",
+      "file": "data/connect-10y-2026-09-06/prices/0669.HK.csv",
+      "sha256": "611406ff8ebb1cbe98082d3b2af94f1f4ecc17b7780a61e12653c6da430683c0",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00670",
+      "file": "data/connect-10y-2026-09-06/prices/0670.HK.csv",
+      "sha256": "a73287c22c657b27a594e89bb71baa48d9c66e99c79391d018331b83f63688df",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00683",
+      "file": "data/connect-10y-2026-09-06/prices/0683.HK.csv",
+      "sha256": "c4d824c9a13683bf3cfe3fd92b52e7b28019195e7ba19350b6cdba10b7cb3f62",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00688",
+      "file": "data/connect-10y-2026-09-06/prices/0688.HK.csv",
+      "sha256": "d3913e1b0e3490dda4513e1adb940627499cce63bec66504bae01f4ddaece1f5",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00696",
+      "file": "data/connect-10y-2026-09-06/prices/0696.HK.csv",
+      "sha256": "aebf06622316c6e0443ae504ccff539d7ef5ce1baf7f594e6fb7a73c4a440a5d",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00697",
+      "file": "data/connect-10y-2026-09-06/prices/0697.HK.csv",
+      "sha256": "f5bdb82fdf6b1a458444a75dfe88c63000cb4ef36ce3546bca9a173a16998f61",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00700",
+      "file": "data/connect-10y-2026-09-06/prices/0700.HK.csv",
+      "sha256": "43d9e29cd58ee45508466ebad77ac9a3141974687a79097623be1690421bd602",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00728",
+      "file": "data/connect-10y-2026-09-06/prices/0728.HK.csv",
+      "sha256": "d4617ed0099568ca18ca181aa05096d6ddfb9620eb4fad0467e3c22865e0bbe0",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00753",
+      "file": "data/connect-10y-2026-09-06/prices/0753.HK.csv",
+      "sha256": "f5675989ad3df14872a35d18573918659a71fb883d246ef0018ccc4ff6ac645f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00762",
+      "file": "data/connect-10y-2026-09-06/prices/0762.HK.csv",
+      "sha256": "f1b6d6104c80d1e09ea54cf0667409622235ba6b38840f54a9bd0b265410ddd4",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00763",
+      "file": "data/connect-10y-2026-09-06/prices/0763.HK.csv",
+      "sha256": "0b2880435afd9ff6a928910486885262ce4b7f742e723ebb84de2cc4187c32dc",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00772",
+      "file": "data/connect-10y-2026-09-06/prices/0772.HK.csv",
+      "sha256": "be043de0ae6894c7928e3d01d7e89d3108257490b4405dced694372024a8238b",
+      "bars": 2170,
+      "first": "2017-11-08",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00780",
+      "file": "data/connect-10y-2026-09-06/prices/0780.HK.csv",
+      "sha256": "897e966e5e19921cfb30105ea0a81be902897d4e895a3ed94f7f623901db9680",
+      "bars": 1912,
+      "first": "2018-11-26",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00788",
+      "file": "data/connect-10y-2026-09-06/prices/0788.HK.csv",
+      "sha256": "31c5ad2873c4ebacff5146e5d8af4f6b662a8c2604d80e150bebbba642824fce",
+      "bars": 1987,
+      "first": "2018-08-08",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00800",
+      "file": "data/connect-10y-2026-09-06/prices/0800.HK.csv",
+      "sha256": "bc0947cd4fcfbe96c36cf88fe99140189819f395863fc23680d0b7f196331c83",
+      "bars": 204,
+      "first": "2025-11-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00817",
+      "file": "data/connect-10y-2026-09-06/prices/0817.HK.csv",
+      "sha256": "85cec2cd41df55caa4fe1f6f5d1de804c65e7db5b5c6ebd98e693ea8dd2c29ed",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00836",
+      "file": "data/connect-10y-2026-09-06/prices/0836.HK.csv",
+      "sha256": "a8bc61b29c1b8f73dc9b15fe69aedb5e350d8a158399a6a9d225c75a4a0876a8",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00853",
+      "file": "data/connect-10y-2026-09-06/prices/0853.HK.csv",
+      "sha256": "3e3fa69192b590369c0fa7f7c8ad7bc8da188d71b797537466f539650c0b3797",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00856",
+      "file": "data/connect-10y-2026-09-06/prices/0856.HK.csv",
+      "sha256": "ae7e46479c5134fafd0b6d2b216e24347b0d418d23f407a28ec57014311006ed",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00857",
+      "file": "data/connect-10y-2026-09-06/prices/0857.HK.csv",
+      "sha256": "aa897f73e5743467cc5d4560b54d4c470b250970cec26835c4ade566d451fae0",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00867",
+      "file": "data/connect-10y-2026-09-06/prices/0867.HK.csv",
+      "sha256": "1d16921d24f1b74dfeb03b7208a2f21dff8e675fcb98aefa092da95d5853dac8",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00868",
+      "file": "data/connect-10y-2026-09-06/prices/0868.HK.csv",
+      "sha256": "1c698e0a63e77b7843cbb4c5cddedbfbdc12c61ab48ade5f5d47c9d77035bd6f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00874",
+      "file": "data/connect-10y-2026-09-06/prices/0874.HK.csv",
+      "sha256": "adbf720aafb54b20e6615295b17cd1b7a098747f0c01e506164f82f70f0906f4",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00880",
+      "file": "data/connect-10y-2026-09-06/prices/0880.HK.csv",
+      "sha256": "0b0b41ae367d612b815330b794ed8882782db74ed29a857cc5eb0847f6a4504c",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00883",
+      "file": "data/connect-10y-2026-09-06/prices/0883.HK.csv",
+      "sha256": "8232b32ba87c8bdfc936eb60c8b69d08b699921eca0cff47bfd4d9475391f42f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00902",
+      "file": "data/connect-10y-2026-09-06/prices/0902.HK.csv",
+      "sha256": "6233ef5972b5069a3ddc6028397abd62c401816d6f4c777fa214d63978c23f24",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00914",
+      "file": "data/connect-10y-2026-09-06/prices/0914.HK.csv",
+      "sha256": "854a1cbdfd94e7e26b2bf890997bc08979a2e59b9debc145929d670a08349fdc",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00916",
+      "file": "data/connect-10y-2026-09-06/prices/0916.HK.csv",
+      "sha256": "541d92443c11d28d67dae13ca8c9187c81a42d53bb383fd6938e1267328014ee",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00921",
+      "file": "data/connect-10y-2026-09-06/prices/0921.HK.csv",
+      "sha256": "36a6819cc4c61c0daae20e04f0cd0552feb2fed426e13f9faaa4313bf57d3bfa",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00939",
+      "file": "data/connect-10y-2026-09-06/prices/0939.HK.csv",
+      "sha256": "5dc14eb93f62d84a438ed89602c41fb1c95b8a8b8db09c5217e3ad5470a3ae69",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00941",
+      "file": "data/connect-10y-2026-09-06/prices/0941.HK.csv",
+      "sha256": "b463eed1d80e69a9311945c11d978ef1de642844087f7b77b4b2dde22e958de7",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00956",
+      "file": "data/connect-10y-2026-09-06/prices/0956.HK.csv",
+      "sha256": "4c7ca7932181d51858ead1fd4acf76bdf2d5bdae78c3ea2e28805bb8c870ce2a",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00960",
+      "file": "data/connect-10y-2026-09-06/prices/0960.HK.csv",
+      "sha256": "44117226f527d7583c8bb1c6d94c0604a4e677e788599975c804a03997f4d2e3",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00966",
+      "file": "data/connect-10y-2026-09-06/prices/0966.HK.csv",
+      "sha256": "96316d25627d4b781ee420264595251148f9e342c5a1cbb80f4afad6c4316123",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00968",
+      "file": "data/connect-10y-2026-09-06/prices/0968.HK.csv",
+      "sha256": "0cde52165db2626f7c3116bebc857cd950e6028f4ef5331283d29c0dc8ff946d",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00975",
+      "file": "data/connect-10y-2026-09-06/prices/0975.HK.csv",
+      "sha256": "c9a25d10776e11fca26b27db5962e47313b8873858c0b8c098838a7426f192e2",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00981",
+      "file": "data/connect-10y-2026-09-06/prices/0981.HK.csv",
+      "sha256": "bc54a1b73bfa145780c8813c12003f1740db0f9f704631a9544393efa017aa31",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00991",
+      "file": "data/connect-10y-2026-09-06/prices/0991.HK.csv",
+      "sha256": "731a7ec2e1ac1c4bef8ec21e1f55dd9dd5dca630520f03a866cb39194387d2ed",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00992",
+      "file": "data/connect-10y-2026-09-06/prices/0992.HK.csv",
+      "sha256": "e4861b06ba39822248e7b6495545091b76e9c7f89a57f4c4d12fd398b381af13",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00995",
+      "file": "data/connect-10y-2026-09-06/prices/0995.HK.csv",
+      "sha256": "6ccfc5ee361e6334de2f3d97d192c9e8d4b318c40671917a6e18e75c576e3b12",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "00998",
+      "file": "data/connect-10y-2026-09-06/prices/0998.HK.csv",
+      "sha256": "15fc52f0dbb1975aed9576fd0f4a4e48c50b4a6c0c4bd984bf1675d68a6a24a4",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01024",
+      "file": "data/connect-10y-2026-09-06/prices/1024.HK.csv",
+      "sha256": "bf18cfe15ef89533a58a9eb9a43b90c9f71237433ee035c4a1051ace28c7c3c4",
+      "bars": 1370,
+      "first": "2021-02-05",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01030",
+      "file": "data/connect-10y-2026-09-06/prices/1030.HK.csv",
+      "sha256": "4ca9f28f89cc4c9919e628ad667dd2298ecce6a7274ecee6ebb4b7f3ab48dcab",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01033",
+      "file": "data/connect-10y-2026-09-06/prices/1033.HK.csv",
+      "sha256": "fa3d43f6a937d0a1efd1f0a07d6fea760677b19ebc254ca76cd8c007a180e9e3",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01038",
+      "file": "data/connect-10y-2026-09-06/prices/1038.HK.csv",
+      "sha256": "aec6b79790fb39edb35c866265749230edb9895c8e1fd309c0a72b167d5bc5dc",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01044",
+      "file": "data/connect-10y-2026-09-06/prices/1044.HK.csv",
+      "sha256": "e400d686708317b76f0b3a073af01447e98a160fd93961b20f94956ca333715d",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01055",
+      "file": "data/connect-10y-2026-09-06/prices/1055.HK.csv",
+      "sha256": "a0cb99c01898e33468b94442aade269e2d7ba1e0e849558454e2851c7f55fe97",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01060",
+      "file": "data/connect-10y-2026-09-06/prices/1060.HK.csv",
+      "sha256": "ef8bbd7cd7c4ac55b8d2130afd730487ec44d9bcc1aa669e14fdf0d770b834e8",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01066",
+      "file": "data/connect-10y-2026-09-06/prices/1066.HK.csv",
+      "sha256": "2972555a9689ace5f79fcd7f357290e9fe48466290774fe16f9b2d80aa3724c7",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01070",
+      "file": "data/connect-10y-2026-09-06/prices/1070.HK.csv",
+      "sha256": "303443d01f1de45da19c7799e50fac2c33965181ac2f8cd7b4d3607d5b37e5e2",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01071",
+      "file": "data/connect-10y-2026-09-06/prices/1071.HK.csv",
+      "sha256": "5c198cb0d054df848f9a456819592b9cbf54eb829824b703ce8d9e07dc11d0c2",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01072",
+      "file": "data/connect-10y-2026-09-06/prices/1072.HK.csv",
+      "sha256": "3563ee0653b5e66b77f754b75296072c6dc43ecdb09a6ede727af4e04a6d62d5",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01081",
+      "file": "data/connect-10y-2026-09-06/prices/1081.HK.csv",
+      "sha256": "368e54510c3d24fac057850952ee3b367497e9f8e9de5e1c3212d3883ae13dd3",
+      "bars": 64,
+      "first": "2026-06-05",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01083",
+      "file": "data/connect-10y-2026-09-06/prices/1083.HK.csv",
+      "sha256": "b9272a85ff9bef99ee2b7284dd5ac9caafb088d26c85e0b0c3e4ca5a6a0af1c1",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01088",
+      "file": "data/connect-10y-2026-09-06/prices/1088.HK.csv",
+      "sha256": "1273c44318526b75ea8170def7379314b8a2eec9ec42f380327089bc9023fac2",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01093",
+      "file": "data/connect-10y-2026-09-06/prices/1093.HK.csv",
+      "sha256": "084254aae4e20ee0d2a6e4fdd454b6a68825f73c155f837a4389712430bf65e2",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01099",
+      "file": "data/connect-10y-2026-09-06/prices/1099.HK.csv",
+      "sha256": "5d6545a438ff62bb4e34b0f9ffd8fcf682af1d7ae9a0d056d92e23f3888beb17",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01109",
+      "file": "data/connect-10y-2026-09-06/prices/1109.HK.csv",
+      "sha256": "72202e0317751119fead9e7a6051cc765386411e913b1a5128690042c6dcc24a",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01112",
+      "file": "data/connect-10y-2026-09-06/prices/1112.HK.csv",
+      "sha256": "302ddf9fa3ba92e343e3a279d2dfcf58050f8701b8bcbde32b9523e73f88be42",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01113",
+      "file": "data/connect-10y-2026-09-06/prices/1113.HK.csv",
+      "sha256": "f0213b0a79be7bc0a20d89804113b187015267212d913b0fee4891bb1d949e6a",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01117",
+      "file": "data/connect-10y-2026-09-06/prices/1117.HK.csv",
+      "sha256": "23fa7017e252aa4f483a8a827e31065747f725332f3ca2e4611698d4c160877c",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01128",
+      "file": "data/connect-10y-2026-09-06/prices/1128.HK.csv",
+      "sha256": "418b1c65150e24e88348fbb339a9a44eed40f78c009ca95b9a82231c0fb9153c",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01138",
+      "file": "data/connect-10y-2026-09-06/prices/1138.HK.csv",
+      "sha256": "7ff92d1823fcc232ec7e5f528d814b22a28d8057f881f3169314077c3fc0c168",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01157",
+      "file": "data/connect-10y-2026-09-06/prices/1157.HK.csv",
+      "sha256": "62e1ce8f00dc9dcf0c93597803a2fce26f539b7e3f2fb65e2b6c2401b231822b",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01164",
+      "file": "data/connect-10y-2026-09-06/prices/1164.HK.csv",
+      "sha256": "82719ba0b4f8bd014e5cc7322cea8091f0c7e0ec47537f8bc780e06783d95676",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01171",
+      "file": "data/connect-10y-2026-09-06/prices/1171.HK.csv",
+      "sha256": "3c6c53ac1b5ebab6ee1206b400a2c586276ec847e61f66abc5734dc7dd709998",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01177",
+      "file": "data/connect-10y-2026-09-06/prices/1177.HK.csv",
+      "sha256": "c8f484d711fb6da8a3e563b4486ae6794edb38f7ec3d5cb6ea64dbf59fa937b6",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01186",
+      "file": "data/connect-10y-2026-09-06/prices/1186.HK.csv",
+      "sha256": "09a9eab8ec320118919f81d485f5befaa9edec06dc52647d4e6259b4d167de60",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01193",
+      "file": "data/connect-10y-2026-09-06/prices/1193.HK.csv",
+      "sha256": "a62c1c5d29e3099f911dc6c1c465075746e00371805943ae6a054cde1b3b426e",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01196",
+      "file": "data/connect-10y-2026-09-06/prices/1196.HK.csv",
+      "sha256": "ce769631af5dec2b6c5828d77dc0eacc7baad56498f39c3fe8dfd23d94224908",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01199",
+      "file": "data/connect-10y-2026-09-06/prices/1199.HK.csv",
+      "sha256": "5fe8b09a31d64270aa9ac8fbe240b56c87eba2bcceaa3a4c0a0e7d09b806f854",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01208",
+      "file": "data/connect-10y-2026-09-06/prices/1208.HK.csv",
+      "sha256": "72199352fc37702cceb81427aebd2b536c3a581608e138f8d32a542506a634ef",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01209",
+      "file": "data/connect-10y-2026-09-06/prices/1209.HK.csv",
+      "sha256": "7f9d78d3c03201ae62740fdd6c0f651b2037cb84988cfb097a9daab93b5e259e",
+      "bars": 1410,
+      "first": "2020-12-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01211",
+      "file": "data/connect-10y-2026-09-06/prices/1211.HK.csv",
+      "sha256": "9586ce1a92c97bceae50825a41436aebe2e1a799b235cefa83b984bf93171988",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01258",
+      "file": "data/connect-10y-2026-09-06/prices/1258.HK.csv",
+      "sha256": "6e50d51fc73ced22431acf197e07eee8511ef12b4196991c88e252dd368b478f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01276",
+      "file": "data/connect-10y-2026-09-06/prices/1276.HK.csv",
+      "sha256": "70ad9ef2616d7a50874a48d7efa292ac86356f4d506d32c571908f06960ed25b",
+      "bars": 319,
+      "first": "2025-05-23",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01277",
+      "file": "data/connect-10y-2026-09-06/prices/1277.HK.csv",
+      "sha256": "1a788ec345900eb2907603d7ce4c05b60fd8f4117cc9939dbee1f62e08832c79",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01288",
+      "file": "data/connect-10y-2026-09-06/prices/1288.HK.csv",
+      "sha256": "b24db6941d189e7db685c8693ef618ac1a6cc2e8f93b16f2added452f75f3a30",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01299",
+      "file": "data/connect-10y-2026-09-06/prices/1299.HK.csv",
+      "sha256": "427d00cd1dc8f59ba9bbee2ccbc71fef7b1041f217eb19162638290e49ff6cd9",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01304",
+      "file": "data/connect-10y-2026-09-06/prices/1304.HK.csv",
+      "sha256": "5adad8ffd4944c7d488b7b3ba645787486d0f4d440bb270f2720ef5d86f965d3",
+      "bars": 287,
+      "first": "2025-07-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01308",
+      "file": "data/connect-10y-2026-09-06/prices/1308.HK.csv",
+      "sha256": "74562559cffc2e7f69287c070a3b5160e6eeac049a61cd2d1aca6331deef280f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01316",
+      "file": "data/connect-10y-2026-09-06/prices/1316.HK.csv",
+      "sha256": "e1414976e9dc7302df52d4e253de868128b3e64b6b9a4cb35bf6d7023c0e84b0",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01318",
+      "file": "data/connect-10y-2026-09-06/prices/1318.HK.csv",
+      "sha256": "e093c5d1ab44236e54b3ef9769e59ce93d69e294d1e7f8c04b3bbd084ee69683",
+      "bars": 426,
+      "first": "2024-12-10",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01336",
+      "file": "data/connect-10y-2026-09-06/prices/1336.HK.csv",
+      "sha256": "20beec92a2d8a2f63afbca64ff9e35acd3c9cecd8a516c67ba4669419eb11b05",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01339",
+      "file": "data/connect-10y-2026-09-06/prices/1339.HK.csv",
+      "sha256": "3dfd43e3f6d7d6e435e253cf567404bd520ade4f0d4e40ba9e5e797a28c5d1ca",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01347",
+      "file": "data/connect-10y-2026-09-06/prices/1347.HK.csv",
+      "sha256": "dc9d79de6bf5120b61bd432e286ac35a2ca0070372867df22f2465000bc75bb4",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01357",
+      "file": "data/connect-10y-2026-09-06/prices/1357.HK.csv",
+      "sha256": "d066c6db37b81cc6e2be64e1e8823693a67189234d97443252e6f911ef5fc6eb",
+      "bars": 2390,
+      "first": "2016-12-16",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01359",
+      "file": "data/connect-10y-2026-09-06/prices/1359.HK.csv",
+      "sha256": "4bbc5e0ff8676dca439f884e11fd21e5222b8218ac724a3c57e710146fe8d7cb",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01364",
+      "file": "data/connect-10y-2026-09-06/prices/1364.HK.csv",
+      "sha256": "8a13869c6269285f55d0b80bcfed5e101ccd34e4d79c3b5836a8ba790517ca05",
+      "bars": 386,
+      "first": "2025-02-12",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01377",
+      "file": "data/connect-10y-2026-09-06/prices/1377.HK.csv",
+      "sha256": "af123e9d36f958b4889a17c78185f29060037cc253707bad593b2c2903694256",
+      "bars": 42,
+      "first": "2026-07-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01378",
+      "file": "data/connect-10y-2026-09-06/prices/1378.HK.csv",
+      "sha256": "dc58d194a5e81e7d2e6cbd7baf7a7feb6c74da6675b5dec623a5c34809447e76",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01384",
+      "file": "data/connect-10y-2026-09-06/prices/1384.HK.csv",
+      "sha256": "4b21b5a1eda305ae97590fa54d5a5905613f16210988c50bc423179e2a0414ad",
+      "bars": 210,
+      "first": "2025-10-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01385",
+      "file": "data/connect-10y-2026-09-06/prices/1385.HK.csv",
+      "sha256": "c37a18ac298eb31d60fdd327b28696ac53e5bcac30531fddf0c88713b70215bf",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01398",
+      "file": "data/connect-10y-2026-09-06/prices/1398.HK.csv",
+      "sha256": "2023502de1f31eab76a4d7fa5afc475876673804557d32c29cfa855faffa80a3",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01415",
+      "file": "data/connect-10y-2026-09-06/prices/1415.HK.csv",
+      "sha256": "b2f64d3c08797315883104fc7d0f8bd862d4c4bbbb25e46208d1e27b9675f617",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01428",
+      "file": "data/connect-10y-2026-09-06/prices/1428.HK.csv",
+      "sha256": "fdb3cdf8d4348c4e4371a2daad15d57956d489dd9fcc68267387b82eff281336",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01456",
+      "file": "data/connect-10y-2026-09-06/prices/1456.HK.csv",
+      "sha256": "61726873a6fc355aab804d9f47fe15e79b628aeb80faf3ae17a69da4c6bafbd8",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01513",
+      "file": "data/connect-10y-2026-09-06/prices/1513.HK.csv",
+      "sha256": "6ff998d6d6e39c69082aac51f2d22fd2afc791d7f9a067dcf5f9bd1abb665693",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01519",
+      "file": "data/connect-10y-2026-09-06/prices/1519.HK.csv",
+      "sha256": "adb8f2711217676b04da80b453ae3c8cb6c0cfaef76d06004acbe08c136a2e5b",
+      "bars": 702,
+      "first": "2023-10-27",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01530",
+      "file": "data/connect-10y-2026-09-06/prices/1530.HK.csv",
+      "sha256": "da8f11d49c8e43fb67b4dd3bf651c03dabb69371613d64f7c25686c02122e98a",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01548",
+      "file": "data/connect-10y-2026-09-06/prices/1548.HK.csv",
+      "sha256": "4acb6695dab089ac0c135c2b1d377de09efcb32fafe4abf92596a526cf444954",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01579",
+      "file": "data/connect-10y-2026-09-06/prices/1579.HK.csv",
+      "sha256": "867104d512b9ebac76445c91bc2f69dce70724d02813f0fa4cb70bb0dc7df46d",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01585",
+      "file": "data/connect-10y-2026-09-06/prices/1585.HK.csv",
+      "sha256": "507c4cca4167fa6b550cd7b7e0f59c5ac6ba3eff7bd9844edf17b19f11464eac",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01618",
+      "file": "data/connect-10y-2026-09-06/prices/1618.HK.csv",
+      "sha256": "ae574c7e321685d337acdec656f5a60b0940a343d39f9241475ca1bdc087796f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01658",
+      "file": "data/connect-10y-2026-09-06/prices/1658.HK.csv",
+      "sha256": "65161f8b03b4bee776a0c8d3e0c4147807f9a194c1aa68e6b08575125d50fbf1",
+      "bars": 2446,
+      "first": "2016-09-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01681",
+      "file": "data/connect-10y-2026-09-06/prices/1681.HK.csv",
+      "sha256": "29938b23c2f55ef1ffbfc6fcc38f527d2c60a128a2f6263cfa47ab86997199b2",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01686",
+      "file": "data/connect-10y-2026-09-06/prices/1686.HK.csv",
+      "sha256": "4bda5128232a0e109a7f581775f8c4a82b3ceee3b4c1fff30382c68a9fb963f2",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01688",
+      "file": "data/connect-10y-2026-09-06/prices/1688.HK.csv",
+      "sha256": "0018474a63f75c316cd3e2cb0d82c9cc418ac5739e2849e51bddb3fcba9c82a5",
+      "bars": 50,
+      "first": "2026-06-26",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01729",
+      "file": "data/connect-10y-2026-09-06/prices/1729.HK.csv",
+      "sha256": "203180171793e13b730b0de2e0a0a34ccb8b58225b3fe98053d511a73290567e",
+      "bars": 2104,
+      "first": "2018-02-13",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01735",
+      "file": "data/connect-10y-2026-09-06/prices/1735.HK.csv",
+      "sha256": "2da837fc2d27187c302d7aec8521b126fb4d586738a3833c18a26a0de9b5d532",
+      "bars": 2074,
+      "first": "2018-03-29",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01766",
+      "file": "data/connect-10y-2026-09-06/prices/1766.HK.csv",
+      "sha256": "688f1c038a22d7bf2200dec133f17aed51657a924aac734051589c592ada4c63",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01768",
+      "file": "data/connect-10y-2026-09-06/prices/1768.HK.csv",
+      "sha256": "05965d6897484a9fc00896648e8b84db2fcd7c14fe8cb0f2b03b32f86030839f",
+      "bars": 148,
+      "first": "2026-01-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01772",
+      "file": "data/connect-10y-2026-09-06/prices/1772.HK.csv",
+      "sha256": "a3b45d21a010b9dd5fc9e2ac91c5273c74fce540ae941bd4a4e52be54c908320",
+      "bars": 1943,
+      "first": "2018-10-11",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01776",
+      "file": "data/connect-10y-2026-09-06/prices/1776.HK.csv",
+      "sha256": "f78c79556884b56fcf449cc6da5e238334ec1ab593c85c2a206e7adbe7200a22",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01783",
+      "file": "data/connect-10y-2026-09-06/prices/1783.HK.csv",
+      "sha256": "f9e753f1d9ea9a69faea4ae5d7204c108e68949b117a2afb93214b541ca5210f",
+      "bars": 1977,
+      "first": "2018-08-22",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01787",
+      "file": "data/connect-10y-2026-09-06/prices/1787.HK.csv",
+      "sha256": "40845c98ba576a1fa750546f4e4c34ce228fc3400229a672623cb89ad77fc143",
+      "bars": 1951,
+      "first": "2018-09-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01788",
+      "file": "data/connect-10y-2026-09-06/prices/1788.HK.csv",
+      "sha256": "8cf146e42c98a2752d3b547b55f35c4036aaab70e28190f1c573982027a80db1",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01797",
+      "file": "data/connect-10y-2026-09-06/prices/1797.HK.csv",
+      "sha256": "1fc08a7b5a41194a552259a4678a30cd3d13b7e34569af5087317be0e4b15ef9",
+      "bars": 1830,
+      "first": "2019-03-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01801",
+      "file": "data/connect-10y-2026-09-06/prices/1801.HK.csv",
+      "sha256": "4998ffffee4108683cdb3c84ba16ee109a44bf94c8321a7575cecf18b125cea1",
+      "bars": 1930,
+      "first": "2018-10-31",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01810",
+      "file": "data/connect-10y-2026-09-06/prices/1810.HK.csv",
+      "sha256": "b34721857e9c99cbeb9df306a83e92e78369cfaf8b8cd2595a75a1a9fa3086c1",
+      "bars": 2009,
+      "first": "2018-07-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01816",
+      "file": "data/connect-10y-2026-09-06/prices/1816.HK.csv",
+      "sha256": "3e6b33147abd4db4ae6cf7213f3b27518ac98deb3f635f3613ba0d5e36454ffd",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01818",
+      "file": "data/connect-10y-2026-09-06/prices/1818.HK.csv",
+      "sha256": "5004099a16cc2868a4a16a324a994ae4bbcd6496966f39b8d8d0ba869ee5ccc1",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01828",
+      "file": "data/connect-10y-2026-09-06/prices/1828.HK.csv",
+      "sha256": "dde59df668da7ca1fb0e328c52ec9fe078ad9174066c1ed33ed097b16dedf12c",
+      "bars": 289,
+      "first": "2025-07-07",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01833",
+      "file": "data/connect-10y-2026-09-06/prices/1833.HK.csv",
+      "sha256": "e3f11c5f2697bf931bced0393b8ea322980937d53a1df5dc19e54ff0a5439fe3",
+      "bars": 2052,
+      "first": "2018-05-04",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01860",
+      "file": "data/connect-10y-2026-09-06/prices/1860.HK.csv",
+      "sha256": "2e290dba9443da972e303b440a67939ddbb6d767574cd967997178a93a452a44",
+      "bars": 1900,
+      "first": "2018-12-12",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01876",
+      "file": "data/connect-10y-2026-09-06/prices/1876.HK.csv",
+      "sha256": "64669f64a13c4a4a8f96cc9c9239d606f7ed504eaa862f3d52f5e2f5741e416a",
+      "bars": 1705,
+      "first": "2019-09-30",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01877",
+      "file": "data/connect-10y-2026-09-06/prices/1877.HK.csv",
+      "sha256": "c84b06e2cc382a181f84f01b8f6db562d775ec6748eaf7adf38e00e220771e3c",
+      "bars": 1892,
+      "first": "2018-12-24",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01880",
+      "file": "data/connect-10y-2026-09-06/prices/1880.HK.csv",
+      "sha256": "97b9749ab857604bd94102b8e28bc945c18d416aad282026db5ca8e5fe3f6bd8",
+      "bars": 989,
+      "first": "2022-08-25",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01882",
+      "file": "data/connect-10y-2026-09-06/prices/1882.HK.csv",
+      "sha256": "c6d96bce82f82dd4d4ff0377b24defc890a3eef21d07dddb02633a129023066f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01888",
+      "file": "data/connect-10y-2026-09-06/prices/1888.HK.csv",
+      "sha256": "5c591d5e2f2b713fc319cd42b4e29ce63a96e37b6b2d3af3657091dc639d672e",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01898",
+      "file": "data/connect-10y-2026-09-06/prices/1898.HK.csv",
+      "sha256": "c43b83af8e9f6c948ea7df952cd6e3b4dfed5377c11148f97da86f88d7e63b48",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01908",
+      "file": "data/connect-10y-2026-09-06/prices/1908.HK.csv",
+      "sha256": "8f367392dab4970372fef3dd1e2bd132aa5b85cb892d1d6f4022568a9c793b53",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01910",
+      "file": "data/connect-10y-2026-09-06/prices/1910.HK.csv",
+      "sha256": "6e427d6eb6a00c781e3758a687a4bbd126e07ade09b9e6fe5bb1f95ad584cc38",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01918",
+      "file": "data/connect-10y-2026-09-06/prices/1918.HK.csv",
+      "sha256": "e0185b4de73f4858f99b81fdce25a073ace21aef2481550f9fee68bd834bcda2",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01919",
+      "file": "data/connect-10y-2026-09-06/prices/1919.HK.csv",
+      "sha256": "e93cd5fd77ed9ceeb867fd7185690ed17ac007e8620177203699c9ee6b35b0ee",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01928",
+      "file": "data/connect-10y-2026-09-06/prices/1928.HK.csv",
+      "sha256": "707917d044b386d26fe3697c84ba75cdc1a1c235118aad1c20132e4d70362d8a",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01929",
+      "file": "data/connect-10y-2026-09-06/prices/1929.HK.csv",
+      "sha256": "bd8c9d1b7e3e1b99fb542563bb1f4da51f2fce4b65ea45d2fdd9052328b0b126",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01952",
+      "file": "data/connect-10y-2026-09-06/prices/1952.HK.csv",
+      "sha256": "1073340941b81d1dffae4a7b5a06ad484d839643f097bf2a5dd80369cd5f1263",
+      "bars": 1451,
+      "first": "2020-10-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01963",
+      "file": "data/connect-10y-2026-09-06/prices/1963.HK.csv",
+      "sha256": "475b969bc0d7e7f2f437ba9ba15f5b97577d6c14cf51350c8d04210981d9d5cd",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01972",
+      "file": "data/connect-10y-2026-09-06/prices/1972.HK.csv",
+      "sha256": "ae923765699e48194142f3cb4db5f4266ccab59d566ecb0950ffb5f9a9ca0a00",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01988",
+      "file": "data/connect-10y-2026-09-06/prices/1988.HK.csv",
+      "sha256": "396de6d21b6314e10e0f15c745a66cae94b5b71ef949402968be8fdaec4606bd",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01989",
+      "file": "data/connect-10y-2026-09-06/prices/1989.HK.csv",
+      "sha256": "06bdb14967597cbf675dcd59f23d76cf5e987d946fbd98ad9c59bb887c972d68",
+      "bars": 114,
+      "first": "2026-03-20",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01997",
+      "file": "data/connect-10y-2026-09-06/prices/1997.HK.csv",
+      "sha256": "9d0fef4c90679da4d9354a3fd3f3b0528ed5bc1f3dc2be713e91fd0fab5c9c2c",
+      "bars": 2165,
+      "first": "2017-11-15",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "01999",
+      "file": "data/connect-10y-2026-09-06/prices/1999.HK.csv",
+      "sha256": "9f5c415b7204122a9ed399c4a7982972863a51a1300426e16c126b7cb0762fa3",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02015",
+      "file": "data/connect-10y-2026-09-06/prices/2015.HK.csv",
+      "sha256": "e70f6bba94afe1ee965a51d58350e259d798e2724c92192364e8c6b8c0a36329",
+      "bars": 1244,
+      "first": "2021-08-12",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02016",
+      "file": "data/connect-10y-2026-09-06/prices/2016.HK.csv",
+      "sha256": "6683dee5853bc553c3869bea9aeb95790b581373fb607147f190b5a8005296f3",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02018",
+      "file": "data/connect-10y-2026-09-06/prices/2018.HK.csv",
+      "sha256": "82b0139ba18bf6edf5bcf8880a925874f5a8207928c2c0427ec7b748652b2d7d",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02020",
+      "file": "data/connect-10y-2026-09-06/prices/2020.HK.csv",
+      "sha256": "fa10cc3cac2dc43e7e6cfc054a2abe7c929eb3676e09cfd4fcb07a8194d31e5e",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02026",
+      "file": "data/connect-10y-2026-09-06/prices/2026.HK.csv",
+      "sha256": "f9d4c3daf8a8be3e6d013687a3c913d2b147a448bafc462eb5dbf15e2b44f4bf",
+      "bars": 204,
+      "first": "2025-11-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02038",
+      "file": "data/connect-10y-2026-09-06/prices/2038.HK.csv",
+      "sha256": "91dbccae824092c21efb5bdb97fde50ea710d7aceb8f33c29791d684d389f871",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02039",
+      "file": "data/connect-10y-2026-09-06/prices/2039.HK.csv",
+      "sha256": "66696059c10d0912a797a511c61f831937eec31637f33cf1247f6f2a9aa9ed2c",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02050",
+      "file": "data/connect-10y-2026-09-06/prices/2050.HK.csv",
+      "sha256": "66f6be85412de976d2845d08251edc492decba1a02e390db224909f0bcf9a393",
+      "bars": 298,
+      "first": "2025-06-23",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02057",
+      "file": "data/connect-10y-2026-09-06/prices/2057.HK.csv",
+      "sha256": "94342f7c2345b1bed936d02f62d7b96947d9d1746883c5fc1dbc9e54cb0d6ebc",
+      "bars": 1457,
+      "first": "2020-09-29",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02096",
+      "file": "data/connect-10y-2026-09-06/prices/2096.HK.csv",
+      "sha256": "69a99f47be6103d0cee98125f49cfef2e0b5867254817be4b3cca0f58c06afce",
+      "bars": 1441,
+      "first": "2020-10-27",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02097",
+      "file": "data/connect-10y-2026-09-06/prices/2097.HK.csv",
+      "sha256": "92b1d2948ae123f0e9db270f1595581e95f0211cd5ae10e23251a8ecac2b4057",
+      "bars": 373,
+      "first": "2025-03-03",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02099",
+      "file": "data/connect-10y-2026-09-06/prices/2099.HK.csv",
+      "sha256": "396c22a5752325c1a81e829897d3298a6bbe22df764e3d7bc4bc7abfb6600346",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02128",
+      "file": "data/connect-10y-2026-09-06/prices/2128.HK.csv",
+      "sha256": "19e3c68075c20c7d5b4da50e63275a8f72fedf078f1f4595582e0e70edb00d40",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02162",
+      "file": "data/connect-10y-2026-09-06/prices/2162.HK.csv",
+      "sha256": "7df5041e63684a93dcba43f8a1c633de12fc0f70b60236d49a9b2adfd035b9b4",
+      "bars": 1269,
+      "first": "2021-07-08",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02196",
+      "file": "data/connect-10y-2026-09-06/prices/2196.HK.csv",
+      "sha256": "ca43b4c12aea6c34aa7de05f570e578bed3a44a38009dc2e55b2564fe8907d8f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02202",
+      "file": "data/connect-10y-2026-09-06/prices/2202.HK.csv",
+      "sha256": "d22605f92f3d34f33dc73eabc5a84612d927ccce224a2e3e385b6960eebc2657",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02208",
+      "file": "data/connect-10y-2026-09-06/prices/2208.HK.csv",
+      "sha256": "230093ae85e9e0344c877e8a42f8909f8b06a8736106a88288578825b4e39028",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02228",
+      "file": "data/connect-10y-2026-09-06/prices/2228.HK.csv",
+      "sha256": "3120aaa4b3639db086d1f0ccb33d7c44dda22b124e8b8cfe31ca5a3d31a3ae89",
+      "bars": 549,
+      "first": "2024-06-13",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02232",
+      "file": "data/connect-10y-2026-09-06/prices/2232.HK.csv",
+      "sha256": "76df5351615bfd7a7830a946b197606d1e70d9a4328d1e468f9b732690ddc9f9",
+      "bars": 2173,
+      "first": "2017-11-03",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02233",
+      "file": "data/connect-10y-2026-09-06/prices/2233.HK.csv",
+      "sha256": "650dbafc25217259f4cfefc0fedd75717e9b18feec05ef08f70d6e5cb7ff1ec7",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02238",
+      "file": "data/connect-10y-2026-09-06/prices/2238.HK.csv",
+      "sha256": "e43e218087a5f95bfeed73060f2f09ec7017fe506788413b7629ffec5b2d4900",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02249",
+      "file": "data/connect-10y-2026-09-06/prices/2249.HK.csv",
+      "sha256": "87d09598b0dac3ce86c1313bb79a0501125817d8ecc98ebe7ec2b9aeb04da765",
+      "bars": 41,
+      "first": "2026-07-10",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02252",
+      "file": "data/connect-10y-2026-09-06/prices/2252.HK.csv",
+      "sha256": "a02e3db90b788957def3dda3015249bdaac804d8387627f3027877fbca4e3bb7",
+      "bars": 1190,
+      "first": "2021-11-02",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02259",
+      "file": "data/connect-10y-2026-09-06/prices/2259.HK.csv",
+      "sha256": "cb802810684378aaf3d2c4a3459cb0bfe4a3bf76e16b1b706dc0cce2ae2c5cfb",
+      "bars": 228,
+      "first": "2025-09-30",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02268",
+      "file": "data/connect-10y-2026-09-06/prices/2268.HK.csv",
+      "sha256": "f9a1f05ed546dee4c4ddcbee383f542d851789e07252ae2fe0829b81353fe8c1",
+      "bars": 687,
+      "first": "2023-11-17",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02269",
+      "file": "data/connect-10y-2026-09-06/prices/2269.HK.csv",
+      "sha256": "cd698efce96b5e6fe1a445fdb3d7e67eca48817689b0b082db2eaf368e37545d",
+      "bars": 2274,
+      "first": "2017-06-13",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02276",
+      "file": "data/connect-10y-2026-09-06/prices/2276.HK.csv",
+      "sha256": "2ee96aab6ddf5f9922a4bc023643684c535cfdf76ffcacbfb5b3f631af7219d4",
+      "bars": 1158,
+      "first": "2021-12-16",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02282",
+      "file": "data/connect-10y-2026-09-06/prices/2282.HK.csv",
+      "sha256": "8bb63eb6f8edc9e57287f225b14ccaefbf5f3f5c4c9605dd4e5d29bbc123db78",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02285",
+      "file": "data/connect-10y-2026-09-06/prices/2285.HK.csv",
+      "sha256": "28b96f2629f15fa2c8a91d140859556285c4290cc7cee4ee2663eb1673fba9f6",
+      "bars": 1149,
+      "first": "2021-12-30",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02313",
+      "file": "data/connect-10y-2026-09-06/prices/2313.HK.csv",
+      "sha256": "42ae69b81fdc3a6c296483afc9c3c0d41c5705b5735d71df3db11b0edcea0c83",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02314",
+      "file": "data/connect-10y-2026-09-06/prices/2314.HK.csv",
+      "sha256": "b4497117e6e0c7d9968cc30d27adbb5e07f52fc5e95f4d9364fc317d30e0e903",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02315",
+      "file": "data/connect-10y-2026-09-06/prices/2315.HK.csv",
+      "sha256": "413ec8994b0f71ba0beab23cd2177e6266bc913f1e50587dd9ad51945d8a582c",
+      "bars": 984,
+      "first": "2022-09-01",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02318",
+      "file": "data/connect-10y-2026-09-06/prices/2318.HK.csv",
+      "sha256": "e61c5ecf347cdcf9df27fa39ca8ea5198d0af3c4abfba355bbcb787f68a80087",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02319",
+      "file": "data/connect-10y-2026-09-06/prices/2319.HK.csv",
+      "sha256": "de2cef162fd37d0d5015d76e835cd6e9d23cc9e7b3118ef607d453ba955a8c87",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02328",
+      "file": "data/connect-10y-2026-09-06/prices/2328.HK.csv",
+      "sha256": "8ab981ca354ac0992ffccfb637be183612d13a9d74d2738f911028399aa94ecb",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02331",
+      "file": "data/connect-10y-2026-09-06/prices/2331.HK.csv",
+      "sha256": "a37c9c5748b3d99dae25321bbdcb4e7358bf2b8bdd5902fe483566adc5936411",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02338",
+      "file": "data/connect-10y-2026-09-06/prices/2338.HK.csv",
+      "sha256": "d4e28fcdfe1ee35541db8fc8faf29ccf07284366e4da215abc2afa147786de26",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02343",
+      "file": "data/connect-10y-2026-09-06/prices/2343.HK.csv",
+      "sha256": "f27b4e838b947a8df4be58b2a3e61903145ce5f64f91f81d1d0e5764a1f45fe3",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02356",
+      "file": "data/connect-10y-2026-09-06/prices/2356.HK.csv",
+      "sha256": "b631d5f64168375cbbee933c0898dc8e3d42c8d75dfd7e61a7c8d64ad0c87e94",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02357",
+      "file": "data/connect-10y-2026-09-06/prices/2357.HK.csv",
+      "sha256": "9aff6a8ebefcfb1bf9ac55ab19d6805a50ea177860d80797b8619ea9bd9ffde8",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02359",
+      "file": "data/connect-10y-2026-09-06/prices/2359.HK.csv",
+      "sha256": "9b94d84dd1a1a0ef051540d9fb2374a4570a91195c9c87c89928cb4ae85eeb3c",
+      "bars": 1899,
+      "first": "2018-12-13",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02367",
+      "file": "data/connect-10y-2026-09-06/prices/2367.HK.csv",
+      "sha256": "d649e51a1165c9c8f330169d04e705d1418c78c513edbb0415f248412ffbffb5",
+      "bars": 940,
+      "first": "2022-11-04",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02378",
+      "file": "data/connect-10y-2026-09-06/prices/2378.HK.csv",
+      "sha256": "7af58d37083bd5e9752613b14ada378938eca533db34621ac23dd61ceffa55b0",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02380",
+      "file": "data/connect-10y-2026-09-06/prices/2380.HK.csv",
+      "sha256": "95bbc86b58678f445a40b2c73d07c80fcf3b26c0d61d45e7d980f4739e2622cc",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02382",
+      "file": "data/connect-10y-2026-09-06/prices/2382.HK.csv",
+      "sha256": "b644ad121451cccae1624451675a39bfaa11c6443f0cbc642bee779260868321",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02386",
+      "file": "data/connect-10y-2026-09-06/prices/2386.HK.csv",
+      "sha256": "c3972a414f0e7ca97c20670de05d2de09c7f4a82329fc39c7a1d9af16944ef68",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02388",
+      "file": "data/connect-10y-2026-09-06/prices/2388.HK.csv",
+      "sha256": "8f628c120cbfb8654ba64c23540ee2504d7eabbf2b2dd3f56deb187a42b97c9b",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02400",
+      "file": "data/connect-10y-2026-09-06/prices/2400.HK.csv",
+      "sha256": "7c9de0e4d7e57534a34f36f287be81628d5ddb9e8a09e57603c3dd60bac1802e",
+      "bars": 1654,
+      "first": "2019-12-12",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02419",
+      "file": "data/connect-10y-2026-09-06/prices/2419.HK.csv",
+      "sha256": "af865deb212d2aca7a8c7c24149263544e0519925b14f6d3d7604a55d68bc43e",
+      "bars": 674,
+      "first": "2023-12-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02423",
+      "file": "data/connect-10y-2026-09-06/prices/2423.HK.csv",
+      "sha256": "c1dda2a4211ae9fd1f1c917c4e3ba3a35ac1462562120ab5d0c604fd9627c70e",
+      "bars": 1063,
+      "first": "2022-05-11",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02432",
+      "file": "data/connect-10y-2026-09-06/prices/2432.HK.csv",
+      "sha256": "67b7b926be64842fc8202e3b065139df884b4616c27d8854343f752669e1f6f2",
+      "bars": 417,
+      "first": "2024-12-23",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02460",
+      "file": "data/connect-10y-2026-09-06/prices/2460.HK.csv",
+      "sha256": "aa1c50280b341e869dc1d3298be3bad828601e9bfcb261d7663e33c36e677157",
+      "bars": 460,
+      "first": "2024-10-23",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02475",
+      "file": "data/connect-10y-2026-09-06/prices/2475.HK.csv",
+      "sha256": "35d7a6babc55be668cf01f0b8d1cea42f756e40d6c8d5004042b2dabbbb1c3a6",
+      "bars": 42,
+      "first": "2026-07-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02476",
+      "file": "data/connect-10y-2026-09-06/prices/2476.HK.csv",
+      "sha256": "9dbbdbe6c8999a9c9168abe1aae9278b56b99253129d45783b8a1415efd32556",
+      "bars": 95,
+      "first": "2026-04-21",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02507",
+      "file": "data/connect-10y-2026-09-06/prices/2507.HK.csv",
+      "sha256": "319d6d744122db72ce2ba9e3064d0fc25f7b18defeca3f5dcaf75ed9d36141c5",
+      "bars": 529,
+      "first": "2024-07-12",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02510",
+      "file": "data/connect-10y-2026-09-06/prices/2510.HK.csv",
+      "sha256": "5a7aeb110eed09d861a474b91a515b65513bce75381f0d0230640d8a289e47b5",
+      "bars": 453,
+      "first": "2024-11-01",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02513",
+      "file": "data/connect-10y-2026-09-06/prices/2513.HK.csv",
+      "sha256": "8228aa059385b3b6e69b58649097378fc76ae98137f4a4b31818f17dd4ab0ca6",
+      "bars": 162,
+      "first": "2026-01-08",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02556",
+      "file": "data/connect-10y-2026-09-06/prices/2556.HK.csv",
+      "sha256": "93e07953f9340333afe749428a06a81b27ffd30f8b6f8a727fa4f2e2b48cbab1",
+      "bars": 568,
+      "first": "2024-05-16",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02577",
+      "file": "data/connect-10y-2026-09-06/prices/2577.HK.csv",
+      "sha256": "4dea565eaf89f5bd4527b4207b075d405c7d7d183f8469933f54e56d68d76a91",
+      "bars": 414,
+      "first": "2024-12-30",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02579",
+      "file": "data/connect-10y-2026-09-06/prices/2579.HK.csv",
+      "sha256": "3075b57ffa5043c697b051ab6beccc237d58580d4ea452b944b840c75b5c785a",
+      "bars": 197,
+      "first": "2025-11-17",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02580",
+      "file": "data/connect-10y-2026-09-06/prices/2580.HK.csv",
+      "sha256": "bc4b526fc60299d1342873432277792b492dcd363dc529755bf3083e5132f818",
+      "bars": 248,
+      "first": "2025-09-02",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02588",
+      "file": "data/connect-10y-2026-09-06/prices/2588.HK.csv",
+      "sha256": "8daf9e5c474735e4c10a8fc74a8187a1fbd86e024137d7490408b15b8354839b",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02590",
+      "file": "data/connect-10y-2026-09-06/prices/2590.HK.csv",
+      "sha256": "185d618bf279d8f6b4b2f0dc1667b5302f7b2d324e67b589cdd2bbcf8c4934b0",
+      "bars": 287,
+      "first": "2025-07-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02595",
+      "file": "data/connect-10y-2026-09-06/prices/2595.HK.csv",
+      "sha256": "979ea58bb18ec95758fab69d1458a11781696fc6f10b3b957c71c6eb5c4f88c8",
+      "bars": 235,
+      "first": "2025-09-19",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02600",
+      "file": "data/connect-10y-2026-09-06/prices/2600.HK.csv",
+      "sha256": "203122026118727414f04c1e911b6e4a1873cad2d767fbd02c35efa26542dc32",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02601",
+      "file": "data/connect-10y-2026-09-06/prices/2601.HK.csv",
+      "sha256": "6ae51593375a0d5014dd48c17c395d848edb54877f0a6ef63307256ec7cae400",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02602",
+      "file": "data/connect-10y-2026-09-06/prices/2602.HK.csv",
+      "sha256": "6da55f40a42a4d91e0a3656af518b28e3fbb527b5a296385f88484296606aa2f",
+      "bars": 965,
+      "first": "2022-09-29",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02607",
+      "file": "data/connect-10y-2026-09-06/prices/2607.HK.csv",
+      "sha256": "7595bcead655387448d384f6350e3fab0989d92143b8baffc4f0ce1e11f7800e",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02610",
+      "file": "data/connect-10y-2026-09-06/prices/2610.HK.csv",
+      "sha256": "afe555e545c833e5c020baa3cccbca0f76509c935551c6ac4b00d7874929ff36",
+      "bars": 357,
+      "first": "2025-03-25",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02611",
+      "file": "data/connect-10y-2026-09-06/prices/2611.HK.csv",
+      "sha256": "fddda51581c998113b3532ddc131f7a7405c7003d1b29415552f91ba518d6616",
+      "bars": 2314,
+      "first": "2017-04-11",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02618",
+      "file": "data/connect-10y-2026-09-06/prices/2618.HK.csv",
+      "sha256": "9de6fdb86288f703d8e1de9a6c06afcbeb2b120864df5fb6737e7d7ad9d3209a",
+      "bars": 1296,
+      "first": "2021-05-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02628",
+      "file": "data/connect-10y-2026-09-06/prices/2628.HK.csv",
+      "sha256": "c4aedf399004edf858c7aab970eb3a8926b44ec4c08f90b40ae2130bbbbbe99b",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02631",
+      "file": "data/connect-10y-2026-09-06/prices/2631.HK.csv",
+      "sha256": "7c02ad2b49741defae4eebcf1197750cff8a27da6a88f567598f396fc4a99f0b",
+      "bars": 257,
+      "first": "2025-08-20",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02637",
+      "file": "data/connect-10y-2026-09-06/prices/2637.HK.csv",
+      "sha256": "b5789cd11b3aff1f732b0619c5a1e3bc5d3aba56ad37b94cce91dcae2901a05c",
+      "bars": 182,
+      "first": "2025-12-08",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02648",
+      "file": "data/connect-10y-2026-09-06/prices/2648.HK.csv",
+      "sha256": "aef3ca9f717561fb62d422653971d736c52cbc5080369cdc38e45282a627a303",
+      "bars": 290,
+      "first": "2025-07-04",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02669",
+      "file": "data/connect-10y-2026-09-06/prices/2669.HK.csv",
+      "sha256": "8c1ef6196893da1a11ecf275e8418924c1a2bb408f4fe072467b8c8c3aa0a8eb",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02675",
+      "file": "data/connect-10y-2026-09-06/prices/2675.HK.csv",
+      "sha256": "7fdb58557e1cf6f9833cb03c9a6bd90d76f6d08471f43a997e6cb19c1fd7edbd",
+      "bars": 162,
+      "first": "2026-01-08",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02676",
+      "file": "data/connect-10y-2026-09-06/prices/2676.HK.csv",
+      "sha256": "60625487fa494924ceb3db8e213192cf5abacd9f1f99938da8aa6f46755c990a",
+      "bars": 182,
+      "first": "2025-12-08",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02687",
+      "file": "data/connect-10y-2026-09-06/prices/2687.HK.csv",
+      "sha256": "bf43169a665d284c2231f11a5d0cba06080790648a7a565535a0d4079faef3f3",
+      "bars": 182,
+      "first": "2025-12-08",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02688",
+      "file": "data/connect-10y-2026-09-06/prices/2688.HK.csv",
+      "sha256": "3b4ca255fa97cb68b3ef45b908741528e6425bad9e4e5703eb60d590620c5d69",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02689",
+      "file": "data/connect-10y-2026-09-06/prices/2689.HK.csv",
+      "sha256": "f5feaa50a2921908abf097ec16dd718f2ff112d2efb38cc380c4e16d63d7c698",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02692",
+      "file": "data/connect-10y-2026-09-06/prices/2692.HK.csv",
+      "sha256": "7a510df92fbd11c96a6a8d22a847b36e5195fb2e3e58c189e0d94822d4a71659",
+      "bars": 123,
+      "first": "2026-03-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02698",
+      "file": "data/connect-10y-2026-09-06/prices/2698.HK.csv",
+      "sha256": "c56d91ec898516b88d2546aa77fe0f95356b23aa3ad494b3d86a3af88b058bd3",
+      "bars": 202,
+      "first": "2025-11-10",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02706",
+      "file": "data/connect-10y-2026-09-06/prices/2706.HK.csv",
+      "sha256": "e4508835328e1d5582032f4be708a767a346fc4b4c386e5fa64c6d2ba44ee5e2",
+      "bars": 136,
+      "first": "2026-02-13",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02714",
+      "file": "data/connect-10y-2026-09-06/prices/2714.HK.csv",
+      "sha256": "788f190747dcd399099a2bc09bc2634b0d9c27e6ea0f1d75b242947f1446b2b5",
+      "bars": 141,
+      "first": "2026-02-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02715",
+      "file": "data/connect-10y-2026-09-06/prices/2715.HK.csv",
+      "sha256": "bdfab509bd3a85dcfa0bed06ee706ae22a2016ad3b6abc515ad1dd09450cbb6c",
+      "bars": 123,
+      "first": "2026-03-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02727",
+      "file": "data/connect-10y-2026-09-06/prices/2727.HK.csv",
+      "sha256": "bd22926625416e01edbc9694ce0116151c25eb2c9952a28275e54f3bdba627c3",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02768",
+      "file": "data/connect-10y-2026-09-06/prices/2768.HK.csv",
+      "sha256": "98ac89f55d6ccc492430820c27e91d7c152f02165c9b9124925f738165aae585",
+      "bars": 143,
+      "first": "2026-02-04",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02788",
+      "file": "data/connect-10y-2026-09-06/prices/2788.HK.csv",
+      "sha256": "a2a696c9771f1d8b83c4b886ac3b1c646115ed06e9ab104b597e833efbc8fe7f",
+      "bars": 192,
+      "first": "2025-11-24",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02799",
+      "file": "data/connect-10y-2026-09-06/prices/2799.HK.csv",
+      "sha256": "fb91c6b945a7b23cdcc7e0097d2c6993520beb1d9837546006aafa0d378a671c",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02866",
+      "file": "data/connect-10y-2026-09-06/prices/2866.HK.csv",
+      "sha256": "6492d5442317f70105e1d54aa29e2f75aa65b02fe966663ce42b9c5bab85e641",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02869",
+      "file": "data/connect-10y-2026-09-06/prices/2869.HK.csv",
+      "sha256": "c0e9a223e9f33fed514690ea5bdee139cf077278aab5d73ff1ea481dcc8296e4",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02880",
+      "file": "data/connect-10y-2026-09-06/prices/2880.HK.csv",
+      "sha256": "e9d7fbcf5feaee78c71dc898c4107ad65b8638dbd7f9931d0d1b0056c140bb4d",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02883",
+      "file": "data/connect-10y-2026-09-06/prices/2883.HK.csv",
+      "sha256": "11ad7b90f17714a4c879fbb41f2c426b7d5958dbdaa9ea0aa3d96d97bf5b55f5",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02888",
+      "file": "data/connect-10y-2026-09-06/prices/2888.HK.csv",
+      "sha256": "4c57f37e58f0888b38e903cbeb0be65111e342777e381072b275810f9649c621",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02889",
+      "file": "data/connect-10y-2026-09-06/prices/2889.HK.csv",
+      "sha256": "40a2d8affebf84d074e5f2cac03c2c678dac0c4edb5a334971331895b4c49076",
+      "bars": 228,
+      "first": "2025-09-30",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "02899",
+      "file": "data/connect-10y-2026-09-06/prices/2899.HK.csv",
+      "sha256": "7c6086ec79c863aceccc97a7792eac17cab8d2e9a5c4b62bc6132073a90cd795",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03200",
+      "file": "data/connect-10y-2026-09-06/prices/3200.HK.csv",
+      "sha256": "f6d2b10d4ee9956d28c763b6b3b8120211ef72353edd73d7b2c55c01d609f7e2",
+      "bars": 141,
+      "first": "2026-02-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03288",
+      "file": "data/connect-10y-2026-09-06/prices/3288.HK.csv",
+      "sha256": "1a1a2fa7df86c3df2c3ffe2e894a9a5c302b1ab9e6536b99bc7f6b63552a67ac",
+      "bars": 300,
+      "first": "2025-06-19",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03296",
+      "file": "data/connect-10y-2026-09-06/prices/3296.HK.csv",
+      "sha256": "bae2869c3e533aa22a7df11e892925950c10238598572a14dae71b0dca78587e",
+      "bars": 93,
+      "first": "2026-04-23",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03306",
+      "file": "data/connect-10y-2026-09-06/prices/3306.HK.csv",
+      "sha256": "8f286853b9f7851a075217569472fee04396d723e5423f316b71428bfd24acee",
+      "bars": 2424,
+      "first": "2016-10-31",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03308",
+      "file": "data/connect-10y-2026-09-06/prices/3308.HK.csv",
+      "sha256": "83d69abf015a27fcb05c6b028e1f0d91db7b3f1658e294cd5587a452ef7d905b",
+      "bars": 27,
+      "first": "2026-07-30",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03311",
+      "file": "data/connect-10y-2026-09-06/prices/3311.HK.csv",
+      "sha256": "c9917001958c301d12f685134b9999c712bd8537351fc4daa58d895ca5801ee7",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03317",
+      "file": "data/connect-10y-2026-09-06/prices/3317.HK.csv",
+      "sha256": "56002b00b53664e5a6f23b8be48f5c7a3be6b7529c8cb93609b60c28d37a6a13",
+      "bars": 168,
+      "first": "2025-12-30",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03320",
+      "file": "data/connect-10y-2026-09-06/prices/3320.HK.csv",
+      "sha256": "a53265430908cad5494b31f8e79f23b5ecddc14e3eae9fd34aa4bd49eccc3142",
+      "bars": 2425,
+      "first": "2016-10-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03323",
+      "file": "data/connect-10y-2026-09-06/prices/3323.HK.csv",
+      "sha256": "6fc1feff8c521fa2fde17816c838e2a8ef31f2c4d7278501c1080262438808cc",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03328",
+      "file": "data/connect-10y-2026-09-06/prices/3328.HK.csv",
+      "sha256": "760a4de2596228dd775053526662da8e0f470dff0d2d8700244aeaa57813be50",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03330",
+      "file": "data/connect-10y-2026-09-06/prices/3330.HK.csv",
+      "sha256": "65c095f69a4fad060255439daa047696e2e0412f6b86a369c3306290e218fc4f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03339",
+      "file": "data/connect-10y-2026-09-06/prices/3339.HK.csv",
+      "sha256": "7f185f5b931d504ac592d6c7050362668f3cad819feb0c38b8ff04ac29705222",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03347",
+      "file": "data/connect-10y-2026-09-06/prices/3347.HK.csv",
+      "sha256": "79281088c4e4283fcb623295485db056b14923867717a59f0fab75acbe4803d6",
+      "bars": 1494,
+      "first": "2020-08-07",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03360",
+      "file": "data/connect-10y-2026-09-06/prices/3360.HK.csv",
+      "sha256": "aee42c4ffcf29e3a09fbc37054ed3a28c24e4cef2d2b389bb2cfe118e7d6c55e",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03369",
+      "file": "data/connect-10y-2026-09-06/prices/3369.HK.csv",
+      "sha256": "bc9da595c1ef8fff1a5f84568ff88e954c3440aa8a6dbaba40ad88c1dbc9acbb",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03393",
+      "file": "data/connect-10y-2026-09-06/prices/3393.HK.csv",
+      "sha256": "264a025c4fa413fd7c866f5eede6504877570051320dbe243fa564d0f8b113d4",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03396",
+      "file": "data/connect-10y-2026-09-06/prices/3396.HK.csv",
+      "sha256": "747650455050a1b74cd03814024c9d3fc394099311908580f229a7754bea99c7",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03606",
+      "file": "data/connect-10y-2026-09-06/prices/3606.HK.csv",
+      "sha256": "2874d39401335d76ff7e034b171985b57a51c0ba1e75aa0b5a847647de4aaee2",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03618",
+      "file": "data/connect-10y-2026-09-06/prices/3618.HK.csv",
+      "sha256": "97e77121f4157cd16128840dcfb608bc74e9adf520e4993ff01c024b699fc5d4",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03661",
+      "file": "data/connect-10y-2026-09-06/prices/3661.HK.csv",
+      "sha256": "fcb1e8cfebc6e32e5ae164c2bb3d201bf421075686a47e869ff8e463524de3a0",
+      "bars": 50,
+      "first": "2026-06-26",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03668",
+      "file": "data/connect-10y-2026-09-06/prices/3668.HK.csv",
+      "sha256": "89bdb19aa25acdd547937896a677f36a119d570fd7f3f38478767ffd446166d1",
+      "bars": 1904,
+      "first": "2018-12-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03677",
+      "file": "data/connect-10y-2026-09-06/prices/3677.HK.csv",
+      "sha256": "f534c1634364b19fc601f294e308c82f0477cc1308ab53b5d532b918c9e62689",
+      "bars": 344,
+      "first": "2025-04-14",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03690",
+      "file": "data/connect-10y-2026-09-06/prices/3690.HK.csv",
+      "sha256": "561927e36867a2dce87d8f6caa26a366b778055d1e540326b18ae6e74adb1205",
+      "bars": 1956,
+      "first": "2018-09-20",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03692",
+      "file": "data/connect-10y-2026-09-06/prices/3692.HK.csv",
+      "sha256": "435d14c2c2a8fe6044fc9fd1903f166adaf14d880d3e9459fd51782a1317499d",
+      "bars": 1780,
+      "first": "2019-06-14",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03696",
+      "file": "data/connect-10y-2026-09-06/prices/3696.HK.csv",
+      "sha256": "3fbfacccd1dbf4dacadbe57cbbbe0d354fcc34c0b469b064a9ce5f5e07506ad2",
+      "bars": 168,
+      "first": "2025-12-30",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03698",
+      "file": "data/connect-10y-2026-09-06/prices/3698.HK.csv",
+      "sha256": "c66b6129425a18e7321db3bd1ce478a5ad5d197605e878881b4dc0ae675d6269",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03750",
+      "file": "data/connect-10y-2026-09-06/prices/3750.HK.csv",
+      "sha256": "ee26d264915da5582e31e949d7d8c0f92a571605672b0c15ddbd9bd95257c7a4",
+      "bars": 322,
+      "first": "2025-05-20",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03759",
+      "file": "data/connect-10y-2026-09-06/prices/3759.HK.csv",
+      "sha256": "bec2eda64c31b24a6e2d3bff6f8003db8993f3ab7973032b37048418da076e65",
+      "bars": 1664,
+      "first": "2019-11-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03800",
+      "file": "data/connect-10y-2026-09-06/prices/3800.HK.csv",
+      "sha256": "dd7b4adfad996874cfc259ccacf4a8b136ab5c07271a2773ff71ff433d15d89c",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03808",
+      "file": "data/connect-10y-2026-09-06/prices/3808.HK.csv",
+      "sha256": "899690ef8bbfbc77a9e97f563afbc981747af424920970f2fa8728a54578ca3f",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03858",
+      "file": "data/connect-10y-2026-09-06/prices/3858.HK.csv",
+      "sha256": "fc3b54cc5bab6bc150f7e3846429b5f87764f43ac0e52c947ea28b37bead5fd2",
+      "bars": 251,
+      "first": "2025-08-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03877",
+      "file": "data/connect-10y-2026-09-06/prices/3877.HK.csv",
+      "sha256": "75a2a828e7340420ede722e32faa5165b12bec359b4c6b0403a128d92315ed46",
+      "bars": 1779,
+      "first": "2019-06-17",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03888",
+      "file": "data/connect-10y-2026-09-06/prices/3888.HK.csv",
+      "sha256": "7dc766e62bd95043adc9e4775aafd9da673fbeff297868b1c7ea3dc107f3aad8",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03896",
+      "file": "data/connect-10y-2026-09-06/prices/3896.HK.csv",
+      "sha256": "ba721353ed731026e6b50278f609445bcc625497c59763fa5a5b665f80607652",
+      "bars": 902,
+      "first": "2022-12-30",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03898",
+      "file": "data/connect-10y-2026-09-06/prices/3898.HK.csv",
+      "sha256": "0f809a34a49a9d16692f89f77ff3bcd25143d06022cc7f5f096f7eaa412ee1f2",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03899",
+      "file": "data/connect-10y-2026-09-06/prices/3899.HK.csv",
+      "sha256": "e976dfc813d85f463006b635eb91c9e526699944e58052d5f804cba123322412",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03900",
+      "file": "data/connect-10y-2026-09-06/prices/3900.HK.csv",
+      "sha256": "30873de6d0e43b6dc7382780f3aaa69b76723b27b5c901bb1c5c052bdee6f028",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03908",
+      "file": "data/connect-10y-2026-09-06/prices/3908.HK.csv",
+      "sha256": "40f9146d8daa27a00e38893ab5ebaf054939de20e70fb4571380b00203b11e5a",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03918",
+      "file": "data/connect-10y-2026-09-06/prices/3918.HK.csv",
+      "sha256": "80c759da5dedefb42c6dcbb5eeca0b3317e48b1560a01db6bece78fcbe034a76",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03931",
+      "file": "data/connect-10y-2026-09-06/prices/3931.HK.csv",
+      "sha256": "a8ba5201bac961d62725b9c66f9c88e55532ec091196c9cd6538daa51b559254",
+      "bars": 961,
+      "first": "2022-10-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03933",
+      "file": "data/connect-10y-2026-09-06/prices/3933.HK.csv",
+      "sha256": "734ed731a1cf38fa9f9865f3a89d9f5fd15002d4250ede9fb7fe3e5849d0b8f5",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03939",
+      "file": "data/connect-10y-2026-09-06/prices/3939.HK.csv",
+      "sha256": "30fb62894aedf99b75d40683570b6f3cb1489afb0382a229e1defeca00835c8a",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03958",
+      "file": "data/connect-10y-2026-09-06/prices/3958.HK.csv",
+      "sha256": "4ad2ecbffb8b91ce69154e2665a2970fc4b63568ff7e1279f3fe3b9cdf4ff242",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03968",
+      "file": "data/connect-10y-2026-09-06/prices/3968.HK.csv",
+      "sha256": "2e98ee4098df25a170161db1fddcdc67074be67a3ad34566c0c944cd9236022c",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03969",
+      "file": "data/connect-10y-2026-09-06/prices/3969.HK.csv",
+      "sha256": "e807e44d0c07e5ecba91c43bc65f2c8a547fa8d5a2a03a28879a36ea00f2c7dc",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03986",
+      "file": "data/connect-10y-2026-09-06/prices/3986.HK.csv",
+      "sha256": "b977370d6d51310f44bfe04ffb6ad4af015288a738db1b93d414dd3828d7ad81",
+      "bars": 159,
+      "first": "2026-01-13",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03988",
+      "file": "data/connect-10y-2026-09-06/prices/3988.HK.csv",
+      "sha256": "173e1b436e1c21585fbbd1339025b158b829f525a4181d1a6e09b1958c556759",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03993",
+      "file": "data/connect-10y-2026-09-06/prices/3993.HK.csv",
+      "sha256": "ca53b9d3af208e3038a19536160426bd51109aaab110c457c25bcc0eab3dde2e",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03996",
+      "file": "data/connect-10y-2026-09-06/prices/3996.HK.csv",
+      "sha256": "781f55a8b7c7076e5c48ec7a2d9447289d36eef6e701c6cf34734613c32f73f1",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "03998",
+      "file": "data/connect-10y-2026-09-06/prices/3998.HK.csv",
+      "sha256": "97c00ca70e61a7a7b4c87098aff074cc62aa2a7e780ef6a8ffe674986220b6b4",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06030",
+      "file": "data/connect-10y-2026-09-06/prices/6030.HK.csv",
+      "sha256": "144f11ed1fd24b0459fc905c031e313540b92c2f481b9956d967420d28d73d6c",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06031",
+      "file": "data/connect-10y-2026-09-06/prices/6031.HK.csv",
+      "sha256": "e9414d75e4ee6fc3623e2136841c110b1e5b0c51c33f94029229a861ed5a506d",
+      "bars": 210,
+      "first": "2025-10-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06049",
+      "file": "data/connect-10y-2026-09-06/prices/6049.HK.csv",
+      "sha256": "7f83c71d1438f7946b3574609b116aa6456319ebeb6a502153fd141d6a9c5493",
+      "bars": 1649,
+      "first": "2019-12-19",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06055",
+      "file": "data/connect-10y-2026-09-06/prices/6055.HK.csv",
+      "sha256": "031e7a6f531993c86e225de1e5e4cc55fa73ccfc0184daf33a47179606a8165d",
+      "bars": 1782,
+      "first": "2019-06-12",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06060",
+      "file": "data/connect-10y-2026-09-06/prices/6060.HK.csv",
+      "sha256": "bdf51f0c06fd949283dd327a37374f99b4c81e13355ba35c0cf9475616a8c8fb",
+      "bars": 2197,
+      "first": "2017-09-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06066",
+      "file": "data/connect-10y-2026-09-06/prices/6066.HK.csv",
+      "sha256": "b5adf09ddf7d369a005d4d47ed70cf0276b3d7888f9268b20dc6db36ae18fece",
+      "bars": 2393,
+      "first": "2016-12-13",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06067",
+      "file": "data/connect-10y-2026-09-06/prices/6067.HK.csv",
+      "sha256": "db3d858c53baa5f04ca9bad237f79f6673ffe979a1d1b9d41db98900d468740e",
+      "bars": 53,
+      "first": "2026-06-23",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06082",
+      "file": "data/connect-10y-2026-09-06/prices/6082.HK.csv",
+      "sha256": "5e73817686b5f4b828474fe150c9b34d1c9edacd9af82d9b5a621fb368e7152a",
+      "bars": 166,
+      "first": "2026-01-02",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06088",
+      "file": "data/connect-10y-2026-09-06/prices/6088.HK.csv",
+      "sha256": "5067cb9dbb368985952cca09db37ce174f663cc893f62f3e8e49b749d0822be9",
+      "bars": 2250,
+      "first": "2017-07-17",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06098",
+      "file": "data/connect-10y-2026-09-06/prices/6098.HK.csv",
+      "sha256": "ee8bef884f336865c9f9ec4b10a2056271f0117d7b3d197514a52b916e41b4d0",
+      "bars": 2022,
+      "first": "2018-06-19",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06127",
+      "file": "data/connect-10y-2026-09-06/prices/6127.HK.csv",
+      "sha256": "e350aa2d41c7de905c4fb73221e64a4a1e7e3b217519b677ae092c358e6113eb",
+      "bars": 1357,
+      "first": "2021-02-26",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06160",
+      "file": "data/connect-10y-2026-09-06/prices/6160.HK.csv",
+      "sha256": "6bfdbb1444ae86eb4f037a4e11581d1c3d6486a2680e8ffdaf2c8cb6bf7ae683",
+      "bars": 1987,
+      "first": "2018-08-08",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06166",
+      "file": "data/connect-10y-2026-09-06/prices/6166.HK.csv",
+      "sha256": "15dd0785cae52f5faab442ce02a965b51ff82a211196f90ab093ad4edd398136",
+      "bars": 210,
+      "first": "2025-10-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06178",
+      "file": "data/connect-10y-2026-09-06/prices/6178.HK.csv",
+      "sha256": "a92e61dd7396a163a485b928b4ebd3a8cdd481730188c080a9f91c575c31be9c",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06181",
+      "file": "data/connect-10y-2026-09-06/prices/6181.HK.csv",
+      "sha256": "80399b5f9256fbdb28a943f31dc03c4f98c392aa0257f11782f1f0b96ea7340d",
+      "bars": 538,
+      "first": "2024-06-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06186",
+      "file": "data/connect-10y-2026-09-06/prices/6186.HK.csv",
+      "sha256": "edca0aa43d4be43866d0b388f432a44b1e4537fd58e04ffd0a1291dd677f0eee",
+      "bars": 1675,
+      "first": "2019-11-13",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06198",
+      "file": "data/connect-10y-2026-09-06/prices/6198.HK.csv",
+      "sha256": "a0b557ee4debdfb87b31b8f8549b886ab33f4e276de8fccdf5b24d57d73d7859",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06600",
+      "file": "data/connect-10y-2026-09-06/prices/6600.HK.csv",
+      "sha256": "35a66b166e63038b2e9dfbc29da6f6771de61c0d47fa579696b620fd828db968",
+      "bars": 168,
+      "first": "2025-12-30",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06613",
+      "file": "data/connect-10y-2026-09-06/prices/6613.HK.csv",
+      "sha256": "c8d9c9fd63df7a94da1b4270ae5d222ee214bde4c8523a125bf352da8484eaeb",
+      "bars": 287,
+      "first": "2025-07-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06618",
+      "file": "data/connect-10y-2026-09-06/prices/6618.HK.csv",
+      "sha256": "897a8feb2c79067375f2f21c546c74d751bf05bc7e82fdd99714dcc626bbdf77",
+      "bars": 1411,
+      "first": "2020-12-08",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06651",
+      "file": "data/connect-10y-2026-09-06/prices/6651.HK.csv",
+      "sha256": "8bc1e2ea92d23503b6bfc3726d3f8763e0266c9cdeec194fa7ee5b6700348ca0",
+      "bars": 168,
+      "first": "2025-12-30",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06655",
+      "file": "data/connect-10y-2026-09-06/prices/6655.HK.csv",
+      "sha256": "45e9dfcaee95e9cb8e3cb5ea91ce0fedcc16579ef12502a29798396a4fe89c4b",
+      "bars": 1090,
+      "first": "2022-03-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06666",
+      "file": "data/connect-10y-2026-09-06/prices/6666.HK.csv",
+      "sha256": "2c10e99ec77b407f93bf63a6f979773db16767644ab93ec991f5614b7ee97cb9",
+      "bars": 1415,
+      "first": "2020-12-02",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06680",
+      "file": "data/connect-10y-2026-09-06/prices/6680.HK.csv",
+      "sha256": "21e3071b9213054f485897f9f66df34d9901808c2ca84cee62c8fe0abd1a4d32",
+      "bars": 1138,
+      "first": "2022-01-14",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06682",
+      "file": "data/connect-10y-2026-09-06/prices/6682.HK.csv",
+      "sha256": "5c713d2c422606456d417e80cc5f369e3cd992d89c60d92719d60d3384d577b0",
+      "bars": 721,
+      "first": "2023-09-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06690",
+      "file": "data/connect-10y-2026-09-06/prices/6690.HK.csv",
+      "sha256": "7257d30636269d592d1eee161db6c33378ef8d25dae6638b0cda11bc207a3ab5",
+      "bars": 1400,
+      "first": "2020-12-23",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06693",
+      "file": "data/connect-10y-2026-09-06/prices/6693.HK.csv",
+      "sha256": "0a8f25f3e95a46890341abf9056a69be8498b54c9221d2643325118078a842d8",
+      "bars": 368,
+      "first": "2025-03-10",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06699",
+      "file": "data/connect-10y-2026-09-06/prices/6699.HK.csv",
+      "sha256": "f0b99eee01c63471890f13586b956e8f1ecceba04d7d340273b8d48f06163366",
+      "bars": 1284,
+      "first": "2021-06-16",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06806",
+      "file": "data/connect-10y-2026-09-06/prices/6806.HK.csv",
+      "sha256": "37937f9ded4d63d22c08dc51b18c998e167190963862fa29024719571efab5e8",
+      "bars": 1812,
+      "first": "2019-04-26",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06808",
+      "file": "data/connect-10y-2026-09-06/prices/6808.HK.csv",
+      "sha256": "bd8e155473276e00bde3537c00238b3c0b8090a9d7a7aac1f4055a9a16514b9a",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06809",
+      "file": "data/connect-10y-2026-09-06/prices/6809.HK.csv",
+      "sha256": "990d2d1b979b4d986d4864ef6f66f3259b2b2e12f88bfcb390c7eb8be11eb8a7",
+      "bars": 140,
+      "first": "2026-02-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06818",
+      "file": "data/connect-10y-2026-09-06/prices/6818.HK.csv",
+      "sha256": "88ebcfb0e52f9ea9e23d5a786e0d6b42ad0145baebd70e73d603bb451e27f64c",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06821",
+      "file": "data/connect-10y-2026-09-06/prices/6821.HK.csv",
+      "sha256": "90517fdd852bc321ab7a2567f0ec85b9a2c06892c93d5c4e66843220611da7cd",
+      "bars": 1162,
+      "first": "2021-12-10",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06855",
+      "file": "data/connect-10y-2026-09-06/prices/6855.HK.csv",
+      "sha256": "5a1f3ec60473fd8477141cd336443a22b4935f78773236d2d40e59159e50b228",
+      "bars": 1687,
+      "first": "2019-10-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06862",
+      "file": "data/connect-10y-2026-09-06/prices/6862.HK.csv",
+      "sha256": "13556775b48d39226c402ca7bef86f849f88801f194b5401e8572192a0ecb400",
+      "bars": 1953,
+      "first": "2018-09-26",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06865",
+      "file": "data/connect-10y-2026-09-06/prices/6865.HK.csv",
+      "sha256": "d1bf904d4a3d73155a89ec14dd5fcee03fcb58b0e239b56e725b964d38e803c9",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06869",
+      "file": "data/connect-10y-2026-09-06/prices/6869.HK.csv",
+      "sha256": "c79614d3bfaf30a7027a0585dea967b88c6ba0097cecd9923f6a933f27aa46dd",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06881",
+      "file": "data/connect-10y-2026-09-06/prices/6881.HK.csv",
+      "sha256": "f9eb4f3dcaa7b2d1f9c55b0520e779a17a520345373b806093ab616ab27fbd42",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06886",
+      "file": "data/connect-10y-2026-09-06/prices/6886.HK.csv",
+      "sha256": "38e5817272025542e1e74adc778251319d6740aad9d6694c55662933683923e7",
+      "bars": 2461,
+      "first": "2016-09-06",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06936",
+      "file": "data/connect-10y-2026-09-06/prices/6936.HK.csv",
+      "sha256": "6283c20486b00c710edc8b83dd876d53acd46ddeec31489df206f01092194142",
+      "bars": 435,
+      "first": "2024-11-27",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06951",
+      "file": "data/connect-10y-2026-09-06/prices/6951.HK.csv",
+      "sha256": "2c0b0578a61f05c25341024d09be663fa871675c18a55022835647cf7563a471",
+      "bars": 42,
+      "first": "2026-07-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06963",
+      "file": "data/connect-10y-2026-09-06/prices/6963.HK.csv",
+      "sha256": "9aeba835b09ab0f109c5ea72591c9420703168b3997e271ef4ccf3a3601e478d",
+      "bars": 915,
+      "first": "2022-12-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06969",
+      "file": "data/connect-10y-2026-09-06/prices/6969.HK.csv",
+      "sha256": "8d78cd2c2629834d37f89f085363869b83e056ab50626d90411c540e4ffe1e9a",
+      "bars": 1514,
+      "first": "2020-07-10",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06979",
+      "file": "data/connect-10y-2026-09-06/prices/6979.HK.csv",
+      "sha256": "a923e5ace5c0ec3aa9f3c896c3c71a90a48b89fc0221a65662c160939ec35068",
+      "bars": 825,
+      "first": "2023-04-27",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06990",
+      "file": "data/connect-10y-2026-09-06/prices/6990.HK.csv",
+      "sha256": "94626bb256045a05f497570755c06835d1120c746d37b80d77c289bab5dd7e77",
+      "bars": 775,
+      "first": "2023-07-11",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "06993",
+      "file": "data/connect-10y-2026-09-06/prices/6993.HK.csv",
+      "sha256": "fdc93f105c2d953251a72bda46da4e5fc4a257581cabc4fb104b4413e61f3855",
+      "bars": 1405,
+      "first": "2020-12-16",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "07618",
+      "file": "data/connect-10y-2026-09-06/prices/7618.HK.csv",
+      "sha256": "3dfa0d1b85af7be547ba2262626ea944aa8140c71edb471daa42f0ae3f50f7ff",
+      "bars": 179,
+      "first": "2025-12-11",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09606",
+      "file": "data/connect-10y-2026-09-06/prices/9606.HK.csv",
+      "sha256": "e88649acd0cdca7288f7083cb6f44c4614e7baab6a19015309959c207ed933a5",
+      "bars": 343,
+      "first": "2025-04-15",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09611",
+      "file": "data/connect-10y-2026-09-06/prices/9611.HK.csv",
+      "sha256": "de70fa41d2ca0263833fb3b769487b99cf6a03d6b18e725ff5a0f702b194c5b5",
+      "bars": 152,
+      "first": "2026-01-22",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09626",
+      "file": "data/connect-10y-2026-09-06/prices/9626.HK.csv",
+      "sha256": "7bd541332bfdaff97cf9ac99e6ea6bcabe0ebfe8f5eeb0c2bc7919a739b39f32",
+      "bars": 1336,
+      "first": "2021-03-29",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09630",
+      "file": "data/connect-10y-2026-09-06/prices/9630.HK.csv",
+      "sha256": "fe353b5916fa9f7b51b5e8fe544c862258dabb08a6bfcf153a166d1cab080d16",
+      "bars": 50,
+      "first": "2026-06-26",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09633",
+      "file": "data/connect-10y-2026-09-06/prices/9633.HK.csv",
+      "sha256": "fd242bc32f6b9f82b27803afa6a44d177d69f74a47ee99c5a9e71bcfbe10e4a3",
+      "bars": 1472,
+      "first": "2020-09-08",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09636",
+      "file": "data/connect-10y-2026-09-06/prices/9636.HK.csv",
+      "sha256": "c3587a52fde5135fa352d87cc2a0751b733e50c55a9ed24610480ab8f2910728",
+      "bars": 856,
+      "first": "2023-03-10",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09660",
+      "file": "data/connect-10y-2026-09-06/prices/9660.HK.csv",
+      "sha256": "fd9e7ccc381f9552d4545eca9647d73464a3e715bcb07e0e316590299faf6a5d",
+      "bars": 459,
+      "first": "2024-10-24",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09688",
+      "file": "data/connect-10y-2026-09-06/prices/9688.HK.csv",
+      "sha256": "48f32c855afb610770904d39e8539033c3fa737d7cf5fb34ed6d4dbf74cbb84d",
+      "bars": 1458,
+      "first": "2020-09-28",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09690",
+      "file": "data/connect-10y-2026-09-06/prices/9690.HK.csv",
+      "sha256": "e8166c04d71b92b66f068651d10a06afe8e3f65ebda9f77b2010373a46463f3c",
+      "bars": 723,
+      "first": "2023-09-26",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09696",
+      "file": "data/connect-10y-2026-09-06/prices/9696.HK.csv",
+      "sha256": "7c1d5be9a5ef99f652282b2706ede824b4062e7defcb071d02699f54bac1ea1d",
+      "bars": 1020,
+      "first": "2022-07-13",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09858",
+      "file": "data/connect-10y-2026-09-06/prices/9858.HK.csv",
+      "sha256": "26c6c7ddeeefe9f24d6f6ae6979b978a8a53140383bb26e1b6f126d11f8a0b80",
+      "bars": 1282,
+      "first": "2021-06-18",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09863",
+      "file": "data/connect-10y-2026-09-06/prices/9863.HK.csv",
+      "sha256": "82ad3e04e0b2a453f49d3b153578daa5bcec8723b39096e16bc2f8dc83dcbedf",
+      "bars": 965,
+      "first": "2022-09-29",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09868",
+      "file": "data/connect-10y-2026-09-06/prices/9868.HK.csv",
+      "sha256": "1d2f1e177b014d7f3d77e4c95c0b4f6a4188902855bc24589ed057ed0005e286",
+      "bars": 1270,
+      "first": "2021-07-07",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09880",
+      "file": "data/connect-10y-2026-09-06/prices/9880.HK.csv",
+      "sha256": "c3ac8d1b6c73f23312eec2491b1ed3e5b6fc673a7356fb4eb4a64bb328c212b0",
+      "bars": 659,
+      "first": "2023-12-29",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09887",
+      "file": "data/connect-10y-2026-09-06/prices/9887.HK.csv",
+      "sha256": "12cb6e2169feac7ea9279b40dadcc409dc0eb8fd85cc9aef9da8152ccb772ee2",
+      "bars": 275,
+      "first": "2025-07-25",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09896",
+      "file": "data/connect-10y-2026-09-06/prices/9896.HK.csv",
+      "sha256": "df73235426f53846c486955ab6f369808159c3860a9c9fbf7828f73b49a55454",
+      "bars": 1020,
+      "first": "2022-07-13",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09899",
+      "file": "data/connect-10y-2026-09-06/prices/9899.HK.csv",
+      "sha256": "fd90083f1e88305f3771021522b2a6151fffcfa73ea16aa5e6da71d5af84fccd",
+      "bars": 1168,
+      "first": "2021-12-02",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09903",
+      "file": "data/connect-10y-2026-09-06/prices/9903.HK.csv",
+      "sha256": "4004ffc1b07335af74f1edcc3e9959aec4e2ba520ba313ea1fd41b01c4b7d694",
+      "bars": 162,
+      "first": "2026-01-08",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09911",
+      "file": "data/connect-10y-2026-09-06/prices/9911.HK.csv",
+      "sha256": "1bd7e98855cac6906bb6d682ecf9ea157d9bada90edc6e32fe4e097f99e3e67c",
+      "bars": 1643,
+      "first": "2019-12-31",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09926",
+      "file": "data/connect-10y-2026-09-06/prices/9926.HK.csv",
+      "sha256": "c6ef7389246db5197ac2bcc2d35abb4e49254de63cf7a30f499d9b51a5c9eb55",
+      "bars": 1565,
+      "first": "2020-04-24",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09927",
+      "file": "data/connect-10y-2026-09-06/prices/9927.HK.csv",
+      "sha256": "b73020878ab64f1f4574a2195440104563a78ceea0917f025cadf2d9db374979",
+      "bars": 205,
+      "first": "2025-11-05",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09969",
+      "file": "data/connect-10y-2026-09-06/prices/9969.HK.csv",
+      "sha256": "ad525a9eff1ffdccca9485c24a866f262f5d2c7dc80f4c9eef55e55a66fce175",
+      "bars": 1587,
+      "first": "2020-03-23",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09973",
+      "file": "data/connect-10y-2026-09-06/prices/9973.HK.csv",
+      "sha256": "5443d2ce75a99909d9f745dd57c5d64c6fdfcbe63b1731aece1678dedcf934cf",
+      "bars": 231,
+      "first": "2025-09-25",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09980",
+      "file": "data/connect-10y-2026-09-06/prices/9980.HK.csv",
+      "sha256": "bc4a724520c8e88c48038570a31d18f1f0d537489ed95996b34a676d0a460f47",
+      "bars": 144,
+      "first": "2026-02-03",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09981",
+      "file": "data/connect-10y-2026-09-06/prices/9981.HK.csv",
+      "sha256": "2363a2614b04681ca3150434851a95843dcac1b2f7ec536fbb7f01685f5b14ff",
+      "bars": 136,
+      "first": "2026-02-13",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09985",
+      "file": "data/connect-10y-2026-09-06/prices/9985.HK.csv",
+      "sha256": "fcf842fa940d25a3d8b9023a0ed750ee989bd5aa79f19e69bdea3de53b68cf90",
+      "bars": 911,
+      "first": "2022-12-15",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09987",
+      "file": "data/connect-10y-2026-09-06/prices/9987.HK.csv",
+      "sha256": "c20868966714fc3ae6415c782e7f1fcb09c1a39dba4b49ea6bda1a2ce7fd98a1",
+      "bars": 1470,
+      "first": "2020-09-10",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09988",
+      "file": "data/connect-10y-2026-09-06/prices/9988.HK.csv",
+      "sha256": "6e2c85680abb7364b63756334c53fc01065ae8eeb98423bfce02993c29fa38b5",
+      "bars": 1666,
+      "first": "2019-11-26",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09992",
+      "file": "data/connect-10y-2026-09-06/prices/9992.HK.csv",
+      "sha256": "3fa778cb9a1ba9cdd50072632f347b2fbe79900aea3dc772525fb3b9ae68328e",
+      "bars": 1408,
+      "first": "2020-12-11",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09995",
+      "file": "data/connect-10y-2026-09-06/prices/9995.HK.csv",
+      "sha256": "15bea7efcc9ed580bb87345df6ef91395ec6dc819505fc1695c48bb955e02497",
+      "bars": 1432,
+      "first": "2020-11-09",
+      "last": "2026-09-04"
+    },
+    {
+      "code": "09999",
+      "file": "data/connect-10y-2026-09-06/prices/9999.HK.csv",
+      "sha256": "af51b0f24394f0a2e203a6ab5ee2d08903f945161327c79f8199f0a36c3b8afc",
+      "bars": 1533,
+      "first": "2020-06-11",
+      "last": "2026-09-04"
+    }
+  ],
+  "exclusions": [
+    {
+      "code": "00501",
+      "name": "豪威集团",
+      "reason": "single observed bar"
+    },
+    {
+      "code": "00668",
+      "name": "安克创新",
+      "reason": "single observed bar"
+    },
+    {
+      "code": "00699",
+      "name": "均胜电子",
+      "reason": "single observed bar"
+    },
+    {
+      "code": "01800",
+      "name": "中国交通建设",
+      "reason": "Unverified cross-source price scale on 2019-04-30"
+    },
+    {
+      "code": "02333",
+      "name": "长城汽车",
+      "reason": "Unverified cross-source price scale on 2019-04-30"
+    },
+    {
+      "code": "02525",
+      "name": "禾赛-W",
+      "reason": "Unverified cross-source price scale on 2026-08-10"
+    },
+    {
+      "code": "03866",
+      "name": "青岛银行",
+      "reason": "Unverified cross-source price scale on 2021-08-19"
+    },
+    {
+      "code": "06099",
+      "name": "招商证券",
+      "reason": "Unverified cross-source price scale on 2020-03-31"
+    }
+  ],
+  "universe_sha256": "496538692a2523a2a492ddd40c3436db7ff848da41d27403b5ca5fedcd4b09b2"
+}
