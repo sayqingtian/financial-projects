@@ -86,10 +86,29 @@ class Panel:
                 v = (c-c.rolling(period).mean()) / c.rolling(period).std(ddof=0).replace(0, np.nan)
             elif name == 'drawdown':
                 v = c / c.rolling(period).max() - 1
+            elif name == 'mfi':
+                typical=(f.adj_high+f.adj_low+c)/3
+                flow=typical*f.volume
+                positive=flow.where(typical.diff()>0,0).rolling(period).sum()
+                negative=flow.where(typical.diff()<0,0).rolling(period).sum()
+                v=(100*positive/(positive+negative)).where(positive+negative!=0,50)
+            elif name == 'cmf':
+                spread=(f.adj_high-f.adj_low).replace(0,np.nan)
+                multiplier=((2*c-f.adj_high-f.adj_low)/spread).fillna(0)
+                v=(multiplier*f.volume).rolling(period).sum()/f.volume.rolling(period).sum().replace(0,np.nan)
             else:
                 raise ValueError(f'Unknown feature {name}')
             rows.append(v)
         self.cache[key] = self.align(rows)
+        return self.cache[key]
+
+    def quantile(self, name, period, lookback, quantile):
+        key=('quantile',name,period,lookback,quantile)
+        if key not in self.cache:
+            feature=self.feature(name,period)
+            values=[pd.Series(feature[ix,j]).shift(1).rolling(lookback,min_periods=lookback).quantile(quantile)
+                    for j,ix in enumerate(self.indices)]
+            self.cache[key]=self.align(values)
         return self.cache[key]
 
 

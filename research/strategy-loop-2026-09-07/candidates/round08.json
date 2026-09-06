@@ -1,0 +1,311 @@
+{
+  "hypothesis": "Volume confirmation and self-normalized historical thresholds may treat low/high volatility stocks more consistently than one fixed return trigger.",
+  "candidates": [
+    {
+      "id": "R08_Q_rsi_252_0.1",
+      "family": "quantile_reversion",
+      "params": {
+        "indicator": "rsi",
+        "period": 14,
+        "lookback": 252,
+        "entry_q": 0.1,
+        "exit_q": 0.9
+      }
+    },
+    {
+      "id": "R08_Q_rsi_252_0.2",
+      "family": "quantile_reversion",
+      "params": {
+        "indicator": "rsi",
+        "period": 14,
+        "lookback": 252,
+        "entry_q": 0.2,
+        "exit_q": 0.8
+      }
+    },
+    {
+      "id": "R08_Q_rsi_504_0.1",
+      "family": "quantile_reversion",
+      "params": {
+        "indicator": "rsi",
+        "period": 14,
+        "lookback": 504,
+        "entry_q": 0.1,
+        "exit_q": 0.9
+      }
+    },
+    {
+      "id": "R08_Q_rsi_504_0.2",
+      "family": "quantile_reversion",
+      "params": {
+        "indicator": "rsi",
+        "period": 14,
+        "lookback": 504,
+        "entry_q": 0.2,
+        "exit_q": 0.8
+      }
+    },
+    {
+      "id": "R08_Q_mom_252_0.1",
+      "family": "quantile_reversion",
+      "params": {
+        "indicator": "mom",
+        "period": 63,
+        "lookback": 252,
+        "entry_q": 0.1,
+        "exit_q": 0.9
+      }
+    },
+    {
+      "id": "R08_Q_mom_252_0.2",
+      "family": "quantile_reversion",
+      "params": {
+        "indicator": "mom",
+        "period": 63,
+        "lookback": 252,
+        "entry_q": 0.2,
+        "exit_q": 0.8
+      }
+    },
+    {
+      "id": "R08_Q_mom_504_0.1",
+      "family": "quantile_reversion",
+      "params": {
+        "indicator": "mom",
+        "period": 63,
+        "lookback": 504,
+        "entry_q": 0.1,
+        "exit_q": 0.9
+      }
+    },
+    {
+      "id": "R08_Q_mom_504_0.2",
+      "family": "quantile_reversion",
+      "params": {
+        "indicator": "mom",
+        "period": 63,
+        "lookback": 504,
+        "entry_q": 0.2,
+        "exit_q": 0.8
+      }
+    },
+    {
+      "id": "R08_MFI14_20",
+      "family": "mfi",
+      "params": {
+        "period": 14,
+        "entry": 20,
+        "exit": 80
+      }
+    },
+    {
+      "id": "R08_MFI14_30",
+      "family": "mfi",
+      "params": {
+        "period": 14,
+        "entry": 30,
+        "exit": 70
+      }
+    },
+    {
+      "id": "R08_MFI28_20",
+      "family": "mfi",
+      "params": {
+        "period": 28,
+        "entry": 20,
+        "exit": 80
+      }
+    },
+    {
+      "id": "R08_MFI28_30",
+      "family": "mfi",
+      "params": {
+        "period": 28,
+        "entry": 30,
+        "exit": 70
+      }
+    },
+    {
+      "id": "R08_MFI63_20",
+      "family": "mfi",
+      "params": {
+        "period": 63,
+        "entry": 20,
+        "exit": 80
+      }
+    },
+    {
+      "id": "R08_MFI63_30",
+      "family": "mfi",
+      "params": {
+        "period": 63,
+        "entry": 30,
+        "exit": 70
+      }
+    },
+    {
+      "id": "R08_VOLREV63_1",
+      "family": "vol_scaled_reversion",
+      "params": {
+        "period": 63,
+        "entry": 1,
+        "exit": 1
+      }
+    },
+    {
+      "id": "R08_VOLREV63_1.5",
+      "family": "vol_scaled_reversion",
+      "params": {
+        "period": 63,
+        "entry": 1.5,
+        "exit": 1.5
+      }
+    },
+    {
+      "id": "R08_VOLREV63_2",
+      "family": "vol_scaled_reversion",
+      "params": {
+        "period": 63,
+        "entry": 2,
+        "exit": 2
+      }
+    },
+    {
+      "id": "R08_VOLREV126_1",
+      "family": "vol_scaled_reversion",
+      "params": {
+        "period": 126,
+        "entry": 1,
+        "exit": 1
+      }
+    },
+    {
+      "id": "R08_VOLREV126_1.5",
+      "family": "vol_scaled_reversion",
+      "params": {
+        "period": 126,
+        "entry": 1.5,
+        "exit": 1.5
+      }
+    },
+    {
+      "id": "R08_VOLREV126_2",
+      "family": "vol_scaled_reversion",
+      "params": {
+        "period": 126,
+        "entry": 2,
+        "exit": 2
+      }
+    },
+    {
+      "id": "R08_CMF_RSI_-0.1",
+      "family": "volume_confirmation",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "minimum": -0.1,
+        "period": 21
+      }
+    },
+    {
+      "id": "R08_CMF_RSI_0",
+      "family": "volume_confirmation",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "minimum": 0,
+        "period": 21
+      }
+    },
+    {
+      "id": "R08_CMF_MAX126_-0.1",
+      "family": "volume_confirmation",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "minimum": -0.1,
+        "period": 21
+      }
+    },
+    {
+      "id": "R08_CMF_MAX126_0",
+      "family": "volume_confirmation",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "minimum": 0,
+        "period": 21
+      }
+    },
+    {
+      "id": "R08_CMF_RETURN_-0.1",
+      "family": "volume_confirmation",
+      "params": {
+        "base": {
+          "family": "return_reversion",
+          "params": {
+            "period": 63,
+            "entry": 0.25,
+            "exit": 0.25
+          }
+        },
+        "minimum": -0.1,
+        "period": 21
+      }
+    },
+    {
+      "id": "R08_CMF_RETURN_0",
+      "family": "volume_confirmation",
+      "params": {
+        "base": {
+          "family": "return_reversion",
+          "params": {
+            "period": 63,
+            "entry": 0.25,
+            "exit": 0.25
+          }
+        },
+        "minimum": 0,
+        "period": 21
+      }
+    }
+  ]
+}

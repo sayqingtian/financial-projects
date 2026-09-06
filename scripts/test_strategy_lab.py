@@ -158,6 +158,22 @@ class EngineTests(unittest.TestCase):
         spec=dict(family='adaptive',params=dict(lookback=3,metric='return',review='daily',members=[dict(family='buy_hold'),dict(family='sma',params=dict(period=2))]))
         self.assertTrue(np.array_equal(targets(p,spec),targets(q,spec)[:8]))
 
+    def test_quantile_threshold_uses_only_preceding_bars(self):
+        p=panel([10,11,13,12,8,15])
+        feature=p.feature('mom',1)
+        q=p.quantile('mom',1,3,.5)
+        self.assertAlmostEqual(q[4,0],float(np.median(feature[1:4,0])))
+
+    def test_volume_confirmation_does_not_force_exit_on_later_low_flow(self):
+        p=panel([10,11,12,13])
+        p.cache[('cmf',21)]=np.array([[-1],[.1],[-1],[-1]])
+        s=dict(family='volume_confirmation',params=dict(base=dict(family='buy_hold')))
+        self.assertEqual(targets(p,s)[:,0].tolist(),[False,True,True,True])
+
+    def test_flat_money_flow_is_neutral(self):
+        p=panel([10]*5)
+        self.assertEqual(p.feature('mfi',3)[-1,0],50)
+
 
 if __name__=='__main__':
     unittest.main()

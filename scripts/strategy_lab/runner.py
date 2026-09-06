@@ -17,6 +17,11 @@ from .engine import simulate, evaluate
 from .rules import targets
 
 
+def text_hash(file):
+    # Git normalizes text to LF; make source fingerprints portable across OSes.
+    return hashlib.sha256(file.read_text(encoding='utf-8').encode('utf-8')).hexdigest()
+
+
 def summary(rows, baseline, cohort):
     b = {r['code']: r for r in baseline}
     selected = [r for r in rows if r['code'] in b and (cohort == 'all' or r[cohort])]
@@ -95,9 +100,10 @@ def run_round(name):
     benchmarks = {k: simulate(panel, benchmark_target, protocol[k])['rows'] for k in ('training', 'development')}
     package = dict(round=name, source_commit=commit,
                    started_utc=dt.datetime.now(dt.timezone.utc).isoformat(),
-                   protocol_sha256=hashlib.sha256((RESEARCH/'protocol.json').read_bytes()).hexdigest(),
-                   config_sha256=hashlib.sha256(config_file.read_bytes()).hexdigest(),
-                   input_manifest_sha256=hashlib.sha256(manifest_file.read_bytes()).hexdigest(),
+                   text_hash_policy='SHA256 of UTF-8 text with LF newlines; downloaded inputs retain exact byte hashes',
+                   protocol_sha256=text_hash(RESEARCH/'protocol.json'),
+                   config_sha256=text_hash(config_file),
+                   input_manifest_sha256=text_hash(manifest_file),
                    benchmark={w: {c: summary(rows, rows, c) for c in ('all','primary','full10')}
                               for w, rows in benchmarks.items()}, candidates=[])
     details = []

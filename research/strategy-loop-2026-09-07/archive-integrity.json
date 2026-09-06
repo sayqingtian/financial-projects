@@ -1,0 +1,61 @@
+{
+  "note": "Rounds 1-7 recorded raw Windows local text hashes; Git text is LF normalized. Original results are immutable. This mapping verifies equivalent committed content; round 8 onward uses UTF-8 LF source fingerprints.",
+  "rounds": [
+    {
+      "round": "round01",
+      "source_commit": "b3284070e9c8cc7c37b2f1b9de79be5a10739268",
+      "git_config_utf8_lf_sha256": "87949705d7100f88ebc685d8c4fcb81955a5de93b5e478e86746c2bb5e10ecf1",
+      "recorded_raw_local_config_sha256": "f99d7488fd29a05250f0f3188e3a7a5206695aebcaef261d5dca1d8d8f983297",
+      "matches_raw_local": true,
+      "matches_after_lf_normalization": true
+    },
+    {
+      "round": "round02",
+      "source_commit": "7a6430980a06a40dabe2d692ec1d8b502c496acc",
+      "git_config_utf8_lf_sha256": "be3da9a808dd9c3a4b202287166d1468edf3a822b6f6c53cd4c380d44678ca81",
+      "recorded_raw_local_config_sha256": "641e51cc351803af9fbc2d9110315236afa34cd6ccb674677c362a2c4b57c09f",
+      "matches_raw_local": true,
+      "matches_after_lf_normalization": true
+    },
+    {
+      "round": "round03",
+      "source_commit": "3ae750bc4d9ad7c3d08f966882caac666c5d4889",
+      "git_config_utf8_lf_sha256": "c82ecca5bb7c3bacd2fab9c23bb53f40984013bf7b1541f5f99c6b3482e86559",
+      "recorded_raw_local_config_sha256": "7f067be876352eb9b00b687aee4c18035dddeb6f8e1679fc3cdc64160c8bac2a",
+      "matches_raw_local": true,
+      "matches_after_lf_normalization": true
+    },
+    {
+      "round": "round04",
+      "source_commit": "272a5de2829410a8cbeaf7b2a7b4a8aca3406e7d",
+      "git_config_utf8_lf_sha256": "ecc015917a2b0053687f616353163358b6cf75c0c83a67e812e9c856b507adf5",
+      "recorded_raw_local_config_sha256": "f55ff3b03cfad5f3add71642ba80504067144f0259f7cd5d7cb453bbaa8a5108",
+      "matches_raw_local": true,
+      "matches_after_lf_normalization": true
+    },
+    {
+      "round": "round05",
+      "source_commit": "e72610cfba52b9403cc7583513b74da15e9e65cb",
+      "git_config_utf8_lf_sha256": "33e19799041bd2664bb952235840959ace1f99a3badf229d0ec13e39bd7d0e68",
+      "recorded_raw_local_config_sha256": "82d7220bcf9ceebff97411c8327063aff9d40070dac115c96b1c34445da557db",
+      "matches_raw_local": true,
+      "matches_after_lf_normalization": true
+    },
+    {
+      "round": "round06",
+      "source_commit": "5dd426b5d62cf3f182e8abe727a78c97dbed10f9",
+      "git_config_utf8_lf_sha256": "ef196e5ae8bafdedba4b2a65292f3ddb279083451cb0bde1331a1b0f1ce97b2a",
+      "recorded_raw_local_config_sha256": "f9ce623ea93789da071fdce9d02a556969d6478e34a4166aff4c2246f9073ab3",
+      "matches_raw_local": true,
+      "matches_after_lf_normalization": true
+    },
+    {
+      "round": "round07",
+      "source_commit": "4778591ae6e80b7349275ae54e2b9b83d20a1acb",
+      "git_config_utf8_lf_sha256": "f737314d0388877eae5a8f6976dee9caf83aca4e6deb77d3ace11a3e2c5e0dbd",
+      "recorded_raw_local_config_sha256": "66566057996bcce454b81c04500fc59c21c36dff41a893abe17790a8a85d7b6b",
+      "matches_raw_local": true,
+      "matches_after_lf_normalization": true
+    }
+  ]
+}

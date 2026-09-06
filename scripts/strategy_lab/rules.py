@@ -26,6 +26,10 @@ def targets(panel, spec):
     if family == 'adaptive':
         from .adaptive import targets as adaptive_targets
         return adaptive_targets(panel,p)
+    if family == 'volume_confirmation':
+        base=targets(panel,p['base'])
+        cmf=panel.feature('cmf',p.get('period',21))
+        return hysteresis(base & (cmf > p.get('minimum',0)),~base,panel.observed)
     if family == 'fundamental_overlay':
         from .fundamentals import features
         base = targets(panel, p['base'])
@@ -156,6 +160,21 @@ def targets(panel, spec):
         buy = (dd < -p['entry']) & (mom > 0)
         sell = dd > -p['exit']
         ready = np.isfinite(dd) & np.isfinite(mom)
+    elif family == 'mfi':
+        mfi=panel.feature('mfi',p['period'])
+        buy,sell,ready=mfi<p['entry'],mfi>p['exit'],np.isfinite(mfi)
+    elif family == 'quantile_reversion':
+        feature=panel.feature(p['indicator'],p['period'])
+        low=panel.quantile(p['indicator'],p['period'],p['lookback'],p['entry_q'])
+        high=panel.quantile(p['indicator'],p['period'],p['lookback'],p['exit_q'])
+        buy,sell=feature<low,feature>high
+        ready=np.isfinite(feature)&np.isfinite(low)&np.isfinite(high)
+    elif family == 'vol_scaled_reversion':
+        m=panel.feature('mom',p['period'])
+        vol=panel.feature('vol',p['period'])
+        with np.errstate(divide='ignore',invalid='ignore'):
+            z=np.log1p(m)/(vol*np.sqrt(p['period']/252))
+        buy,sell,ready=z < -p['entry'],z > p['exit'],np.isfinite(z)
     else:
         raise ValueError(f'Unknown family {family}')
     return hysteresis(buy, sell, review, ready, initial=p.get('initial_hold',False))
