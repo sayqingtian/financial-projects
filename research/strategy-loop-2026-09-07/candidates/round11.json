@@ -1,0 +1,343 @@
+{
+  "hypothesis": "Verify the market-breadth improvement is not one threshold spike: neighboring horizons, alternate review schedules, initial-held/capital controls, and a fixed formation-date breadth population. No reserved-window performance used.",
+  "candidates": [
+    {
+      "id": "R11_BREADTH150_0.15_0.65",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 150,
+        "entry": 0.15,
+        "exit": 0.65
+      }
+    },
+    {
+      "id": "R11_BREADTH150_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 150,
+        "entry": 0.2,
+        "exit": 0.7
+      }
+    },
+    {
+      "id": "R11_BREADTH150_0.25_0.75",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 150,
+        "entry": 0.25,
+        "exit": 0.75
+      }
+    },
+    {
+      "id": "R11_BREADTH200_0.15_0.65",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.15,
+        "exit": 0.65
+      }
+    },
+    {
+      "id": "R11_BREADTH200_0.25_0.75",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.25,
+        "exit": 0.75
+      }
+    },
+    {
+      "id": "R11_BREADTH250_0.15_0.65",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 250,
+        "entry": 0.15,
+        "exit": 0.65
+      }
+    },
+    {
+      "id": "R11_BREADTH250_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 250,
+        "entry": 0.2,
+        "exit": 0.7
+      }
+    },
+    {
+      "id": "R11_BREADTH250_0.25_0.75",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 250,
+        "entry": 0.25,
+        "exit": 0.75
+      }
+    },
+    {
+      "id": "R11_FIXED_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7,
+        "formation_date": "2016-09-06"
+      }
+    },
+    {
+      "id": "R11_INITIAL_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7,
+        "initial_hold": true
+      }
+    },
+    {
+      "id": "R11_weekly_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7,
+        "review": "weekly"
+      }
+    },
+    {
+      "id": "R11_monthly_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7,
+        "review": "monthly"
+      }
+    },
+    {
+      "id": "R11_FIXED_0.3_0.8",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.3,
+        "exit": 0.8,
+        "formation_date": "2016-09-06"
+      }
+    },
+    {
+      "id": "R11_INITIAL_0.3_0.8",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.3,
+        "exit": 0.8,
+        "initial_hold": true
+      }
+    },
+    {
+      "id": "R11_weekly_0.3_0.8",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.3,
+        "exit": 0.8,
+        "review": "weekly"
+      }
+    },
+    {
+      "id": "R11_monthly_0.3_0.8",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.3,
+        "exit": 0.8,
+        "review": "monthly"
+      }
+    },
+    {
+      "id": "R11_MARKET_BAG",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.3,
+                "exit": 0.8
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R11_HORIZON_BAG",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 150,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.3333333333333333,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 250,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R11_MARKET_CORE0.5",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R11_MARKET_CORE0.75",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.75,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "buy_hold"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R11_MARKET_STOCK_BLEND",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.2,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75,
+                    "initial_hold": true
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          },
+          {
+            "weight": 0.25,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R11_MARKET_AVOID_LOSS",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "breadth_reversal",
+          "params": {
+            "period": 200,
+            "entry": 0.2,
+            "exit": 0.7
+          }
+        },
+        "mode": "avoid_loss",
+        "lag": 365
+      }
+    }
+  ]
+}

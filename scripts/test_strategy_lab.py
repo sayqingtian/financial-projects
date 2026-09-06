@@ -188,6 +188,13 @@ class EngineTests(unittest.TestCase):
         s=dict(family='breadth_reversal',params=dict(period=3,entry=.3,exit=.7,minimum_stocks=1))
         self.assertTrue(np.array_equal(targets(p,s),targets(q,s)[:6]))
 
+    def test_fixed_breadth_members_do_not_add_later_listings(self):
+        a=panel([10,11,12],dates=['2020-01-01','2020-01-02','2020-01-03'])
+        b=panel([10,9],dates=['2020-01-02','2020-01-03'])
+        p=Panel([a.frames[0],b.frames[0]],[dict(code='A',name='A'),dict(code='B',name='B')])
+        self.assertEqual(p.breadth(2,1)[-1,0],.5)
+        self.assertEqual(p.breadth(2,1,'2020-01-01')[-1,0],1)
+
 
 if __name__=='__main__':
     unittest.main()

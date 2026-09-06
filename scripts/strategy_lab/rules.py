@@ -32,7 +32,7 @@ def targets(panel, spec):
         return hysteresis(base & (cmf > p.get('minimum',0)),~base,panel.observed)
     if family == 'breadth_overlay':
         base=targets(panel,p['base'])
-        br=panel.breadth(p.get('period',200),p.get('minimum_stocks',50))
+        br=panel.breadth(p.get('period',200),p.get('minimum_stocks',50),p.get('formation_date'))
         if p['mode']=='contrarian_hold':
             market=hysteresis(br<p.get('low',.3),br>p.get('high',.7),panel.observed,np.isfinite(br))
             return base|market
@@ -188,7 +188,7 @@ def targets(panel, spec):
             z=np.log1p(m)/(vol*np.sqrt(p['period']/252))
         buy,sell,ready=z < -p['entry'],z > p['exit'],np.isfinite(z)
     elif family == 'breadth_reversal':
-        br=panel.breadth(p['period'],p.get('minimum_stocks',50))
+        br=panel.breadth(p['period'],p.get('minimum_stocks',50),p.get('formation_date'))
         buy,sell=br<p['entry'],br>p['exit']
         ready=np.isfinite(br) & np.isfinite(panel.feature('sma',p['period']))
     else:

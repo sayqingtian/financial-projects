@@ -111,16 +111,17 @@ class Panel:
             self.cache[key]=self.align(values)
         return self.cache[key]
 
-    def breadth(self, period, minimum=50):
-        key=('breadth',period,minimum)
+    def breadth(self, period, minimum=50, formation_date=None):
+        key=('breadth',period,minimum,formation_date)
         if key not in self.cache:
             average=self.feature('sma',period)
             last_seen=np.full(self.shape[1],-1000000,dtype=int)
             ordinal=self.dates.astype('datetime64[D]').astype(int)
+            members=np.array([formation_date is None or str(f.index[0])<=formation_date for f in self.frames])
             breadth=np.full(self.shape[0],np.nan)
             for i,day in enumerate(ordinal):
                 last_seen[self.observed[i]]=day
-                valid=np.isfinite(average[i]) & (day-last_seen<=7)
+                valid=members & np.isfinite(average[i]) & (day-last_seen<=7)
                 if valid.sum()>=minimum:
                     breadth[i]=np.mean(self.close[i,valid]>average[i,valid])
             self.cache[key]=np.broadcast_to(breadth[:,None],self.shape)
