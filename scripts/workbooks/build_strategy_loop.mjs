@@ -79,7 +79,7 @@ const settings=[
  ['循环上限','北京时间00:41:26—02:41:26','最多2小时；开发阶段后先锁定再核验，不为用满时限继续污染保留期。'],
 ];
 s.getRange(`C7:E${6+settings.length}`).values=settings;s.getRange(`C7:E${6+settings.length}`).format.rowHeight=43;s.getRange(`C7:E${6+settings.length}`).format.wrapText=true;
-s.getRange('D7:D10').format.font={name:font,size:11,color:'#0000FF'};formats(s,['D'],10,pct,7);formats(s,['D'],13,pct,12);s.getRange('D11').setNumberFormat(money);
+s.getRange('D7:D10').format.font={name:font,size:11,color:'#0000FF'};formats(s,['D'],10,pct,7);formats(s,['D'],13,'0.00%',12);s.getRange('D11').setNumberFormat(money);
 header(s,'C35:E35',['来源','路径/链接','用途']);
 const repo='https://github.com/sayqingtian/financial-projects';
 const sources=[
@@ -107,7 +107,8 @@ const stockValues=rows.map(r=>[r.code,r.name,windows[r.window],labels[r.candidat
 s=setup('全股结果',['股票代码','股票名称','区间','配置','主要样本1=是','十年样本1=是','行情起日','行情止日','实际年数','日历覆盖率','账户终值HKD','年化收益','持有年化','超额年化','夏普','持有夏普','最大回撤','持有回撤','买入次数','自然卖出数','期末结算数','持仓时间占比','全程现金1=是','状态','排除原因','累计收益'],stockValues,
  {A:11,B:24,C:12,D:27,E:13,F:13,G:15,H:15,I:12,J:15,K:19,L:15,M:15,N:15,O:12,P:13,Q:15,R:15,S:12,T:13,U:13,V:17,W:15,X:13,Y:64,Z:15},
  '469只港股：同股、同区间、同成本比较','2814行＝469股×2区间×3配置；保留期独立从现金起步。空白为不可计算，0表示实际结果。');
-formats(s,['A'],stockLast,'@');formats(s,['G','H'],stockLast,'yyyy-mm-dd');formats(s,['I','O','P'],stockLast,num);formats(s,['K'],stockLast,money);formats(s,['J','L','M','N','Q','R','V','Z'],stockLast,pct);
+// Keep underlying IDs as text; zero-padding also corrects numeric-string preview formatting.
+formats(s,['A'],stockLast,'00000');formats(s,['G','H'],stockLast,'yyyy-mm-dd');formats(s,['I','O','P'],stockLast,num);formats(s,['K'],stockLast,money);formats(s,['J','L','M','N','Q','R','V','Z'],stockLast,pct);
 form(s,`L7:L${stockLast}`,rows.map((r,i)=>{const n=i+7;return[r.status==='可计算'?`=(K${n}/'口径版本'!$D$11)^(1/I${n})-1`:'=""'];}),true);
 form(s,`N7:N${stockLast}`,rows.map((r,i)=>{const n=i+7;return[r.status==='可计算'?`=L${n}-M${n}`:'=""'];}));
 form(s,`Z7:Z${stockLast}`,rows.map((r,i)=>{const n=i+7;return[r.status==='可计算'?`=K${n}/'口径版本'!$D$11-1`:'=""'];}),true);tint(s,`N7:N${stockLast}`);
@@ -144,7 +145,7 @@ s=setup('交易区间',['股票代码','股票名称','配置','区间','买入�
  r.code,r.name,labels[r.candidate],windows[r.window],date(r.buy_signal),date(r.entry_date),date(r.sell_signal),date(r.exit_date),r.entry_cost,r.exit_proceeds,null,null,r.days_held,r.forced_exit?'期末结算（非卖点）':'策略卖点',r.entry_price,r.exit_price,r.quantity]),
  {A:11,B:24,C:27,D:12,E:16,F:16,G:16,H:16,I:19,J:19,K:19,L:16,M:18,N:25,O:18,P:18,Q:20},
  '4236笔配对交易：信号与成交明确分列','两种广度配置×完整历史/保留期；包含亏损交易。保留期重新从现金起步，与全历史记录有重叠。');
-formats(s,['A'],tradeLast,'@');formats(s,['E','F','G','H'],tradeLast,'yyyy-mm-dd');formats(s,['I','J','K'],tradeLast,money);formats(s,['L'],tradeLast,pct);formats(s,['O','P','Q'],tradeLast,num);
+formats(s,['A'],tradeLast,'00000');formats(s,['E','F','G','H'],tradeLast,'yyyy-mm-dd');formats(s,['I','J','K'],tradeLast,money);formats(s,['L'],tradeLast,pct);formats(s,['O','P','Q'],tradeLast,num);
 form(s,`K7:L${tradeLast}`,trades.map((r,i)=>{const n=i+7;return[`=J${n}-I${n}`,`=J${n}/I${n}-1`];}));tint(s,`L7:L${tradeLast}`);
 
 const yearLast=6+data.yearly.length;
@@ -181,7 +182,7 @@ for(const [window,top,anchorStart,anchorEnd] of [['full',70,'J6','R29'],['reserv
  header(s,`J${top}:M${top}`,['月份','200日广度(月初)','250日广度(每日)','买入持有']);
  const list=[...monthly.entries()];s.getRange(`J${top+1}:J${top+list.length}`).values=list.map(x=>[x[0]]);
  form(s,`K${top+1}:M${top+list.length}`,list.map(x=>['F','G','H'].map(c=>`=${c}${x[1]}`)));formats(s,['K','L','M'],top+list.length,'0.000',top+1);
- const chart=s.charts.add('line',s.getRange(`J${top}:M${top+list.length}`));chart.title=window==='full'?'完整历史：相似终值，不同回撤':'保留期：持有基准上涨更多';chart.titleTextStyle.fontSize=14;chart.titleTextStyle.typeface=font;chart.setPosition(anchorStart,anchorEnd);
+ const chart=s.charts.add('line',s.getRange(`J${top}:M${top+list.length}`));chart.title=window==='full'?'完整历史（月度采样）：相似终值，不同回撤':'保留期（月度采样）：持有基准上涨更多';chart.titleTextStyle.fontSize=14;chart.titleTextStyle.typeface=font;chart.setPosition(anchorStart,anchorEnd);
  chart.legend={position:'bottom',textStyle:{typeface:font,fontSize:11}};chart.xAxis={axisType:'textAxis',textStyle:{typeface:font,fontSize:10},tickLabelInterval:window==='full'?24:6};
  chart.yAxis={numberFormatCode:'0.0"倍"',numberFormatSourceLinked:false,textStyle:{typeface:font,fontSize:11}};
  ['#B37635','#245A81','#438455'].forEach((c,i)=>chart.series.items[i].fill=c);
@@ -198,7 +199,7 @@ overview.forEach((r,i)=>{
  form(s,`E${n}:I${n}`,[['D','E','F','G','H'].map(c=>r.candidate===bh&&c==='E'?'=""':`='候选验证'!${c}${r.source}`)],true);
  s.getRange(`J${n}`).values=[[r.candidate===primary?'事先锁定主策略':r.candidate===comparison?'观察候选':'同成本基准']];
 });
-s.getRange('C7:J12').format.rowHeight=38;formats(s,['F','G','I'],12,pct,7);formats(s,['H'],12,num,7);
+s.getRange('C7:J12').format.rowHeight=38;formats(s,['F','I'],12,pct,7);formats(s,['G'],12,'0.00%',7);formats(s,['H'],12,num,7);
 note(s,'C15:J17','未找到跨时期稳定达标的策略。250日版本完整十年年化中位数9.35%，65.1%股票跑赢；保留期同一275股仅41.1%跑赢。不能只凭全历史成绩选为实盘最优。');
 s.getRange('C15:J17').format.fill='#FFF1D9';
 note(s,'C19:J21','预先锁定的主策略：200日广度、月初评审。保留期揭晓后没有更换主策略。主要统计样本（完整历史370股／保留期381股）的详细结果见“候选验证”。');
