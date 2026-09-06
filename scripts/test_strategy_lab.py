@@ -174,6 +174,20 @@ class EngineTests(unittest.TestCase):
         p=panel([10]*5)
         self.assertEqual(p.feature('mfi',3)[-1,0],50)
 
+    def test_market_breadth_excludes_future_listing_and_stale_quotes(self):
+        a=panel([10,11,12],dates=['2020-01-01','2020-01-02','2020-01-20'])
+        b=panel([10,9],dates=['2020-01-02','2020-01-03'])
+        p=Panel([a.frames[0],b.frames[0]],[dict(code='A',name='A'),dict(code='B',name='B')])
+        breadth=p.breadth(2,1)
+        self.assertEqual(breadth[1,0],1)
+        self.assertEqual(breadth[2,0],.5)
+        self.assertEqual(breadth[-1,0],1)
+
+    def test_breadth_signal_is_prefix_invariant(self):
+        p=panel([10,12,9,8,14,15]);q=panel([10,12,9,8,14,15,1000,1])
+        s=dict(family='breadth_reversal',params=dict(period=3,entry=.3,exit=.7,minimum_stocks=1))
+        self.assertTrue(np.array_equal(targets(p,s),targets(q,s)[:6]))
+
 
 if __name__=='__main__':
     unittest.main()

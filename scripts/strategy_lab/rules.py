@@ -30,6 +30,18 @@ def targets(panel, spec):
         base=targets(panel,p['base'])
         cmf=panel.feature('cmf',p.get('period',21))
         return hysteresis(base & (cmf > p.get('minimum',0)),~base,panel.observed)
+    if family == 'breadth_overlay':
+        base=targets(panel,p['base'])
+        br=panel.breadth(p.get('period',200),p.get('minimum_stocks',50))
+        if p['mode']=='contrarian_hold':
+            market=hysteresis(br<p.get('low',.3),br>p.get('high',.7),panel.observed,np.isfinite(br))
+            return base|market
+        risk_on=hysteresis(br>.55,br<.35,panel.observed,np.isfinite(br))
+        if p['mode']=='risk_filter':
+            return base & risk_on
+        if p['mode']=='risk_entry_only':
+            return hysteresis(base & risk_on,~base,panel.observed)
+        raise ValueError(p['mode'])
     if family == 'fundamental_overlay':
         from .fundamentals import features
         base = targets(panel, p['base'])
@@ -175,6 +187,10 @@ def targets(panel, spec):
         with np.errstate(divide='ignore',invalid='ignore'):
             z=np.log1p(m)/(vol*np.sqrt(p['period']/252))
         buy,sell,ready=z < -p['entry'],z > p['exit'],np.isfinite(z)
+    elif family == 'breadth_reversal':
+        br=panel.breadth(p['period'],p.get('minimum_stocks',50))
+        buy,sell=br<p['entry'],br>p['exit']
+        ready=np.isfinite(br) & np.isfinite(panel.feature('sma',p['period']))
     else:
         raise ValueError(f'Unknown family {family}')
     return hysteresis(buy, sell, review, ready, initial=p.get('initial_hold',False))

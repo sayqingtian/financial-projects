@@ -1,0 +1,396 @@
+{
+  "hypothesis": "Market breadth across currently available historical bars may supply a shared market regime. Future IPOs and quotes stale over 7 days cannot enter breadth. The current-universe survivor bias remains.",
+  "candidates": [
+    {
+      "id": "R10_BREADTH100_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 100,
+        "entry": 0.2,
+        "exit": 0.7
+      }
+    },
+    {
+      "id": "R10_BREADTH100_0.3_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 100,
+        "entry": 0.3,
+        "exit": 0.7
+      }
+    },
+    {
+      "id": "R10_BREADTH100_0.3_0.8",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 100,
+        "entry": 0.3,
+        "exit": 0.8
+      }
+    },
+    {
+      "id": "R10_BREADTH100_0.4_0.8",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 100,
+        "entry": 0.4,
+        "exit": 0.8
+      }
+    },
+    {
+      "id": "R10_BREADTH100_INITIAL",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 100,
+        "entry": 0.3,
+        "exit": 0.7,
+        "initial_hold": true
+      }
+    },
+    {
+      "id": "R10_BREADTH200_0.2_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.2,
+        "exit": 0.7
+      }
+    },
+    {
+      "id": "R10_BREADTH200_0.3_0.7",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.3,
+        "exit": 0.7
+      }
+    },
+    {
+      "id": "R10_BREADTH200_0.3_0.8",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.3,
+        "exit": 0.8
+      }
+    },
+    {
+      "id": "R10_BREADTH200_0.4_0.8",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.4,
+        "exit": 0.8
+      }
+    },
+    {
+      "id": "R10_BREADTH200_INITIAL",
+      "family": "breadth_reversal",
+      "params": {
+        "period": 200,
+        "entry": 0.3,
+        "exit": 0.7,
+        "initial_hold": true
+      }
+    },
+    {
+      "id": "R10_RSI_risk_filter",
+      "family": "breadth_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "mode": "risk_filter",
+        "period": 200
+      }
+    },
+    {
+      "id": "R10_RSI_risk_entry_only",
+      "family": "breadth_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "mode": "risk_entry_only",
+        "period": 200
+      }
+    },
+    {
+      "id": "R10_RSI_contrarian_hold",
+      "family": "breadth_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "mode": "contrarian_hold",
+        "period": 200
+      }
+    },
+    {
+      "id": "R10_MAX126_risk_filter",
+      "family": "breadth_overlay",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "mode": "risk_filter",
+        "period": 200
+      }
+    },
+    {
+      "id": "R10_MAX126_risk_entry_only",
+      "family": "breadth_overlay",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "mode": "risk_entry_only",
+        "period": 200
+      }
+    },
+    {
+      "id": "R10_MAX126_contrarian_hold",
+      "family": "breadth_overlay",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "mode": "contrarian_hold",
+        "period": 200
+      }
+    },
+    {
+      "id": "R10_RETURN_risk_filter",
+      "family": "breadth_overlay",
+      "params": {
+        "base": {
+          "family": "return_reversion",
+          "params": {
+            "period": 63,
+            "entry": 0.25,
+            "exit": 0.25
+          }
+        },
+        "mode": "risk_filter",
+        "period": 200
+      }
+    },
+    {
+      "id": "R10_RETURN_risk_entry_only",
+      "family": "breadth_overlay",
+      "params": {
+        "base": {
+          "family": "return_reversion",
+          "params": {
+            "period": 63,
+            "entry": 0.25,
+            "exit": 0.25
+          }
+        },
+        "mode": "risk_entry_only",
+        "period": 200
+      }
+    },
+    {
+      "id": "R10_RETURN_contrarian_hold",
+      "family": "breadth_overlay",
+      "params": {
+        "base": {
+          "family": "return_reversion",
+          "params": {
+            "period": 63,
+            "entry": 0.25,
+            "exit": 0.25
+          }
+        },
+        "mode": "contrarian_hold",
+        "period": 200
+      }
+    },
+    {
+      "id": "R10_BLEND100_MAX126",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 100,
+                "entry": 0.3,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R10_BLEND100_RETURN",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 100,
+                "entry": 0.3,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R10_BLEND200_MAX126",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.3,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "risk_overlay",
+              "params": {
+                "base": {
+                  "family": "rsi",
+                  "params": {
+                    "period": 14,
+                    "entry": 25,
+                    "exit": 75
+                  }
+                },
+                "max_bars": 126,
+                "cooldown": 20
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "R10_BLEND200_RETURN",
+      "family": "blend",
+      "params": {
+        "members": [
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "breadth_reversal",
+              "params": {
+                "period": 200,
+                "entry": 0.3,
+                "exit": 0.7
+              }
+            }
+          },
+          {
+            "weight": 0.5,
+            "strategy": {
+              "family": "return_reversion",
+              "params": {
+                "period": 63,
+                "entry": 0.25,
+                "exit": 0.25
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

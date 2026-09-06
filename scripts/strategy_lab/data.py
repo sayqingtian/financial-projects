@@ -111,6 +111,21 @@ class Panel:
             self.cache[key]=self.align(values)
         return self.cache[key]
 
+    def breadth(self, period, minimum=50):
+        key=('breadth',period,minimum)
+        if key not in self.cache:
+            average=self.feature('sma',period)
+            last_seen=np.full(self.shape[1],-1000000,dtype=int)
+            ordinal=self.dates.astype('datetime64[D]').astype(int)
+            breadth=np.full(self.shape[0],np.nan)
+            for i,day in enumerate(ordinal):
+                last_seen[self.observed[i]]=day
+                valid=np.isfinite(average[i]) & (day-last_seen<=7)
+                if valid.sum()>=minimum:
+                    breadth[i]=np.mean(self.close[i,valid]>average[i,valid])
+            self.cache[key]=np.broadcast_to(breadth[:,None],self.shape)
+        return self.cache[key]
+
 
 def load_panel():
     root = PROJECT / 'data/connect-10y-2026-09-06'
