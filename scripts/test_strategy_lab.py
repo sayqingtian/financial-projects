@@ -8,6 +8,7 @@ from strategy_lab.data import Panel
 from strategy_lab.engine import simulate
 from strategy_lab.rules import targets
 from report_tencent_fundamentals import simulate as independent
+from strategy_lab.fundamentals import annual_values
 
 
 def panel(close, opens=None, volume=None, dates=None):
@@ -103,6 +104,24 @@ class EngineTests(unittest.TestCase):
                dict(family='risk_overlay',params=dict(base=dict(family='buy_hold'),loss=.2,cooldown=2))]
         for s in specs:
             self.assertTrue(np.array_equal(targets(p,s),targets(q,s)[:6]))
+
+    def test_fundamental_same_day_and_future_exclusion(self):
+        annual=[dict(year_end='2019-12-31',profit=10,revenue_yoy_pct=3,profit_yoy_pct=4,margin_pct=20)]
+        v=annual_values(['2020-06-28','2020-06-29'],annual,180)
+        self.assertTrue(np.isnan(v[0,0]))
+        self.assertEqual(v[1,0],10)
+        later=annual+[dict(year_end='2025-12-31',profit=999)]
+        self.assertTrue(np.allclose(v,annual_values(['2020-06-28','2020-06-29'],later,180),equal_nan=True))
+
+    def test_new_missing_financial_year_does_not_reuse_old_profit(self):
+        a=[dict(year_end='2019-12-31',profit=10),dict(year_end='2020-12-31',profit=None)]
+        self.assertTrue(np.isnan(annual_values(['2021-07-01'],a,180)[0,0]))
+
+    def test_fundamental_fallback_is_explicit_and_losses_override(self):
+        p=panel([10,11,12])
+        p.cache[('fundamentals',180)]={k:np.array([[np.nan],[-1],[2]],float) for k in ['profit','revenue_growth','profit_growth','margin']}
+        s=dict(family='fundamental_overlay',params=dict(base=dict(family='buy_hold'),mode='avoid_loss'))
+        self.assertEqual(targets(p,s)[:,0].tolist(),[True,False,True])
 
 
 if __name__=='__main__':

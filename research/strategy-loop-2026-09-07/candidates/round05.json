@@ -1,0 +1,573 @@
+{
+  "hypothesis": "Use lagged profitability and growth as soft overlays. Unknown/stale fields explicitly fall back to technical rules; financial snapshots are not claimed PIT. Evaluate 180- and 365-day assumptions.",
+  "candidates": [
+    {
+      "id": "R05_RSI_avoid_loss",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "mode": "avoid_loss",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_RSI_growth_filter",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "mode": "growth_filter",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_RSI_quality_filter",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "mode": "quality_filter",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_RSI_hold_growth",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "mode": "hold_growth",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_RSI_profit_only",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "mode": "profit_only",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_RSI_avoid_loss_L365",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "mode": "avoid_loss",
+        "lag": 365
+      }
+    },
+    {
+      "id": "R05_RSI_growth_filter_L365",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "mode": "growth_filter",
+        "lag": 365
+      }
+    },
+    {
+      "id": "R05_RSI_hold_growth_L365",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "rsi",
+          "params": {
+            "period": 14,
+            "entry": 25,
+            "exit": 75
+          }
+        },
+        "mode": "hold_growth",
+        "lag": 365
+      }
+    },
+    {
+      "id": "R05_MAX126_avoid_loss",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "mode": "avoid_loss",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_MAX126_growth_filter",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "mode": "growth_filter",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_MAX126_quality_filter",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "mode": "quality_filter",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_MAX126_hold_growth",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "mode": "hold_growth",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_MAX126_profit_only",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "mode": "profit_only",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_MAX126_avoid_loss_L365",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "mode": "avoid_loss",
+        "lag": 365
+      }
+    },
+    {
+      "id": "R05_MAX126_growth_filter_L365",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "mode": "growth_filter",
+        "lag": 365
+      }
+    },
+    {
+      "id": "R05_MAX126_hold_growth_L365",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "risk_overlay",
+          "params": {
+            "base": {
+              "family": "rsi",
+              "params": {
+                "period": 14,
+                "entry": 25,
+                "exit": 75
+              }
+            },
+            "max_bars": 126,
+            "cooldown": 20
+          }
+        },
+        "mode": "hold_growth",
+        "lag": 365
+      }
+    },
+    {
+      "id": "R05_CHANNEL_avoid_loss",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "channel_reversion",
+          "params": {
+            "period": 126,
+            "entry": 0.1,
+            "exit": 0.9
+          }
+        },
+        "mode": "avoid_loss",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_CHANNEL_growth_filter",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "channel_reversion",
+          "params": {
+            "period": 126,
+            "entry": 0.1,
+            "exit": 0.9
+          }
+        },
+        "mode": "growth_filter",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_CHANNEL_quality_filter",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "channel_reversion",
+          "params": {
+            "period": 126,
+            "entry": 0.1,
+            "exit": 0.9
+          }
+        },
+        "mode": "quality_filter",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_CHANNEL_hold_growth",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "channel_reversion",
+          "params": {
+            "period": 126,
+            "entry": 0.1,
+            "exit": 0.9
+          }
+        },
+        "mode": "hold_growth",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_CHANNEL_profit_only",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "channel_reversion",
+          "params": {
+            "period": 126,
+            "entry": 0.1,
+            "exit": 0.9
+          }
+        },
+        "mode": "profit_only",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_CHANNEL_avoid_loss_L365",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "channel_reversion",
+          "params": {
+            "period": 126,
+            "entry": 0.1,
+            "exit": 0.9
+          }
+        },
+        "mode": "avoid_loss",
+        "lag": 365
+      }
+    },
+    {
+      "id": "R05_CHANNEL_growth_filter_L365",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "channel_reversion",
+          "params": {
+            "period": 126,
+            "entry": 0.1,
+            "exit": 0.9
+          }
+        },
+        "mode": "growth_filter",
+        "lag": 365
+      }
+    },
+    {
+      "id": "R05_CHANNEL_hold_growth_L365",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "channel_reversion",
+          "params": {
+            "period": 126,
+            "entry": 0.1,
+            "exit": 0.9
+          }
+        },
+        "mode": "hold_growth",
+        "lag": 365
+      }
+    },
+    {
+      "id": "R05_RETURN_avoid_loss",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "return_reversion",
+          "params": {
+            "period": 63,
+            "entry": 0.25,
+            "exit": 0.25
+          }
+        },
+        "mode": "avoid_loss",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_RETURN_growth_filter",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "return_reversion",
+          "params": {
+            "period": 63,
+            "entry": 0.25,
+            "exit": 0.25
+          }
+        },
+        "mode": "growth_filter",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_RETURN_quality_filter",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "return_reversion",
+          "params": {
+            "period": 63,
+            "entry": 0.25,
+            "exit": 0.25
+          }
+        },
+        "mode": "quality_filter",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_RETURN_hold_growth",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "return_reversion",
+          "params": {
+            "period": 63,
+            "entry": 0.25,
+            "exit": 0.25
+          }
+        },
+        "mode": "hold_growth",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_RETURN_profit_only",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "return_reversion",
+          "params": {
+            "period": 63,
+            "entry": 0.25,
+            "exit": 0.25
+          }
+        },
+        "mode": "profit_only",
+        "lag": 180
+      }
+    },
+    {
+      "id": "R05_RETURN_avoid_loss_L365",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "return_reversion",
+          "params": {
+            "period": 63,
+            "entry": 0.25,
+            "exit": 0.25
+          }
+        },
+        "mode": "avoid_loss",
+        "lag": 365
+      }
+    },
+    {
+      "id": "R05_RETURN_growth_filter_L365",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "return_reversion",
+          "params": {
+            "period": 63,
+            "entry": 0.25,
+            "exit": 0.25
+          }
+        },
+        "mode": "growth_filter",
+        "lag": 365
+      }
+    },
+    {
+      "id": "R05_RETURN_hold_growth_L365",
+      "family": "fundamental_overlay",
+      "params": {
+        "base": {
+          "family": "return_reversion",
+          "params": {
+            "period": 63,
+            "entry": 0.25,
+            "exit": 0.25
+          }
+        },
+        "mode": "hold_growth",
+        "lag": 365
+      }
+    }
+  ]
+}

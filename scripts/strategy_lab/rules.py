@@ -23,6 +23,29 @@ def targets(panel, spec):
     review = panel.review(p.get('review', 'daily'))
     if family == 'buy_hold':
         return hysteresis(panel.observed, np.zeros(panel.shape, bool), panel.observed)
+    if family == 'fundamental_overlay':
+        from .fundamentals import features
+        base = targets(panel, p['base'])
+        f = features(panel, p.get('lag',180))
+        known = np.isfinite(f['profit'])
+        profitable = known & (f['profit'] > 0)
+        loss = known & (f['profit'] <= 0)
+        growth_known = np.isfinite(f['revenue_growth']) & np.isfinite(f['profit_growth'])
+        growth_good = (f['revenue_growth'] > p.get('growth_min',0)) & (f['profit_growth'] > p.get('growth_min',0))
+        mode = p['mode']
+        if mode == 'avoid_loss':
+            return base & ~loss
+        if mode == 'growth_filter':
+            return base & (~growth_known | growth_good) & ~loss
+        if mode == 'quality_filter':
+            quality_known = known & np.isfinite(f['margin'])
+            good = profitable & (f['margin'] >= p.get('margin_min',10))
+            return base & (~quality_known | good)
+        if mode == 'hold_growth':
+            return (base | (profitable & growth_known & growth_good)) & ~loss
+        if mode == 'profit_only':
+            return np.where(known, profitable, base)
+        raise ValueError(f'Unknown fundamental overlay {mode}')
     if family == 'ensemble':
         votes = sum(targets(panel, member).astype(int) for member in p['members'])
         return hysteresis(votes >= p['entry_votes'], votes <= p['exit_votes'], review)

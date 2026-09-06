@@ -123,6 +123,9 @@ def run_round(name):
         recovery.parent.mkdir(exist_ok=True)
         recovery.write_text(json.dumps(package, ensure_ascii=False, indent=2), encoding='utf-8')
     package['completed_utc'] = dt.datetime.now(dt.timezone.utc).isoformat()
+    if hasattr(panel, 'aux_manifest'):
+        package['additional_snapshot_inputs'] = panel.aux_manifest
+        package['fundamental_warning'] = 'Snapshot GAAP proxy, assumed lag, not original disclosure vintages; missing fields use explicitly specified technical fallback.'
     package['elapsed_seconds'] = time.monotonic()-started
     final.write_text(json.dumps(package, ensure_ascii=False, indent=2, allow_nan=False)+'\n', encoding='utf-8')
     text = io.StringIO(newline='')
