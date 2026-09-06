@@ -72,7 +72,7 @@ def main():
                 assert value(5, f'G{i}') is None
         close(9, 'D12', .001)
         close(9, 'D13', .0005)
-        charts = [f for f in z.namelist() if re.fullmatch(r'xl/charts/chart\d+.xml', f)]
+        charts = [f for f in z.namelist() if re.fullmatch(r'xl/(?:drawings/)?charts/chart\d+.xml', f)]
         assert len(charts) == 2
         for chart in charts:
             xml = z.read(chart).decode('utf-8')
