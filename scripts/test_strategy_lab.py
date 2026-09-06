@@ -9,6 +9,7 @@ from strategy_lab.engine import simulate, evaluate
 from strategy_lab.rules import targets
 from report_tencent_fundamentals import simulate as independent
 from strategy_lab.fundamentals import annual_values
+from strategy_lab.adaptive import select_targets
 
 
 def panel(close, opens=None, volume=None, dates=None):
@@ -143,6 +144,19 @@ class EngineTests(unittest.TestCase):
         p=panel([10,11])
         s=dict(family='blend',params=dict(members=[dict(weight=1.1,strategy=dict(family='buy_hold'))]))
         with self.assertRaises(ValueError):evaluate(p,s,['2020-01-01','2020-01-02'])
+
+    def test_expert_selector_updates_only_at_review(self):
+        p=panel([10,11,12,13])
+        experts=np.array([np.ones(p.shape,bool),np.zeros(p.shape,bool)])
+        scores=np.array([[[1],[1],[1],[1]],[[0],[2],[2],[2]]],float)
+        review=np.array([[True],[False],[True],[False]])
+        result=select_targets(p,experts,scores,review)
+        self.assertEqual(result[:,0].tolist(),[True,True,False,False])
+
+    def test_adaptive_experts_do_not_see_future_appends(self):
+        p=panel([10,12,9,8,14,15,13,20]);q=panel([10,12,9,8,14,15,13,20,1,1000])
+        spec=dict(family='adaptive',params=dict(lookback=3,metric='return',review='daily',members=[dict(family='buy_hold'),dict(family='sma',params=dict(period=2))]))
+        self.assertTrue(np.array_equal(targets(p,spec),targets(q,spec)[:8]))
 
 
 if __name__=='__main__':

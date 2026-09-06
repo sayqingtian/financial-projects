@@ -1,0 +1,1053 @@
+{
+  "hypothesis": "Monthly per-stock expert selection on preceding 1-3 years only; four pre-registered experts, Buy & Hold fallback before sufficient history. No hindsight best-per-stock selection.",
+  "candidates": [
+    {
+      "id": "R07_META_reversal_252_sharpe",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 252,
+        "metric": "sharpe"
+      }
+    },
+    {
+      "id": "R07_META_reversal_252_utility",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 252,
+        "metric": "utility"
+      }
+    },
+    {
+      "id": "R07_META_reversal_252_return",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 252,
+        "metric": "return"
+      }
+    },
+    {
+      "id": "R07_META_reversal_504_sharpe",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 504,
+        "metric": "sharpe"
+      }
+    },
+    {
+      "id": "R07_META_reversal_504_utility",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 504,
+        "metric": "utility"
+      }
+    },
+    {
+      "id": "R07_META_reversal_504_return",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 504,
+        "metric": "return"
+      }
+    },
+    {
+      "id": "R07_META_reversal_756_sharpe",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 756,
+        "metric": "sharpe"
+      }
+    },
+    {
+      "id": "R07_META_reversal_756_utility",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 756,
+        "metric": "utility"
+      }
+    },
+    {
+      "id": "R07_META_reversal_756_return",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 756,
+        "metric": "return"
+      }
+    },
+    {
+      "id": "R07_META_reversal_252_hysteresis",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 252,
+        "metric": "sharpe",
+        "switch_margin": 0.2
+      }
+    },
+    {
+      "id": "R07_META_reversal_252_cashfloor",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 252,
+        "metric": "sharpe",
+        "positive_only": true
+      }
+    },
+    {
+      "id": "R07_META_reversal_504_hysteresis",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 504,
+        "metric": "sharpe",
+        "switch_margin": 0.2
+      }
+    },
+    {
+      "id": "R07_META_reversal_504_cashfloor",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "risk_overlay",
+            "params": {
+              "base": {
+                "family": "rsi",
+                "params": {
+                  "period": 14,
+                  "entry": 25,
+                  "exit": 75
+                }
+              },
+              "max_bars": 126,
+              "cooldown": 20
+            }
+          },
+          {
+            "family": "channel_reversion",
+            "params": {
+              "period": 126,
+              "entry": 0.1,
+              "exit": 0.9
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          }
+        ],
+        "lookback": 504,
+        "metric": "sharpe",
+        "positive_only": true
+      }
+    },
+    {
+      "id": "R07_META_diverse_252_sharpe",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          }
+        ],
+        "lookback": 252,
+        "metric": "sharpe"
+      }
+    },
+    {
+      "id": "R07_META_diverse_252_utility",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          }
+        ],
+        "lookback": 252,
+        "metric": "utility"
+      }
+    },
+    {
+      "id": "R07_META_diverse_252_return",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          }
+        ],
+        "lookback": 252,
+        "metric": "return"
+      }
+    },
+    {
+      "id": "R07_META_diverse_504_sharpe",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          }
+        ],
+        "lookback": 504,
+        "metric": "sharpe"
+      }
+    },
+    {
+      "id": "R07_META_diverse_504_utility",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          }
+        ],
+        "lookback": 504,
+        "metric": "utility"
+      }
+    },
+    {
+      "id": "R07_META_diverse_504_return",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          }
+        ],
+        "lookback": 504,
+        "metric": "return"
+      }
+    },
+    {
+      "id": "R07_META_diverse_756_sharpe",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          }
+        ],
+        "lookback": 756,
+        "metric": "sharpe"
+      }
+    },
+    {
+      "id": "R07_META_diverse_756_utility",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          }
+        ],
+        "lookback": 756,
+        "metric": "utility"
+      }
+    },
+    {
+      "id": "R07_META_diverse_756_return",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          }
+        ],
+        "lookback": 756,
+        "metric": "return"
+      }
+    },
+    {
+      "id": "R07_META_diverse_252_hysteresis",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          }
+        ],
+        "lookback": 252,
+        "metric": "sharpe",
+        "switch_margin": 0.2
+      }
+    },
+    {
+      "id": "R07_META_diverse_252_cashfloor",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          }
+        ],
+        "lookback": 252,
+        "metric": "sharpe",
+        "positive_only": true
+      }
+    },
+    {
+      "id": "R07_META_diverse_504_hysteresis",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          }
+        ],
+        "lookback": 504,
+        "metric": "sharpe",
+        "switch_margin": 0.2
+      }
+    },
+    {
+      "id": "R07_META_diverse_504_cashfloor",
+      "family": "adaptive",
+      "params": {
+        "members": [
+          {
+            "family": "buy_hold"
+          },
+          {
+            "family": "rsi",
+            "params": {
+              "period": 14,
+              "entry": 25,
+              "exit": 75
+            }
+          },
+          {
+            "family": "return_reversion",
+            "params": {
+              "period": 63,
+              "entry": 0.25,
+              "exit": 0.25
+            }
+          },
+          {
+            "family": "sma",
+            "params": {
+              "period": 200,
+              "review": "monthly"
+            }
+          }
+        ],
+        "lookback": 504,
+        "metric": "sharpe",
+        "positive_only": true
+      }
+    }
+  ]
+}

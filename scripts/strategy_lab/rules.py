@@ -23,6 +23,9 @@ def targets(panel, spec):
     review = panel.review(p.get('review', 'daily'))
     if family == 'buy_hold':
         return hysteresis(panel.observed, np.zeros(panel.shape, bool), panel.observed)
+    if family == 'adaptive':
+        from .adaptive import targets as adaptive_targets
+        return adaptive_targets(panel,p)
     if family == 'fundamental_overlay':
         from .fundamentals import features
         base = targets(panel, p['base'])
