@@ -125,7 +125,8 @@ def main():
                             higher_sharpe_full=f['median_sharpe'] is not None and f['median_sharpe']>bf['median_sharpe'],
                             higher_sharpe_reserved=v['median_sharpe'] is not None and v['median_sharpe']>bv['median_sharpe'])
         package['candidates'].append(item)
-        print(f"{i}/{len(selection['finalists'])} {spec['id']} full: n={f['count']} win={f['outperform_rate']:.1%} CAGR={f['median_cagr']:.2f}% Sharpe={f['median_sharpe']:.3f}; reserved: win={v['outperform_rate']:.1%} CAGR={v['median_cagr']:.2f}% Sharpe={v['median_sharpe']:.3f}",flush=True)
+        fmt=lambda value: f'{value:.3f}' if value is not None else 'N/A (cash only)'
+        print(f"{i}/{len(selection['finalists'])} {spec['id']} full: n={f['count']} win={f['outperform_rate']:.1%} CAGR={f['median_cagr']:.2f}% Sharpe={fmt(f['median_sharpe'])}; reserved: win={v['outperform_rate']:.1%} CAGR={v['median_cagr']:.2f}% Sharpe={fmt(v['median_sharpe'])}",flush=True)
     package['completed_utc']=dt.datetime.now(dt.timezone.utc).isoformat()
     if hasattr(panel,'aux_manifest'):
         package['additional_snapshot_inputs']=panel.aux_manifest
