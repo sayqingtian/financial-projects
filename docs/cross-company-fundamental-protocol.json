@@ -1,0 +1,29 @@
+{
+  "version": "cross-company-annual-v1",
+  "frozen_before_first_cross_company_backtest": true,
+  "base_protocol": "docs/tencent-fundamental-protocol.json",
+  "symbols": ["9988.HK", "1398.HK"],
+  "prices": "Existing frozen local HKD price files; Alibaba starts at HK listing 2019-11-26, ICBC at 2016-09-06; both end 2026-09-04. No US ADS splice.",
+  "shared_rules": "Same 70 entry / strictly below 50 exit, monthly review, next tradable open, 400-day financial and 7-day prior FX limits, 200-bar warmup, 70/30 independent sleeves, 0.001 commission and 0.0005 slippage per side as Tencent. No parameter search.",
+  "alibaba": {
+    "label": "Original thresholds with explicit issuer accounting mappings",
+    "quality": "Consolidated adjusted EBITA / revenue as the disclosed core operating profitability proxy; it is not identical to Tencent non-IFRS operating margin. All original weights and numeric thresholds retained.",
+    "growth": "Original annual revenue and non-GAAP net income growth from that announcement",
+    "valuation": "Non-GAAP diluted EPS per Hong Kong ordinary share in CNY. FY2019 pre-split per-share or ADS EPS divided by 8 for July 2019 split; later ADS EPS divided by 8. Fiscal years end March 31 and are published in same calendar year.",
+    "net_cash": "Cash and cash equivalents + short-term investments + liquid treasury investments disclosed separately, less current and noncurrent bank borrowings and unsecured/convertible notes; exclude restricted cash, strategic equity stakes and leases. Preserve definition/line-item changes per original release.",
+    "dividend": "Ordinary dividend in USD per post-split ordinary share, consistent numerator and denominator; ratio is currency independent. Special dividends excluded. When prior ordinary DPS is zero, give zero dividend-growth points, including first-time dividends. No invented denominator.",
+    "dividend_availability": "Use only ordinary dividends announced by that annual release. Do not backfill a dividend first announced later in the year."
+  },
+  "icbc": {
+    "label": "Bank-specific exploratory variant; not an unchanged transfer of Tencent numerical scoring",
+    "original_model_status": "Not applicable: industrial net cash and core operating margin do not have comparable bank meanings. Do not fabricate an original-model return.",
+    "quality": "30 * clip((weighted ROE percent - 5) / 10)",
+    "growth": "12.5 * clip(operating income YoY percent / 10) + 12.5 * clip(attributable net profit YoY percent / 10)",
+    "valuation": "25 * clip((1.2 - PB) / 0.8); PB = raw HKD price * prior CNY/HKD / ordinary BVPS CNY. Exclude preference/perpetual capital when calculating common BVPS.",
+    "safety": "5 * clip((CET1 ratio percent - 9) / 4) + 5 * clip((3 - NPL ratio percent) / 2)",
+    "shareholder": "10 * clip(annual ordinary DPS CNY / (raw HKD price * prior CNY/HKD) / 0.08). Use total annual interim + proposed final ordinary DPS known at annual release, never only final after switching to twice-yearly dividends.",
+    "note": "Thresholds are research assumptions for bank economics, not claimed regulatory limits or return-optimized parameters. Preserve original-release figures, including then-current Basel/accounting definitions."
+  },
+  "validation": "Announcement gating, March year-end support, split/ADS currency units, zero prior dividends, bank-specific formulas, source hashes, independent daily score/signal/fill/equity reconciliation, unchanged Tencent output regression.",
+  "limitations": "Annual-only pilot; no 2026 interim or quarter updates; no claim of untouched out-of-sample validation or statistically reliable alpha. Present all fixed variants regardless of outcome."
+}

@@ -1,6 +1,6 @@
 use crate::data::fetcher::OHLCV;
 use crate::strategy::{Action, Signal, Strategy};
-use anyhow::Result;
+use anyhow::{ensure, Result};
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 
@@ -22,7 +22,7 @@ impl SMACrossover {
         if idx < period - 1 {
             return None;
         }
-        let sum: f64 = data[idx - period + 1..=idx].iter().map(|d| d.close).sum();
+        let sum: f64 = data[idx - (period - 1)..=idx].iter().map(|d| d.close).sum();
         Some(sum / period as f64)
     }
 }
@@ -33,6 +33,10 @@ impl Strategy for SMACrossover {
     }
 
     fn generate_signals(&self, data: &[OHLCV]) -> Result<Vec<Signal>> {
+        ensure!(
+            self.short_period > 0 && self.short_period < self.long_period,
+            "SMA periods must satisfy 0 < short < long"
+        );
         let mut signals = Vec::new();
         let mut position = false;
 
@@ -53,7 +57,10 @@ impl Strategy for SMACrossover {
                             date: data[i].date,
                             action: Action::Buy,
                             price: data[i].close,
-                            reason: format!("SMA{} crossed above SMA{}", self.short_period, self.long_period),
+                            reason: format!(
+                                "SMA{} crossed above SMA{}",
+                                self.short_period, self.long_period
+                            ),
                         });
                         position = true;
                     } else if cross_down && position {
@@ -61,7 +68,10 @@ impl Strategy for SMACrossover {
                             date: data[i].date,
                             action: Action::Sell,
                             price: data[i].close,
-                            reason: format!("SMA{} crossed below SMA{}", self.short_period, self.long_period),
+                            reason: format!(
+                                "SMA{} crossed below SMA{}",
+                                self.short_period, self.long_period
+                            ),
                         });
                         position = false;
                     }

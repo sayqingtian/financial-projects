@@ -1,0 +1,53 @@
+{
+  "frozen_utc": "2026-09-06T15:34:55.940910+00:00",
+  "status": "exploratory_snapshot_not_point_in_time",
+  "scope": "Frozen 469-stock universe including 3 prior issuer pilots; assess remaining 466 independently.",
+  "unchanged": {
+    "weights": [
+      30,
+      25,
+      25,
+      10,
+      10
+    ],
+    "entry": 70,
+    "exit_below": 50,
+    "review": "first observed trading day of month, close",
+    "execution": "next positive-volume open",
+    "commission_per_side": 0.001,
+    "slippage_per_side": 0.0005,
+    "initial_hkd": 100000,
+    "hybrid_core": 0.7,
+    "hybrid_tactical": 0.3,
+    "sma_days": 200,
+    "cash_interest": 0
+  },
+  "proxies": {
+    "quality": "GAAP operating profit / standard operating income; 20%-40% mapped to 0-30",
+    "growth": "GAAP revenue and parent profit growth; (current-prior)/abs(prior), each 0%-25% mapped to 0-12.5",
+    "valuation": "Historical split-adjusted close * strictly prior daily report-currency FX / diluted EPS (basic fallback); PE50-20 maps 0-25",
+    "safety": "(cash + short/long deposits - reported bank borrowings, bonds and notes)/GAAP parent profit; -1 to +1 maps 0-10; standard absent component means not separately reported, not a filled missing total",
+    "shareholder": "Same-currency ordinary full-year DPS growth; 0%-20% maps 0-10; zero prior DPS means 0 points; explicit no-dividend records required",
+    "available_date": "max(fiscal year end +180 days, latest update date of current/prior regular-dividend records); not actual financial publication date",
+    "losses": "Known non-positive parent profit or EPS forces cash on monthly review",
+    "gaps": "Latest arrived annual record with incomplete inputs forces cash, never falls back to an older profitable record",
+    "freshness": "Annual assumed availability age <=400d; FX strictly prior date and age<=7d",
+    "exclusions": "Financial sectors and any unverified in-period split units; missing split-event history; no industry-specific score invented"
+  },
+  "fixed_sensitivity": [
+    "financial lag270d",
+    "financial lag365d",
+    "commission+slippage doubled",
+    "entry75/exit45",
+    "entry65/exit55"
+  ],
+  "summary_cohort": "Remaining-stock proxy with >=3 calendar years, >=80% monthly valid-data/loss-exit reviews, no blocked industry or split units",
+  "biases": [
+    "Current constituent/market-cap survivor selection; no historical universe reconstruction",
+    "Current vendor statements may contain later restatements",
+    "Six-month delay is an assumption and does not prove the statement existed at that date",
+    "GAAP proxy is a separate strategy, not original non-GAAP validation",
+    "Common market exposures mean stock outcomes are not independent",
+    "Fractional adjusted-price execution, no lot constraint or cash rate; historical cost approximation"
+  ]
+}

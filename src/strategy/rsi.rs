@@ -1,6 +1,6 @@
 use crate::data::fetcher::OHLCV;
 use crate::strategy::{Action, Signal, Strategy};
-use anyhow::Result;
+use anyhow::{ensure, Result};
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 
@@ -41,7 +41,7 @@ impl RSIStrategy {
         let avg_loss = losses / self.period as f64;
 
         if avg_loss == 0.0 {
-            return Some(100.0);
+            return Some(if avg_gain == 0.0 { 50.0 } else { 100.0 });
         }
 
         let rs = avg_gain / avg_loss;
@@ -55,6 +55,15 @@ impl Strategy for RSIStrategy {
     }
 
     fn generate_signals(&self, data: &[OHLCV]) -> Result<Vec<Signal>> {
+        ensure!(self.period > 0, "RSI period must be positive");
+        ensure!(
+            self.oversold.is_finite()
+                && self.overbought.is_finite()
+                && 0.0 <= self.oversold
+                && self.oversold < self.overbought
+                && self.overbought <= 100.0,
+            "RSI thresholds must satisfy 0 <= oversold < overbought <= 100"
+        );
         let mut signals = Vec::new();
         let mut position = false;
 
@@ -66,7 +75,10 @@ impl Strategy for RSIStrategy {
                         date: data[i].date,
                         action: Action::Buy,
                         price: data[i].close,
-                        reason: format!("RSI({}) = {:.1} < oversold({})", self.period, rsi_val, self.oversold),
+                        reason: format!(
+                            "RSI({}) = {:.1} < oversold({})",
+                            self.period, rsi_val, self.oversold
+                        ),
                     });
                     position = true;
                 } else if rsi_val > self.overbought && position {
@@ -74,7 +86,10 @@ impl Strategy for RSIStrategy {
                         date: data[i].date,
                         action: Action::Sell,
                         price: data[i].close,
-                        reason: format!("RSI({}) = {:.1} > overbought({})", self.period, rsi_val, self.overbought),
+                        reason: format!(
+                            "RSI({}) = {:.1} > overbought({})",
+                            self.period, rsi_val, self.overbought
+                        ),
                     });
                     position = false;
                 }

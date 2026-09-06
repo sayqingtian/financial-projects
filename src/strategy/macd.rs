@@ -1,6 +1,6 @@
 use crate::data::fetcher::OHLCV;
 use crate::strategy::{Action, Signal, Strategy};
-use anyhow::Result;
+use anyhow::{ensure, Result};
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 
@@ -29,12 +29,9 @@ impl MACDStrategy {
         }
     }
 
-    fn calculate_macd(&self, data: &[OHLCV]) -> (Vec<f64>, Vec<f64>, Vec<f64>) {
-        let mut fast_ema = Vec::new();
-        let mut slow_ema = Vec::new();
-        let mut macd_line = Vec::new();
-        let mut signal_line = Vec::new();
-        let mut histogram = Vec::new();
+    fn calculate_macd(&self, data: &[OHLCV]) -> (Vec<f64>, Vec<f64>) {
+        let mut macd_line = Vec::with_capacity(data.len());
+        let mut signal_line = Vec::with_capacity(data.len());
 
         let mut prev_fast = None;
         let mut prev_slow = None;
@@ -46,22 +43,21 @@ impl MACDStrategy {
             prev_fast = Some(fast);
             prev_slow = Some(slow);
 
-            fast_ema.push(fast);
-            slow_ema.push(slow);
-
             let macd = fast - slow;
             macd_line.push(macd);
 
             let signal = match prev_signal {
-                Some(prev) => macd * (2.0 / (self.signal_period as f64 + 1.0)) + prev * (1.0 - 2.0 / (self.signal_period as f64 + 1.0)),
+                Some(prev) => {
+                    macd * (2.0 / (self.signal_period as f64 + 1.0))
+                        + prev * (1.0 - 2.0 / (self.signal_period as f64 + 1.0))
+                }
                 None => macd,
             };
             prev_signal = Some(signal);
             signal_line.push(signal);
-            histogram.push(macd - signal);
         }
 
-        (macd_line, signal_line, histogram)
+        (macd_line, signal_line)
     }
 }
 
@@ -71,20 +67,25 @@ impl Strategy for MACDStrategy {
     }
 
     fn generate_signals(&self, data: &[OHLCV]) -> Result<Vec<Signal>> {
-        let (macd_line, signal_line, _) = self.calculate_macd(data);
+        ensure!(
+            self.fast_period > 0 && self.fast_period < self.slow_period && self.signal_period > 0,
+            "MACD periods must satisfy 0 < fast < slow and signal > 0"
+        );
+        let (macd_line, signal_line) = self.calculate_macd(data);
         let mut signals = Vec::new();
         let mut position = false;
 
         for i in 1..data.len() {
             let cross_up = macd_line[i - 1] <= signal_line[i - 1] && macd_line[i] > signal_line[i];
-            let cross_down = macd_line[i - 1] >= signal_line[i - 1] && macd_line[i] < signal_line[i];
+            let cross_down =
+                macd_line[i - 1] >= signal_line[i - 1] && macd_line[i] < signal_line[i];
 
             if cross_up && !position {
                 signals.push(Signal {
                     date: data[i].date,
                     action: Action::Buy,
                     price: data[i].close,
-                    reason: format!("MACD crossed above signal line"),
+                    reason: "MACD crossed above signal line".into(),
                 });
                 position = true;
             } else if cross_down && position {
@@ -92,7 +93,7 @@ impl Strategy for MACDStrategy {
                     date: data[i].date,
                     action: Action::Sell,
                     price: data[i].close,
-                    reason: format!("MACD crossed below signal line"),
+                    reason: "MACD crossed below signal line".into(),
                 });
                 position = false;
             }

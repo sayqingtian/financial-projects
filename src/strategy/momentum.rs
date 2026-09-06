@@ -1,6 +1,6 @@
 use crate::data::fetcher::OHLCV;
 use crate::strategy::{Action, Signal, Strategy};
-use anyhow::Result;
+use anyhow::{ensure, Result};
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 
@@ -21,11 +21,13 @@ impl Strategy for MomentumStrategy {
     }
 
     fn generate_signals(&self, data: &[OHLCV]) -> Result<Vec<Signal>> {
+        ensure!(self.lookback > 0, "Momentum lookback must be positive");
         let mut signals = Vec::new();
         let mut position = false;
 
         for i in self.lookback..data.len() {
-            let momentum = (data[i].close - data[i - self.lookback].close) / data[i - self.lookback].close;
+            let momentum =
+                (data[i].close - data[i - self.lookback].close) / data[i - self.lookback].close;
 
             if momentum > 0.0 && !position {
                 signals.push(Signal {

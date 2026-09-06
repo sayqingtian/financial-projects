@@ -1,6 +1,6 @@
 use crate::data::fetcher::OHLCV;
 use crate::strategy::{Action, Signal, Strategy};
-use anyhow::Result;
+use anyhow::{ensure, Result};
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 
@@ -19,9 +19,10 @@ impl MeanReversionStrategy {
         if idx < self.period - 1 {
             return None;
         }
-        let slice = &data[idx - self.period + 1..=idx];
+        let slice = &data[idx - (self.period - 1)..=idx];
         let mean = slice.iter().map(|d| d.close).sum::<f64>() / self.period as f64;
-        let variance = slice.iter().map(|d| (d.close - mean).powi(2)).sum::<f64>() / self.period as f64;
+        let variance =
+            slice.iter().map(|d| (d.close - mean).powi(2)).sum::<f64>() / self.period as f64;
         let std = variance.sqrt();
         if std == 0.0 {
             return None;
@@ -36,6 +37,10 @@ impl Strategy for MeanReversionStrategy {
     }
 
     fn generate_signals(&self, data: &[OHLCV]) -> Result<Vec<Signal>> {
+        ensure!(
+            self.period > 0 && self.threshold.is_finite() && self.threshold > 0.0,
+            "Mean-reversion period and threshold must be positive"
+        );
         let mut signals = Vec::new();
         let mut position = false;
 

@@ -4,7 +4,7 @@ use anyhow::Result;
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct BuyHoldStrategy;
 
 impl BuyHoldStrategy {
@@ -22,20 +22,12 @@ impl Strategy for BuyHoldStrategy {
         if data.is_empty() {
             return Ok(vec![]);
         }
-        Ok(vec![
-            Signal {
-                date: data.first().unwrap().date,
-                action: Action::Buy,
-                price: data.first().unwrap().close,
-                reason: "Buy at start".to_string(),
-            },
-            Signal {
-                date: data.last().unwrap().date,
-                action: Action::Sell,
-                price: data.last().unwrap().close,
-                reason: "Sell at end".to_string(),
-            },
-        ])
+        Ok(vec![Signal {
+            date: data.first().unwrap().date,
+            action: Action::Buy,
+            price: data.first().unwrap().close,
+            reason: "Buy at start".to_string(),
+        }])
     }
 
     fn params(&self) -> serde_json::Value {

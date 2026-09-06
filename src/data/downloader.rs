@@ -1,5 +1,5 @@
-use crate::data::fetcher::DataFetcher;
-use anyhow::Result;
+use crate::data::fetcher::{normalize_hk_symbol, DataFetcher};
+use anyhow::{ensure, Context, Result};
 use chrono::{Duration, Utc};
 use clap::{Args, Subcommand};
 use std::path::PathBuf;
@@ -44,14 +44,24 @@ pub enum OutputFormat {
 pub fn download_data(cmd: DataCommand) -> Result<()> {
     match cmd {
         DataCommand::Download(args) => {
+            ensure!(
+                (1..=100).contains(&args.years),
+                "Years must be between 1 and 100"
+            );
+            let symbol = normalize_hk_symbol(&args.symbol)?;
             std::fs::create_dir_all(&args.output_dir)?;
-
-            let fetcher = DataFetcher::new();
+            let fetcher = DataFetcher::new()?;
             let end = Utc::now().timestamp();
-            let start = (Utc::now() - Duration::days((args.years * 365) as i64)).timestamp();
+            let start = Utc::now()
+                .checked_sub_signed(Duration::days(i64::from(args.years) * 365))
+                .context("Date range out of bounds")?
+                .timestamp();
 
-            println!("Downloading {} years of data for {}.HK...", args.years, args.symbol);
-            let data = fetcher.fetch_hk_stock(&args.symbol, start, end)?;
+            eprintln!(
+                "Downloading {} years of data for {}.HK...",
+                args.years, symbol
+            );
+            let data = fetcher.fetch_hk_stock(&symbol, start, end)?;
 
             if data.is_empty() {
                 println!("No data returned for symbol {}", args.symbol);
@@ -65,7 +75,7 @@ pub fn download_data(cmd: DataCommand) -> Result<()> {
             );
             println!("Downloaded {} rows ({})", data.len(), date_range);
 
-            let base_name = format!("{}.HK", args.symbol);
+            let base_name = format!("{}.HK", symbol);
             match args.format {
                 OutputFormat::Csv | OutputFormat::Both => {
                     let path = args.output_dir.join(format!("{}.csv", base_name));

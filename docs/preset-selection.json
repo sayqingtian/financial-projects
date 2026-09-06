@@ -1,0 +1,485 @@
+{
+  "version": "0.6.0",
+  "symbol": "0700.HK",
+  "source_report": "../reports/tencent-ranking.json",
+  "source_version": "0.5.0",
+  "start_date": "2021-09-07",
+  "end_date": "2026-09-04",
+  "scoring_method": "percentile_30_return_30_drawdown_40_sharpe_v1",
+  "weights": {
+    "annual_return": 0.3,
+    "drawdown": 0.3,
+    "sharpe": 0.4
+  },
+  "benchmark": "Buy & Hold",
+  "benchmark_score": 47.142857142857146,
+  "rule": "keep original score >= benchmark score; select once",
+  "retained_count": 20,
+  "removed_count": 16,
+  "presets": [
+    {
+      "strategy_name": "Keltner Breakout",
+      "params": {
+        "atr_period": 10,
+        "ema_period": 20,
+        "kind": "keltner",
+        "multiplier": 2.0
+      },
+      "original_rank": 1,
+      "original_score": 94.28571428571429,
+      "retained": true
+    },
+    {
+      "strategy_name": "GitHub MACD-V (ta4j)",
+      "params": {
+        "atr_period": 26,
+        "fast": 12,
+        "implementation": "rust_daily_full_window_v1",
+        "kind": "macd_v",
+        "range_threshold": 25.0,
+        "signal_period": 9,
+        "slow": 26,
+        "source": {
+          "adaptation": "strategy_rules",
+          "commit": "bc7157ed2100ff5567022c81eae5bc37c4d1640d",
+          "license": "MIT",
+          "path": "ta4j-examples/src/main/java/ta4jexamples/strategies/MACDVMomentumStateStrategy.java",
+          "repository": "ta4j/ta4j",
+          "url": "https://github.com/ta4j/ta4j/blob/bc7157ed2100ff5567022c81eae5bc37c4d1640d/ta4j-examples/src/main/java/ta4jexamples/strategies/MACDVMomentumStateStrategy.java"
+        }
+      },
+      "original_rank": 2,
+      "original_score": 94.0,
+      "retained": true
+    },
+    {
+      "strategy_name": "GitHub Moving Momentum (ta4j)",
+      "params": {
+        "fast": 9,
+        "implementation": "rust_daily_full_window_v1",
+        "kind": "moving_momentum",
+        "overbought": 80.0,
+        "oversold": 20.0,
+        "signal_period": 18,
+        "slow": 26,
+        "source": {
+          "adaptation": "strategy_rules",
+          "commit": "bc7157ed2100ff5567022c81eae5bc37c4d1640d",
+          "license": "MIT",
+          "path": "ta4j-examples/src/main/java/ta4jexamples/strategies/MovingMomentumStrategy.java",
+          "repository": "ta4j/ta4j",
+          "url": "https://github.com/ta4j/ta4j/blob/bc7157ed2100ff5567022c81eae5bc37c4d1640d/ta4j-examples/src/main/java/ta4jexamples/strategies/MovingMomentumStrategy.java"
+        },
+        "stochastic_period": 14
+      },
+      "original_rank": 3,
+      "original_score": 92.0,
+      "retained": true
+    },
+    {
+      "strategy_name": "Mean Reversion (Z-Score)",
+      "params": {
+        "period": 20,
+        "threshold": 2.0
+      },
+      "original_rank": 4,
+      "original_score": 86.28571428571429,
+      "retained": true
+    },
+    {
+      "strategy_name": "CCI Recovery",
+      "params": {
+        "entry_level": -100.0,
+        "exit_level": 100.0,
+        "kind": "cci",
+        "period": 20
+      },
+      "original_rank": 5,
+      "original_score": 84.0,
+      "retained": true
+    },
+    {
+      "strategy_name": "Bollinger Bands",
+      "params": {
+        "period": 20,
+        "std_dev": 2.0
+      },
+      "original_rank": 6,
+      "original_score": 82.57142857142857,
+      "retained": true
+    },
+    {
+      "strategy_name": "SMA Crossover",
+      "params": {
+        "long_period": 200,
+        "short_period": 50
+      },
+      "original_rank": 7,
+      "original_score": 80.28571428571429,
+      "retained": true
+    },
+    {
+      "strategy_name": "GitHub CCI Correction (ta4j)",
+      "params": {
+        "implementation": "rust_daily_full_window_v1",
+        "kind": "cci_correction",
+        "long": 200,
+        "short": 5,
+        "source": {
+          "adaptation": "strategy_rules",
+          "commit": "bc7157ed2100ff5567022c81eae5bc37c4d1640d",
+          "license": "MIT",
+          "path": "ta4j-examples/src/main/java/ta4jexamples/strategies/CCICorrectionStrategy.java",
+          "repository": "ta4j/ta4j",
+          "url": "https://github.com/ta4j/ta4j/blob/bc7157ed2100ff5567022c81eae5bc37c4d1640d/ta4j-examples/src/main/java/ta4jexamples/strategies/CCICorrectionStrategy.java"
+        },
+        "threshold": 100.0
+      },
+      "original_rank": 8,
+      "original_score": 77.42857142857143,
+      "retained": true
+    },
+    {
+      "strategy_name": "GitHub RSI2 (ta4j)",
+      "params": {
+        "implementation": "rust_daily_full_window_v1",
+        "kind": "rsi2",
+        "long": 200,
+        "overbought": 95.0,
+        "oversold": 5.0,
+        "rsi_period": 2,
+        "short": 5,
+        "source": {
+          "adaptation": "strategy_rules",
+          "commit": "bc7157ed2100ff5567022c81eae5bc37c4d1640d",
+          "license": "MIT",
+          "path": "ta4j-examples/src/main/java/ta4jexamples/strategies/RSI2Strategy.java",
+          "repository": "ta4j/ta4j",
+          "url": "https://github.com/ta4j/ta4j/blob/bc7157ed2100ff5567022c81eae5bc37c4d1640d/ta4j-examples/src/main/java/ta4jexamples/strategies/RSI2Strategy.java"
+        }
+      },
+      "original_rank": 9,
+      "original_score": 76.28571428571429,
+      "retained": true
+    },
+    {
+      "strategy_name": "GitHub Connors RSI (LEAN adapter)",
+      "params": {
+        "implementation": "rust_daily_full_window_v1",
+        "kind": "connors_rsi",
+        "overbought": 90.0,
+        "oversold": 10.0,
+        "price_period": 3,
+        "rank_period": 100,
+        "source": {
+          "adaptation": "indicator_with_local_trading_rules",
+          "commit": "23b735d99a357807dc0df9f4c51d30f05fe0d277",
+          "license": "Apache-2.0",
+          "path": "Indicators/ConnorsRelativeStrengthIndex.cs",
+          "repository": "QuantConnect/Lean",
+          "url": "https://github.com/QuantConnect/Lean/blob/23b735d99a357807dc0df9f4c51d30f05fe0d277/Indicators/ConnorsRelativeStrengthIndex.cs"
+        },
+        "streak_period": 2
+      },
+      "original_rank": 10,
+      "original_score": 74.0,
+      "retained": true
+    },
+    {
+      "strategy_name": "Ultimate Oscillator",
+      "params": {
+        "kind": "ultimate",
+        "long": 28,
+        "medium": 14,
+        "overbought": 70.0,
+        "oversold": 30.0,
+        "short": 7
+      },
+      "original_rank": 11,
+      "original_score": 72.57142857142857,
+      "retained": true
+    },
+    {
+      "strategy_name": "Donchian Breakout",
+      "params": {
+        "entry": 20,
+        "exit": 10,
+        "kind": "donchian"
+      },
+      "original_rank": 12,
+      "original_score": 69.42857142857143,
+      "retained": true
+    },
+    {
+      "strategy_name": "Chaikin Money Flow",
+      "params": {
+        "kind": "cmf",
+        "period": 20,
+        "threshold": 0.05
+      },
+      "original_rank": 13,
+      "original_score": 68.28571428571429,
+      "retained": true
+    },
+    {
+      "strategy_name": "SMA Crossover",
+      "params": {
+        "long_period": 30,
+        "short_period": 10
+      },
+      "original_rank": 14,
+      "original_score": 59.714285714285715,
+      "retained": true
+    },
+    {
+      "strategy_name": "Williams %R Recovery",
+      "params": {
+        "kind": "williams_r",
+        "overbought": -20.0,
+        "oversold": -80.0,
+        "period": 14
+      },
+      "original_rank": 15,
+      "original_score": 59.42857142857143,
+      "retained": true
+    },
+    {
+      "strategy_name": "ADX Directional",
+      "params": {
+        "entry_threshold": 25.0,
+        "exit_threshold": 20.0,
+        "kind": "adx",
+        "period": 14
+      },
+      "original_rank": 16,
+      "original_score": 59.142857142857146,
+      "retained": true
+    },
+    {
+      "strategy_name": "Aroon Trend",
+      "params": {
+        "kind": "aroon",
+        "period": 25,
+        "threshold": 50.0
+      },
+      "original_rank": 17,
+      "original_score": 54.0,
+      "retained": true
+    },
+    {
+      "strategy_name": "TRIX Crossover",
+      "params": {
+        "kind": "trix",
+        "period": 15,
+        "signal_period": 9
+      },
+      "original_rank": 18,
+      "original_score": 51.714285714285715,
+      "retained": true
+    },
+    {
+      "strategy_name": "RSI Mean Reversion",
+      "params": {
+        "overbought": 70.0,
+        "oversold": 30.0,
+        "period": 14
+      },
+      "original_rank": 19,
+      "original_score": 50.285714285714285,
+      "retained": true
+    },
+    {
+      "strategy_name": "Buy & Hold",
+      "params": {},
+      "original_rank": 20,
+      "original_score": 47.142857142857146,
+      "retained": true
+    },
+    {
+      "strategy_name": "Ichimoku Cloud",
+      "params": {
+        "base": 26,
+        "conversion": 9,
+        "displacement": 26,
+        "kind": "ichimoku",
+        "span": 52
+      },
+      "original_rank": 21,
+      "original_score": 45.714285714285715,
+      "retained": false
+    },
+    {
+      "strategy_name": "EMA Crossover",
+      "params": {
+        "fast": 12,
+        "kind": "ema_crossover",
+        "slow": 26
+      },
+      "original_rank": 22,
+      "original_score": 39.42857142857143,
+      "retained": false
+    },
+    {
+      "strategy_name": "Supertrend",
+      "params": {
+        "kind": "supertrend",
+        "multiplier": 3.0,
+        "period": 10
+      },
+      "original_rank": 23,
+      "original_score": 36.285714285714285,
+      "retained": false
+    },
+    {
+      "strategy_name": "RSI Mean Reversion",
+      "params": {
+        "overbought": 80.0,
+        "oversold": 20.0,
+        "period": 14
+      },
+      "original_rank": 24,
+      "original_score": 35.42857142857143,
+      "retained": false
+    },
+    {
+      "strategy_name": "SMA Crossover",
+      "params": {
+        "long_period": 50,
+        "short_period": 20
+      },
+      "original_rank": 25,
+      "original_score": 34.0,
+      "retained": false
+    },
+    {
+      "strategy_name": "MFI Recovery",
+      "params": {
+        "kind": "mfi",
+        "overbought": 80.0,
+        "oversold": 20.0,
+        "period": 14
+      },
+      "original_rank": 26,
+      "original_score": 31.428571428571427,
+      "retained": false
+    },
+    {
+      "strategy_name": "MACD",
+      "params": {
+        "fast_period": 12,
+        "signal_period": 9,
+        "slow_period": 26
+      },
+      "original_rank": 27,
+      "original_score": 28.0,
+      "retained": false
+    },
+    {
+      "strategy_name": "Stochastic Reversal",
+      "params": {
+        "kind": "stochastic",
+        "overbought": 80.0,
+        "oversold": 20.0,
+        "period": 14,
+        "smooth_d": 3,
+        "smooth_k": 3
+      },
+      "original_rank": 28,
+      "original_score": 23.142857142857142,
+      "retained": false
+    },
+    {
+      "strategy_name": "Dual Thrust Daily",
+      "params": {
+        "kind": "dual_thrust",
+        "lower_factor": 0.5,
+        "period": 4,
+        "upper_factor": 0.5
+      },
+      "original_rank": 29,
+      "original_score": 20.0,
+      "retained": false
+    },
+    {
+      "strategy_name": "VWMA Crossover",
+      "params": {
+        "kind": "vwma",
+        "period": 20
+      },
+      "original_rank": 30,
+      "original_score": 18.571428571428573,
+      "retained": false
+    },
+    {
+      "strategy_name": "Momentum",
+      "params": {
+        "lookback": 20
+      },
+      "original_rank": 31,
+      "original_score": 15.428571428571429,
+      "retained": false
+    },
+    {
+      "strategy_name": "OBV Trend",
+      "params": {
+        "ema_period": 20,
+        "kind": "obv"
+      },
+      "original_rank": 31,
+      "original_score": 15.428571428571429,
+      "retained": false
+    },
+    {
+      "strategy_name": "Vortex Crossover",
+      "params": {
+        "kind": "vortex",
+        "period": 14
+      },
+      "original_rank": 33,
+      "original_score": 11.428571428571429,
+      "retained": false
+    },
+    {
+      "strategy_name": "GitHub KAMA Trend (LEAN adapter)",
+      "params": {
+        "fast": 2,
+        "implementation": "rust_daily_full_window_v1",
+        "kind": "kama_trend",
+        "period": 10,
+        "slow": 30,
+        "source": {
+          "adaptation": "indicator_with_local_trading_rules",
+          "commit": "23b735d99a357807dc0df9f4c51d30f05fe0d277",
+          "license": "Apache-2.0",
+          "path": "Indicators/KaufmanAdaptiveMovingAverage.cs",
+          "repository": "QuantConnect/Lean",
+          "url": "https://github.com/QuantConnect/Lean/blob/23b735d99a357807dc0df9f4c51d30f05fe0d277/Indicators/KaufmanAdaptiveMovingAverage.cs"
+        }
+      },
+      "original_rank": 34,
+      "original_score": 10.0,
+      "retained": false
+    },
+    {
+      "strategy_name": "Force Index",
+      "params": {
+        "kind": "force_index",
+        "period": 13
+      },
+      "original_rank": 35,
+      "original_score": 2.857142857142857,
+      "retained": false
+    },
+    {
+      "strategy_name": "Chandelier Trend",
+      "params": {
+        "kind": "chandelier",
+        "multiplier": 3.0,
+        "period": 22
+      },
+      "original_rank": 36,
+      "original_score": 0.0,
+      "retained": false
+    }
+  ]
+}

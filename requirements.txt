@@ -1,0 +1,6 @@
+# Optional Python research scripts; the Rust CLI does not need these packages.
+requests
+matplotlib
+pypdf
+openpyxl
+tzdata; sys_platform == "win32"

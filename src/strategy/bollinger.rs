@@ -1,6 +1,6 @@
 use crate::data::fetcher::OHLCV;
 use crate::strategy::{Action, Signal, Strategy};
-use anyhow::Result;
+use anyhow::{ensure, Result};
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 
@@ -19,9 +19,10 @@ impl BollingerStrategy {
         if idx < self.period - 1 {
             return None;
         }
-        let slice = &data[idx - self.period + 1..=idx];
+        let slice = &data[idx - (self.period - 1)..=idx];
         let mean = slice.iter().map(|d| d.close).sum::<f64>() / self.period as f64;
-        let variance = slice.iter().map(|d| (d.close - mean).powi(2)).sum::<f64>() / self.period as f64;
+        let variance =
+            slice.iter().map(|d| (d.close - mean).powi(2)).sum::<f64>() / self.period as f64;
         let std = variance.sqrt();
         let upper = mean + self.std_dev * std;
         let lower = mean - self.std_dev * std;
@@ -35,6 +36,10 @@ impl Strategy for BollingerStrategy {
     }
 
     fn generate_signals(&self, data: &[OHLCV]) -> Result<Vec<Signal>> {
+        ensure!(
+            self.period > 0 && self.std_dev.is_finite() && self.std_dev > 0.0,
+            "Bollinger period and standard-deviation multiplier must be positive"
+        );
         let mut signals = Vec::new();
         let mut position = false;
 
@@ -63,7 +68,10 @@ impl Strategy for BollingerStrategy {
                         date: data[i].date,
                         action: Action::Sell,
                         price,
-                        reason: format!("Price ${:.2} reverted to middle band ${:.2}", price, middle),
+                        reason: format!(
+                            "Price ${:.2} reverted to middle band ${:.2}",
+                            price, middle
+                        ),
                     });
                     position = false;
                 }

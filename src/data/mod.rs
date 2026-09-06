@@ -1,2 +1,2 @@
-pub mod fetcher;
 pub mod downloader;
+pub mod fetcher;
